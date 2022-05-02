@@ -4,7 +4,10 @@
 
 class ZarzadzanieAutorami :public System
 {
-
+	void DodanieAutora(std::string f_imie, std::string f_nazwisko)
+	{
+		c_autor(f_imie, f_nazwisko);
+	}
 };
 class c_autor :protected ZarzadzanieAutorami
 {
@@ -16,10 +19,10 @@ public:
 	{
 
 	}
-	c_autor(std::string fimie, std::string fnazwisko)
+	c_autor(std::string f_imie, std::string f_nazwisko)
 	{
-		imie = fimie;
-		nazwisko = fnazwisko;
+		imie = f_imie;
+		nazwisko = f_nazwisko;
 	}
 };
 

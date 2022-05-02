@@ -26,5 +26,8 @@
     <ClInclude Include="ZarzadzanieAutorami.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
+    <ClInclude Include="ZarzadzanieDrukarniami.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

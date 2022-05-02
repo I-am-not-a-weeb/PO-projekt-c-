@@ -2,12 +2,11 @@
 #include "System.h"
 #include "ZarzadzanieAutorami.h"
 
-
 class ZarzadzaniePozycjamiIUmowanie :public System
 {
 protected: 
 public: 
-	virtual void PrzyznanieAutora(c_autor f_autor) = 0;
+	virtual void PrzyznanieAutora() = 0;
 };
 
 class c_pozycja : protected ZarzadzaniePozycjamiIUmowanie

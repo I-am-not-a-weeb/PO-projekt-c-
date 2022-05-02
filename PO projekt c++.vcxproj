@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ZarzadzanieAutorami.h" />
+    <ClInclude Include="ZarzadzanieDrukarniami.h" />
     <ClInclude Include="ZarzadzaniePozycjamiIUmowanie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
