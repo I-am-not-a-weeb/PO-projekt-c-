@@ -1,12 +1,13 @@
 #pragma once
 #include "System.h"
 #include <iostream>
+#include <Windows.h>
 
 class ZarzadzanieAutorami :public System
 {
-	void DodanieAutora(std::string f_imie, std::string f_nazwisko)
+	c_autor DodajAutora(std::string f_imie, std::string f_nazwisko)
 	{
-		c_autor(f_imie, f_nazwisko);
+		return c_autor(f_imie, f_nazwisko);
 	}
 };
 class c_autor :protected ZarzadzanieAutorami

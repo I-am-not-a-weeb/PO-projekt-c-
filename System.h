@@ -1,4 +1,5 @@
 #pragma once
+#include <Windows.h>
 
 class System
 {
@@ -15,4 +16,5 @@ public:
 	{
 
 	}
+	System();
 };

@@ -1,6 +1,7 @@
 #pragma once
 #include "System.h"
 #include <iostream>
+#include <Windows.h>
 
 class ZarzadzanieDrukowaniem :public System
 {
@@ -10,7 +11,7 @@ class ZarzadzanieDrukowaniem :public System
 	}
 };
 
-class c_drukarnia : protected ZarzadzanieDrukowaniem
+class c_drukarnia :protected ZarzadzanieDrukowaniem
 {
 private: 
 	bool DrukowanieAlbumow;
@@ -20,7 +21,7 @@ public:
 	{
 
 	}
-	c_drukarnia(bool f_drukowanieAlbumow,std::string f_nazwa)
+	c_drukarnia(bool f_drukowanieAlbumow, std::string f_nazwa)
 	{
 		DrukowanieAlbumow = f_drukowanieAlbumow;
 		nazwa = f_nazwa;

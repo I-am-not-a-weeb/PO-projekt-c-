@@ -1,72 +1,74 @@
 #pragma once
 #include "System.h"
 #include "ZarzadzanieAutorami.h"
-
+#include <Windows.h>
+#include <string>
 class ZarzadzaniePozycjamiIUmowanie :public System
 {
-protected: 
-public: 
-	virtual void PrzyznanieAutora() = 0;
+protected:
+public:
+	virtual c_ksiazka DodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst) = 0;
+	virtual c_czasopismo DodajCzasopismo(std::string f_tytul, bool f_interwal, std::string f_tekst)=0;
+	virtual void ZmianaInterwaluRodzaju() = 0;
 };
 
-class c_pozycja : protected ZarzadzaniePozycjamiIUmowanie
+class c_pozycja :protected ZarzadzaniePozycjamiIUmowanie
 {
 protected:
 	std::string tytul;
 	c_autor autor;
 	std::string tekst;
 public:
-	virtual void PrzyznanieAutora(c_autor f_autor)
+	c_ksiazka DodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst)
 	{
-		autor = f_autor;
+		return c_ksiazka(f_tytul,f_rodzaj,f_tekst);
 	}
-	virtual void ZmianaRodzajuInterwalu() = 0;
+	c_czasopismo DodajCzasopismo(std::string f_tytul, bool f_interwal, std::string f_tekst)
+	{
+		return c_czasopismo(f_tytul,f_interwal,f_tekst);
+	}
+	virtual void ZmianaInterwaluRodzaju();
 };
 
-class c_Ksiazka : protected c_pozycja
+class c_ksiazka :protected c_pozycja
 {
-private:
+protected:
 	int rodzaj = - 1;
 public:
-	c_Ksiazka()
+	c_ksiazka()
 	{
 
 	}
-	c_Ksiazka(int f_rodzaj)
+	c_ksiazka(std::string f_tytul, int f_rodzaj, std::string f_tekst)
 	{
-		rodzaj = f_rodzaj;
-	}
-	c_Ksiazka(int f_rodzaj,std::string f_tekst)
-	{
+		tytul = f_tytul;
 		rodzaj = f_rodzaj;
 		tekst = f_tekst;
 	}
-	void ZmianaRodzajuInterwalu(int f_rodzaj)
+	void ZmianaInterwaluRodzaju(int f_rodzaj)
 	{
 		rodzaj = f_rodzaj;
 	}
 };
 
-class c_Czasopismo : protected c_pozycja
+class c_czasopismo : protected c_pozycja
 {
-private:
+protected:
 	bool interwal;
 public:
-	c_Czasopismo()
+	c_czasopismo()
 	{
 
 	}
-	c_Czasopismo(bool f_interwal)
+	c_czasopismo(std::string f_tytul,bool f_interwal, std::string f_tekst)
 	{
-		interwal = f_interwal;
-	}
-	c_Czasopismo(bool f_interwal, std::string f_tekst)
-	{
+		tytul = f_tytul;
 		interwal = f_interwal;
 		tekst = f_tekst;
 	}
-	void ZmianaRodzajuInterwalu(bool f_interwal)
+	void ZmianaInterwaluRodzaju(bool f_interwal)
 	{
 		interwal = f_interwal;
 	}
+
 };
