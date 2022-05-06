@@ -3,7 +3,7 @@
 #include "ZarzadzanieAutorami.h"
 #include "ZarzadzanieDrukarniami.h"
 
-class baza 
+class baza      //nie widzê niczego do zmiany
 {
 protected:
 	int maxID = 0;
