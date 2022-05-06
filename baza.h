@@ -2,6 +2,7 @@
 #include "ZarzadzaniePozycjamiIUmowanie.h"
 #include "ZarzadzanieAutorami.h"
 #include "ZarzadzanieDrukarniami.h"
+#include <sstream>
 
 class baza 
 {
@@ -30,6 +31,17 @@ public:
             ksiazki[i] = temp_ksiazki[i];
         }
         ksiazki[maxID - 1] = c_ksiazka(f_tytul, f_rodzaj, f_tekst, maxID - 1);
+    }
+    std::string dump()     /// do zapisu
+    {
+        std::ostringstream out;
+        out << "KS:" << endl;
+        for (int i = 0; i < maxID; i++)
+        {
+            out << ksiazki[i].getId() << " " << ksiazki[i].getTytul() << " " << ksiazki[i].getAutor().getImie();
+            out << " " << ksiazki[i].getAutor().getNazwisko() << " " << ksiazki[i].getTekst() << endl;
+        }
+        return out.str();
     }
 };
 
