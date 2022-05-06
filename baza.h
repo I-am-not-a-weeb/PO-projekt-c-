@@ -2,6 +2,7 @@
 #include "ZarzadzaniePozycjamiIUmowanie.h"
 #include "ZarzadzanieAutorami.h"
 #include "ZarzadzanieDrukarniami.h"
+#include <sstream>
 
 class baza 
 {
@@ -31,6 +32,18 @@ public:
         }
         ksiazki[maxID - 1] = c_ksiazka(f_tytul, f_rodzaj, f_tekst, maxID - 1);
     }
+    std::string dump()     /// do zapisu
+    {
+        std::ostringstream out;
+        out << "KS:" << endl;
+        for (int i = 0; i < maxID; i++)
+        {
+            out << ksiazki[i].getId() << " " << ksiazki[i].getTytul() << " " << ksiazki[i].getAutor().getImie();
+            out << " " << ksiazki[i].getAutor().getNazwisko() << " " << ksiazki[i].getTekst() << endl;
+        }
+        return out.str();
+    }
+                                                                       ///tutaj c_autor -> c_ksiazka/ autorzy[]->ksiazki[]
 };
 
 class bazaCzasopism : protected baza
@@ -54,6 +67,7 @@ public:
         czasopisma[maxID - 1] = c_czasopismo(f_tytul,f_interwal,f_tekst,maxID-1);
         delete[] temp_czasopisma;
     }
+                                                                            ///tutaj c_autor -> c_czasopismo/ autorzy[]->czasopisma[]
 };
 
 class bazaDrukarni : protected baza
@@ -77,6 +91,7 @@ public:
         drukarnie[maxID - 1] = c_drukarnia(f_album, f_nazwa,maxID-1);
         delete temp_drukarnie;
 	}
+                                                                                ///tutaj c_autor -> c_drukarnia/ autorzy[]->drukarnie[]
 };
 
 class bazaAutorow : protected baza
@@ -100,7 +115,7 @@ public:
         autorzy[maxID-1] = c_autor(f_imie,f_nazwisko,maxID-1);
         delete[] temp_autorzy;
 	}
-    void usunAutora(c_autor f_autor)
+    void usunAutora(c_autor f_autor)                        ///cala ta funckcja ale ze zmianami
     {
         int temp_i,temp;
         for (int i = 0; i < maxID; i++)
