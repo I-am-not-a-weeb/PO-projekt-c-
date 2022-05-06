@@ -142,9 +142,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PO projekt c++.cpp" />
-    <ClCompile Include="ZarzadzaniePozycjamiIUmowanie.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="baza.h" />
     <ClInclude Include="ZarzadzanieAutorami.h" />
     <ClInclude Include="ZarzadzanieDrukarniami.h" />
     <ClInclude Include="ZarzadzaniePozycjamiIUmowanie.h" />
