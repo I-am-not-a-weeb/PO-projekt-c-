@@ -70,8 +70,7 @@ public:
             }
         }
 
-    }
-    ///tutaj c_autor -> c_ksiazka/ autorzy[]->ksiazki[]
+    }                                                            ///tutaj c_autor -> c_ksiazka/ autorzy[]->ksiazki[]
 };
 
 class bazaCzasopism : protected baza
@@ -134,7 +133,7 @@ public:
         }
 
     }
-    ///tutaj c_autor -> c_czasopismo/ autorzy[]->czasopisma[]
+                                                                            ///tutaj c_autor -> c_czasopismo/ autorzy[]->czasopisma[]
 };
 
 class bazaDrukarni : protected baza
@@ -186,7 +185,8 @@ public:
         }
 
     }
-    ///tutaj c_autor -> c_drukarnia/ autorzy[]->drukarnie[]
+	}
+                                                                                ///tutaj c_autor -> c_drukarnia/ autorzy[]->drukarnie[]
 };
 
 class bazaAutorow : protected baza
@@ -220,6 +220,7 @@ public:
         }
         return out.str();
     }
+	}
     void usunAutora(c_autor f_autor)                        ///cala ta funckcja ale ze zmianami
     {
         int temp_i, temp;
