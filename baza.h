@@ -160,7 +160,8 @@ public:
     }
     void usunDrukarnie(c_drukarnia f_drukarnia)                        ///cala ta funckcja ale ze zmianami
     {
-        int temp_i, temp;                                       
+        int temp_i, temp;
+        for (int i = 0; i < maxID; i++)
         {
             if (f_drukarnia == drukarnie[i])
             {
