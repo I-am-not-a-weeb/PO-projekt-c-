@@ -43,12 +43,12 @@ public:
         }
         return out.str();
     }
-    void usunKsiazke(c_ksiazka f_autor)                        ///cala ta funckcja ale ze zmianami
+    void usunKsiazke(c_ksiazka f_ksiazka)                        ///cala ta funckcja ale ze zmianami
     {
         int temp_i, temp;                                       ///nie wiem co zrobic z f_autor
         for (int i = 0; i < maxID; i++)
         {
-            if (f_autor == ksiazki[i])
+            if (f_ksiazka == ksiazki[i])
             {
                 temp = maxID - i;
                 temp_i = i;
@@ -106,12 +106,12 @@ public:
         }
         return out.str();
     }
-    void usunCzasopismo(c_czasopismo f_autor)                        ///cala ta funckcja ale ze zmianami
+    void usunCzasopismo(c_czasopismo f_czasopismo)                        ///cala ta funckcja ale ze zmianami
     {
         int temp_i, temp;                                       ///nie wiem co zrobic z f_autor
         for (int i = 0; i < maxID; i++)
         {
-            if (f_autor == czasopisma[i])
+            if (f_czasopismo == czasopisma[i])
             {
                 temp = maxID - i;
                 temp_i = i;
@@ -158,12 +158,11 @@ public:
         drukarnie[maxID - 1] = c_drukarnia(f_album, f_nazwa, maxID - 1);
         delete temp_drukarnie;
     }
-    void usunDrukarnie(c_drukarnia f_autor)                        ///cala ta funckcja ale ze zmianami
+    void usunDrukarnie(c_drukarnia f_drukarnia)                        ///cala ta funckcja ale ze zmianami
     {
-        int temp_i, temp;                                       ///nie wiem co zrobic z f_autor
-        for (int i = 0; i < maxID; i++)
+        int temp_i, temp;                                       
         {
-            if (f_autor == drukarnie[i])
+            if (f_drukarnia == drukarnie[i])
             {
                 temp = maxID - i;
                 temp_i = i;
