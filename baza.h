@@ -185,8 +185,6 @@ public:
         }
 
     }
-	}
-                                                                                ///tutaj c_autor -> c_drukarnia/ autorzy[]->drukarnie[]
 };
 
 class bazaAutorow : protected baza
@@ -220,7 +218,6 @@ public:
         }
         return out.str();
     }
-	}
     void usunAutora(c_autor f_autor)                        ///cala ta funckcja ale ze zmianami
     {
         int temp_i, temp;

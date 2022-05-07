@@ -22,6 +22,10 @@ public:
 		nazwa = f_nazwa;
 		id = f_id;
 	}
+	friend bool operator==(c_drukarnia l, c_drukarnia r)
+	{
+		if (l.id == r.id) return 1; else return 0;
+	}
 };
 
 __interface ZarzadzanieDrukowaniem

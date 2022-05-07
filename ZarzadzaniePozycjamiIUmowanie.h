@@ -66,6 +66,10 @@ public:
 	{
 		return id;
 	}
+	friend bool operator==(c_ksiazka l, c_ksiazka r)
+	{
+		if (l.id == r.id) return 1; else return 0;
+	}
 };
 
 class c_czasopismo : protected c_pozycja
@@ -111,6 +115,10 @@ public:
 	int getId()
 	{
 		return id;
+	}
+	friend bool operator==(c_czasopismo l, c_czasopismo r)
+	{
+		if (l.id == r.id) return 1; else return 0;
 	}
 };
 __interface ZarzadzaniePozycjamiIUmowanie 
