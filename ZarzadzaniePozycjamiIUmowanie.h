@@ -9,7 +9,7 @@ class c_pozycja
 {
 protected:
 	std::string tytul;
-	c_autor autor;
+	c_autor autor = c_autor();
 	std::string tekst;
 	int id=-1;
 public:
@@ -19,7 +19,6 @@ public:
 	virtual std::string getTekst() = 0;
 	virtual int getId() = 0;
 	virtual void przyznajTytul(std::string f_tytul) = 0;
-	virtual void przyznajAutora(c_autor f_autor) = 0;
 };
 
 class c_ksiazka :protected c_pozycja
@@ -29,7 +28,7 @@ protected:
 public:
 	c_ksiazka()
 	{
-
+		autor = c_autor();
 	}
 	c_ksiazka(std::string f_tytul, int f_rodzaj, std::string f_tekst, int f_id)
 	{
@@ -38,13 +37,20 @@ public:
 		tekst = f_tekst;
 		id = f_id;
 	}
-	void przyznajAutora(c_autor f_autor)
+	c_ksiazka(const c_ksiazka &f_ksiazka)
 	{
-		autor = f_autor;
+		autor = f_ksiazka.autor;
+		tekst = f_ksiazka.tekst;
+		rodzaj = f_ksiazka.rodzaj;
+		id = f_ksiazka.id;
 	}
 	void przyznajTytul(std::string f_tytul)
 	{
 		tytul = f_tytul;
+	}
+	void dodajAutora(c_autor f_autor)
+	{
+		autor = f_autor;
 	}
 	int getRodzajInterwal()
 	{

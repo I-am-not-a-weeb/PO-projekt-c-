@@ -15,31 +15,38 @@ public:
 class bazaKsiazek : protected baza
 {
 private:
-    c_ksiazka* ksiazki, * temp_ksiazki;
+    c_ksiazka* ksiazki, *temp_ksiazki;
 public:
     void dodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst)
     {
-        temp_ksiazki = new c_ksiazka[++maxID];
-        for (int i = 0; i < maxID; i++)
+        if (maxID > 0)
         {
-            temp_ksiazki[i] = ksiazki[i];
+            temp_ksiazki = new c_ksiazka[maxID];
+            for (int i = 0; i < maxID; i++)
+            {
+                temp_ksiazki[i] = ksiazki[i];
+            }
+            delete[] ksiazki;
+            ksiazki = new c_ksiazka[++maxID];
+            for (int i = 0; i < maxID-1; i++)
+            {
+                ksiazki[i] = temp_ksiazki[i];
+            }
+            ksiazki[maxID - 1] = c_ksiazka(f_tytul, f_rodzaj, f_tekst, maxID - 1);
         }
-        delete[] ksiazki;
-        ksiazki = new c_ksiazka[maxID];
-        for (int i = 0; i < maxID; i++)
+        else
         {
-            ksiazki[i] = temp_ksiazki[i];
+            ksiazki = new c_ksiazka[++maxID];
+            ksiazki[0] = c_ksiazka(f_tytul, f_rodzaj, f_tekst, maxID - 1);
         }
-        ksiazki[maxID - 1] = c_ksiazka(f_tytul, f_rodzaj, f_tekst, maxID - 1);
     }
     std::string dump()     /// do zapisu
     {
         std::ostringstream out;
-        out << "KS:" << endl;
+        out << "KS:" << std::endl;
         for (int i = 0; i < maxID; i++)
         {
-            out << ksiazki[i].getId() << " " << ksiazki[i].getTytul() << " " << ksiazki[i].getAutor().getImie();
-            out << " " << ksiazki[i].getAutor().getNazwisko() << " " << ksiazki[i].getTekst() << endl;
+            out << ksiazki[i].getId() << " " << ksiazki[i].getTytul() <<" " << ksiazki[i].getRodzajInterwal() << " " << ksiazki[i].getAutor().getImie() << " " << ksiazki[i].getAutor().getNazwisko() << " " << ksiazki[i].getTekst() << std::endl;
         }
         return out.str();
     }
@@ -71,6 +78,17 @@ public:
         }
 
     }                                                            ///tutaj c_autor -> c_ksiazka/ autorzy[]->ksiazki[]
+    void testwypisywania()
+    {
+        for (int i = 0; i < maxID; i++)
+        {
+            std::cout << ksiazki[i].getId() << " " << ksiazki[i].getTytul() << " " << ksiazki[i].getAutor().getImie() << " " << ksiazki[i].getAutor().getNazwisko() << " " << ksiazki[i].getTekst() << std::endl;
+        }
+    }
+    c_ksiazka* dejksiazke(int f_id)
+    {
+        return &ksiazki[f_id];
+    }
 };
 
 class bazaCzasopism : protected baza
@@ -97,11 +115,11 @@ public:
     std::string dump()     /// do zapisu
     {
         std::ostringstream out;
-        out << "CZAS:" << endl;
+        out << "CZAS:" << std::endl;
         for (int i = 0; i < maxID; i++)
         {
             out << czasopisma[i].getId() << " " << czasopisma[i].getTytul() << " " << czasopisma[i].getAutor().getImie();
-            out << " " << czasopisma[i].getAutor().getNazwisko() << " " << czasopisma[i].getTekst() << endl;
+            out << " " << czasopisma[i].getAutor().getNazwisko() << " " << czasopisma[i].getTekst() << std::endl;
         }
         return out.str();
     }
@@ -133,7 +151,6 @@ public:
         }
 
     }
-                                                                            ///tutaj c_autor -> c_czasopismo/ autorzy[]->czasopisma[]
 };
 
 class bazaDrukarni : protected baza
@@ -211,10 +228,10 @@ public:
     std::string dump()     /// do zapisu
     {
         std::ostringstream out;
-        out << "AU:" << endl;
+        out << "AU:" << std::endl;
         for (int i = 0; i < maxID; i++)
         {
-            out << autorzy[i].getImie() << " " << autorzy[i].getNazwisko() << endl;
+            out << autorzy[i].getImie() << " " << autorzy[i].getNazwisko() << std::endl;
         }
         return out.str();
     }
