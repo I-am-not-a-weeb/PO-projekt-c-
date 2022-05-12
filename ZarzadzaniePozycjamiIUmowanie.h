@@ -4,6 +4,7 @@
 #include <Windows.h>
 #include <string>
 #include <memory>
+#include <sstream>
 
 class c_pozycja
 {
@@ -72,9 +73,25 @@ public:
 	{
 		return id;
 	}
+	std::string dump_t()
+	{
+		std::ostringstream out;
+		out << id << " " << tytul << " " << rodzaj << " " << tekst << std::endl;
+		return out.str();
+	}
+	std::string dump()
+	{
+		std::ostringstream out;
+		out << id << " " << tytul << " " << rodzaj << std::endl;
+		return out.str();
+	}
 	friend bool operator==(c_ksiazka l, c_ksiazka r)
 	{
 		if (l.id == r.id) return 1; else return 0;
+	}
+	friend bool operator<(c_ksiazka l, c_ksiazka r)
+	{
+		if (l.tytul < r.tytul) return 1; else return 0;
 	}
 };
 
@@ -122,9 +139,25 @@ public:
 	{
 		return id;
 	}
+	std::string dump_t()
+	{
+		std::ostringstream out;
+		out << id << " " << tytul << " " << interwal << " " << tekst << std::endl;
+		return out.str();
+	}
+	std::string dump()
+	{
+		std::ostringstream out;
+		out << id << " " << tytul << " " << interwal << std::endl;
+		return out.str();
+	}
 	friend bool operator==(c_czasopismo l, c_czasopismo r)
 	{
 		if (l.id == r.id) return 1; else return 0;
+	}
+	friend bool operator<(c_czasopismo l, c_czasopismo r)
+	{
+		if (l.tytul < r.tytul) return 1; else return 0;
 	}
 };
 __interface ZarzadzaniePozycjamiIUmowanie 

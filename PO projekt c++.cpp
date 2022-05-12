@@ -29,7 +29,7 @@ int main()
 		cout <<endl<< "Id autora: ";
 		cin >> ida;
 		baza.dodajKsiazke(tytul, rodzaj, tekst);
-		baza.dejksiazke(id)->dodajAutora(c_autor(imiea,nazwiskoa,ida));
+		//baza.dejksiazke(id)->dodajAutora(c_autor(imiea,nazwiskoa,ida));
 	}
 	system("cls");
 	cout << baza.dump();
