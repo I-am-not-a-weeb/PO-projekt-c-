@@ -174,60 +174,22 @@ public:
 class bazaAutorow : protected baza
 {
 private:
-    c_autor* autorzy, * temp_autorzy;
+    std::vector<c_autor> vecAutor;
 public:
     void dodajAutora(std::string f_imie, std::string f_nazwisko)
     {
-        temp_autorzy = new c_autor[++maxID];
-        for (int i = 0; i < maxID; i++)
-        {
-            temp_autorzy[i] = autorzy[i];
-        }
-        delete[] autorzy;
-        autorzy = new c_autor[maxID];
-        for (int i = 0; i < maxID; i++)
-        {
-            autorzy[i] = temp_autorzy[i];
-        }
-        autorzy[maxID - 1] = c_autor(f_imie, f_nazwisko, maxID - 1);
-        delete[] temp_autorzy;
+        vecAutor.push_back(c_autor(f_imie, f_nazwisko, ++maxID));
     }
     std::string dump()     /// do zapisu
     {
         std::ostringstream out;
-        out << "AU:" << std::endl;
-        for (int i = 0; i < maxID; i++)
+        for (std::vector<c_autor>::iterator i = vecAutor.begin(); i != vecAutor.end(); i++)
         {
-            out << autorzy[i].getImie() << " " << autorzy[i].getNazwisko() << std::endl;
+            out << (*i).dump();
         }
-        return out.str();
     }
     void usunAutora(c_autor f_autor)                        ///cala ta funckcja ale ze zmianami
     {
-        int temp_i, temp;
-        for (int i = 0; i < maxID; i++)
-        {
-            if (f_autor == autorzy[i])
-            {
-                temp = maxID - i;
-                temp_i = i;
-                for (int i = temp; i < maxID - 1; i++)
-                {
-                    autorzy[i] = autorzy[i + 1];
-                }
-                for (int i = 0; i < maxID; i++)
-                {
-                    temp_autorzy[i] = autorzy[i];
-                }
-                delete[] autorzy;
-                autorzy = new c_autor[maxID];
-                for (int i = 0; i < maxID; i++)
-                {
-                    autorzy[i] = temp_autorzy[i];
-                }
-                break;
-            }
-        }
 
     }
 };

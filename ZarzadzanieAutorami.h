@@ -2,6 +2,7 @@
 #include "System.h"
 #include <iostream>
 #include <Windows.h>
+#include <sstream>
 
 class c_autor
 {
@@ -27,6 +28,11 @@ public:
 	std::string getNazwisko()
 	{
 		return nazwisko;
+	}
+	std::string dump()
+	{
+		std::ostringstream out;
+		out << id << " " << imie << " " << nazwisko << std::endl;
 	}
 	friend bool operator==(c_autor l, c_autor r)
 	{
