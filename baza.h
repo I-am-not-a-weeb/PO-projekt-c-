@@ -156,7 +156,7 @@ public:
     {
         vecDrukarnie.push_back(c_drukarnia(f_nazwa, f_album,++maxID));
     }
-    void usunDrukarnie(c_drukarnia f_drukarnia)                        ///cala ta funckcja ale ze zmianami
+    void usunDrukarnie(c_drukarnia f_drukarnia) 
     {
         vecDrukarnie.erase(std::remove(vecDrukarnie.begin(), vecDrukarnie.end(), f_drukarnia));
     }
@@ -180,7 +180,7 @@ public:
     {
         vecAutor.push_back(c_autor(f_imie, f_nazwisko, ++maxID));
     }
-    std::string dump()     /// do zapisu
+    std::string dump()  
     {
         std::ostringstream out;
         for (std::vector<c_autor>::iterator i = vecAutor.begin(); i != vecAutor.end(); i++)
@@ -188,8 +188,8 @@ public:
             out << (*i).dump();
         }
     }
-    void usunAutora(c_autor f_autor)                        ///cala ta funckcja ale ze zmianami
+    void usunAutora(c_autor f_autor)
     {
-
+        vecAutor.erase(std::remove(vecAutor.begin(), vecAutor.end(), f_autor));
     }
 };

@@ -41,6 +41,7 @@ public:
 	c_ksiazka(const c_ksiazka &f_ksiazka)
 	{
 		autor = f_ksiazka.autor;
+		tytul = f_ksiazka.tytul;
 		tekst = f_ksiazka.tekst;
 		rodzaj = f_ksiazka.rodzaj;
 		id = f_ksiazka.id;
