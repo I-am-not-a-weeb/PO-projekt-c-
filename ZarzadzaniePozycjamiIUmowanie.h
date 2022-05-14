@@ -77,13 +77,13 @@ public:
 	std::string dump_t()
 	{
 		std::ostringstream out;
-		out << id << " " << tytul << " " << rodzaj << " " << tekst << std::endl;
+		out << id << "|" << tytul << "|" << rodzaj << "|" << tekst << std::endl;
 		return out.str();
 	}
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << " " << tytul << " " << rodzaj << std::endl;
+		out << id << "|" << tytul << "|" << rodzaj << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_ksiazka l, c_ksiazka r)
@@ -143,13 +143,13 @@ public:
 	std::string dump_t()
 	{
 		std::ostringstream out;
-		out << id << " " << tytul << " " << interwal << " " << tekst << std::endl;
+		out << id << "|" << tytul << "|" << interwal << "|" << tekst << std::endl;
 		return out.str();
 	}
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << " " << tytul << " " << interwal << std::endl;
+		out << id << "|" << tytul << "|" << interwal << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_czasopismo l, c_czasopismo r)
@@ -159,17 +159,5 @@ public:
 	friend bool operator<(c_czasopismo l, c_czasopismo r)
 	{
 		if (l.tytul < r.tytul) return 1; else return 0;
-	}
-};
-__interface ZarzadzaniePozycjamiIUmowanie 
-{
-public:
-	c_ksiazka dodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst,int f_id)
-	{
-		return c_ksiazka(f_tytul, f_rodzaj, f_tekst, f_id);
-	}
-	c_czasopismo dodajCzasopismo(std::string f_tytul, int f_interwal, std::string f_tekst,int f_id)
-	{
-		return c_czasopismo(f_tytul, f_interwal, f_tekst, f_id);
 	}
 };

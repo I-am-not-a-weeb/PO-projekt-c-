@@ -17,8 +17,16 @@ public:
 	{
 		///baza
 	}
-	void Stop()
+	void Open()
 	{
+		ifstream file;
+		file.open("data.txt");
+		std::string line;
+		while (!file.eof())
+		{
+			if (std::getline(file, line));
+			//line =													algorytym zbierania danych z linijki
+		}
 
 	}
 	void Save(bazaKsiazek &f_bazaK, bazaCzasopism &f_bazaC, bazaAutorow &f_bazaA, bazaDrukarni &f_bazaD)
@@ -31,7 +39,7 @@ public:
 		bool is_continued = true;
 
 		system("cls");
-		std::cout << "1. Zapisaæ w pliku domyslnym (dane.txt)" << std::endl << "2. Zapisac w wybranym pliku poprzez podanie sciezki" << std::endl;
+		std::cout << "1. Zapisaæ w pliku domyslnym (data.txt)" << std::endl << "2. Zapisac w wybranym pliku poprzez podanie sciezki" << std::endl;
 		char ch;
 		while (is_continued)
 		{

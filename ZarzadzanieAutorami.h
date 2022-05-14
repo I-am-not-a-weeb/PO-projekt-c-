@@ -32,7 +32,7 @@ public:
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << " " << imie << " " << nazwisko << std::endl;
+		out << id << "|" << imie << "|" << nazwisko << std::endl;
 	}
 	friend bool operator==(c_autor l, c_autor r)
 	{
