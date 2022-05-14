@@ -12,6 +12,11 @@ int main()
 	string imiea, nazwiskoa, tytul, tekst;
 	bazaKsiazek baza;
 	c_ksiazka temp;
+
+	bazaKsiazek bazaK;
+	bazaCzasopism bazaC;
+	bazaAutorow bazaA;
+
 	for (int i = 0; i < 3; i++)
 	{
 		cout << "Id: ";
