@@ -19,7 +19,7 @@ public:
 	}
 	void Open()
 	{
-		ifstream file;
+		std::ifstream file;
 		file.open("data.txt");
 		std::string line;
 		while (!file.eof())
@@ -48,29 +48,29 @@ public:
 			{
 			case '1':
 			{
-				ofstream file;
-				file.open("data.txt", ios::in);
-				file << bazaK->dump() << "---" << endl << bazaC->dump() << "---" << endl << bazaA->dump() << "---" << endl << bazaD->dump();
+				std::ofstream file;
+				file.open("data.txt", std::ios::in);
+				file << bazaK->dump() << "---" << std::endl << bazaC->dump() << "---" << std::endl << bazaA->dump() << "---" << std::endl << bazaD->dump();
 				is_continued = false;
 			}
 			case '2':
 			{
-				ofstream file;
+				std::ofstream file;
 				std::string path;
-				cout << "Wpisz sciezke: ";
-				cin >> path;
-				file.open(path, ios::in);
+				std::cout << "Wpisz sciezke: ";
+				std::cin >> path;
+				file.open(path, std::ios::in);
 				if (!file.is_open())
 				{
-					cout << endl << "Nie otwarto pliku.";
+					std::cout << std::endl << "Nie otwarto pliku.";
 					break;
 				}
-				file << bazaK->dump() << "---" << endl << bazaC->dump() << "---" << endl << bazaA->dump() << "---" << endl << bazaD->dump();
+				file << bazaK->dump() << "---" << std::endl << bazaC->dump() << "---" << std::endl << bazaA->dump() << "---" << std::endl << bazaD->dump();
 				is_continued = false;
 			}
 			default:
 			{
-				cout << "Brak opcji.";
+				std::cout << "Brak opcji.";
 			}
 			}
 			_getch();
