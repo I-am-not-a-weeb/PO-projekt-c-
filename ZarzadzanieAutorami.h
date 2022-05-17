@@ -33,6 +33,7 @@ public:
 	{
 		std::ostringstream out;
 		out << id << "|" << imie << "|" << nazwisko << std::endl;
+		return out.str();
 	}
 	friend bool operator==(c_autor l, c_autor r)
 	{

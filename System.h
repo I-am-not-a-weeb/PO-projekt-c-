@@ -7,10 +7,10 @@
 class System
 {
 private:
-	shared_ptr<bazaKsiazek> bazaK;
-	shared_ptr<bazaCzasopism> bazaC;
-	shared_ptr<bazaAutorow> bazaA;
-	shared_ptr<bazaDrukarni> bazaD;
+	std::shared_ptr<bazaKsiazek> bazaK;
+	std::shared_ptr<bazaCzasopism> bazaC;
+	std::shared_ptr<bazaAutorow> bazaA;
+	std::shared_ptr<bazaDrukarni> bazaD;
 
 public:
 	void Start()

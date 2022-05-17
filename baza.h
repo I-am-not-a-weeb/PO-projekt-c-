@@ -108,6 +108,7 @@ public:
         {
             out << (*i).dump();
         }
+        return out.str();
     }
     void usunAutora(c_autor f_autor)
     {
