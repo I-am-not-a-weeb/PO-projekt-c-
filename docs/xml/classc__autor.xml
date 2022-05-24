@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classc__autor" kind="class" language="C++" prot="public">
+    <compoundname>c_autor</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc__autor_1aba79af084b202114aa72814201b5edc5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string c_autor::imie</definition>
+        <argsstring></argsstring>
+        <name>imie</name>
+        <qualifiedname>c_autor::imie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="62" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__autor_1a8d865fae80051321bf5d3e7ff8b5ffc8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string c_autor::nazwisko</definition>
+        <argsstring></argsstring>
+        <name>nazwisko</name>
+        <qualifiedname>c_autor::nazwisko</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="63" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__autor_1ab449fbaa21d12d2f8b215e1d0d30ece2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int c_autor::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>c_autor::id</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="64" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__autor_1a5e560c908045be2f9b424990c7d051a7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classc__umowa" kindref="compound">c_umowa</ref> &gt;</type>
+        <definition>std::vector&lt;c_umowa&gt; c_autor::vecUmowy</definition>
+        <argsstring></argsstring>
+        <name>vecUmowy</name>
+        <qualifiedname>c_autor::vecUmowy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="65" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc__autor_1ae8ec05f42746b2a25bd5290490a502c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_autor::c_autor</definition>
+        <argsstring>()</argsstring>
+        <name>c_autor</name>
+        <qualifiedname>c_autor::c_autor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="67" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__autor_1a707ccd77acc4fc6163d7c1037791eb8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_autor::c_autor</definition>
+        <argsstring>(std::string f_imie, std::string f_nazwisko, int f_id)</argsstring>
+        <name>c_autor</name>
+        <qualifiedname>c_autor::c_autor</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_imie</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>f_nazwisko</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="72" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__autor_1a8ef4f7da1df9b6f63068c66750901af1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void c_autor::dodajUmowe</definition>
+        <argsstring>(c_umowa f_umowa)</argsstring>
+        <name>dodajUmowe</name>
+        <qualifiedname>c_autor::dodajUmowe</qualifiedname>
+        <param>
+          <type><ref refid="classc__umowa" kindref="compound">c_umowa</ref></type>
+          <declname>f_umowa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="78" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__autor_1aaa8fc2dd4c6a3249a92bbd71d3e75f6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_autor::getImie</definition>
+        <argsstring>()</argsstring>
+        <name>getImie</name>
+        <qualifiedname>c_autor::getImie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="82" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__autor_1a13e9e9213e1db2e7de358c84a950d163" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_autor::getNazwisko</definition>
+        <argsstring>()</argsstring>
+        <name>getNazwisko</name>
+        <qualifiedname>c_autor::getNazwisko</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="86" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__autor_1a1000a8f12d806aca3923aec61bfade40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_autor::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <qualifiedname>c_autor::dump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="90" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="90" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classc__autor_1aa60a4ab68d36149b0d0a2f03ffa770ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(c_autor l, c_autor r)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>c_autor::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="96" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="96" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="59" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="60" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classc__autor_1ae8ec05f42746b2a25bd5290490a502c5" prot="public" virt="non-virtual"><scope>c_autor</scope><name>c_autor</name></member>
+      <member refid="classc__autor_1a707ccd77acc4fc6163d7c1037791eb8e" prot="public" virt="non-virtual"><scope>c_autor</scope><name>c_autor</name></member>
+      <member refid="classc__autor_1a8ef4f7da1df9b6f63068c66750901af1" prot="public" virt="non-virtual"><scope>c_autor</scope><name>dodajUmowe</name></member>
+      <member refid="classc__autor_1a1000a8f12d806aca3923aec61bfade40" prot="public" virt="non-virtual"><scope>c_autor</scope><name>dump</name></member>
+      <member refid="classc__autor_1aaa8fc2dd4c6a3249a92bbd71d3e75f6f" prot="public" virt="non-virtual"><scope>c_autor</scope><name>getImie</name></member>
+      <member refid="classc__autor_1a13e9e9213e1db2e7de358c84a950d163" prot="public" virt="non-virtual"><scope>c_autor</scope><name>getNazwisko</name></member>
+      <member refid="classc__autor_1ab449fbaa21d12d2f8b215e1d0d30ece2" prot="private" virt="non-virtual"><scope>c_autor</scope><name>id</name></member>
+      <member refid="classc__autor_1aba79af084b202114aa72814201b5edc5" prot="private" virt="non-virtual"><scope>c_autor</scope><name>imie</name></member>
+      <member refid="classc__autor_1a8d865fae80051321bf5d3e7ff8b5ffc8" prot="private" virt="non-virtual"><scope>c_autor</scope><name>nazwisko</name></member>
+      <member refid="classc__autor_1aa60a4ab68d36149b0d0a2f03ffa770ea" prot="public" virt="non-virtual"><scope>c_autor</scope><name>operator==</name></member>
+      <member refid="classc__autor_1a5e560c908045be2f9b424990c7d051a7" prot="private" virt="non-virtual"><scope>c_autor</scope><name>vecUmowy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

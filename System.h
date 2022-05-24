@@ -3,6 +3,8 @@
 #include <conio.h>
 #include <Windows.h>
 #include "baza.h"
+#include <fstream>
+#include <memory>
 
 class System
 {
@@ -11,70 +13,35 @@ private:
 	std::shared_ptr<bazaCzasopism> bazaC;
 	std::shared_ptr<bazaAutorow> bazaA;
 	std::shared_ptr<bazaDrukarni> bazaD;
+	std::shared_ptr<bazaUmow> bazaU;
 
 public:
 	void Start()
 	{
-		///baza
+		std::fstream data_file, id_data;
+		data_file.open("");
 	}
 	void Open()
 	{
-		std::ifstream file;
-		file.open("data.txt");
-		std::string line;
-		while (!file.eof())
-		{
-			if (std::getline(file, line));
-			//line =													algorytym zbierania danych z linijki
-		}
 
 	}
-	void Save(bazaKsiazek &f_bazaK, bazaCzasopism &f_bazaC, bazaAutorow &f_bazaA, bazaDrukarni &f_bazaD)
+	void Save(std::shared_ptr<bazaKsiazek>f_bazaK, std::shared_ptr<bazaCzasopism>f_bazaC,		//funkcja zapisujaca caly stan systemu w plikach
+		std::shared_ptr<bazaAutorow>f_bazaA,std::shared_ptr<bazaDrukarni>f_bazaD,				//plik all_data - wszystko z wszystkich baz
+		std::shared_ptr<bazaUmow>f_bazaU,std::fstream &f_fileK,									//plik id_data - po ile czego w czym jest
+		std::fstream &f_fileC, std::fstream &f_fileA, std::fstream &f_fileD)					
 	{
-		*bazaK = f_bazaK;
-		*bazaC = f_bazaC;
-		*bazaA = f_bazaA;
-		*bazaD = f_bazaD;
+		std::fstream all_data, id_data;
+		size_t temp_sum_ids = f_bazaA->getMaxID() + f_bazaC->getMaxID() + f_bazaD->getMaxID() + f_bazaK->getMaxID() + f_bazaU->getMaxID();
 
-		bool is_continued = true;
-
-		system("cls");
-		std::cout << "1. Zapisaæ w pliku domyslnym (data.txt)" << std::endl << "2. Zapisac w wybranym pliku poprzez podanie sciezki" << std::endl;
-		char ch;
-		while (is_continued)
+		if (!(f_fileK.is_open() || f_fileC.is_open() || f_fileA.is_open() || f_fileD.is_open()))
 		{
-			ch = _getch();
-			switch (ch)
-			{
-			case '1':
-			{
-				std::ofstream file;
-				file.open("data.txt", std::ios::in);
-				file << bazaK->dump() << "---" << std::endl << bazaC->dump() << "---" << std::endl << bazaA->dump() << "---" << std::endl << bazaD->dump();
-				is_continued = false;
-			}
-			case '2':
-			{
-				std::ofstream file;
-				std::string path;
-				std::cout << "Wpisz sciezke: ";
-				std::cin >> path;
-				file.open(path, std::ios::in);
-				if (!file.is_open())
-				{
-					std::cout << std::endl << "Nie otwarto pliku.";
-					break;
-				}
-				file << bazaK->dump() << "---" << std::endl << bazaC->dump() << "---" << std::endl << bazaA->dump() << "---" << std::endl << bazaD->dump();
-				is_continued = false;
-			}
-			default:
-			{
-				std::cout << "Brak opcji.";
-			}
-			}
+			std::cout << "Blad otwarcia plikow. Nacisnij dowolny przycisk by kontynuowac." << std::endl;
 			_getch();
+			return;
 		}
+		f_fileK << bazaK->dump();
+		f_fileC << bazaC->dump();
+		f_fileA << bazaA->dump();
+		f_fileD << bazaD->dump();
 	}
-	
 };

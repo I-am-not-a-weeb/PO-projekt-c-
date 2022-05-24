@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classc__umowa" kind="class" language="C++" prot="public">
+    <compoundname>c_umowa</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc__umowa_1af31c95c784893ee15e1947593dbbeb7a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int c_umowa::rodzaj</definition>
+        <argsstring></argsstring>
+        <name>rodzaj</name>
+        <qualifiedname>c_umowa::rodzaj</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="18" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__umowa_1a355fb6588f9294a4c06587c221f88e6c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int c_umowa::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>c_umowa::id</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="18" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__umowa_1a1655a9f96f11842041633481718bdebb" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;c_ksiazka&gt; c_umowa::pozK</definition>
+        <argsstring></argsstring>
+        <name>pozK</name>
+        <qualifiedname>c_umowa::pozK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="19" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__umowa_1a53fa3f34ec072e048ff0fea14118b02e" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;c_czasopismo&gt; c_umowa::pozC</definition>
+        <argsstring></argsstring>
+        <name>pozC</name>
+        <qualifiedname>c_umowa::pozC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="20" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc__umowa_1a8293e869d18391f487db7b85974987d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_umowa::c_umowa</definition>
+        <argsstring>(std::shared_ptr&lt; c_ksiazka &gt; f_ksiazka, int f_rodzaj)</argsstring>
+        <name>c_umowa</name>
+        <qualifiedname>c_umowa::c_umowa</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+          <declname>f_ksiazka</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="23" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__umowa_1afa7a9cb2ad3bb8c157cd6cebfa000ed7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_umowa::c_umowa</definition>
+        <argsstring>(std::shared_ptr&lt; c_czasopismo &gt; f_czasopismo, int f_rodzaj)</argsstring>
+        <name>c_umowa</name>
+        <qualifiedname>c_umowa::c_umowa</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &gt;</type>
+          <declname>f_czasopismo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="28" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__umowa_1a63eae1de7bf5205e63c722e2406393bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int c_umowa::getRodzaj</definition>
+        <argsstring>()</argsstring>
+        <name>getRodzaj</name>
+        <qualifiedname>c_umowa::getRodzaj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="33" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__umowa_1a26c14efdd16fba592021b3cad114fa7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void c_umowa::zmienRodzaj</definition>
+        <argsstring>(int f_rodzaj)</argsstring>
+        <name>zmienRodzaj</name>
+        <qualifiedname>c_umowa::zmienRodzaj</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="37" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__umowa_1af4b49034040a4ff85a9f768c7a749087" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_ksiazka &gt; c_umowa::getpozK</definition>
+        <argsstring>()</argsstring>
+        <name>getpozK</name>
+        <qualifiedname>c_umowa::getpozK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="49" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__umowa_1a2ad9f1cfd19bafa8da5d5c028d84aa35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_czasopismo &gt; c_umowa::getpozC</definition>
+        <argsstring>()</argsstring>
+        <name>getpozC</name>
+        <qualifiedname>c_umowa::getpozC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="53" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="15" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="16" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classc__umowa_1a8293e869d18391f487db7b85974987d4" prot="public" virt="non-virtual"><scope>c_umowa</scope><name>c_umowa</name></member>
+      <member refid="classc__umowa_1afa7a9cb2ad3bb8c157cd6cebfa000ed7" prot="public" virt="non-virtual"><scope>c_umowa</scope><name>c_umowa</name></member>
+      <member refid="classc__umowa_1a2ad9f1cfd19bafa8da5d5c028d84aa35" prot="public" virt="non-virtual"><scope>c_umowa</scope><name>getpozC</name></member>
+      <member refid="classc__umowa_1af4b49034040a4ff85a9f768c7a749087" prot="public" virt="non-virtual"><scope>c_umowa</scope><name>getpozK</name></member>
+      <member refid="classc__umowa_1a63eae1de7bf5205e63c722e2406393bc" prot="public" virt="non-virtual"><scope>c_umowa</scope><name>getRodzaj</name></member>
+      <member refid="classc__umowa_1a355fb6588f9294a4c06587c221f88e6c" prot="private" virt="non-virtual"><scope>c_umowa</scope><name>id</name></member>
+      <member refid="classc__umowa_1a53fa3f34ec072e048ff0fea14118b02e" prot="private" virt="non-virtual"><scope>c_umowa</scope><name>pozC</name></member>
+      <member refid="classc__umowa_1a1655a9f96f11842041633481718bdebb" prot="private" virt="non-virtual"><scope>c_umowa</scope><name>pozK</name></member>
+      <member refid="classc__umowa_1af31c95c784893ee15e1947593dbbeb7a" prot="private" virt="non-virtual"><scope>c_umowa</scope><name>rodzaj</name></member>
+      <member refid="classc__umowa_1a26c14efdd16fba592021b3cad114fa7d" prot="public" virt="non-virtual"><scope>c_umowa</scope><name>zmienRodzaj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

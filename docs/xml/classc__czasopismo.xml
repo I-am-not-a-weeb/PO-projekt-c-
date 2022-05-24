@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classc__czasopismo" kind="class" language="C++" prot="public">
+    <compoundname>c_czasopismo</compoundname>
+    <basecompoundref refid="classc__pozycja" prot="protected" virt="non-virtual">c_pozycja</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classc__czasopismo_1ae380f32b1a4e9e090fc876bc10cc92c2" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int c_czasopismo::interwal</definition>
+        <argsstring></argsstring>
+        <name>interwal</name>
+        <qualifiedname>c_czasopismo::interwal</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="200" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc__czasopismo_1ab6e154fb75da2ff31f67cbef84fb5d78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_czasopismo::c_czasopismo</definition>
+        <argsstring>()</argsstring>
+        <name>c_czasopismo</name>
+        <qualifiedname>c_czasopismo::c_czasopismo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="202" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a03f021c7075aa797c8890fea3ded50b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_czasopismo::c_czasopismo</definition>
+        <argsstring>(std::string f_tytul, int f_interwal, std::string f_tekst, int f_id)</argsstring>
+        <name>c_czasopismo</name>
+        <qualifiedname>c_czasopismo::c_czasopismo</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_interwal</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>f_tekst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="206" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="206" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a953dfc52c4e3c87ea0f94518c1fc7701" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_czasopismo::c_czasopismo</definition>
+        <argsstring>(const c_czasopismo &amp;f_czasopismo)</argsstring>
+        <name>c_czasopismo</name>
+        <qualifiedname>c_czasopismo::c_czasopismo</qualifiedname>
+        <param>
+          <type>const <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &amp;</type>
+          <declname>f_czasopismo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="213" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="213" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a030d5375451395d5df759a818801012c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void c_czasopismo::przyznajTytul</definition>
+        <argsstring>(std::string f_tytul)</argsstring>
+        <name>przyznajTytul</name>
+        <qualifiedname>c_czasopismo::przyznajTytul</qualifiedname>
+        <reimplements refid="classc__pozycja_1a0ac114ca92231c9f22fb4533669f1382">przyznajTytul</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="221" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a7e4d5561d361dd93c216de0fae2b2d8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void c_czasopismo::przyznajAutora</definition>
+        <argsstring>(c_autor f_autor)</argsstring>
+        <name>przyznajAutora</name>
+        <qualifiedname>c_czasopismo::przyznajAutora</qualifiedname>
+        <param>
+          <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
+          <declname>f_autor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="225" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1ab1e307176ff8ed796cb4e8c8acb4f905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int c_czasopismo::getRodzajInterwal</definition>
+        <argsstring>()</argsstring>
+        <name>getRodzajInterwal</name>
+        <qualifiedname>c_czasopismo::getRodzajInterwal</qualifiedname>
+        <reimplements refid="classc__pozycja_1a997bc423d8303f4143b3f4e1c28859aa">getRodzajInterwal</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="229" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1affe729e700f36c3c91ddaa68fba5c32b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
+        <definition>c_autor c_czasopismo::getAutor</definition>
+        <argsstring>()</argsstring>
+        <name>getAutor</name>
+        <qualifiedname>c_czasopismo::getAutor</qualifiedname>
+        <reimplements refid="classc__pozycja_1a9b73df6147e489d4281b2c39f3ba6dea">getAutor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="233" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a7d46208ee1408ebd8daa068673e9f8be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string c_czasopismo::getTytul</definition>
+        <argsstring>()</argsstring>
+        <name>getTytul</name>
+        <qualifiedname>c_czasopismo::getTytul</qualifiedname>
+        <reimplements refid="classc__pozycja_1a324cb69be8e2685de6145b014983072d">getTytul</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="237" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1abb02bbf913a4d2ae36dae974e4cd90ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string c_czasopismo::getTekst</definition>
+        <argsstring>()</argsstring>
+        <name>getTekst</name>
+        <qualifiedname>c_czasopismo::getTekst</qualifiedname>
+        <reimplements refid="classc__pozycja_1a7a6218b406f34e2235cb9efd1da68cf0">getTekst</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="241" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="241" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a7997a42c34567ea0ecad2cf95e0049a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int c_czasopismo::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>c_czasopismo::getId</qualifiedname>
+        <reimplements refid="classc__pozycja_1a481db2dfea4151367694941ff6619327">getId</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="245" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a3193e2a6de7531beee04336559eddab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_czasopismo::dump_t</definition>
+        <argsstring>()</argsstring>
+        <name>dump_t</name>
+        <qualifiedname>c_czasopismo::dump_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="249" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="249" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a6d23ee846d3e5a73e2e683d4dc0acaf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_czasopismo::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <qualifiedname>c_czasopismo::dump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="255" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="255" bodyend="260"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classc__czasopismo_1af8ce76a29f7080ac4364aa562e6ec54a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(c_czasopismo l, c_czasopismo r)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>c_czasopismo::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="261" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="261" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="friend" id="classc__czasopismo_1a28bbbcf6c3b847639ebfce4a9f3a05e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(c_czasopismo l, c_czasopismo r)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>c_czasopismo::operator&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="265" column="8" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="265" bodyend="268"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>c_czasopismo</label>
+        <link refid="classc__czasopismo"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>c_pozycja</label>
+        <link refid="classc__pozycja"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>c_autor</label>
+        <link refid="classc__autor"/>
+      </node>
+      <node id="1">
+        <label>c_czasopismo</label>
+        <link refid="classc__czasopismo"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>c_pozycja</label>
+        <link refid="classc__pozycja"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>autor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="197" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="198" bodyend="269"/>
+    <listofallmembers>
+      <member refid="classc__pozycja_1ab21b5ecc5dd2e20c551987bf47c3cf84" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>autor</name></member>
+      <member refid="classc__czasopismo_1ab6e154fb75da2ff31f67cbef84fb5d78" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>c_czasopismo</name></member>
+      <member refid="classc__czasopismo_1a03f021c7075aa797c8890fea3ded50b8" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>c_czasopismo</name></member>
+      <member refid="classc__czasopismo_1a953dfc52c4e3c87ea0f94518c1fc7701" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>c_czasopismo</name></member>
+      <member refid="classc__pozycja_1a5e19ab43fadee9f07e9c1b35041046bf" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>count</name></member>
+      <member refid="classc__czasopismo_1a6d23ee846d3e5a73e2e683d4dc0acaf4" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>dump</name></member>
+      <member refid="classc__czasopismo_1a3193e2a6de7531beee04336559eddab3" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>dump_t</name></member>
+      <member refid="classc__czasopismo_1affe729e700f36c3c91ddaa68fba5c32b" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getAutor</name></member>
+      <member refid="classc__pozycja_1a3f3c730445d46339966c01f86757ae05" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>getCount</name></member>
+      <member refid="classc__czasopismo_1a7997a42c34567ea0ecad2cf95e0049a0" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getId</name></member>
+      <member refid="classc__czasopismo_1ab1e307176ff8ed796cb4e8c8acb4f905" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getRodzajInterwal</name></member>
+      <member refid="classc__czasopismo_1abb02bbf913a4d2ae36dae974e4cd90ae" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getTekst</name></member>
+      <member refid="classc__czasopismo_1a7d46208ee1408ebd8daa068673e9f8be" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getTytul</name></member>
+      <member refid="classc__pozycja_1abd844aa9e20a6f880af0388df114b1d3" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>id</name></member>
+      <member refid="classc__czasopismo_1ae380f32b1a4e9e090fc876bc10cc92c2" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>interwal</name></member>
+      <member refid="classc__czasopismo_1a28bbbcf6c3b847639ebfce4a9f3a05e4" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>operator&lt;</name></member>
+      <member refid="classc__czasopismo_1af8ce76a29f7080ac4364aa562e6ec54a" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>operator==</name></member>
+      <member refid="classc__czasopismo_1a7e4d5561d361dd93c216de0fae2b2d8b" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>przyznajAutora</name></member>
+      <member refid="classc__czasopismo_1a030d5375451395d5df759a818801012c" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>przyznajTytul</name></member>
+      <member refid="classc__pozycja_1af015282d021e3f40dd532992b3e4a10d" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>tekst</name></member>
+      <member refid="classc__pozycja_1a753320da4544d93bf319d903df179980" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>tytul</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

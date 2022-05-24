@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.4" xml:lang="en-US">
+  <compound refid="classbaza" kind="class"><name>baza</name>
+    <member refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" kind="variable"><name>maxID</name></member>
+    <member refid="classbaza_1acb0899ba4aa2273720fd949d830bc511" kind="function"><name>dump</name></member>
+    <member refid="classbaza_1a74d1c31125deb832c105235eb41105c9" kind="function"><name>getMaxID</name></member>
+  </compound>
+  <compound refid="classbaza_autorow" kind="class"><name>bazaAutorow</name>
+    <member refid="classbaza_autorow_1a36a759703dc7da849ee6a694744ef903" kind="variable"><name>vecAutor</name></member>
+    <member refid="classbaza_autorow_1a19a76fee6b66ae74c08efa3202798ce1" kind="function"><name>dodajAutora</name></member>
+    <member refid="classbaza_autorow_1a8b6e99c6370eb3ef00efc51589096207" kind="function"><name>dump</name></member>
+    <member refid="classbaza_autorow_1aa42c486a7d4bd3b791a1aa15a1490074" kind="function"><name>getMaxID</name></member>
+    <member refid="classbaza_autorow_1ae079d248177572533832cf00007f62ef" kind="function"><name>usunAutora</name></member>
+  </compound>
+  <compound refid="classbaza_czasopism" kind="class"><name>bazaCzasopism</name>
+    <member refid="classbaza_czasopism_1ae86d35627048079ba93f715cf3525aed" kind="variable"><name>vecCzasopism</name></member>
+    <member refid="classbaza_czasopism_1a4dec7f63b1c11b0b7da0b6e1b6c6da7b" kind="function"><name>dodajCzasopismo</name></member>
+    <member refid="classbaza_czasopism_1ab460f7370c4ac0dc1318d94cabb99a6a" kind="function"><name>usunCzasopismo</name></member>
+    <member refid="classbaza_czasopism_1a5578094905cf8110342a63d1f5756678" kind="function"><name>getMaxID</name></member>
+    <member refid="classbaza_czasopism_1a7837aaa595345835d9916b56d77b3ae6" kind="function"><name>dump</name></member>
+  </compound>
+  <compound refid="classbaza_drukarni" kind="class"><name>bazaDrukarni</name>
+    <member refid="classbaza_drukarni_1ab364a41513ffd89ea94027187f930fe3" kind="variable"><name>vecDrukarnie</name></member>
+    <member refid="classbaza_drukarni_1a81cdb4f07c0d2c586ca6d46fdd8d7795" kind="function"><name>dodajDrukarnie</name></member>
+    <member refid="classbaza_drukarni_1af6f2826959556056b8d8c42a50d4d59e" kind="function"><name>usunDrukarnie</name></member>
+    <member refid="classbaza_drukarni_1adbd755e462edf1b2b4f937ce25d0ac1d" kind="function"><name>getMaxID</name></member>
+    <member refid="classbaza_drukarni_1a6c195294f190ee816a4185cf2096e02d" kind="function"><name>dump</name></member>
+  </compound>
+  <compound refid="classbaza_ksiazek" kind="class"><name>bazaKsiazek</name>
+    <member refid="classbaza_ksiazek_1acd51336d7c8c108b01e521c29ecc2a12" kind="variable"><name>vecKsiazka</name></member>
+    <member refid="classbaza_ksiazek_1a5315281cbc97dc6510307c62abc516ae" kind="function"><name>~bazaKsiazek</name></member>
+    <member refid="classbaza_ksiazek_1a23bb0f5d2184e02039be0ba3583a3038" kind="function"><name>dodajKsiazke</name></member>
+    <member refid="classbaza_ksiazek_1a7f4c59bbee142a90fbba6c20eed2e69b" kind="function"><name>usunKsiazke</name></member>
+    <member refid="classbaza_ksiazek_1a4237d1715c775aa3471e1c8b1825b2cc" kind="function"><name>getMaxID</name></member>
+    <member refid="classbaza_ksiazek_1a1ca572513613c36ae642a46b6e1f276d" kind="function"><name>dump</name></member>
+  </compound>
+  <compound refid="classbaza_umow" kind="class"><name>bazaUmow</name>
+    <member refid="classbaza_umow_1a8fc95c12da4531cae6039e1ac6d5ab29" kind="variable"><name>vecUmow</name></member>
+    <member refid="classbaza_umow_1ab478e5e25b869d7c58729a43f7b50d98" kind="function"><name>dodajUmoweK</name></member>
+    <member refid="classbaza_umow_1a9183d0d98bfe5598c22a4b96635ac741" kind="function"><name>dodajUmoweC</name></member>
+    <member refid="classbaza_umow_1aaa1d273f58f603670ed05afaee1e0421" kind="function"><name>getMaxID</name></member>
+  </compound>
+  <compound refid="classc__autor" kind="class"><name>c_autor</name>
+    <member refid="classc__autor_1aba79af084b202114aa72814201b5edc5" kind="variable"><name>imie</name></member>
+    <member refid="classc__autor_1a8d865fae80051321bf5d3e7ff8b5ffc8" kind="variable"><name>nazwisko</name></member>
+    <member refid="classc__autor_1ab449fbaa21d12d2f8b215e1d0d30ece2" kind="variable"><name>id</name></member>
+    <member refid="classc__autor_1a5e560c908045be2f9b424990c7d051a7" kind="variable"><name>vecUmowy</name></member>
+    <member refid="classc__autor_1ae8ec05f42746b2a25bd5290490a502c5" kind="function"><name>c_autor</name></member>
+    <member refid="classc__autor_1a707ccd77acc4fc6163d7c1037791eb8e" kind="function"><name>c_autor</name></member>
+    <member refid="classc__autor_1a8ef4f7da1df9b6f63068c66750901af1" kind="function"><name>dodajUmowe</name></member>
+    <member refid="classc__autor_1aaa8fc2dd4c6a3249a92bbd71d3e75f6f" kind="function"><name>getImie</name></member>
+    <member refid="classc__autor_1a13e9e9213e1db2e7de358c84a950d163" kind="function"><name>getNazwisko</name></member>
+    <member refid="classc__autor_1a1000a8f12d806aca3923aec61bfade40" kind="function"><name>dump</name></member>
+    <member refid="classc__autor_1aa60a4ab68d36149b0d0a2f03ffa770ea" kind="friend"><name>operator==</name></member>
+  </compound>
+  <compound refid="classc__czasopismo" kind="class"><name>c_czasopismo</name>
+    <member refid="classc__czasopismo_1ae380f32b1a4e9e090fc876bc10cc92c2" kind="variable"><name>interwal</name></member>
+    <member refid="classc__czasopismo_1ab6e154fb75da2ff31f67cbef84fb5d78" kind="function"><name>c_czasopismo</name></member>
+    <member refid="classc__czasopismo_1a03f021c7075aa797c8890fea3ded50b8" kind="function"><name>c_czasopismo</name></member>
+    <member refid="classc__czasopismo_1a953dfc52c4e3c87ea0f94518c1fc7701" kind="function"><name>c_czasopismo</name></member>
+    <member refid="classc__czasopismo_1a030d5375451395d5df759a818801012c" kind="function"><name>przyznajTytul</name></member>
+    <member refid="classc__czasopismo_1a7e4d5561d361dd93c216de0fae2b2d8b" kind="function"><name>przyznajAutora</name></member>
+    <member refid="classc__czasopismo_1ab1e307176ff8ed796cb4e8c8acb4f905" kind="function"><name>getRodzajInterwal</name></member>
+    <member refid="classc__czasopismo_1affe729e700f36c3c91ddaa68fba5c32b" kind="function"><name>getAutor</name></member>
+    <member refid="classc__czasopismo_1a7d46208ee1408ebd8daa068673e9f8be" kind="function"><name>getTytul</name></member>
+    <member refid="classc__czasopismo_1abb02bbf913a4d2ae36dae974e4cd90ae" kind="function"><name>getTekst</name></member>
+    <member refid="classc__czasopismo_1a7997a42c34567ea0ecad2cf95e0049a0" kind="function"><name>getId</name></member>
+    <member refid="classc__czasopismo_1a3193e2a6de7531beee04336559eddab3" kind="function"><name>dump_t</name></member>
+    <member refid="classc__czasopismo_1a6d23ee846d3e5a73e2e683d4dc0acaf4" kind="function"><name>dump</name></member>
+    <member refid="classc__czasopismo_1af8ce76a29f7080ac4364aa562e6ec54a" kind="friend"><name>operator==</name></member>
+    <member refid="classc__czasopismo_1a28bbbcf6c3b847639ebfce4a9f3a05e4" kind="friend"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="classc__drukarnia" kind="class"><name>c_drukarnia</name>
+    <member refid="classc__drukarnia_1acf58ea431d88fa9119caa8685dbbea16" kind="variable"><name>DrukowanieAlbumow</name></member>
+    <member refid="classc__drukarnia_1abb5e6665d89520c82e7dde23e5f2730e" kind="variable"><name>nazwa</name></member>
+    <member refid="classc__drukarnia_1ae3f3b799531df6ebde2a3a8672bd2818" kind="variable"><name>id</name></member>
+    <member refid="classc__drukarnia_1a99907b1a4f0740681fcd13c202a670c1" kind="function"><name>c_drukarnia</name></member>
+    <member refid="classc__drukarnia_1acc75591b8b495f0c243a59a3957f3cd8" kind="function"><name>c_drukarnia</name></member>
+    <member refid="classc__drukarnia_1a1a170d62cfdc9598e089c5e386bf0666" kind="function"><name>dump</name></member>
+    <member refid="classc__drukarnia_1a4b59fc383ff37b53db01f4b63ceeb7a5" kind="friend"><name>operator==</name></member>
+  </compound>
+  <compound refid="classc__ksiazka" kind="class"><name>c_ksiazka</name>
+    <member refid="classc__ksiazka_1a8276eb868ffd0719c83bf8236c656c09" kind="variable"><name>rodzaj</name></member>
+    <member refid="classc__ksiazka_1acb9d094aaf60ad359cee191b2c147a78" kind="function"><name>c_ksiazka</name></member>
+    <member refid="classc__ksiazka_1ad256e12e6e6f12f7f8802ae3d60702fe" kind="function"><name>c_ksiazka</name></member>
+    <member refid="classc__ksiazka_1a2aa5ffd4d9c99c5e7a22f64c703337e9" kind="function"><name>c_ksiazka</name></member>
+    <member refid="classc__ksiazka_1a717a7e24d5f29c099f90130bf366d65c" kind="function"><name>przyznajTytul</name></member>
+    <member refid="classc__ksiazka_1a986538377a475cec63db16538e87e8ce" kind="function"><name>dodajAutora</name></member>
+    <member refid="classc__ksiazka_1a3ee4507f911ddc1908f50d8f8318f1d8" kind="function"><name>getRodzajInterwal</name></member>
+    <member refid="classc__ksiazka_1ac1e3e3ae5b6353fb615e4ccc398d0f3a" kind="function"><name>getAutor</name></member>
+    <member refid="classc__ksiazka_1a37fc9e36e58b05901306e99912db93f0" kind="function"><name>getTytul</name></member>
+    <member refid="classc__ksiazka_1a3638267b03c2274d9de38bf962af30e4" kind="function"><name>getTekst</name></member>
+    <member refid="classc__ksiazka_1ab6424ab3931bec93298066a1c417d5f9" kind="function"><name>getId</name></member>
+    <member refid="classc__ksiazka_1a330dc6a70b32677bef19675ea6bb6961" kind="function"><name>dump_t</name></member>
+    <member refid="classc__ksiazka_1a40fc8580acfaae4f701692cba06a2059" kind="function"><name>dump</name></member>
+    <member refid="classc__ksiazka_1a46c72b5aadd78e785acd29b0c235a648" kind="friend"><name>operator==</name></member>
+    <member refid="classc__ksiazka_1a141a383f53afe4fc986fd84f4a711ff0" kind="friend"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="classc__pozycja" kind="class"><name>c_pozycja</name>
+    <member refid="classc__pozycja_1a753320da4544d93bf319d903df179980" kind="variable"><name>tytul</name></member>
+    <member refid="classc__pozycja_1ab21b5ecc5dd2e20c551987bf47c3cf84" kind="variable"><name>autor</name></member>
+    <member refid="classc__pozycja_1af015282d021e3f40dd532992b3e4a10d" kind="variable"><name>tekst</name></member>
+    <member refid="classc__pozycja_1abd844aa9e20a6f880af0388df114b1d3" kind="variable"><name>id</name></member>
+    <member refid="classc__pozycja_1a5e19ab43fadee9f07e9c1b35041046bf" kind="variable"><name>count</name></member>
+    <member refid="classc__pozycja_1a997bc423d8303f4143b3f4e1c28859aa" kind="function"><name>getRodzajInterwal</name></member>
+    <member refid="classc__pozycja_1a9b73df6147e489d4281b2c39f3ba6dea" kind="function"><name>getAutor</name></member>
+    <member refid="classc__pozycja_1a324cb69be8e2685de6145b014983072d" kind="function"><name>getTytul</name></member>
+    <member refid="classc__pozycja_1a7a6218b406f34e2235cb9efd1da68cf0" kind="function"><name>getTekst</name></member>
+    <member refid="classc__pozycja_1a481db2dfea4151367694941ff6619327" kind="function"><name>getId</name></member>
+    <member refid="classc__pozycja_1a0ac114ca92231c9f22fb4533669f1382" kind="function"><name>przyznajTytul</name></member>
+    <member refid="classc__pozycja_1a3f3c730445d46339966c01f86757ae05" kind="function"><name>getCount</name></member>
+  </compound>
+  <compound refid="classc__umowa" kind="class"><name>c_umowa</name>
+    <member refid="classc__umowa_1af31c95c784893ee15e1947593dbbeb7a" kind="variable"><name>rodzaj</name></member>
+    <member refid="classc__umowa_1a355fb6588f9294a4c06587c221f88e6c" kind="variable"><name>id</name></member>
+    <member refid="classc__umowa_1a1655a9f96f11842041633481718bdebb" kind="variable"><name>pozK</name></member>
+    <member refid="classc__umowa_1a53fa3f34ec072e048ff0fea14118b02e" kind="variable"><name>pozC</name></member>
+    <member refid="classc__umowa_1a8293e869d18391f487db7b85974987d4" kind="function"><name>c_umowa</name></member>
+    <member refid="classc__umowa_1afa7a9cb2ad3bb8c157cd6cebfa000ed7" kind="function"><name>c_umowa</name></member>
+    <member refid="classc__umowa_1a63eae1de7bf5205e63c722e2406393bc" kind="function"><name>getRodzaj</name></member>
+    <member refid="classc__umowa_1a26c14efdd16fba592021b3cad114fa7d" kind="function"><name>zmienRodzaj</name></member>
+    <member refid="classc__umowa_1af4b49034040a4ff85a9f768c7a749087" kind="function"><name>getpozK</name></member>
+    <member refid="classc__umowa_1a2ad9f1cfd19bafa8da5d5c028d84aa35" kind="function"><name>getpozC</name></member>
+  </compound>
+  <compound refid="class_system" kind="class"><name>System</name>
+    <member refid="class_system_1a3027fe0ce4b50b4414892ec6535a59e0" kind="variable"><name>bazaK</name></member>
+    <member refid="class_system_1adefc1936b72ea4a29f4ff783287c6fbd" kind="variable"><name>bazaC</name></member>
+    <member refid="class_system_1a5002c9a4809d9f527919b00b3a224e0b" kind="variable"><name>bazaA</name></member>
+    <member refid="class_system_1a46e3da9e2b4e1b48977991430497153a" kind="variable"><name>bazaD</name></member>
+    <member refid="class_system_1a824afbfb59353a4683f72cd6426c13fc" kind="variable"><name>bazaU</name></member>
+    <member refid="class_system_1a99d3c3036a58c1698f286677c4ace286" kind="function"><name>Start</name></member>
+    <member refid="class_system_1a72ecdb324bce4a0e96e210ffae6e212f" kind="function"><name>Open</name></member>
+    <member refid="class_system_1ac3d9bbcaefd3e3731a0f0ab99d22bf62" kind="function"><name>Save</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="baza_8h" kind="file"><name>baza.h</name>
+  </compound>
+  <compound refid="_p_o_01projekt_01c_09_09_8cpp" kind="file"><name>PO projekt c++.cpp</name>
+    <member refid="_p_o_01projekt_01c_09_09_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_system_8cpp" kind="file"><name>System.cpp</name>
+  </compound>
+  <compound refid="_system_8h" kind="file"><name>System.h</name>
+  </compound>
+  <compound refid="_zarzadzanie_autorami_8h" kind="file"><name>ZarzadzanieAutorami.h</name>
+  </compound>
+  <compound refid="_zarzadzanie_drukarniami_8h" kind="file"><name>ZarzadzanieDrukarniami.h</name>
+  </compound>
+  <compound refid="_zarzadzanie_pozycjami_i_umowanie_8h" kind="file"><name>ZarzadzaniePozycjamiIUmowanie.h</name>
+  </compound>
+  <compound refid="md__c___users__i_am_not_a_weeb_source_repos__p_o_projekt_c____r_e_a_d_m_e" kind="page"><name>md_C__Users_I_am_not_a_weeb_source_repos_PO_projekt_c___README</name>
+  </compound>
+  <compound refid="dir_d97db01e6be5edf766fd704603b04a05" kind="dir"><name>C:/Users/I_am_not_a_weeb</name>
+  </compound>
+  <compound refid="dir_5544d2dd6e5f91e0803a3148f02c5ad9" kind="dir"><name>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++</name>
+  </compound>
+  <compound refid="dir_54efcab058069751ec87830bee225e44" kind="dir"><name>C:/Users/I_am_not_a_weeb/source/repos</name>
+  </compound>
+  <compound refid="dir_e934ab610b14015e7ef7948bf7661a53" kind="dir"><name>C:/Users/I_am_not_a_weeb/source</name>
+  </compound>
+  <compound refid="dir_d522931ffa1371640980b621734a4381" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

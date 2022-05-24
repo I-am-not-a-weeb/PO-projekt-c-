@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classc__ksiazka" kind="class" language="C++" prot="public">
+    <compoundname>c_ksiazka</compoundname>
+    <basecompoundref refid="classc__pozycja" prot="protected" virt="non-virtual">c_pozycja</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classc__ksiazka_1a8276eb868ffd0719c83bf8236c656c09" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int c_ksiazka::rodzaj</definition>
+        <argsstring></argsstring>
+        <name>rodzaj</name>
+        <qualifiedname>c_ksiazka::rodzaj</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="126" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc__ksiazka_1acb9d094aaf60ad359cee191b2c147a78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_ksiazka::c_ksiazka</definition>
+        <argsstring>()</argsstring>
+        <name>c_ksiazka</name>
+        <qualifiedname>c_ksiazka::c_ksiazka</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="128" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1ad256e12e6e6f12f7f8802ae3d60702fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_ksiazka::c_ksiazka</definition>
+        <argsstring>(std::string f_tytul, int f_rodzaj, std::string f_tekst, int f_id)</argsstring>
+        <name>c_ksiazka</name>
+        <qualifiedname>c_ksiazka::c_ksiazka</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>f_tekst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="132" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="132" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a2aa5ffd4d9c99c5e7a22f64c703337e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_ksiazka::c_ksiazka</definition>
+        <argsstring>(const c_ksiazka &amp;f_ksiazka)</argsstring>
+        <name>c_ksiazka</name>
+        <qualifiedname>c_ksiazka::c_ksiazka</qualifiedname>
+        <param>
+          <type>const <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &amp;</type>
+          <declname>f_ksiazka</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="139" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="139" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a717a7e24d5f29c099f90130bf366d65c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void c_ksiazka::przyznajTytul</definition>
+        <argsstring>(std::string f_tytul)</argsstring>
+        <name>przyznajTytul</name>
+        <qualifiedname>c_ksiazka::przyznajTytul</qualifiedname>
+        <reimplements refid="classc__pozycja_1a0ac114ca92231c9f22fb4533669f1382">przyznajTytul</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="147" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a986538377a475cec63db16538e87e8ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void c_ksiazka::dodajAutora</definition>
+        <argsstring>(c_autor f_autor)</argsstring>
+        <name>dodajAutora</name>
+        <qualifiedname>c_ksiazka::dodajAutora</qualifiedname>
+        <param>
+          <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
+          <declname>f_autor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="151" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a3ee4507f911ddc1908f50d8f8318f1d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int c_ksiazka::getRodzajInterwal</definition>
+        <argsstring>()</argsstring>
+        <name>getRodzajInterwal</name>
+        <qualifiedname>c_ksiazka::getRodzajInterwal</qualifiedname>
+        <reimplements refid="classc__pozycja_1a997bc423d8303f4143b3f4e1c28859aa">getRodzajInterwal</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="155" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1ac1e3e3ae5b6353fb615e4ccc398d0f3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
+        <definition>c_autor c_ksiazka::getAutor</definition>
+        <argsstring>()</argsstring>
+        <name>getAutor</name>
+        <qualifiedname>c_ksiazka::getAutor</qualifiedname>
+        <reimplements refid="classc__pozycja_1a9b73df6147e489d4281b2c39f3ba6dea">getAutor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="159" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a37fc9e36e58b05901306e99912db93f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string c_ksiazka::getTytul</definition>
+        <argsstring>()</argsstring>
+        <name>getTytul</name>
+        <qualifiedname>c_ksiazka::getTytul</qualifiedname>
+        <reimplements refid="classc__pozycja_1a324cb69be8e2685de6145b014983072d">getTytul</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="163" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a3638267b03c2274d9de38bf962af30e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string c_ksiazka::getTekst</definition>
+        <argsstring>()</argsstring>
+        <name>getTekst</name>
+        <qualifiedname>c_ksiazka::getTekst</qualifiedname>
+        <reimplements refid="classc__pozycja_1a7a6218b406f34e2235cb9efd1da68cf0">getTekst</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="167" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1ab6424ab3931bec93298066a1c417d5f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int c_ksiazka::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>c_ksiazka::getId</qualifiedname>
+        <reimplements refid="classc__pozycja_1a481db2dfea4151367694941ff6619327">getId</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="171" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a330dc6a70b32677bef19675ea6bb6961" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_ksiazka::dump_t</definition>
+        <argsstring>()</argsstring>
+        <name>dump_t</name>
+        <qualifiedname>c_ksiazka::dump_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="175" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="175" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a40fc8580acfaae4f701692cba06a2059" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_ksiazka::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <qualifiedname>c_ksiazka::dump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="181" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="181" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classc__ksiazka_1a46c72b5aadd78e785acd29b0c235a648" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(c_ksiazka l, c_ksiazka r)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>c_ksiazka::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="187" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="friend" id="classc__ksiazka_1a141a383f53afe4fc986fd84f4a711ff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(c_ksiazka l, c_ksiazka r)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>c_ksiazka::operator&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="191" column="8" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="191" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>c_ksiazka</label>
+        <link refid="classc__ksiazka"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>c_pozycja</label>
+        <link refid="classc__pozycja"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>c_autor</label>
+        <link refid="classc__autor"/>
+      </node>
+      <node id="1">
+        <label>c_ksiazka</label>
+        <link refid="classc__ksiazka"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>c_pozycja</label>
+        <link refid="classc__pozycja"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>autor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="123" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="124" bodyend="195"/>
+    <listofallmembers>
+      <member refid="classc__pozycja_1ab21b5ecc5dd2e20c551987bf47c3cf84" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>autor</name></member>
+      <member refid="classc__ksiazka_1acb9d094aaf60ad359cee191b2c147a78" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>c_ksiazka</name></member>
+      <member refid="classc__ksiazka_1ad256e12e6e6f12f7f8802ae3d60702fe" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>c_ksiazka</name></member>
+      <member refid="classc__ksiazka_1a2aa5ffd4d9c99c5e7a22f64c703337e9" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>c_ksiazka</name></member>
+      <member refid="classc__pozycja_1a5e19ab43fadee9f07e9c1b35041046bf" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>count</name></member>
+      <member refid="classc__ksiazka_1a986538377a475cec63db16538e87e8ce" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>dodajAutora</name></member>
+      <member refid="classc__ksiazka_1a40fc8580acfaae4f701692cba06a2059" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>dump</name></member>
+      <member refid="classc__ksiazka_1a330dc6a70b32677bef19675ea6bb6961" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>dump_t</name></member>
+      <member refid="classc__ksiazka_1ac1e3e3ae5b6353fb615e4ccc398d0f3a" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getAutor</name></member>
+      <member refid="classc__pozycja_1a3f3c730445d46339966c01f86757ae05" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>getCount</name></member>
+      <member refid="classc__ksiazka_1ab6424ab3931bec93298066a1c417d5f9" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getId</name></member>
+      <member refid="classc__ksiazka_1a3ee4507f911ddc1908f50d8f8318f1d8" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getRodzajInterwal</name></member>
+      <member refid="classc__ksiazka_1a3638267b03c2274d9de38bf962af30e4" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getTekst</name></member>
+      <member refid="classc__ksiazka_1a37fc9e36e58b05901306e99912db93f0" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getTytul</name></member>
+      <member refid="classc__pozycja_1abd844aa9e20a6f880af0388df114b1d3" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>id</name></member>
+      <member refid="classc__ksiazka_1a141a383f53afe4fc986fd84f4a711ff0" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>operator&lt;</name></member>
+      <member refid="classc__ksiazka_1a46c72b5aadd78e785acd29b0c235a648" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>operator==</name></member>
+      <member refid="classc__ksiazka_1a717a7e24d5f29c099f90130bf366d65c" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>przyznajTytul</name></member>
+      <member refid="classc__ksiazka_1a8276eb868ffd0719c83bf8236c656c09" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>rodzaj</name></member>
+      <member refid="classc__pozycja_1af015282d021e3f40dd532992b3e4a10d" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>tekst</name></member>
+      <member refid="classc__pozycja_1a753320da4544d93bf319d903df179980" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>tytul</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

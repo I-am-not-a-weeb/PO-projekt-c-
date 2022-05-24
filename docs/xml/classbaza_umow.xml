@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classbaza_umow" kind="class" language="C++" prot="public">
+    <compoundname>bazaUmow</compoundname>
+    <basecompoundref refid="classbaza" prot="protected" virt="non-virtual">baza</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbaza_umow_1a8fc95c12da4531cae6039e1ac6d5ab29" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classc__umowa" kindref="compound">c_umowa</ref> &gt;</type>
+        <definition>std::vector&lt;c_umowa&gt; bazaUmow::vecUmow</definition>
+        <argsstring></argsstring>
+        <name>vecUmow</name>
+        <qualifiedname>bazaUmow::vecUmow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="142" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbaza_umow_1ab478e5e25b869d7c58729a43f7b50d98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void bazaUmow::dodajUmoweK</definition>
+        <argsstring>(std::shared_ptr&lt; c_autor &gt; f_autor, std::shared_ptr&lt; c_ksiazka &gt; f_ksiazka, int f_rodzaj)</argsstring>
+        <name>dodajUmoweK</name>
+        <qualifiedname>bazaUmow::dodajUmoweK</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__autor" kindref="compound">c_autor</ref> &gt;</type>
+          <declname>f_autor</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+          <declname>f_ksiazka</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="144" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_umow_1a9183d0d98bfe5598c22a4b96635ac741" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void bazaUmow::dodajUmoweC</definition>
+        <argsstring>(std::shared_ptr&lt; c_autor &gt; f_autor, std::shared_ptr&lt; c_czasopismo &gt; f_czasopismo, int f_rodzaj)</argsstring>
+        <name>dodajUmoweC</name>
+        <qualifiedname>bazaUmow::dodajUmoweC</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__autor" kindref="compound">c_autor</ref> &gt;</type>
+          <declname>f_autor</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &gt;</type>
+          <declname>f_czasopismo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="149" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="149" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_umow_1aaa1d273f58f603670ed05afaee1e0421" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t bazaUmow::getMaxID</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxID</name>
+        <qualifiedname>bazaUmow::getMaxID</qualifiedname>
+        <reimplements refid="classbaza_1a74d1c31125deb832c105235eb41105c9">getMaxID</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="154" column="12" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="154" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>baza</label>
+        <link refid="classbaza"/>
+      </node>
+      <node id="1">
+        <label>bazaUmow</label>
+        <link refid="classbaza_umow"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>baza</label>
+        <link refid="classbaza"/>
+      </node>
+      <node id="1">
+        <label>bazaUmow</label>
+        <link refid="classbaza_umow"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="139" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="140" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classbaza_umow_1a9183d0d98bfe5598c22a4b96635ac741" prot="public" virt="non-virtual"><scope>bazaUmow</scope><name>dodajUmoweC</name></member>
+      <member refid="classbaza_umow_1ab478e5e25b869d7c58729a43f7b50d98" prot="public" virt="non-virtual"><scope>bazaUmow</scope><name>dodajUmoweK</name></member>
+      <member refid="classbaza_1acb0899ba4aa2273720fd949d830bc511" prot="protected" virt="pure-virtual"><scope>bazaUmow</scope><name>dump</name></member>
+      <member refid="classbaza_umow_1aaa1d273f58f603670ed05afaee1e0421" prot="public" virt="virtual"><scope>bazaUmow</scope><name>getMaxID</name></member>
+      <member refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" prot="protected" virt="non-virtual"><scope>bazaUmow</scope><name>maxID</name></member>
+      <member refid="classbaza_umow_1a8fc95c12da4531cae6039e1ac6d5ab29" prot="private" virt="non-virtual"><scope>bazaUmow</scope><name>vecUmow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

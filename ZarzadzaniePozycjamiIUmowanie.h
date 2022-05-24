@@ -6,20 +6,26 @@
 #include <memory>
 #include <sstream>
 
+/*
 class c_pozycja
 {
 protected:
 	std::string tytul;
 	c_autor autor = c_autor();
 	std::string tekst;
-	int id=-1;
+	int id = -1;
 public:
+	inline static int count = -1;
 	virtual int getRodzajInterwal() = 0;
 	virtual c_autor getAutor() = 0;
 	virtual std::string getTytul() = 0;
 	virtual std::string getTekst() = 0;
 	virtual int getId() = 0;
 	virtual void przyznajTytul(std::string f_tytul) = 0;
+	int getCount()
+	{
+		return count;
+	}
 };
 
 class c_ksiazka :protected c_pozycja
@@ -36,7 +42,7 @@ public:
 		tytul = f_tytul;
 		rodzaj = f_rodzaj;
 		tekst = f_tekst;
-		id = f_id;
+		id = ++count;
 	}
 	c_ksiazka(const c_ksiazka &f_ksiazka)
 	{
@@ -110,7 +116,7 @@ public:
 		tytul = f_tytul;
 		interwal = f_interwal;
 		tekst = f_tekst;
-		id = f_id;
+		id = ++count;
 	}
 	void przyznajTytul(std::string f_tytul)
 	{
@@ -160,4 +166,4 @@ public:
 	{
 		if (l.tytul < r.tytul) return 1; else return 0;
 	}
-};
+};*/

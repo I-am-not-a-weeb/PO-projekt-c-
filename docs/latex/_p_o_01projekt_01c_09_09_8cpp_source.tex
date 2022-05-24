@@ -1,0 +1,45 @@
+\hypertarget{_p_o_01projekt_01c_09_09_8cpp_source}{}\doxysection{PO projekt c++.cpp}
+\label{_p_o_01projekt_01c_09_09_8cpp_source}\index{C:/Users/I\_am\_not\_a\_weeb/source/repos/PO projekt c++/PO projekt c++.cpp@{C:/Users/I\_am\_not\_a\_weeb/source/repos/PO projekt c++/PO projekt c++.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}System.h"{}}}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}ZarzadzaniePozycjamiIUmowanie.h"{}}}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <Windows.h>}}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include "{}baza.h"{}}}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00007}00007 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00009}00009 \textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00010}00010 \{}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00011}00011     \textcolor{keywordtype}{int} id, rodzaj, ida;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00012}00012     \textcolor{keywordtype}{string} imiea, nazwiskoa, tytul, tekst;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00013}00013     \mbox{\hyperlink{classbaza_ksiazek}{bazaKsiazek}} \mbox{\hyperlink{classbaza}{baza}};}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00014}00014     \mbox{\hyperlink{classc__ksiazka}{c\_ksiazka}} temp;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00015}00015     c\_pozycja::count = -\/1;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00017}00017     \mbox{\hyperlink{classbaza_ksiazek}{bazaKsiazek}} bazaK;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00018}00018     \mbox{\hyperlink{classbaza_czasopism}{bazaCzasopism}} bazaC;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00019}00019     \mbox{\hyperlink{classbaza_autorow}{bazaAutorow}} bazaA;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00021}00021     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 3; i++)}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00022}00022     \{}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00023}00023         cout << endl << \textcolor{stringliteral}{"{}Rodzaj: "{}};}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00024}00024         cin >> rodzaj;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00025}00025         cout << endl << \textcolor{stringliteral}{"{}Tytul: "{}};}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00026}00026         cin >> tytul;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00027}00027         cout << endl << \textcolor{stringliteral}{"{}Tekst: "{}};}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00028}00028         cin >> tekst;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00029}00029         cout <<endl<< \textcolor{stringliteral}{"{}Imie autora: "{}};}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00030}00030         cin >> imiea;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00031}00031         cout <<endl<< \textcolor{stringliteral}{"{}Nazwisko autora: "{}};}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00032}00032         cin >> nazwiskoa;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00033}00033         cout <<endl<< \textcolor{stringliteral}{"{}Id autora: "{}};}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00034}00034         cin >> ida;}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00035}00035         \mbox{\hyperlink{classbaza}{baza}}.dodajKsiazke(tytul, rodzaj, tekst);}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00037}00037     system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00038}00038     cout << \mbox{\hyperlink{classbaza}{baza}}.dump();}
+\DoxyCodeLine{\Hypertarget{_p_o_01projekt_01c_09_09_8cpp_source_l00039}00039 \}}
+
+\end{DoxyCode}

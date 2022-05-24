@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classc__pozycja" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>c_pozycja</compoundname>
+    <derivedcompoundref refid="classc__czasopismo" prot="protected" virt="non-virtual">c_czasopismo</derivedcompoundref>
+    <derivedcompoundref refid="classc__ksiazka" prot="protected" virt="non-virtual">c_ksiazka</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classc__pozycja_1a753320da4544d93bf319d903df179980" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string c_pozycja::tytul</definition>
+        <argsstring></argsstring>
+        <name>tytul</name>
+        <qualifiedname>c_pozycja::tytul</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="105" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__pozycja_1ab21b5ecc5dd2e20c551987bf47c3cf84" prot="protected" static="no" mutable="no">
+        <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
+        <definition>c_autor c_pozycja::autor</definition>
+        <argsstring></argsstring>
+        <name>autor</name>
+        <qualifiedname>c_pozycja::autor</qualifiedname>
+        <initializer>= <ref refid="classc__autor" kindref="compound">c_autor</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="106" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__pozycja_1af015282d021e3f40dd532992b3e4a10d" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string c_pozycja::tekst</definition>
+        <argsstring></argsstring>
+        <name>tekst</name>
+        <qualifiedname>c_pozycja::tekst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="107" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__pozycja_1abd844aa9e20a6f880af0388df114b1d3" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int c_pozycja::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>c_pozycja::id</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="108" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classc__pozycja_1a5e19ab43fadee9f07e9c1b35041046bf" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int c_pozycja::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>c_pozycja::count</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="110" column="19" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc__pozycja_1a997bc423d8303f4143b3f4e1c28859aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int c_pozycja::getRodzajInterwal</definition>
+        <argsstring>()=0</argsstring>
+        <name>getRodzajInterwal</name>
+        <qualifiedname>c_pozycja::getRodzajInterwal</qualifiedname>
+        <reimplementedby refid="classc__ksiazka_1a3ee4507f911ddc1908f50d8f8318f1d8">getRodzajInterwal</reimplementedby>
+        <reimplementedby refid="classc__czasopismo_1ab1e307176ff8ed796cb4e8c8acb4f905">getRodzajInterwal</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="111" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__pozycja_1a9b73df6147e489d4281b2c39f3ba6dea" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
+        <definition>virtual c_autor c_pozycja::getAutor</definition>
+        <argsstring>()=0</argsstring>
+        <name>getAutor</name>
+        <qualifiedname>c_pozycja::getAutor</qualifiedname>
+        <reimplementedby refid="classc__ksiazka_1ac1e3e3ae5b6353fb615e4ccc398d0f3a">getAutor</reimplementedby>
+        <reimplementedby refid="classc__czasopismo_1affe729e700f36c3c91ddaa68fba5c32b">getAutor</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="112" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__pozycja_1a324cb69be8e2685de6145b014983072d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string c_pozycja::getTytul</definition>
+        <argsstring>()=0</argsstring>
+        <name>getTytul</name>
+        <qualifiedname>c_pozycja::getTytul</qualifiedname>
+        <reimplementedby refid="classc__ksiazka_1a37fc9e36e58b05901306e99912db93f0">getTytul</reimplementedby>
+        <reimplementedby refid="classc__czasopismo_1a7d46208ee1408ebd8daa068673e9f8be">getTytul</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="113" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__pozycja_1a7a6218b406f34e2235cb9efd1da68cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string c_pozycja::getTekst</definition>
+        <argsstring>()=0</argsstring>
+        <name>getTekst</name>
+        <qualifiedname>c_pozycja::getTekst</qualifiedname>
+        <reimplementedby refid="classc__ksiazka_1a3638267b03c2274d9de38bf962af30e4">getTekst</reimplementedby>
+        <reimplementedby refid="classc__czasopismo_1abb02bbf913a4d2ae36dae974e4cd90ae">getTekst</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="114" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__pozycja_1a481db2dfea4151367694941ff6619327" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int c_pozycja::getId</definition>
+        <argsstring>()=0</argsstring>
+        <name>getId</name>
+        <qualifiedname>c_pozycja::getId</qualifiedname>
+        <reimplementedby refid="classc__ksiazka_1ab6424ab3931bec93298066a1c417d5f9">getId</reimplementedby>
+        <reimplementedby refid="classc__czasopismo_1a7997a42c34567ea0ecad2cf95e0049a0">getId</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="115" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__pozycja_1a0ac114ca92231c9f22fb4533669f1382" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void c_pozycja::przyznajTytul</definition>
+        <argsstring>(std::string f_tytul)=0</argsstring>
+        <name>przyznajTytul</name>
+        <qualifiedname>c_pozycja::przyznajTytul</qualifiedname>
+        <reimplementedby refid="classc__ksiazka_1a717a7e24d5f29c099f90130bf366d65c">przyznajTytul</reimplementedby>
+        <reimplementedby refid="classc__czasopismo_1a030d5375451395d5df759a818801012c">przyznajTytul</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="116" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__pozycja_1a3f3c730445d46339966c01f86757ae05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int c_pozycja::getCount</definition>
+        <argsstring>()</argsstring>
+        <name>getCount</name>
+        <qualifiedname>c_pozycja::getCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="117" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>c_czasopismo</label>
+        <link refid="classc__czasopismo"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>c_ksiazka</label>
+        <link refid="classc__ksiazka"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>c_pozycja</label>
+        <link refid="classc__pozycja"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>c_autor</label>
+        <link refid="classc__autor"/>
+      </node>
+      <node id="1">
+        <label>c_pozycja</label>
+        <link refid="classc__pozycja"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>autor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="102" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="103" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classc__pozycja_1ab21b5ecc5dd2e20c551987bf47c3cf84" prot="protected" virt="non-virtual"><scope>c_pozycja</scope><name>autor</name></member>
+      <member refid="classc__pozycja_1a5e19ab43fadee9f07e9c1b35041046bf" prot="public" virt="non-virtual"><scope>c_pozycja</scope><name>count</name></member>
+      <member refid="classc__pozycja_1a9b73df6147e489d4281b2c39f3ba6dea" prot="public" virt="pure-virtual"><scope>c_pozycja</scope><name>getAutor</name></member>
+      <member refid="classc__pozycja_1a3f3c730445d46339966c01f86757ae05" prot="public" virt="non-virtual"><scope>c_pozycja</scope><name>getCount</name></member>
+      <member refid="classc__pozycja_1a481db2dfea4151367694941ff6619327" prot="public" virt="pure-virtual"><scope>c_pozycja</scope><name>getId</name></member>
+      <member refid="classc__pozycja_1a997bc423d8303f4143b3f4e1c28859aa" prot="public" virt="pure-virtual"><scope>c_pozycja</scope><name>getRodzajInterwal</name></member>
+      <member refid="classc__pozycja_1a7a6218b406f34e2235cb9efd1da68cf0" prot="public" virt="pure-virtual"><scope>c_pozycja</scope><name>getTekst</name></member>
+      <member refid="classc__pozycja_1a324cb69be8e2685de6145b014983072d" prot="public" virt="pure-virtual"><scope>c_pozycja</scope><name>getTytul</name></member>
+      <member refid="classc__pozycja_1abd844aa9e20a6f880af0388df114b1d3" prot="protected" virt="non-virtual"><scope>c_pozycja</scope><name>id</name></member>
+      <member refid="classc__pozycja_1a0ac114ca92231c9f22fb4533669f1382" prot="public" virt="pure-virtual"><scope>c_pozycja</scope><name>przyznajTytul</name></member>
+      <member refid="classc__pozycja_1af015282d021e3f40dd532992b3e4a10d" prot="protected" virt="non-virtual"><scope>c_pozycja</scope><name>tekst</name></member>
+      <member refid="classc__pozycja_1a753320da4544d93bf319d903df179980" prot="protected" virt="non-virtual"><scope>c_pozycja</scope><name>tytul</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

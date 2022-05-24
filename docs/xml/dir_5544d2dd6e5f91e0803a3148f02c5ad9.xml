@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_5544d2dd6e5f91e0803a3148f02c5ad9" kind="dir">
+    <compoundname>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++</compoundname>
+    <innerfile refid="baza_8h">baza.h</innerfile>
+    <innerfile refid="_p_o_01projekt_01c_09_09_8cpp">PO projekt c++.cpp</innerfile>
+    <innerfile refid="_system_8cpp">System.cpp</innerfile>
+    <innerfile refid="_system_8h">System.h</innerfile>
+    <innerfile refid="_zarzadzanie_autorami_8h">ZarzadzanieAutorami.h</innerfile>
+    <innerfile refid="_zarzadzanie_drukarniami_8h">ZarzadzanieDrukarniami.h</innerfile>
+    <innerfile refid="_zarzadzanie_pozycjami_i_umowanie_8h">ZarzadzaniePozycjamiIUmowanie.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/"/>
+  </compounddef>
+</doxygen>

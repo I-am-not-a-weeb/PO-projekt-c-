@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classc__drukarnia" kind="class" language="C++" prot="public">
+    <compoundname>c_drukarnia</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc__drukarnia_1acf58ea431d88fa9119caa8685dbbea16" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool c_drukarnia::DrukowanieAlbumow</definition>
+        <argsstring></argsstring>
+        <name>DrukowanieAlbumow</name>
+        <qualifiedname>c_drukarnia::DrukowanieAlbumow</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="11" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__drukarnia_1abb5e6665d89520c82e7dde23e5f2730e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string c_drukarnia::nazwa</definition>
+        <argsstring></argsstring>
+        <name>nazwa</name>
+        <qualifiedname>c_drukarnia::nazwa</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="12" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc__drukarnia_1ae3f3b799531df6ebde2a3a8672bd2818" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int c_drukarnia::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>c_drukarnia::id</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="13" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc__drukarnia_1a99907b1a4f0740681fcd13c202a670c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_drukarnia::c_drukarnia</definition>
+        <argsstring>()</argsstring>
+        <name>c_drukarnia</name>
+        <qualifiedname>c_drukarnia::c_drukarnia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="15" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__drukarnia_1acc75591b8b495f0c243a59a3957f3cd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_drukarnia::c_drukarnia</definition>
+        <argsstring>(std::string f_nazwa, bool f_drukowanieAlbumow, int f_id)</argsstring>
+        <name>c_drukarnia</name>
+        <qualifiedname>c_drukarnia::c_drukarnia</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_nazwa</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>f_drukowanieAlbumow</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="19" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__drukarnia_1a1a170d62cfdc9598e089c5e386bf0666" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_drukarnia::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <qualifiedname>c_drukarnia::dump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="25" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="25" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classc__drukarnia_1a4b59fc383ff37b53db01f4b63ceeb7a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(c_drukarnia l, c_drukarnia r)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>c_drukarnia::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classc__drukarnia" kindref="compound">c_drukarnia</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="classc__drukarnia" kindref="compound">c_drukarnia</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="30" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="8" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="9" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classc__drukarnia_1a99907b1a4f0740681fcd13c202a670c1" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>c_drukarnia</name></member>
+      <member refid="classc__drukarnia_1acc75591b8b495f0c243a59a3957f3cd8" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>c_drukarnia</name></member>
+      <member refid="classc__drukarnia_1acf58ea431d88fa9119caa8685dbbea16" prot="private" virt="non-virtual"><scope>c_drukarnia</scope><name>DrukowanieAlbumow</name></member>
+      <member refid="classc__drukarnia_1a1a170d62cfdc9598e089c5e386bf0666" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>dump</name></member>
+      <member refid="classc__drukarnia_1ae3f3b799531df6ebde2a3a8672bd2818" prot="private" virt="non-virtual"><scope>c_drukarnia</scope><name>id</name></member>
+      <member refid="classc__drukarnia_1abb5e6665d89520c82e7dde23e5f2730e" prot="private" virt="non-virtual"><scope>c_drukarnia</scope><name>nazwa</name></member>
+      <member refid="classc__drukarnia_1a4b59fc383ff37b53db01f4b63ceeb7a5" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

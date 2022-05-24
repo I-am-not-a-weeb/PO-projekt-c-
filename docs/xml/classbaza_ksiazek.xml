@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classbaza_ksiazek" kind="class" language="C++" prot="public">
+    <compoundname>bazaKsiazek</compoundname>
+    <basecompoundref refid="classbaza" prot="protected" virt="non-virtual">baza</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbaza_ksiazek_1acd51336d7c8c108b01e521c29ecc2a12" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::vector&lt;c_ksiazka&gt; bazaKsiazek::vecKsiazka</definition>
+        <argsstring></argsstring>
+        <name>vecKsiazka</name>
+        <qualifiedname>bazaKsiazek::vecKsiazka</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="21" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbaza_ksiazek_1a5315281cbc97dc6510307c62abc516ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>bazaKsiazek::~bazaKsiazek</definition>
+        <argsstring>()</argsstring>
+        <name>~bazaKsiazek</name>
+        <qualifiedname>bazaKsiazek::~bazaKsiazek</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="23" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_ksiazek_1a23bb0f5d2184e02039be0ba3583a3038" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void bazaKsiazek::dodajKsiazke</definition>
+        <argsstring>(std::string f_tytul, int f_rodzaj, std::string f_tekst)</argsstring>
+        <name>dodajKsiazke</name>
+        <qualifiedname>bazaKsiazek::dodajKsiazke</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>f_tekst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="27" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_ksiazek_1a7f4c59bbee142a90fbba6c20eed2e69b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void bazaKsiazek::usunKsiazke</definition>
+        <argsstring>(c_ksiazka f_ksiazka)</argsstring>
+        <name>usunKsiazke</name>
+        <qualifiedname>bazaKsiazek::usunKsiazke</qualifiedname>
+        <param>
+          <type><ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref></type>
+          <declname>f_ksiazka</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="31" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="31" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_ksiazek_1a4237d1715c775aa3471e1c8b1825b2cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t bazaKsiazek::getMaxID</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxID</name>
+        <qualifiedname>bazaKsiazek::getMaxID</qualifiedname>
+        <reimplements refid="classbaza_1a74d1c31125deb832c105235eb41105c9">getMaxID</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="41" column="12" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_ksiazek_1a1ca572513613c36ae642a46b6e1f276d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string bazaKsiazek::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <qualifiedname>bazaKsiazek::dump</qualifiedname>
+        <reimplements refid="classbaza_1acb0899ba4aa2273720fd949d830bc511">dump</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="45" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="45" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>baza</label>
+        <link refid="classbaza"/>
+      </node>
+      <node id="1">
+        <label>bazaKsiazek</label>
+        <link refid="classbaza_ksiazek"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>baza</label>
+        <link refid="classbaza"/>
+      </node>
+      <node id="1">
+        <label>bazaKsiazek</label>
+        <link refid="classbaza_ksiazek"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="18" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="19" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classbaza_ksiazek_1a23bb0f5d2184e02039be0ba3583a3038" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>dodajKsiazke</name></member>
+      <member refid="classbaza_ksiazek_1a1ca572513613c36ae642a46b6e1f276d" prot="public" virt="virtual"><scope>bazaKsiazek</scope><name>dump</name></member>
+      <member refid="classbaza_ksiazek_1a4237d1715c775aa3471e1c8b1825b2cc" prot="public" virt="virtual"><scope>bazaKsiazek</scope><name>getMaxID</name></member>
+      <member refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" prot="protected" virt="non-virtual"><scope>bazaKsiazek</scope><name>maxID</name></member>
+      <member refid="classbaza_ksiazek_1a7f4c59bbee142a90fbba6c20eed2e69b" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>usunKsiazke</name></member>
+      <member refid="classbaza_ksiazek_1acd51336d7c8c108b01e521c29ecc2a12" prot="private" virt="non-virtual"><scope>bazaKsiazek</scope><name>vecKsiazka</name></member>
+      <member refid="classbaza_ksiazek_1a5315281cbc97dc6510307c62abc516ae" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>~bazaKsiazek</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

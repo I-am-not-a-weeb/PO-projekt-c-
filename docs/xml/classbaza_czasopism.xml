@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classbaza_czasopism" kind="class" language="C++" prot="public">
+    <compoundname>bazaCzasopism</compoundname>
+    <basecompoundref refid="classbaza" prot="protected" virt="non-virtual">baza</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbaza_czasopism_1ae86d35627048079ba93f715cf3525aed" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &gt;</type>
+        <definition>std::vector&lt;c_czasopismo&gt; bazaCzasopism::vecCzasopism</definition>
+        <argsstring></argsstring>
+        <name>vecCzasopism</name>
+        <qualifiedname>bazaCzasopism::vecCzasopism</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="59" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbaza_czasopism_1a4dec7f63b1c11b0b7da0b6e1b6c6da7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void bazaCzasopism::dodajCzasopismo</definition>
+        <argsstring>(std::string f_tytul, bool f_interwal, std::string f_tekst)</argsstring>
+        <name>dodajCzasopismo</name>
+        <qualifiedname>bazaCzasopism::dodajCzasopismo</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>f_interwal</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>f_tekst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="61" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_czasopism_1ab460f7370c4ac0dc1318d94cabb99a6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void bazaCzasopism::usunCzasopismo</definition>
+        <argsstring>(c_czasopismo f_czasopismo)</argsstring>
+        <name>usunCzasopismo</name>
+        <qualifiedname>bazaCzasopism::usunCzasopismo</qualifiedname>
+        <param>
+          <type><ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref></type>
+          <declname>f_czasopismo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="65" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_czasopism_1a5578094905cf8110342a63d1f5756678" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t bazaCzasopism::getMaxID</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxID</name>
+        <qualifiedname>bazaCzasopism::getMaxID</qualifiedname>
+        <reimplements refid="classbaza_1a74d1c31125deb832c105235eb41105c9">getMaxID</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="69" column="12" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_czasopism_1a7837aaa595345835d9916b56d77b3ae6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string bazaCzasopism::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <qualifiedname>bazaCzasopism::dump</qualifiedname>
+        <reimplements refid="classbaza_1acb0899ba4aa2273720fd949d830bc511">dump</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="73" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="73" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>baza</label>
+        <link refid="classbaza"/>
+      </node>
+      <node id="1">
+        <label>bazaCzasopism</label>
+        <link refid="classbaza_czasopism"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>baza</label>
+        <link refid="classbaza"/>
+      </node>
+      <node id="1">
+        <label>bazaCzasopism</label>
+        <link refid="classbaza_czasopism"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="56" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="57" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classbaza_czasopism_1a4dec7f63b1c11b0b7da0b6e1b6c6da7b" prot="public" virt="non-virtual"><scope>bazaCzasopism</scope><name>dodajCzasopismo</name></member>
+      <member refid="classbaza_czasopism_1a7837aaa595345835d9916b56d77b3ae6" prot="public" virt="virtual"><scope>bazaCzasopism</scope><name>dump</name></member>
+      <member refid="classbaza_czasopism_1a5578094905cf8110342a63d1f5756678" prot="public" virt="virtual"><scope>bazaCzasopism</scope><name>getMaxID</name></member>
+      <member refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" prot="protected" virt="non-virtual"><scope>bazaCzasopism</scope><name>maxID</name></member>
+      <member refid="classbaza_czasopism_1ab460f7370c4ac0dc1318d94cabb99a6a" prot="public" virt="non-virtual"><scope>bazaCzasopism</scope><name>usunCzasopismo</name></member>
+      <member refid="classbaza_czasopism_1ae86d35627048079ba93f715cf3525aed" prot="private" virt="non-virtual"><scope>bazaCzasopism</scope><name>vecCzasopism</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -12,6 +12,7 @@ protected:
     int maxID = 0;
 public:
     virtual std::string dump() = 0;
+    virtual size_t getMaxID() = 0;
 };
 
 class bazaKsiazek : protected baza
@@ -19,6 +20,10 @@ class bazaKsiazek : protected baza
 private:
     std::vector<c_ksiazka> vecKsiazka;
 public:
+    ~bazaKsiazek()
+    {
+
+    }
     void dodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst)
     {
         vecKsiazka.push_back(c_ksiazka(f_tytul, f_rodzaj, f_tekst, ++maxID));
@@ -32,6 +37,10 @@ public:
         {
             ~del();
         }*/
+    }
+    size_t getMaxID()
+    {
+        return vecKsiazka.size();
     }
     std::string dump()
     {
@@ -57,6 +66,10 @@ public:
     {
         vecCzasopism.erase(std::remove(vecCzasopism.begin(), vecCzasopism.end(), f_czasopismo));
     }
+    size_t getMaxID()
+    {
+        return vecCzasopism.size();
+    }
     std::string dump()
     {
         std::ostringstream out;
@@ -80,6 +93,10 @@ public:
     void usunDrukarnie(c_drukarnia f_drukarnia) 
     {
         vecDrukarnie.erase(std::remove(vecDrukarnie.begin(), vecDrukarnie.end(), f_drukarnia));
+    }
+    size_t getMaxID()
+    {
+        return vecDrukarnie.size();
     }
     std::string dump()
     {
@@ -110,8 +127,32 @@ public:
         }
         return out.str();
     }
+    size_t getMaxID()
+    {
+        return vecAutor.size();
+    }
     void usunAutora(c_autor f_autor)
     {
         vecAutor.erase(std::remove(vecAutor.begin(), vecAutor.end(), f_autor));
+    }
+};
+class bazaUmow : protected baza
+{
+private:
+    std::vector<c_umowa> vecUmow;
+public:
+    void dodajUmoweK(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
+    {
+        vecUmow.push_back(c_umowa(f_ksiazka, f_rodzaj));
+        f_autor->dodajUmowe(vecUmow.back());
+    }
+    void dodajUmoweC(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
+    {
+        vecUmow.push_back(c_umowa(f_czasopismo, f_rodzaj));
+        f_autor->dodajUmowe(vecUmow.back());
+    }
+    size_t getMaxID()
+    {
+        return vecUmow.size();
     }
 };

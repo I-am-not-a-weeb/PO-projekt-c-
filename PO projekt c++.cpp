@@ -12,6 +12,7 @@ int main()
 	string imiea, nazwiskoa, tytul, tekst;
 	bazaKsiazek baza;
 	c_ksiazka temp;
+	c_pozycja::count = -1;
 
 	bazaKsiazek bazaK;
 	bazaCzasopism bazaC;
@@ -19,8 +20,6 @@ int main()
 
 	for (int i = 0; i < 3; i++)
 	{
-		cout << "Id: ";
-		cin >> id;
 		cout << endl << "Rodzaj: ";
 		cin >> rodzaj;
 		cout << endl << "Tytul: ";
@@ -34,7 +33,6 @@ int main()
 		cout <<endl<< "Id autora: ";
 		cin >> ida;
 		baza.dodajKsiazke(tytul, rodzaj, tekst);
-		//baza.dejksiazke(id)->dodajAutora(c_autor(imiea,nazwiskoa,ida));
 	}
 	system("cls");
 	cout << baza.dump();

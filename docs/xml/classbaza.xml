@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classbaza" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>baza</compoundname>
+    <derivedcompoundref refid="classbaza_autorow" prot="protected" virt="non-virtual">bazaAutorow</derivedcompoundref>
+    <derivedcompoundref refid="classbaza_czasopism" prot="protected" virt="non-virtual">bazaCzasopism</derivedcompoundref>
+    <derivedcompoundref refid="classbaza_drukarni" prot="protected" virt="non-virtual">bazaDrukarni</derivedcompoundref>
+    <derivedcompoundref refid="classbaza_ksiazek" prot="protected" virt="non-virtual">bazaKsiazek</derivedcompoundref>
+    <derivedcompoundref refid="classbaza_umow" prot="protected" virt="non-virtual">bazaUmow</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classbaza_1abcd804a85cb70c6848bd079234105f0c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int baza::maxID</definition>
+        <argsstring></argsstring>
+        <name>maxID</name>
+        <qualifiedname>baza::maxID</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="12" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbaza_1acb0899ba4aa2273720fd949d830bc511" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string baza::dump</definition>
+        <argsstring>()=0</argsstring>
+        <name>dump</name>
+        <qualifiedname>baza::dump</qualifiedname>
+        <reimplementedby refid="classbaza_ksiazek_1a1ca572513613c36ae642a46b6e1f276d">dump</reimplementedby>
+        <reimplementedby refid="classbaza_czasopism_1a7837aaa595345835d9916b56d77b3ae6">dump</reimplementedby>
+        <reimplementedby refid="classbaza_drukarni_1a6c195294f190ee816a4185cf2096e02d">dump</reimplementedby>
+        <reimplementedby refid="classbaza_autorow_1a8b6e99c6370eb3ef00efc51589096207">dump</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="14" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_1a74d1c31125deb832c105235eb41105c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t baza::getMaxID</definition>
+        <argsstring>()=0</argsstring>
+        <name>getMaxID</name>
+        <qualifiedname>baza::getMaxID</qualifiedname>
+        <reimplementedby refid="classbaza_ksiazek_1a4237d1715c775aa3471e1c8b1825b2cc">getMaxID</reimplementedby>
+        <reimplementedby refid="classbaza_czasopism_1a5578094905cf8110342a63d1f5756678">getMaxID</reimplementedby>
+        <reimplementedby refid="classbaza_drukarni_1adbd755e462edf1b2b4f937ce25d0ac1d">getMaxID</reimplementedby>
+        <reimplementedby refid="classbaza_autorow_1aa42c486a7d4bd3b791a1aa15a1490074">getMaxID</reimplementedby>
+        <reimplementedby refid="classbaza_umow_1aaa1d273f58f603670ed05afaee1e0421">getMaxID</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="15" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>baza</label>
+        <link refid="classbaza"/>
+      </node>
+      <node id="2">
+        <label>bazaAutorow</label>
+        <link refid="classbaza_autorow"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>bazaCzasopism</label>
+        <link refid="classbaza_czasopism"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>bazaDrukarni</label>
+        <link refid="classbaza_drukarni"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>bazaKsiazek</label>
+        <link refid="classbaza_ksiazek"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>bazaUmow</label>
+        <link refid="classbaza_umow"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="9" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="10" bodyend="16"/>
+    <listofallmembers>
+      <member refid="classbaza_1acb0899ba4aa2273720fd949d830bc511" prot="public" virt="pure-virtual"><scope>baza</scope><name>dump</name></member>
+      <member refid="classbaza_1a74d1c31125deb832c105235eb41105c9" prot="public" virt="pure-virtual"><scope>baza</scope><name>getMaxID</name></member>
+      <member refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" prot="protected" virt="non-virtual"><scope>baza</scope><name>maxID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
