@@ -28,16 +28,6 @@ public:
     {
         vecKsiazka.push_back(c_ksiazka(f_tytul, f_rodzaj, f_tekst, ++maxID));
     }
-    void usunKsiazke(c_ksiazka f_ksiazka)
-    {
-        vecKsiazka.erase(std::remove(vecKsiazka.begin(),vecKsiazka.end(),f_ksiazka));
-        /*t_ptr = std::for_each(vecKsiazka.begin(), vecKsiazka.end(), ).erase();
-        vector<c_ksiazka>::iterator del;
-        for (del = vecKsiazka.begin(); del!= vecKsiazka.end(); del++)
-        {
-            ~del();
-        }*/
-    }
     size_t getMaxID()
     {
         return vecKsiazka.size();
@@ -62,10 +52,10 @@ public:
     {
         vecCzasopism.push_back(c_czasopismo(f_tytul, f_interwal, f_tekst, ++maxID));
     }
-    void usunCzasopismo(c_czasopismo f_czasopismo)
-    {
-        vecCzasopism.erase(std::remove(vecCzasopism.begin(), vecCzasopism.end(), f_czasopismo));
-    }
+    //void usunCzasopismo(c_czasopismo f_czasopismo)
+    //{
+    //    vecCzasopism.erase(std::remove(vecCzasopism.begin(), vecCzasopism.end(), f_czasopismo));
+    //}
     size_t getMaxID()
     {
         return vecCzasopism.size();
@@ -89,10 +79,6 @@ public:
     void dodajDrukarnie(std::string f_nazwa, bool f_album)
     {
         vecDrukarnie.push_back(c_drukarnia(f_nazwa, f_album,++maxID));
-    }
-    void usunDrukarnie(c_drukarnia f_drukarnia) 
-    {
-        vecDrukarnie.erase(std::remove(vecDrukarnie.begin(), vecDrukarnie.end(), f_drukarnia));
     }
     size_t getMaxID()
     {
@@ -130,10 +116,6 @@ public:
     size_t getMaxID()
     {
         return vecAutor.size();
-    }
-    void usunAutora(c_autor f_autor)
-    {
-        vecAutor.erase(std::remove(vecAutor.begin(), vecAutor.end(), f_autor));
     }
 };
 class bazaUmow : protected baza

@@ -7,6 +7,7 @@
 #include <vector>
 #include <conio.h>
 #include <memory>
+#include "except.h"
 
 class c_pozycja;
 class c_ksiazka;
@@ -38,14 +39,14 @@ public:
 	{
 		rodzaj = f_rodzaj;
 	}
-	/*void dodajKsiazke(std::shared_ptr<c_ksiazka> f_ksiazka)
+	void dodajKsiazke(std::shared_ptr<c_ksiazka> f_ksiazka)
 	{
 		pozK = f_ksiazka;
 	}
 	void dodajCzasopismp(std::shared_ptr<c_czasopismo> f_czasopismo)
 	{
 		pozC = f_czasopismo;
-	}*/
+	}
 	std::shared_ptr<c_ksiazka> getpozK()
 	{
 		return pozK;
@@ -71,6 +72,7 @@ public:
 	}
 	c_autor(std::string f_imie, std::string f_nazwisko, int f_id)
 	{
+		if (f_imie.size() < 3 || f_nazwisko.size() < 3) throw except("Nieprawidlowe dane\n" + f_imie + "\n" + f_nazwisko);
 		imie = f_imie;
 		nazwisko = f_nazwisko;
 		id = f_id;
@@ -196,6 +198,11 @@ public:
 
 class c_czasopismo : protected c_pozycja
 {
+private:
+	std::string interwal_str(bool f_interwal)
+	{
+		if (f_interwal == 1) return "Miesiecznik"; else return "Tygodnik";
+	}
 protected:
 	int interwal = -1;
 public:
@@ -249,13 +256,13 @@ public:
 	std::string dump_t()
 	{
 		std::ostringstream out;
-		out << id << "|" << tytul << "|" << interwal << "|" << tekst << std::endl;
+		out << id << "|" << tytul << "|" << interwal_str(interwal) << "|" << tekst << std::endl;
 		return out.str();
 	}
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << "|" << tytul << "|" << interwal << std::endl;
+		out << id << "|" << tytul << "|" << interwal_str(interwal) << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_czasopismo l, c_czasopismo r)
