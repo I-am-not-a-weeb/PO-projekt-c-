@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	char ch;
-	int id, rodzaj, ida;
+	int id, rodzaj,rodzajU, ida;
 	string imiea, nazwiskoa, tytul, tekst;
 	bazaKsiazek baza;
 	c_ksiazka temp;
@@ -18,10 +18,12 @@ int main()
 	bazaKsiazek bazaK;
 	bazaCzasopism bazaC;
 	bazaAutorow bazaA;
+	bazaUmow bazaU;					/// do zrobienia dump
 	System sys;
 	while (1)
 	{
-		cout << "1. Bazy" << endl << "2. Sklep" << endl << "3. Zapisz system" << endl << "4. Otworz zapis" << endl << "0. Wyłacz program"  << endl;
+		system("cls");
+		cout << "1. Bazy" << endl << "2. Sklep" << endl << "3. Zapisz system" << endl << "4. Otworz zapis" << endl << "0. Wylacz program"  << endl;
 		ch = _getch();
 		system("cls");
 		switch (ch)
@@ -30,14 +32,18 @@ int main()
 		{	
 			while(1)
 			{
-			cout << "1. Baza autorow" << endl << "2. Baza Drukarni" << endl << "3. Baza pozycji" << endl << "4. Baza umow" << endl << "0. Wyjdz";
+			system("cls");
+			cout << "1. Baza autorow" << endl << "2. Baza Drukarni" << endl << "3. Baza pozycji" << endl << "4. Baza umow" << endl << "0. Cofnij";
 			ch = _getch();
 			system("cls");
 			switch (ch)
 			{
 			case '1':		//baza autorow
 			{
-				cout << "1. Wypisac baze" << endl << "2. Dodac autora" << endl << "3. Dodac umowe do autora" <<endl <<"0. Wyjdz" << endl;
+				while(1)
+				{
+				system("cls");
+				cout << "1. Wypisac baze" << endl << "2. Dodac autora" << endl << "3. Dodac umowe do autora" <<endl <<"0. Cofnij" << endl;
 				ch = _getch();
 				system("cls");
 				switch (ch)
@@ -45,6 +51,8 @@ int main()
 				case '1':		//wypis bazy autorow
 				{
 					cout << bazaA.dump() << endl << "Nacisnij dowolny przycisk by kontynuowac." << endl;
+					_getch();
+					continue;
 				}
 				case '2':		//dodanie autora
 				{
@@ -52,29 +60,90 @@ int main()
 					cin >> imiea;
 					cout << endl << "Nazwisko: ";
 					cin >> nazwiskoa;
-					try{ 
-						bazaA.dodajAutora(imiea, nazwiskoa); 
+					try {
+						bazaA.dodajAutora(imiea, nazwiskoa);
 					}
-					catch (except ex) { cout << endl << ex.getMsg()<< endl <<"Nacisnij dowolny przycisk aby kontynuowac."; }
+					catch (except ex) { cout << endl << ex.getMsg() << endl << "Nacisnij dowolny przycisk aby kontynuowac."; }
+					catch (bad_alloc) {}
 					continue;
 				}
 				case '3':		//dodanie umowy
 				{
-
+					while (1)
+					{
+						system("cls");
+						cout << "1. Umowa na ksiazke" << endl << "2. Umowa na czasopismo" << endl << "0. Cofnij" << endl;
+						ch = _getch();
+						system("cls");
+						switch (ch)
+						{
+							cout << bazaA.dump() << endl << "Wpisz ID autora: ";
+							cin >> ida;
+							cout << endl << "Nazwa: ";
+							cin >> tytul;
+						case 1:			//ksiazka
+						{
+							bazaA.getAutorById(ida)->dodajUmowe(*bazaU.dodajUmoweK(bazaA.getAutorById(ida), bazaK.dodajKsiazke(tytul, rodzaj,"TBD"),rodzajU));
+							
+							continue;
+						}
+						case 2:			//czasopismo
+						{
+							bazaA.getAutorById(ida)->dodajUmowe();
+							continue;
+						}
+						case 0:			//cofniecie
+						{
+							break;
+						}
+						}
+						break;
+					}
+					
 				}
-				case '0':
+				case '0':		//confniecie
 				{
 
+					break;
 				}
-
+				default:
+				{
+					continue;
+				}
+				}
+				break;
 				}
 				continue;
 			}
 			case '2':		//baza drukarni
 			{
-				cout << "1. Wypisac baze" << endl << "2. Dodac drukarnie" << endl;
+				while (1)
+				{
+					system("cls");
+					cout << "1. Wypisac baze" << endl << "2. Dodac drukarnie" <<endl << "0. Cofnij"<< endl;
+					ch = _getch();
+					switch (ch)
+					{
+					case 1:		//wypis bazy
+					{
 
-				continue;
+					}
+					case 2:		//dodanie drukarki
+					{
+
+					}
+					case 0:		//cofniecie
+					{
+						break;
+					}
+					default:
+					{
+						continue;
+					}
+					}
+					break;
+				}
+				
 			}
 			case '3':		//baza pozycji
 			{
@@ -110,6 +179,7 @@ int main()
 			}
 			break;
 			}
+			continue;
 		}
 		case '2':		//sklep
 		{
@@ -129,7 +199,8 @@ int main()
 			{
 				cout << "Czy zapisac stan? Y/N";
 				ch = _getch();
-				if (ch == 'y' || ch == 'Y'); //sys.Save();
+				//if (ch == 'y' || ch == 'Y'); //sys.Save();
+				return 0;
 			}
 		}
 		default:

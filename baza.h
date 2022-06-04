@@ -24,9 +24,11 @@ public:
     {
 
     }
-    void dodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst)
+    std::shared_ptr<c_ksiazka> dodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst)
     {
-        vecKsiazka.push_back(c_ksiazka(f_tytul, f_rodzaj, f_tekst, ++maxID));
+        c_ksiazka temp = c_ksiazka(f_tytul, f_rodzaj, f_tekst, ++maxID);
+        vecKsiazka.push_back(temp);
+        return std::shared_ptr<c_ksiazka>(&temp);
     }
     size_t getMaxID()
     {
@@ -113,6 +115,10 @@ public:
         }
         return out.str();
     }
+    std::shared_ptr<c_autor> getAutorById(int f_id)
+    {
+        return std::shared_ptr<c_autor>(&vecAutor[f_id - 1]);
+    }
     size_t getMaxID()
     {
         return vecAutor.size();
@@ -123,15 +129,21 @@ class bazaUmow : protected baza
 private:
     std::vector<c_umowa> vecUmow;
 public:
-    void dodajUmoweK(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
+    std::shared_ptr<c_umowa> dodajUmoweK(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
     {
-        vecUmow.push_back(c_umowa(f_ksiazka, f_rodzaj));
-        f_autor->dodajUmowe(vecUmow.back());
+        std::shared_ptr<c_umowa> tmp;
+        *tmp = c_umowa(f_ksiazka, f_rodzaj);
+        vecUmow.push_back(*tmp);
+        f_autor->dodajUmowe(*tmp);
+        return tmp;
     }
-    void dodajUmoweC(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
+    std::shared_ptr<c_umowa> dodajUmoweC(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
     {
-        vecUmow.push_back(c_umowa(f_czasopismo, f_rodzaj));
-        f_autor->dodajUmowe(vecUmow.back());
+        std::shared_ptr<c_umowa> tmp;
+        *tmp = c_umowa(f_czasopismo, f_rodzaj);
+        vecUmow.push_back(*tmp);
+        f_autor->dodajUmowe(*tmp);
+        return tmp;
     }
     size_t getMaxID()
     {

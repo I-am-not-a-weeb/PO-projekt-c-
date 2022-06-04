@@ -77,7 +77,7 @@ public:
 		nazwisko = f_nazwisko;
 		id = f_id;
 	}
-	void dodajUmowe(c_umowa f_umowa)
+	std::shared_ptr<c_umowa> dodajUmowe(c_umowa f_umowa)
 	{
 		vecUmowy.push_back(f_umowa);
 	}
@@ -88,6 +88,14 @@ public:
 	std::string getNazwisko()
 	{
 		return nazwisko;
+	}
+	int getId()
+	{
+		return id;
+	}
+	std::shared_ptr<c_autor> getPtr()
+	{
+		return std::shared_ptr<c_autor>(this);
 	}
 	std::string dump()
 	{
@@ -136,6 +144,13 @@ public:
 		tytul = f_tytul;
 		rodzaj = f_rodzaj;
 		tekst = f_tekst;
+		id = ++count;
+	}
+	c_ksiazka(std::string f_tytul, int f_rodzaj, int f_id)
+	{
+		tytul = f_tytul;
+		rodzaj = f_rodzaj;
+		tekst = "TBD";
 		id = ++count;
 	}
 	c_ksiazka(const c_ksiazka& f_ksiazka)
