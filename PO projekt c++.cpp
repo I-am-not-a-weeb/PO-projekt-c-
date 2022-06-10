@@ -106,6 +106,7 @@ int main()
 								}
 								break;
 							}
+							continue;
 						}
 						case '0':		//confniecie
 						{
