@@ -21,7 +21,7 @@ private:
 	std::string imie;
 	std::string nazwisko;
 	int id = -1;
-	std::vector<c_umowa> vecUmowy;
+	std::vector<std::shared_ptr<c_umowa>> vecUmowy;
 	std::vector<std::shared_ptr<c_ksiazka>> vecK;
 	std::vector<std::shared_ptr<c_czasopismo>> vecC;
 public:
@@ -39,7 +39,7 @@ public:
 	}
 	std::shared_ptr<c_umowa> dodajUmowe(std::shared_ptr<c_umowa> f_umowa)
 	{
-		vecUmowy.push_back(*f_umowa);
+		vecUmowy.push_back(f_umowa);
 		return f_umowa;
 	}
 	std::shared_ptr<c_ksiazka> dodajKsiazke(std::shared_ptr<c_ksiazka> f_ksiazka)

@@ -79,6 +79,8 @@ int main()
 								system("cls");
 								switch (ch)
 								{
+								case '1':			//ksiazka
+								{
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
 									cin >> ida;
 									cout << endl << "Nazwa: ";
@@ -87,22 +89,31 @@ int main()
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
 									cin >> rodzajU;
-								case '1':			//ksiazka
-								{
-									bazaA.getAutorById(ida)->dodajUmowe(bazaU.dodajUmoweK(bazaA.getAutorById(ida), bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU));
-									continue;
+									bazaU.dodajUmoweK(bazaA.getAutorById(ida), bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU);
+									cout << bazaA.getAutorById(ida)->getImie();
+									break;
 								}
 								case '2':			//czasopismo
 								{
+									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
+									cin >> ida;
+									cout << endl << "Nazwa: ";
+									cin >> tytul;
+									cout << endl << "Rodzaj: ";
+									cin >> rodzaj;
+									cout << endl << "Rodzaj umowy: ";
+									cin >> rodzajU;
 									bazaA.getAutorById(ida)->dodajUmowe(bazaU.dodajUmoweC(bazaA.getAutorById(ida), bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU));
-									continue;
+									break;
 								}
 								case '0':			//cofniecie
 								{
 									break;
 								}
 								default:
+								{
 									continue;
+								}
 								}
 								break;
 							}
@@ -130,13 +141,13 @@ int main()
 						ch = _getch();
 						switch (ch)
 						{
-						case 1:		//wypis bazy
+						case '1':		//wypis bazy
 						{
 							cout << bazaD.dump() << endl << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 							_getch();
 							continue;
 						}
-						case 2:		//dodanie drukarki
+						case '2':		//dodanie drukarki
 						{
 							cout << "Nazwa: ";
 							cin >> nazwa;
@@ -151,7 +162,7 @@ int main()
 							bazaD.dodajDrukarnie(nazwa, yn);
 							continue;
 						}
-						case 0:		//cofniecie
+						case '0':		//cofniecie
 						{
 							break;
 						}
@@ -225,6 +236,7 @@ int main()
 								}
 								break;
 							}
+							continue;
 						}
 						case '2':		//baza czasopism
 						{
@@ -259,6 +271,7 @@ int main()
 										}
 										continue;
 									}
+								}
 								case '0':		//cofniecie
 								{
 									break;
@@ -269,8 +282,8 @@ int main()
 								}
 								}
 								break;
-								}
 							}
+							continue;
 						case '0':		//cofnij
 						{
 							break;

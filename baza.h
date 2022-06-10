@@ -6,6 +6,8 @@
 #include <vector>
 #include <fstream>
 
+void null_deleter(c_autor*) {}
+
 class baza
 {
 protected:
@@ -28,7 +30,7 @@ public:
     {
         c_ksiazka temp = c_ksiazka(f_tytul, f_rodzaj, f_tekst, ++maxID);
         vecKsiazka.push_back(temp);
-        return std::shared_ptr<c_ksiazka>(&temp);
+        return std::shared_ptr<c_ksiazka>(&vecKsiazka.back());
     }
     size_t getMaxID()
     {
@@ -119,7 +121,7 @@ public:
     }
     std::shared_ptr<c_autor> getAutorById(int f_id)
     {
-        return std::shared_ptr<c_autor>(&vecAutor[f_id - 1]);
+        return std::shared_ptr<c_autor>(&vecAutor[f_id - 1],&null_deleter);
     }
     size_t getMaxID()
     {
@@ -134,9 +136,8 @@ public:
     std::shared_ptr<c_umowa> dodajUmoweK(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
     {
         std::shared_ptr<c_umowa> tmp;
-        *tmp = c_umowa(f_ksiazka, f_rodzaj);
+        tmp= std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj));
         vecUmow.push_back(*tmp);
-        f_autor->dodajUmowe(tmp);
         return tmp;
     }
     std::shared_ptr<c_umowa> dodajUmoweC(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
