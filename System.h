@@ -36,7 +36,7 @@ public:
 		if (!(f_fileK->is_open() || f_fileC->is_open() || f_fileA->is_open() || f_fileD->is_open() || f_fileU->is_open() 
 			|| f_fileMagC->is_open() || f_fileMagK->is_open() || f_fileSklC->is_open() || f_fileSklK->is_open()))
 		{
-			std::cout << std::endl << "Blad otwarcia plikow. Nacisnij dowolny przycisk aby kontynuowac." << std::endl;
+			std::cout << std::endl << "Blad otwarcia plikow. Nacisnij dowolny przycisk aby kontynuowac." << std::endl; 
 			_getch();
 			return 0;
 		}

@@ -161,7 +161,7 @@ int main()
 						}
 						break;
 					}
-
+					continue;
 				}
 				case '3':		//baza pozycji
 				{
@@ -277,9 +277,11 @@ int main()
 						default:
 							continue;
 						}
-						break;
 						}
+						break;
 					}
+					continue;
+				}
 				case '4':		//baza umow
 				{
 					while (1)
@@ -350,6 +352,5 @@ int main()
 		}
 		}
 		break;
-		}
 	}
 }
