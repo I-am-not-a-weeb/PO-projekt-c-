@@ -87,17 +87,17 @@ int main()
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
 									cin >> rodzajU;
-								case 1:			//ksiazka
+								case '1':			//ksiazka
 								{
 									bazaA.getAutorById(ida)->dodajUmowe(bazaU.dodajUmoweK(bazaA.getAutorById(ida), bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU));
 									continue;
 								}
-								case 2:			//czasopismo
+								case '2':			//czasopismo
 								{
 									bazaA.getAutorById(ida)->dodajUmowe(bazaU.dodajUmoweC(bazaA.getAutorById(ida), bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU));
 									continue;
 								}
-								case 0:			//cofniecie
+								case '0':			//cofniecie
 								{
 									break;
 								}
