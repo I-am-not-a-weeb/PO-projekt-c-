@@ -9,53 +9,11 @@
 #include <memory>
 #include "except.h"
 
+class c_umowa;
 class c_pozycja;
 class c_ksiazka;
 class c_czasopismo;
-
-class c_umowa
-{
-private:
-	int rodzaj = -1, id = -1;
-	std::shared_ptr<c_ksiazka> pozK;
-	std::shared_ptr<c_czasopismo> pozC;
-
-public:
-	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
-	{
-		pozK = f_ksiazka;
-		rodzaj = f_rodzaj;
-	}
-	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
-	{
-		pozC = f_czasopismo;
-		rodzaj = f_rodzaj;
-	}
-	int getRodzaj()
-	{
-		return rodzaj;
-	}
-	void zmienRodzaj(int f_rodzaj)
-	{
-		rodzaj = f_rodzaj;
-	}
-	void dodajKsiazke(std::shared_ptr<c_ksiazka> f_ksiazka)
-	{
-		pozK = f_ksiazka;
-	}
-	void dodajCzasopismp(std::shared_ptr<c_czasopismo> f_czasopismo)
-	{
-		pozC = f_czasopismo;
-	}
-	std::shared_ptr<c_ksiazka> getpozK()
-	{
-		return pozK;
-	}
-	std::shared_ptr<c_czasopismo> getpozC()
-	{
-		return pozC;
-	}
-};
+class c_autor;
 
 class c_autor
 {
@@ -64,6 +22,8 @@ private:
 	std::string nazwisko;
 	int id = -1;
 	std::vector<c_umowa> vecUmowy;
+	std::vector<std::shared_ptr<c_ksiazka>> vecK;
+	std::vector<std::shared_ptr<c_czasopismo>> vecC;
 public:
 	c_autor()
 	{
@@ -77,9 +37,20 @@ public:
 		nazwisko = f_nazwisko;
 		id = f_id;
 	}
-	std::shared_ptr<c_umowa> dodajUmowe(c_umowa f_umowa)
+	std::shared_ptr<c_umowa> dodajUmowe(std::shared_ptr<c_umowa> f_umowa)
 	{
-		vecUmowy.push_back(f_umowa);
+		vecUmowy.push_back(*f_umowa);
+		return f_umowa;
+	}
+	std::shared_ptr<c_ksiazka> dodajKsiazke(std::shared_ptr<c_ksiazka> f_ksiazka)
+	{
+		vecK.push_back(f_ksiazka);
+		return f_ksiazka;
+	}
+	std::shared_ptr<c_czasopismo> dodajCzasopismo(std::shared_ptr <c_czasopismo> f_czasopismo)
+	{
+		vecC.push_back(f_czasopismo);
+		return f_czasopismo;
 	}
 	std::string getImie()
 	{
@@ -290,9 +261,178 @@ public:
 	}
 };
 
+class c_umowa
+{
+private:
+	int rodzaj = -1, id = -1;
+	std::shared_ptr<c_ksiazka> pozK;
+	std::shared_ptr<c_czasopismo> pozC;
 
+public:
+	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj)
+	{
+		pozK = f_ksiazka;
+		rodzaj = f_rodzaj;
+	}
+	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
+	{
+		pozC = f_czasopismo;
+		rodzaj = f_rodzaj;
+	}
+	int getRodzaj()
+	{
+		return rodzaj;
+	}
+	void zmienRodzaj(int f_rodzaj)
+	{
+		rodzaj = f_rodzaj;
+	}
+	void dodajKsiazke(std::shared_ptr<c_ksiazka> f_ksiazka)
+	{
+		pozK = f_ksiazka;
+	}
+	void dodajCzasopismp(std::shared_ptr<c_czasopismo> f_czasopismo)
+	{
+		pozC = f_czasopismo;
+	}
+	std::shared_ptr<c_ksiazka> getpozK()
+	{
+		return pozK;
+	}
+	std::shared_ptr<c_czasopismo> getpozC()
+	{
+		return pozC;
+	}
+	std::string dump()
+	{
+		std::stringstream out;
+		if (pozC != nullptr)
+		{
+			out << id << " " << rodzaj << " " << pozC.get()->getId();
+			return out.str();
+		}
+		if (pozK != nullptr)
+		{
+			out << id << " " << rodzaj << " " << pozK.get()->getId();
+			return out.str();
+		}
+	}
+};
 
+class amK
+{
+	std::shared_ptr<c_ksiazka> ptrK;
+	int ilosc;
+public:
+	amK(std::shared_ptr<c_ksiazka> f_ksiazka,int f_ilosc)
+	{
+		ptrK = f_ksiazka;
+		ilosc = f_ilosc;
+	}
+	std::shared_ptr<c_ksiazka> getPtr()
+	{
+		return ptrK;
+	}
+	int getIlosc()
+	{
+		return ilosc;
+	}
+	int zmienIlosc(int delta)			//+= ilosc
+	{
+		ilosc += delta;
+		return ilosc;
+	}
+	std::string wypis()
+	{
+		std::ostringstream out;
+		out << ptrK->getId() << " " << ptrK->getTytul() << " " << ptrK->getRodzajInterwal()<< " " << ilosc << std::endl;
+		return out.str();
+	}
+	std::string dump()
+	{
+		std::ostringstream out;
+		out << ptrK->getId() << " " << ptrK->getRodzajInterwal() << std::endl;
+		return out.str();
+	}
+};
+class amC
+{
+	std::shared_ptr<c_czasopismo> ptrC;
+	int ilosc;
+public:
+	amC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_ilosc)
+	{
+		ptrC = f_czasopismo;
+		ilosc = f_ilosc;
+	}
+	std::shared_ptr<c_czasopismo> getPtr()
+	{
+		return ptrC;
+	}
+	int getIlosc()
+	{
+		return ilosc;
+	}
+	int zmienIlosc(int delta)		//+= ilosc
+	{
+		ilosc += delta;
+		return ilosc;
+	}
+	std::string wypis()
+	{
+		std::ostringstream out;
+		out << ptrC->getId() << " " << ptrC->getTytul() << " " << ptrC->getRodzajInterwal() << " " << ilosc << std::endl;
+		return out.str();
+	}
+	std::string dump()
+	{
+		std::ostringstream out;
+		out << ptrC->getId() << " " << ptrC->getRodzajInterwal() << std::endl;
+		return out.str();
+	}
+};
 
-
-
-
+class magazyn
+{
+	std::vector<amK> mag_ksiazka;
+	std::vector<amC> mag_czasopismo;
+public:
+	void dodruk_k(std::shared_ptr<amK> f_amksiazka, int f_ilosc)
+	{
+		f_amksiazka->zmienIlosc(f_ilosc);
+	}
+	void dodruk_c(std::shared_ptr<amC> f_amczasopismo, int f_ilosc)
+	{
+		f_amczasopismo->zmienIlosc(f_ilosc);
+	}
+	std::string wypis()
+	{
+		std::ostringstream out;
+		out << "Ksiazki:" << std::endl;
+		for (std::vector<amK>::iterator i = mag_ksiazka.begin(); i != mag_ksiazka.end(); i++)
+		{
+			out << i->wypis();
+		}
+		out << "Czasopisma:" << std::endl;
+		for (std::vector<amC>::iterator i = mag_czasopismo.begin(); i != mag_czasopismo.end(); i++)
+		{
+			out << i->wypis();
+		}
+	}
+	std::string dumpK()
+	{
+		std::ostringstream out;
+		for (std::vector<amK>::iterator i = mag_ksiazka.begin(); i != mag_ksiazka.end(); i++)
+		{
+			out << i->dump();
+		}
+		return out.str();
+	}
+};
+class sklep
+{
+	std::vector<amK> sklK;
+	std::vector<amC> sklC;
+public:
+	
+};

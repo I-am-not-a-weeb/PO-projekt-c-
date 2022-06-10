@@ -26,6 +26,7 @@ public:
 	{
 		std::stringstream out;
 		out << id << "|" << nazwa << "|" << DrukowanieAlbumow << std::endl;
+		return out.str();
 	}
 	friend bool operator==(c_drukarnia l, c_drukarnia r)
 	{

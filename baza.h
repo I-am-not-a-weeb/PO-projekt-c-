@@ -50,9 +50,11 @@ class bazaCzasopism : protected baza
 private:
     std::vector<c_czasopismo> vecCzasopism;
 public:
-    void dodajCzasopismo(std::string f_tytul, bool f_interwal, std::string f_tekst)
+    std::shared_ptr<c_czasopismo> dodajCzasopismo(std::string f_tytul, bool f_interwal, std::string f_tekst)
     {
-        vecCzasopism.push_back(c_czasopismo(f_tytul, f_interwal, f_tekst, ++maxID));
+        c_czasopismo temp = c_czasopismo(f_tytul, f_interwal, f_tekst, ++maxID);
+        vecCzasopism.push_back(temp);
+        return std::shared_ptr<c_czasopismo>(&temp);
     }
     //void usunCzasopismo(c_czasopismo f_czasopismo)
     //{
@@ -134,7 +136,7 @@ public:
         std::shared_ptr<c_umowa> tmp;
         *tmp = c_umowa(f_ksiazka, f_rodzaj);
         vecUmow.push_back(*tmp);
-        f_autor->dodajUmowe(*tmp);
+        f_autor->dodajUmowe(tmp);
         return tmp;
     }
     std::shared_ptr<c_umowa> dodajUmoweC(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
@@ -142,11 +144,20 @@ public:
         std::shared_ptr<c_umowa> tmp;
         *tmp = c_umowa(f_czasopismo, f_rodzaj);
         vecUmow.push_back(*tmp);
-        f_autor->dodajUmowe(*tmp);
+        f_autor->dodajUmowe(tmp);
         return tmp;
     }
     size_t getMaxID()
     {
         return vecUmow.size();
+    }
+    std::string dump()
+    {
+        std::ostringstream out;
+        for (std::vector<c_umowa>::iterator i = vecUmow.begin(); i != vecUmow.end(); i++)
+        {
+            out << (*i).dump();
+        }
+        return out.str();
     }
 };
