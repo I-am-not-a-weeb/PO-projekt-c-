@@ -1,8 +1,9 @@
 ﻿#include <iostream>
 #include "System.h"
+#include "baza.h"
 #include "ZarzadzaniePozycjamiIUmowanie.h"
 #include <Windows.h>
-#include "baza.h"
+//#include "baza.h"
 
 using namespace std;
 
@@ -10,7 +11,7 @@ int main()
 {
 	bool yn;
 	char ch;
-	int id = -1, rodzaj = -1, rodzajU = -1, ida = -1;
+	int id = -1, rodzaj = -1, rodzajU = -1, ida = -1,ilosc = -1;
 	string imiea, nazwiskoa, tytul, tekst, nazwa;
 	bazaKsiazek baza;
 	c_ksiazka temp;
@@ -20,7 +21,10 @@ int main()
 	bazaCzasopism bazaC;
 	bazaAutorow bazaA;
 	bazaDrukarni bazaD;
-	bazaUmow bazaU;					/// do zrobienia dump
+	bazaUmow bazaU;				
+
+
+	sklep sklepp;
 	System sys;
 	while (1)
 	{
@@ -335,12 +339,53 @@ int main()
 				}
 				}
 				break;
-				}
-				continue;
 			}
+			continue;
+		}
 		case '2':		//sklep
 		{
+			while (1)
+			{	
+				system("cls");
+				cout << "1. Wypisz stan" << endl << "2. Sprzedaj pozycje" << endl << "3. Zamow do druku" << endl << "0. Cofnij";
+				ch = _getch();
+				system("cls");
+				switch (ch)
+				{
+				case '1':		//wypis stanu sklepu
+				{
+					cout << sklepp.wypis() << endl << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
+					_getch();
+					continue;
+				}
+				case '2':		//sprzedaz
+				{
+					cout << sklepp.wypis() << endl << "ID: ";
+					cin >> id;
+					cout << endl << "Ilosc:";
+					cin >> ilosc;
+					try {
+						sklepp.sprzed(id, ilosc);
+					}
+					catch (except es) { cout << es.getMsg() << "Nacisnij dowolny przycisk aby kontynuowac." << endl; _getch(); }
+					continue;
+				}
+				case '3':		//drukowanko
+				{
 
+				}
+				case '0':		//cofniecie
+				{
+					break;
+				}
+				default:
+				{
+					continue;
+				}
+				}
+				break;
+			}
+			continue;
 		}
 		case '3':		//zapis ->
 		{

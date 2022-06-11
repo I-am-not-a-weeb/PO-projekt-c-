@@ -77,29 +77,6 @@ public:
     }
 };
 
-class bazaDrukarni : protected baza
-{
-private:
-    std::vector<c_drukarnia> vecDrukarnie;
-public:
-    void dodajDrukarnie(std::string f_nazwa, bool f_album)
-    {
-        vecDrukarnie.push_back(c_drukarnia(f_nazwa, f_album,++maxID));
-    }
-    size_t getMaxID()
-    {
-        return vecDrukarnie.size();
-    }
-    std::string dump()
-    {
-        std::ostringstream out;
-        for (std::vector<c_drukarnia>::iterator i = vecDrukarnie.begin(); i != vecDrukarnie.end(); i++)
-        {
-            out << (*i).dump();
-        }
-        return out.str();
-    }
-};
 
 class bazaAutorow : protected baza
 {

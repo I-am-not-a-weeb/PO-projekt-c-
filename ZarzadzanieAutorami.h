@@ -8,12 +8,74 @@
 #include <conio.h>
 #include <memory>
 #include "except.h"
+#include "baza.h"
+#include "ZarzadzanieDrukarniami.h"
 
 class c_umowa;
 class c_pozycja;
 class c_ksiazka;
 class c_czasopismo;
 class c_autor;
+class c_drukarnia;
+class baza;
+class bazaDrukarni;
+
+class c_drukarnia
+{
+private:
+	bool DrukowanieAlbumow = 0;
+	std::string nazwa;
+	int id = -1;
+public:
+	c_drukarnia()
+	{
+
+	}
+	c_drukarnia(std::string f_nazwa, bool f_drukowanieAlbumow, int f_id)
+	{
+		DrukowanieAlbumow = f_drukowanieAlbumow;
+		nazwa = f_nazwa;
+		id = f_id;
+	}
+	bool getDrAl()
+	{
+		return DrukowanieAlbumow;
+	}
+	std::string dump()
+	{
+		std::stringstream out;
+		out << id << "|" << nazwa << "|" << DrukowanieAlbumow << std::endl;
+		return out.str();
+	}
+	friend bool operator==(c_drukarnia l, c_drukarnia r)
+	{
+		if (l.id == r.id) return 1; else return 0;
+	}
+};
+
+class bazaDrukarni
+{
+	int maxID = 0;
+public:
+	std::vector<c_drukarnia> vecDrukarnie;
+	void dodajDrukarnie(std::string f_nazwa, bool f_album)
+	{
+		vecDrukarnie.push_back(c_drukarnia(f_nazwa, f_album, ++maxID));
+	}
+	size_t getMaxID()
+	{
+		return vecDrukarnie.size();
+	}
+	std::string dump()
+	{
+		std::ostringstream out;
+		for (std::vector<c_drukarnia>::iterator i = vecDrukarnie.begin(); i != vecDrukarnie.end(); i++)
+		{
+			out << (*i).dump();
+		}
+		return out.str();
+	}
+};
 
 class c_autor
 {
@@ -267,42 +329,50 @@ private:
 	int rodzaj = -1, id = -1;
 	std::shared_ptr<c_ksiazka> pozK;
 	std::shared_ptr<c_czasopismo> pozC;
-
 public:
+
 	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj)
 	{
 		pozK = f_ksiazka;
 		rodzaj = f_rodzaj;
 	}
+
 	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
 	{
 		pozC = f_czasopismo;
 		rodzaj = f_rodzaj;
 	}
+
 	int getRodzaj()
 	{
 		return rodzaj;
 	}
+
 	void zmienRodzaj(int f_rodzaj)
 	{
 		rodzaj = f_rodzaj;
 	}
+
 	void dodajKsiazke(std::shared_ptr<c_ksiazka> f_ksiazka)
 	{
 		pozK = f_ksiazka;
 	}
+
 	void dodajCzasopismp(std::shared_ptr<c_czasopismo> f_czasopismo)
 	{
 		pozC = f_czasopismo;
 	}
+
 	std::shared_ptr<c_ksiazka> getpozK()
 	{
 		return pozK;
 	}
+
 	std::shared_ptr<c_czasopismo> getpozC()
 	{
 		return pozC;
 	}
+
 	std::string dump()
 	{
 		std::stringstream out;
@@ -323,35 +393,53 @@ class amK
 {
 	std::shared_ptr<c_ksiazka> ptrK;
 	int ilosc;
+	float cena;
 public:
-	amK(std::shared_ptr<c_ksiazka> f_ksiazka,int f_ilosc)
+
+	amK(std::shared_ptr<c_ksiazka> f_ksiazka,int f_ilosc,float f_cena)
 	{
 		ptrK = f_ksiazka;
 		ilosc = f_ilosc;
+		cena = f_cena;
 	}
+
 	std::shared_ptr<c_ksiazka> getPtr()
 	{
 		return ptrK;
 	}
+
 	int getIlosc()
 	{
 		return ilosc;
 	}
+
+	float getCena()
+	{
+		return cena;
+	}
+
 	int zmienIlosc(int delta)			//+= ilosc
 	{
 		ilosc += delta;
 		return ilosc;
 	}
+
+	void zmienCena(float f_cena)
+	{
+		cena = f_cena;
+	}
+
 	std::string wypis()
 	{
 		std::ostringstream out;
-		out << ptrK->getId() << " " << ptrK->getTytul() << " " << ptrK->getRodzajInterwal()<< " " << ilosc << std::endl;
+		out << ptrK->getId() << " " << ptrK->getTytul() << " " << ptrK->getRodzajInterwal()<< " " << ilosc << " "<< cena << std::endl;
 		return out.str();
 	}
+
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << ptrK->getId() << " " << ptrK->getRodzajInterwal() << std::endl;
+		out << ptrK->getId() << " " << ptrK->getRodzajInterwal() << " " << ilosc << " " << cena << std::endl;
 		return out.str();
 	}
 };
@@ -359,35 +447,54 @@ class amC
 {
 	std::shared_ptr<c_czasopismo> ptrC;
 	int ilosc;
+	float cena;
 public:
-	amC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_ilosc)
+
+	amC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_ilosc, float f_cena)
 	{
 		ptrC = f_czasopismo;
 		ilosc = f_ilosc;
+		cena = f_cena;
 	}
+
 	std::shared_ptr<c_czasopismo> getPtr()
 	{
 		return ptrC;
 	}
+
 	int getIlosc()
 	{
 		return ilosc;
 	}
+
+	float getCena()
+	{
+		return cena;
+	}
+
 	int zmienIlosc(int delta)		//+= ilosc
 	{
+		if (ilosc < (-delta)) throw except("Nieprawidlowa ilosc");
 		ilosc += delta;
 		return ilosc;
 	}
+
+	void zmienCena(float f_cena)
+	{
+		cena = f_cena;
+	}
+
 	std::string wypis()
 	{
 		std::ostringstream out;
-		out << ptrC->getId() << " " << ptrC->getTytul() << " " << ptrC->getRodzajInterwal() << " " << ilosc << std::endl;
+		out << ptrC->getId() << " " << ptrC->getTytul() << " " << ptrC->getRodzajInterwal() << " " << ilosc <<" " << cena << std::endl;
 		return out.str();
 	}
+
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << ptrC->getId() << " " << ptrC->getRodzajInterwal() << std::endl;
+		out << ptrC->getId() << " " << ptrC->getRodzajInterwal() << " "<< ilosc << " " << cena << std::endl;
 		return out.str();
 	}
 };
@@ -397,14 +504,17 @@ class magazyn
 	std::vector<amK> mag_ksiazka;
 	std::vector<amC> mag_czasopismo;
 public:
+
 	void dodruk_k(std::shared_ptr<amK> f_amksiazka, int f_ilosc)
 	{
 		f_amksiazka->zmienIlosc(f_ilosc);
 	}
+
 	void dodruk_c(std::shared_ptr<amC> f_amczasopismo, int f_ilosc)
 	{
 		f_amczasopismo->zmienIlosc(f_ilosc);
 	}
+
 	std::string wypis()
 	{
 		std::ostringstream out;
@@ -419,6 +529,7 @@ public:
 			out << i->wypis();
 		}
 	}
+
 	std::string dumpK()
 	{
 		std::ostringstream out;
@@ -429,10 +540,124 @@ public:
 		return out.str();
 	}
 };
+
 class sklep
 {
 	std::vector<amK> sklK;
 	std::vector<amC> sklC;
 public:
-	
+
+	void dodruk_k(std::shared_ptr<c_ksiazka> f_ksiazka, int f_ilosc, std::shared_ptr<bazaDrukarni> f_bazaD, float f_cena)
+	{
+		for (std::vector<amK>::iterator i = sklK.begin(); i != sklK.end(); i++)
+		{
+			if (i->getPtr()->getId() != f_ksiazka->getId()) continue;
+			else
+			{
+				if (i->getPtr()->getRodzajInterwal() != 3) i->zmienIlosc(f_ilosc);
+				else
+				{
+					for (std::vector<c_drukarnia>::iterator n = f_bazaD.get()->vecDrukarnie.begin(); n != f_bazaD.get()->vecDrukarnie.end(); n++)
+					{
+						if (n->getDrAl()) i->zmienIlosc(f_ilosc);
+						else { throw (except("Brak drukarni ktora moze drukowac albumow.")); }
+						return;
+					}
+				}
+			}
+		}
+		if (f_ksiazka->getRodzajInterwal() != 3) sklK.push_back(amK(f_ksiazka,f_ilosc,f_cena));
+		else
+		{
+			for (std::vector<c_drukarnia>::iterator n = f_bazaD.get()->vecDrukarnie.begin(); n != f_bazaD.get()->vecDrukarnie.end(); n++)
+			{
+				if (n->getDrAl()) sklK.push_back(amK(f_ksiazka,f_ilosc, f_cena));
+				else { throw (except("Brak drukarni ktora moze drukowac albumow.")); }
+				return;
+			}
+		}
+	}
+
+	void sprzed(int f_id, int f_ilosc)
+	{
+		char ch;
+		if (f_ilosc > 0) throw except("Nie mozna sprzedac ujemnej ilosci.");
+		for (std::vector<amK>::iterator i = sklK.begin(); i != sklK.end(); i++)
+		{
+			if (i->getPtr()->getId() == f_id)
+			{
+				std::cout << "Cena: " << i->getCena() * f_ilosc << std::endl << "Kontynuowac? Y/N";
+				while (1)
+				{
+					ch = _getch();
+					if (ch == 'y' || ch == 'Y')
+					{
+						try { i->zmienIlosc(f_ilosc); }
+						catch (except es) { std::cout << std::endl << es.getMsg() << std::endl; }
+						break;
+					}
+					else if (ch == 'n' || ch == 'N') break;
+					else continue;
+				}
+			}
+			
+		}
+		for (std::vector<amC>::iterator i = sklC.begin(); i != sklC.end(); i++)
+		{
+			std::cout << "Cena: " << i->getCena() * f_ilosc << std::endl << "Kontynuowac? Y/N";
+			while (1)
+			{
+				ch = _getch();
+				ch = _getch();
+				if (ch == 'y' || ch == 'Y')
+				{
+					try { i->zmienIlosc(f_ilosc); }
+					catch (except es) { std::cout << std::endl << es.getMsg() << std::endl; }
+					break;
+				}
+				else if (ch == 'n' || ch == 'N') break;
+				else continue;
+			}
+		}
+	}
+
+	void dodruk_c(std::shared_ptr<c_czasopismo> f_czasopismo, int f_ilosc, float f_cena)
+	{
+		for (std::vector<amC>::iterator i = sklC.begin(); i != sklC.end(); i++)
+		{
+			if (i->getPtr()->getId() != f_czasopismo->getId()) continue;
+			else
+			{
+				i->zmienIlosc(f_ilosc);
+				return;
+			}
+		}
+		sklC.push_back(amC(f_czasopismo, f_ilosc,f_cena));
+	}
+
+	std::string wypis()
+	{
+		std::ostringstream out;
+		out << "Ksiazki:" << std::endl;
+		for (std::vector<amK>::iterator i = sklK.begin(); i != sklK.end(); i++)
+		{
+			out << i->wypis();
+		}
+		out << "Czasopisma:" << std::endl;
+		for (std::vector<amC>::iterator i = sklC.begin(); i != sklC.end(); i++)
+		{
+			out << i->wypis();
+		}
+		return out.str();
+	}
+
+	std::string dumpK()
+	{
+		std::ostringstream out;
+		for (std::vector<amK>::iterator i = sklK.begin(); i != sklK.end(); i++)
+		{
+			out << i->dump();
+		}
+		return out.str();
+	}
 };
