@@ -416,9 +416,12 @@ int main()
 		}
 		case '3':		//zapis ->
 		{
-			sys.Save(shared_ptr<bazaKsiazek>(&bazaK), shared_ptr<bazaCzasopism>(&bazaC), shared_ptr <bazaAutorow>(&bazaA), shared_ptr<bazaDrukarni>(&bazaD), shared_ptr<bazaUmow>(&bazaU)
-				, shared_ptr<sklep>(&sklepp), unique_ptr<fstream>(&fileK), unique_ptr<fstream>(&fileC), unique_ptr<fstream>(&fileA), unique_ptr<fstream>(&fileU), unique_ptr<fstream>(&fileD)
-				, unique_ptr<fstream>(&filesklK), unique_ptr<fstream>(&filesklC));
+			try{
+				if (sys.Save(shared_ptr<bazaKsiazek>(&bazaK), shared_ptr<bazaCzasopism>(&bazaC), shared_ptr <bazaAutorow>(&bazaA), shared_ptr<bazaDrukarni>(&bazaD), shared_ptr<bazaUmow>(&bazaU)
+					, shared_ptr<sklep>(&sklepp), unique_ptr<fstream>(&fileK), unique_ptr<fstream>(&fileC), unique_ptr<fstream>(&fileA), unique_ptr<fstream>(&fileU), unique_ptr<fstream>(&fileD)
+					, unique_ptr<fstream>(&filesklK), unique_ptr<fstream>(&filesklC))) cout << endl << "Pomyslnie zapisano.";
+			}
+			catch (except es) { cout << endl << es.getMsg(); }
 		}
 		case '4':		//odczyt <-
 		{
