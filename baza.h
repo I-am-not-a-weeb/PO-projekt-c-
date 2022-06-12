@@ -24,9 +24,9 @@ private:
 public:
     std::shared_ptr<c_ksiazka> dodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst)
     {
-        c_ksiazka temp = c_ksiazka(f_tytul, f_rodzaj, f_tekst, ++maxID);
-        vecKsiazka.push_back(temp);
-        return std::shared_ptr<c_ksiazka>(&vecKsiazka.back());
+        std::shared_ptr<c_ksiazka> temp(new c_ksiazka(f_tytul, f_rodzaj, f_tekst, ++maxID), [](c_ksiazka*) {});
+        vecKsiazka.push_back(*temp);
+        return temp;
     }
     size_t getMaxID()
     {
@@ -110,7 +110,7 @@ public:
     }
     std::shared_ptr<c_autor> getAutorById(int f_id)
     {
-        if (!(f_id < 0 || f_id >= vecAutor.size())) return std::shared_ptr<c_autor>(&vecAutor[f_id - 1], &null_deleter);
+        if (f_id >= 0 && f_id <= vecAutor.size()) return std::shared_ptr<c_autor>(&vecAutor[f_id - 1], &null_deleter);
         else throw except("Brak autora o podanym id.");
     }
     size_t getMaxID()
@@ -126,14 +126,14 @@ public:
     std::shared_ptr<c_umowa> dodajUmoweK(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
     {
         std::shared_ptr<c_umowa> tmp;
-        tmp= std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj));
+        tmp= std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj),[](c_umowa*){});
         vecUmow.push_back(*tmp);
         return tmp;
     }
     std::shared_ptr<c_umowa> dodajUmoweC(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
     {
         std::shared_ptr<c_umowa> tmp;
-        tmp = std::shared_ptr<c_umowa>(new c_umowa(f_czasopismo, f_rodzaj));
+        tmp = std::shared_ptr<c_umowa>(new c_umowa(f_czasopismo, f_rodzaj),[](c_umowa*){});
         vecUmow.push_back(*tmp);
         return tmp;
     }

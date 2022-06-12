@@ -27,10 +27,9 @@ int main()
 
 	shared_ptr<bazaDrukarni> PtrBazaD(&bazaD);
 
-	fstream fileK, fileC("plikC.txt", fstream::out), fileA("plikA.txt",ios::out), fileD("plikD.txt", ios::out), fileU("plikU.txt"), filesklK("pliksklK."), filesklC("pliksklC.txt");
+	fstream fileK, fileC, fileA, fileD, fileU, filesklK, filesklC;
 	sklep sklepp;
 	System sys;
-	system("pause");
 	while (1)
 	{
 		system("cls");
@@ -93,7 +92,8 @@ int main()
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
 									cin >> ida;
 									cout << endl << "Nazwa: ";
-									cin >> tytul;
+									cin.ignore();
+									getline(cin,tytul);
 									cout << endl << "Rodzaj: ";
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
@@ -107,7 +107,7 @@ int main()
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
 									cin >> ida;
 									cout << endl << "Nazwa: ";
-									cin >> tytul;
+									getline(cin,tytul);
 									cout << endl << "Rodzaj: ";
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
@@ -398,7 +398,10 @@ int main()
 						sklepp.dodruk_k(bazaK.getPtrById(id), ilosc, PtrBazaD, cena); }
 					catch (except es) {
 						try { sklepp.dodruk_c(bazaC.getPtrById(id), ilosc, cena); }
-						catch (except es) { cout << endl << es.getMsg() << endl; }
+						catch (except es) {
+							cout << endl << es.getMsg() << endl << "Nacisnij dowolny przycisk aby kontynuowac.";
+							_getch();
+						}
 					}
 					continue;
 				}

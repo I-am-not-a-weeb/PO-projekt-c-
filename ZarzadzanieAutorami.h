@@ -208,7 +208,7 @@ public:
 	}
 	std::shared_ptr<c_ksiazka> getPtr()
 	{
-		return std::shared_ptr<c_ksiazka>(this);
+		return std::shared_ptr<c_ksiazka>(this,[](c_ksiazka*){});
 	}
 	c_autor getAutor()
 	{
@@ -341,7 +341,7 @@ public:
 
 	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj)
 	{
-		pozK = f_ksiazka;
+		pozK = std::shared_ptr<c_ksiazka>(f_ksiazka.get(), [](c_ksiazka*) {});
 		rodzaj = f_rodzaj;
 	}
 
@@ -363,7 +363,7 @@ public:
 
 	void dodajKsiazke(std::shared_ptr<c_ksiazka> f_ksiazka)
 	{
-		pozK = f_ksiazka;
+		pozK = std::shared_ptr<c_ksiazka>(f_ksiazka.get(),[](c_ksiazka*){});
 	}
 
 	void dodajCzasopismp(std::shared_ptr<c_czasopismo> f_czasopismo)
@@ -386,12 +386,12 @@ public:
 		std::stringstream out;
 		if (pozC != nullptr)
 		{
-			out << id << " " << rodzaj << " " << pozC.get()->getId();
+			out << id << " " << rodzaj << " " << pozC.get()->getId() << endl;
 			return out.str();
 		}
 		if (pozK != nullptr)
 		{
-			out << id << " " << rodzaj << " " << pozK.get()->getId();
+			out << id << " " << rodzaj << " " << pozK.get()->getId() << endl;
 			return out.str();
 		}
 	}
