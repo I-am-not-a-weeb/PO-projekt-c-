@@ -10,12 +10,11 @@
 class System
 {
 private:
-	std::shared_ptr<bazaKsiazek> bazaK;
+	/*std::shared_ptr<bazaKsiazek> bazaK;
 	std::shared_ptr<bazaCzasopism> bazaC;
 	std::shared_ptr<bazaAutorow> bazaA;
 	std::shared_ptr<bazaDrukarni> bazaD;
-	std::shared_ptr<bazaUmow> bazaU;
-
+	std::shared_ptr<bazaUmow> bazaU;*/
 public:
 	void Start()
 	{
@@ -44,5 +43,4 @@ public:
 		*f_fileU << f_bazaU->dump();
 		*f_fileSklK << f_skl->dumpK();
 	}
-	
 };
