@@ -206,6 +206,10 @@ public:
 	{
 		return rodzaj;
 	}
+	std::shared_ptr<c_ksiazka> getPtr()
+	{
+		return std::shared_ptr<c_ksiazka>(this);
+	}
 	c_autor getAutor()
 	{
 		return autor;
@@ -284,6 +288,10 @@ public:
 	int getRodzajInterwal()
 	{
 		return interwal;
+	}
+	std::shared_ptr<c_czasopismo> getPtrB()
+	{
+		return std::shared_ptr<c_czasopismo>(this);
 	}
 	c_autor getAutor()
 	{

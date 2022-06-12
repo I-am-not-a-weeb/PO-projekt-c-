@@ -12,6 +12,7 @@ int main()
 	bool yn;
 	char ch;
 	int id = -1, rodzaj = -1, rodzajU = -1, ida = -1,ilosc = -1;
+	float cena = 0;
 	string imiea, nazwiskoa, tytul, tekst, nazwa;
 	bazaKsiazek baza;
 	c_ksiazka temp;
@@ -23,6 +24,7 @@ int main()
 	bazaDrukarni bazaD;
 	bazaUmow bazaU;				
 
+	std::shared_ptr<bazaDrukarni> PtrBazaD(&bazaD);
 
 	sklep sklepp;
 	System sys;
@@ -372,7 +374,19 @@ int main()
 				}
 				case '3':		//drukowanko
 				{
-
+					cout << sklepp.wypis() << endl << "ID: ";
+					cin >> id;
+					cout << endl << "Ilosc:";
+					cin >> ilosc;
+					cout << endl << "Cena: ";
+					cin >> cena;
+					try {
+						sklepp.dodruk_k(bazaK.getPtrById(id), ilosc, PtrBazaD, cena); }
+					catch (except es) {
+						try { sklepp.dodruk_c(bazaC.getPtrById(id), ilosc, cena); }
+						catch (except es) { cout << endl << es.getMsg() << endl; }
+					}
+					continue;
 				}
 				case '0':		//cofniecie
 				{
@@ -399,7 +413,7 @@ int main()
 		{
 			while (1)				//pytanie o zapis
 			{
-				cout << "Czy zapisac stan? Y/N";
+				std::cout << "Czy zapisac stan? Y/N";
 				ch = _getch();
 				//if (ch == 'y' || ch == 'Y'); //sys.Save();
 				return 0;

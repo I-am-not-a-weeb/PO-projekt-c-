@@ -36,6 +36,14 @@ public:
     {
         return vecKsiazka.size();
     }
+    std::shared_ptr<c_ksiazka> getPtrById(int f_id)
+    {
+        for (std::vector<c_ksiazka>::iterator i = vecKsiazka.begin(); i != vecKsiazka.end(); i++)
+        {
+            if (i->getId() == f_id) return i->getPtr();
+        }
+        throw except("Brak ksiazki o podanym id.");
+    }
     std::string dump()
     {
         std::ostringstream out;
@@ -65,6 +73,14 @@ public:
     size_t getMaxID()
     {
         return vecCzasopism.size();
+    }
+    std::shared_ptr<c_czasopismo> getPtrById(int f_id)
+    {
+        for (std::vector<c_czasopismo>::iterator i = vecCzasopism.begin(); i != vecCzasopism.end(); i++)
+        {
+            if (i->getId() == f_id) return i->getPtrB();
+        }
+        throw except("Brak pozycji po podanym id");
     }
     std::string dump()
     {
@@ -139,3 +155,5 @@ public:
         return out.str();
     }
 };
+
+void null_deleter(bazaDrukarni*) {}
