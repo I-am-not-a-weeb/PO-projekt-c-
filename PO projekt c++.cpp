@@ -26,6 +26,8 @@ int main()
 
 	std::shared_ptr<bazaDrukarni> PtrBazaD(&bazaD);
 
+	fstream fileK, fileC, fileA, fileD, fileU, filesklK, filesklC;
+
 	sklep sklepp;
 	System sys;
 	while (1)
@@ -212,7 +214,7 @@ int main()
 									while (1)
 									{
 										cout << endl << "Tytul: ";
-										cin >> tytul;
+										getline(cin,tytul);
 										cout << endl << "Rodzaj: ";
 										cin >> rodzaj;
 										cout << endl << "ID autora:";
@@ -222,8 +224,12 @@ int main()
 											cout << "Potwierdzenie dodania ksiazki o nazwie \"" << tytul << "\" rodzaju: \"" << rodzaj << "\" i ID autora: \"" << ida << "\"  Y/N";
 											ch = _getch();
 											if (ch == 'y' || ch == 'Y')
-											{
-												bazaA.getAutorById(ida)->dodajKsiazke(bazaK.dodajKsiazke(tytul, rodzaj, "TBD"));
+											{	
+												try {
+													bazaA.getAutorById(ida)->dodajKsiazke(bazaK.dodajKsiazke(tytul, rodzaj, "TBD"));
+													cout << endl << "Dodano ksiazke.";
+												}
+												catch (except es) { cout << endl << es.getMsg(); }
 												cout << endl << "Dodano ksiazke. Nacisnij dowolny przycisk aby kontynuowac." << endl;
 												_getch();
 												break;
@@ -262,7 +268,7 @@ int main()
 								case '2':		//dodanie ksiazki
 								{
 									cout << "Tytul: ";
-									cin >> tytul;
+									getline(cin,tytul);
 									cout << endl << "Interwal: ";
 									cin >> rodzaj;
 									cout << endl << "ID autora:";
@@ -403,7 +409,9 @@ int main()
 		}
 		case '3':		//zapis ->
 		{
-
+			sys.Save(shared_ptr<bazaKsiazek>(&bazaK), shared_ptr<bazaCzasopism>(&bazaC), shared_ptr <bazaAutorow>(&bazaA), shared_ptr<bazaDrukarni>(&bazaD), shared_ptr<bazaUmow>(&bazaU)
+				, shared_ptr<sklep>(&sklepp), unique_ptr<fstream>(&fileK), unique_ptr<fstream>(&fileC), unique_ptr<fstream>(&fileA), unique_ptr<fstream>(&fileU), unique_ptr<fstream>(&fileD)
+				, unique_ptr<fstream>(&filesklK), unique_ptr<fstream>(&filesklC));
 		}
 		case '4':		//odczyt <-
 		{

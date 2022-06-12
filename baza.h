@@ -114,7 +114,8 @@ public:
     }
     std::shared_ptr<c_autor> getAutorById(int f_id)
     {
-        return std::shared_ptr<c_autor>(&vecAutor[f_id - 1],&null_deleter);
+        if (!(f_id < 0 || f_id >= vecAutor.size())) return std::shared_ptr<c_autor>(&vecAutor[f_id - 1], &null_deleter);
+        else throw except("Brak autora o podanym id.");
     }
     size_t getMaxID()
     {
