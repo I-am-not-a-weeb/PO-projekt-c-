@@ -91,22 +91,29 @@ int main()
 								{
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
 									cin >> ida;
-									cout << endl << "Nazwa: ";
+									cout << endl << "Nazwa ksiazki: ";
 									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Rodzaj: ";
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
 									cin >> rodzajU;
-									bazaU.dodajUmoweK(bazaA.getAutorById(ida), bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU);
-									cout << bazaA.getAutorById(ida)->getImie();
+									try {
+										bazaU.dodajUmoweK(bazaA.getAutorById(ida), bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU);
+										cout << bazaA.getAutorById(ida)->getImie();
+									}
+									catch (except es) {
+										cout << endl << es.getMsg();
+										system("pause");
+									}
 									break;
 								}
 								case '2':			//czasopismo
 								{
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
 									cin >> ida;
-									cout << endl << "Nazwa: ";
+									cout << endl << "Nazwa czasopisma: ";
+									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Rodzaj: ";
 									cin >> rodzaj;

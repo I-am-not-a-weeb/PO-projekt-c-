@@ -386,12 +386,12 @@ public:
 		std::stringstream out;
 		if (pozC != nullptr)
 		{
-			out << id << " " << rodzaj << " " << pozC.get()->getId() << endl;
+			out << id << " " << rodzaj << " " << pozC.get()->getId() << std::endl;
 			return out.str();
 		}
 		if (pozK != nullptr)
 		{
-			out << id << " " << rodzaj << " " << pozK.get()->getId() << endl;
+			out << id << " " << rodzaj << " " << pozK.get()->getId() << std::endl;
 			return out.str();
 		}
 	}
