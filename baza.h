@@ -22,10 +22,6 @@ class bazaKsiazek : protected baza
 private:
     std::vector<c_ksiazka> vecKsiazka;
 public:
-    ~bazaKsiazek()
-    {
-
-    }
     std::shared_ptr<c_ksiazka> dodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst)
     {
         c_ksiazka temp = c_ksiazka(f_tytul, f_rodzaj, f_tekst, ++maxID);

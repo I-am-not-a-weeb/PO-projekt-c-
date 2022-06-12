@@ -24,7 +24,7 @@ public:
 	{
 
 	}
-	bool Save(std::shared_ptr<bazaKsiazek>f_bazaK, std::shared_ptr<bazaCzasopism>f_bazaC, std::shared_ptr<bazaAutorow>f_bazaA,
+	void Save(std::shared_ptr<bazaKsiazek>f_bazaK, std::shared_ptr<bazaCzasopism>f_bazaC, std::shared_ptr<bazaAutorow>f_bazaA,
 		std::shared_ptr<bazaDrukarni>f_bazaD, std::shared_ptr<bazaUmow>f_bazaU, std::shared_ptr<sklep> f_skl,
 		std::unique_ptr<std::fstream> f_fileK, std::unique_ptr<std::fstream> f_fileC, std::unique_ptr<std::fstream> f_fileA,
 		std::unique_ptr<std::fstream> f_fileU, std::unique_ptr<std::fstream> f_fileD, std::unique_ptr<std::fstream> f_fileSklK, std::unique_ptr<std::fstream> f_fileSklC)
@@ -42,5 +42,6 @@ public:
 		*f_fileD << f_bazaD->dump();
 		*f_fileU << f_bazaU->dump();
 		*f_fileSklK << f_skl->dumpK();
+		*f_fileSklC << f_skl->dumpC();
 	}
 };

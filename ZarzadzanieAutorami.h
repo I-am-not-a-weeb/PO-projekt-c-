@@ -668,4 +668,13 @@ public:
 		}
 		return out.str();
 	}
+	std::string dumpC()
+	{
+		std::ostringstream out;
+		for (std::vector<amC>::iterator i = sklC.begin(); i != sklC.end(); i++)
+		{
+			out << i->dump();
+		}
+		return out.str();
+	}
 };
