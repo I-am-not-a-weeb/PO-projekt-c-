@@ -137,9 +137,8 @@ public:
     std::shared_ptr<c_umowa> dodajUmoweC(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
     {
         std::shared_ptr<c_umowa> tmp;
-        *tmp = c_umowa(f_czasopismo, f_rodzaj);
+        tmp = std::shared_ptr<c_umowa>(new c_umowa(f_czasopismo, f_rodzaj));
         vecUmow.push_back(*tmp);
-        f_autor->dodajUmowe(tmp);
         return tmp;
     }
     size_t getMaxID()

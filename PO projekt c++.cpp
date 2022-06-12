@@ -230,7 +230,7 @@ int main()
 													cout << endl << "Dodano ksiazke.";
 												}
 												catch (except es) { cout << endl << es.getMsg(); }
-												cout << endl << "Dodano ksiazke. Nacisnij dowolny przycisk aby kontynuowac." << endl;
+												cout << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 												_getch();
 												break;
 											}
@@ -279,7 +279,14 @@ int main()
 										ch = _getch();
 										if (ch == 'y' || ch == 'Y')
 										{
-											bazaA.getAutorById(ida)->dodajCzasopismo(bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"));
+											try {
+												bazaA.getAutorById(ida)->dodajCzasopismo(bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"));
+												cout << endl << "Dodano czasopismo.";
+											}
+											catch(except es){ cout << endl << es.getMsg(); }
+											cout << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
+											_getch();
+											break;
 										}
 										continue;
 									}
