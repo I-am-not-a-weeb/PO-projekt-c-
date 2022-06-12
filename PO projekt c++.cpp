@@ -3,6 +3,7 @@
 #include "baza.h"
 #include "ZarzadzaniePozycjamiIUmowanie.h"
 #include <Windows.h>
+#include <fstream>
 //#include "baza.h"
 
 using namespace std;
@@ -24,12 +25,12 @@ int main()
 	bazaDrukarni bazaD;
 	bazaUmow bazaU;				
 
-	std::shared_ptr<bazaDrukarni> PtrBazaD(&bazaD);
+	shared_ptr<bazaDrukarni> PtrBazaD(&bazaD);
 
-	fstream fileK, fileC, fileA, fileD, fileU, filesklK, filesklC;
-
+	fstream fileK, fileC("plikC.txt", fstream::out), fileA("plikA.txt",ios::out), fileD("plikD.txt", ios::out), fileU("plikU.txt"), filesklK("pliksklK."), filesklC("pliksklC.txt");
 	sklep sklepp;
 	System sys;
+	system("pause");
 	while (1)
 	{
 		system("cls");
@@ -417,9 +418,9 @@ int main()
 		case '3':		//zapis ->
 		{
 			try{
-				sys.Save(shared_ptr<bazaKsiazek>(&bazaK), shared_ptr<bazaCzasopism>(&bazaC), shared_ptr <bazaAutorow>(&bazaA), shared_ptr<bazaDrukarni>(&bazaD), shared_ptr<bazaUmow>(&bazaU)
-					, shared_ptr<sklep>(&sklepp), unique_ptr<fstream>(&fileK), unique_ptr<fstream>(&fileC), unique_ptr<fstream>(&fileA), unique_ptr<fstream>(&fileU), unique_ptr<fstream>(&fileD)
-					, unique_ptr<fstream>(&filesklK), unique_ptr<fstream>(&filesklC));
+				sys.Save(shared_ptr<bazaKsiazek>(&bazaK,[](bazaKsiazek*){}), shared_ptr<bazaCzasopism>(&bazaC,[](bazaCzasopism*){}), shared_ptr <bazaAutorow>(&bazaA,[](bazaAutorow*){}), shared_ptr<bazaDrukarni>(&bazaD,[](bazaDrukarni*){}), shared_ptr<bazaUmow>(&bazaU,[](bazaUmow*){})
+					, shared_ptr<sklep>(&sklepp,[](sklep*){}), shared_ptr<fstream>(&fileK, [](fstream*) {}), shared_ptr<fstream>(&fileC, [](fstream*) {}), shared_ptr<fstream>(&fileA, [](fstream*) {}), shared_ptr<fstream>(&fileU, [](fstream*) {}), shared_ptr<fstream>(&fileD, [](fstream*) {})
+					, shared_ptr<fstream>(&filesklK,[](fstream*) {}), shared_ptr<fstream>(&filesklC,[](fstream*){}));
 				cout << endl << "Pomyslnie zapisano.";
 			}
 			catch (except es) { cout << endl << es.getMsg(); }
@@ -437,7 +438,7 @@ int main()
 				std::cout << "Czy zapisac stan? Y/N";
 				ch = _getch();
 				//if (ch == 'y' || ch == 'Y'); //sys.Save();
-				return 0;
+				exit(0);
 			}
 		}
 		default:
