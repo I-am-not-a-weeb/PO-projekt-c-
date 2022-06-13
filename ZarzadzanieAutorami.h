@@ -44,7 +44,7 @@ public:
 	std::string dump()
 	{
 		std::stringstream out;
-		out << id << " " << nazwa << " " << DrukowanieAlbumow << std::endl;
+		out << id << " " << DrukowanieAlbumow << " " << nazwa << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_drukarnia l, c_drukarnia r)
@@ -128,7 +128,7 @@ public:
 	}
 	std::shared_ptr<c_autor> getPtr()
 	{
-		return std::shared_ptr<c_autor>(this);
+		return std::shared_ptr<c_autor>(this,[](c_autor*){});
 	}
 	std::string dump()
 	{
@@ -235,7 +235,7 @@ public:
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << " " << tytul << " " << rodzaj << std::endl;
+		out << id << " " << rodzaj << " " << tytul << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_ksiazka l, c_ksiazka r)
@@ -291,7 +291,7 @@ public:
 	}
 	std::shared_ptr<c_czasopismo> getPtrB()
 	{
-		return std::shared_ptr<c_czasopismo>(this);
+		return std::shared_ptr<c_czasopismo>(this,[](c_czasopismo*){});
 	}
 	c_autor getAutor()
 	{
@@ -312,13 +312,13 @@ public:
 	std::string dump_t()
 	{
 		std::ostringstream out;
-		out << id << " " << tytul << " " << interwal_str(interwal) << " " << tekst << std::endl;
+		out << id << " " << interwal_str(interwal) << " " << tytul << " " << tekst << std::endl;
 		return out.str();
 	}
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << " " << tytul << " " << interwal_str(interwal) << std::endl;
+		out << id << " " << interwal_str(interwal) << " " << tytul << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_czasopismo l, c_czasopismo r)
@@ -334,21 +334,26 @@ public:
 class c_umowa
 {
 private:
+	bool ks;
 	int rodzaj = -1, id = -1;
 	std::shared_ptr<c_ksiazka> pozK;
 	std::shared_ptr<c_czasopismo> pozC;
 public:
 
-	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj)
+	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj,int f_id)
 	{
 		pozK = std::shared_ptr<c_ksiazka>(f_ksiazka.get(), [](c_ksiazka*) {});
 		rodzaj = f_rodzaj;
+		id = f_id;
+		ks = true;
 	}
 
-	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
+	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj, int f_id)
 	{
 		pozC = f_czasopismo;
 		rodzaj = f_rodzaj;
+		id = f_id;
+		ks = false;
 	}
 
 	int getRodzaj()
@@ -386,12 +391,12 @@ public:
 		std::stringstream out;
 		if (pozC != nullptr)
 		{
-			out << id << " " << rodzaj << " " << pozC.get()->getId() << std::endl;
+			out << id << " " << rodzaj << " " << ks<< " " << pozC.get()->getId() << std::endl;
 			return out.str();
 		}
 		if (pozK != nullptr)
 		{
-			out << id << " " << rodzaj << " " << pozK.get()->getId() << std::endl;
+			out << id << " " << rodzaj << " " << ks << " " << pozK.get()->getId() << std::endl;
 			return out.str();
 		}
 	}
@@ -428,7 +433,7 @@ public:
 
 	int zmienIlosc(int delta)			//+= ilosc
 	{
-		if (ilosc < -delta) throw except("Brak takiej ilosci ksiazek.");
+		if (ilosc < (- delta)) throw except("Brak takiej ilosci ksiazek.");
 		ilosc += delta;
 		return ilosc;
 	}
@@ -483,7 +488,7 @@ public:
 
 	int zmienIlosc(int delta)		//+= ilosc
 	{
-		if (ilosc < (-delta)) throw except("Nieprawidlowa ilosc");
+		if (ilosc < (-delta)) throw except("Brak takiej ilosci czasopism.");
 		ilosc += delta;
 		return ilosc;
 	}

@@ -58,14 +58,10 @@ private:
 public:
     std::shared_ptr<c_czasopismo> dodajCzasopismo(std::string f_tytul, bool f_interwal, std::string f_tekst)
     {
-        c_czasopismo temp = c_czasopismo(f_tytul, f_interwal, f_tekst, ++maxID);
-        vecCzasopism.push_back(temp);
-        return std::shared_ptr<c_czasopismo>(&temp);
+        std::shared_ptr<c_czasopismo> temp(new c_czasopismo(f_tytul, f_interwal, f_tekst, ++maxID),[](c_czasopismo*){});
+        vecCzasopism.push_back(*temp);
+        return temp;
     }
-    //void usunCzasopismo(c_czasopismo f_czasopismo)
-    //{
-    //    vecCzasopism.erase(std::remove(vecCzasopism.begin(), vecCzasopism.end(), f_czasopismo));
-    //}
     size_t getMaxID()
     {
         return vecCzasopism.size();
@@ -76,7 +72,7 @@ public:
         {
             if (i->getId() == f_id) return i->getPtrB();
         }
-        throw except("Brak pozycji po podanym id");
+        throw except("Brak czasopisma po podanym id");
     }
     std::string dump()
     {

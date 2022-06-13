@@ -119,7 +119,15 @@ int main()
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
 									cin >> rodzajU;
-									bazaA.getAutorById(ida)->dodajUmowe(bazaU.dodajUmoweC(bazaA.getAutorById(ida), bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU));
+									try {
+										bazaU.dodajUmoweC(bazaA.getAutorById(ida), bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU);
+										cout << bazaA.getAutorById(ida)->getImie();
+									}
+									catch (except es)
+									{
+										cout << endl << es.getMsg();
+										system("pause");
+									}
 									break;
 								}
 								case '0':			//cofniecie
@@ -166,7 +174,8 @@ int main()
 						case '2':		//dodanie drukarki
 						{
 							cout << "Nazwa: ";
-							cin >> nazwa;
+							cin.ignore();
+							getline(cin,nazwa);
 							while (1)
 							{
 								cout << endl << "Czy drukuje albumy? Y/N";
