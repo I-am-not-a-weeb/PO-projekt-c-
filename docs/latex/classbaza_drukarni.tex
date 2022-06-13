@@ -1,29 +1,31 @@
 \hypertarget{classbaza_drukarni}{}\doxysection{baza\+Drukarni Class Reference}
 \label{classbaza_drukarni}\index{bazaDrukarni@{bazaDrukarni}}
-Inheritance diagram for baza\+Drukarni\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classbaza_drukarni}
-\end{center}
-\end{figure}
+
+
+{\ttfamily \#include $<$Zarzadzanie\+Autorami.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classbaza_drukarni_a81cdb4f07c0d2c586ca6d46fdd8d7795}{dodaj\+Drukarnie}} (std\+::string f\+\_\+nazwa, bool f\+\_\+album)
 \item 
-void \mbox{\hyperlink{classbaza_drukarni_af6f2826959556056b8d8c42a50d4d59e}{usun\+Drukarnie}} (\mbox{\hyperlink{classc__drukarnia}{c\+\_\+drukarnia}} f\+\_\+drukarnia)
+void \mbox{\hyperlink{classbaza_drukarni_aa358ae1d7977bc16a46c4ec4b1f78308}{wczytD}} (std\+::string f\+\_\+nazwa, bool f\+\_\+album, int f\+\_\+id)
 \item 
 size\+\_\+t \mbox{\hyperlink{classbaza_drukarni_adbd755e462edf1b2b4f937ce25d0ac1d}{get\+Max\+ID}} ()
 \item 
 std\+::string \mbox{\hyperlink{classbaza_drukarni_a6c195294f190ee816a4185cf2096e02d}{dump}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classc__drukarnia}{c\+\_\+drukarnia}} $>$ \mbox{\hyperlink{classbaza_drukarni_ab364a41513ffd89ea94027187f930fe3}{vec\+Drukarnie}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00084}{84}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00056}{56}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
@@ -36,48 +38,53 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00084}{84}} of file \mbox{\h
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00089}{89}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00061}{61}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classbaza_drukarni_a6c195294f190ee816a4185cf2096e02d}\label{classbaza_drukarni_a6c195294f190ee816a4185cf2096e02d}} 
 \index{bazaDrukarni@{bazaDrukarni}!dump@{dump}}
 \index{dump@{dump}!bazaDrukarni@{bazaDrukarni}}
 \doxysubsubsection{\texorpdfstring{dump()}{dump()}}
-{\footnotesize\ttfamily std\+::string baza\+Drukarni\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily std\+::string baza\+Drukarni\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
-
-
-
-Definition at line \mbox{\hyperlink{baza_8h_source_l00101}{101}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00073}{73}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classbaza_drukarni_adbd755e462edf1b2b4f937ce25d0ac1d}\label{classbaza_drukarni_adbd755e462edf1b2b4f937ce25d0ac1d}} 
 \index{bazaDrukarni@{bazaDrukarni}!getMaxID@{getMaxID}}
 \index{getMaxID@{getMaxID}!bazaDrukarni@{bazaDrukarni}}
 \doxysubsubsection{\texorpdfstring{getMaxID()}{getMaxID()}}
-{\footnotesize\ttfamily size\+\_\+t baza\+Drukarni\+::get\+Max\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily size\+\_\+t baza\+Drukarni\+::get\+Max\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00069}{69}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classbaza_drukarni_aa358ae1d7977bc16a46c4ec4b1f78308}\label{classbaza_drukarni_aa358ae1d7977bc16a46c4ec4b1f78308}} 
+\index{bazaDrukarni@{bazaDrukarni}!wczytD@{wczytD}}
+\index{wczytD@{wczytD}!bazaDrukarni@{bazaDrukarni}}
+\doxysubsubsection{\texorpdfstring{wczytD()}{wczytD()}}
+{\footnotesize\ttfamily void baza\+Drukarni\+::wczytD (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+nazwa,  }\item[{bool}]{f\+\_\+album,  }\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00097}{97}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
-
-\mbox{\Hypertarget{classbaza_drukarni_af6f2826959556056b8d8c42a50d4d59e}\label{classbaza_drukarni_af6f2826959556056b8d8c42a50d4d59e}} 
-\index{bazaDrukarni@{bazaDrukarni}!usunDrukarnie@{usunDrukarnie}}
-\index{usunDrukarnie@{usunDrukarnie}!bazaDrukarni@{bazaDrukarni}}
-\doxysubsubsection{\texorpdfstring{usunDrukarnie()}{usunDrukarnie()}}
-{\footnotesize\ttfamily void baza\+Drukarni\+::usun\+Drukarnie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc__drukarnia}{c\+\_\+drukarnia}}}]{f\+\_\+drukarnia }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00065}{65}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00093}{93}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbaza_drukarni_ab364a41513ffd89ea94027187f930fe3}\label{classbaza_drukarni_ab364a41513ffd89ea94027187f930fe3}} 
+\index{bazaDrukarni@{bazaDrukarni}!vecDrukarnie@{vecDrukarnie}}
+\index{vecDrukarnie@{vecDrukarnie}!bazaDrukarni@{bazaDrukarni}}
+\doxysubsubsection{\texorpdfstring{vecDrukarnie}{vecDrukarnie}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classc__drukarnia}{c\+\_\+drukarnia}}$>$ baza\+Drukarni\+::vec\+Drukarnie}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00060}{60}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/baza.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/\mbox{\hyperlink{_zarzadzanie_autorami_8h}{Zarzadzanie\+Autorami.\+h}}\end{DoxyCompactItemize}

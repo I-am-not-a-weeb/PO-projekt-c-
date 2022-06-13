@@ -1,53 +1,147 @@
 \hypertarget{_system_8h_source}{}\doxysection{System.\+h}
 \label{_system_8h_source}\index{C:/Users/I\_am\_not\_a\_weeb/source/repos/PO projekt c++/System.h@{C:/Users/I\_am\_not\_a\_weeb/source/repos/PO projekt c++/System.h}}
-
+\mbox{\hyperlink{_system_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_system_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
 \DoxyCodeLine{\Hypertarget{_system_8h_source_l00002}00002 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{\Hypertarget{_system_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <conio.h>}}
 \DoxyCodeLine{\Hypertarget{_system_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <Windows.h>}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}baza.h"{}}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{baza_8h}{baza.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{_system_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <fstream>}}
 \DoxyCodeLine{\Hypertarget{_system_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <memory>}}
 \DoxyCodeLine{\Hypertarget{_system_8h_source_l00008}00008 }
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00009}\mbox{\hyperlink{class_system}{00009}} \textcolor{keyword}{class }\mbox{\hyperlink{class_system}{System}}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00010}00010 \{}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00011}00011 \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00012}00012     std::shared\_ptr<bazaKsiazek> bazaK;}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00013}00013     std::shared\_ptr<bazaCzasopism> bazaC;}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00014}00014     std::shared\_ptr<bazaAutorow> bazaA;}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00015}00015     std::shared\_ptr<bazaDrukarni> bazaD;}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00016}00016     std::shared\_ptr<bazaUmow> bazaU;}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00017}00017 }
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00018}00018 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00019}00019     \textcolor{keywordtype}{void} Start()}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00020}00020     \{}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00021}00021         std::fstream data\_file, id\_data;}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00022}00022         data\_file.open(\textcolor{stringliteral}{"{}"{}});}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00023}00023     \}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00024}00024     \textcolor{keywordtype}{void} Open()}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00025}00025     \{}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00026}00026 }
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00027}00027     \}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00028}00028     \textcolor{keywordtype}{void} Save(std::shared\_ptr<bazaKsiazek>f\_bazaK, std::shared\_ptr<bazaCzasopism>f\_bazaC,       \textcolor{comment}{//funkcja zapisujaca caly stan systemu w plikach}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00029}00029         std::shared\_ptr<bazaAutorow>f\_bazaA,std::shared\_ptr<bazaDrukarni>f\_bazaD,               \textcolor{comment}{//plik all\_data -\/ wszystko z wszystkich baz}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00030}00030         std::shared\_ptr<bazaUmow>f\_bazaU,std::fstream \&f\_fileK,                                 \textcolor{comment}{//plik id\_data -\/ po ile czego w czym jest}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00031}00031         std::fstream \&f\_fileC, std::fstream \&f\_fileA, std::fstream \&f\_fileD)                    }
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00032}00032     \{}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00033}00033         std::fstream all\_data, id\_data;}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00034}00034         \textcolor{keywordtype}{size\_t} temp\_sum\_ids = f\_bazaA-\/>getMaxID() + f\_bazaC-\/>getMaxID() + f\_bazaD-\/>getMaxID() + f\_bazaK-\/>getMaxID() + f\_bazaU-\/>getMaxID();}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00035}00035 }
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00036}00036         \textcolor{keywordflow}{if} (!(f\_fileK.is\_open() || f\_fileC.is\_open() || f\_fileA.is\_open() || f\_fileD.is\_open()))}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00037}00037         \{}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00038}00038             std::cout << \textcolor{stringliteral}{"{}Blad otwarcia plikow. Nacisnij dowolny przycisk by kontynuowac."{}} << std::endl;}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00039}00039             \_getch();}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00040}00040             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00041}00041         \}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00042}00042         f\_fileK << bazaK-\/>dump();}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00043}00043         f\_fileC << bazaC-\/>dump();}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00044}00044         f\_fileA << bazaA-\/>dump();}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00045}00045         f\_fileD << bazaD-\/>dump();}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00046}00046     \}}
-\DoxyCodeLine{\Hypertarget{_system_8h_source_l00047}00047 \};}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00009}00009 \textcolor{keyword}{using }std::ios;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00011}\mbox{\hyperlink{class_system}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{class_system}{System}}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00013}00013 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00014}00014     }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00015}00015 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00016}\mbox{\hyperlink{class_system_a99d3c3036a58c1698f286677c4ace286}{00016}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_a99d3c3036a58c1698f286677c4ace286}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00017}00017     \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00019}00019     \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00020}\mbox{\hyperlink{class_system_af66432de07a152c6f4376565c46ba7c7}{00020}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_af66432de07a152c6f4376565c46ba7c7}{Open}}(std::shared\_ptr<bazaKsiazek>f\_bazaK, std::shared\_ptr<bazaCzasopism>f\_bazaC, std::shared\_ptr<bazaAutorow>f\_bazaA, std::shared\_ptr<bazaDrukarni>f\_bazaD}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00021}00021         ,std::shared\_ptr<bazaUmow>f\_bazaU, std::shared\_ptr<sklep> f\_skl,std::shared\_ptr<std::fstream> f\_fileK, std::shared\_ptr<std::fstream> f\_fileC}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00022}00022         ,std::shared\_ptr<std::fstream> f\_fileA,std::shared\_ptr<std::fstream> f\_fileU, std::shared\_ptr<std::fstream> f\_fileD, std::shared\_ptr<std::fstream> f\_fileSklK}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00023}00023         ,std::shared\_ptr<std::fstream> f\_fileSklC)}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00024}00024     \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00025}00025         \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00026}00026         std::shared\_ptr<bazaKsiazek> temp\_bazaK(\textcolor{keyword}{new} \mbox{\hyperlink{classbaza_ksiazek}{bazaKsiazek}}, [](\mbox{\hyperlink{classbaza_ksiazek}{bazaKsiazek}}*) \{\});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00027}00027         std::shared\_ptr<bazaAutorow> temp\_bazaA(\textcolor{keyword}{new} \mbox{\hyperlink{classbaza_autorow}{bazaAutorow}},[](\mbox{\hyperlink{classbaza_autorow}{bazaAutorow}}*)\{\});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00028}00028         std::shared\_ptr<bazaCzasopism> temp\_bazaC(\textcolor{keyword}{new} \mbox{\hyperlink{classbaza_czasopism}{bazaCzasopism}}, [](\mbox{\hyperlink{classbaza_czasopism}{bazaCzasopism}}*) \{\});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00029}00029         std::shared\_ptr<bazaDrukarni> temp\_bazaD(\textcolor{keyword}{new} \mbox{\hyperlink{classbaza_drukarni}{bazaDrukarni}}, [](\mbox{\hyperlink{classbaza_drukarni}{bazaDrukarni}}*) \{\});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00030}00030         std::shared\_ptr<bazaUmow> temp\_bazaU(\textcolor{keyword}{new} \mbox{\hyperlink{classbaza_umow}{bazaUmow}}, [](\mbox{\hyperlink{classbaza_umow}{bazaUmow}}*) \{\});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00032}00032         std::shared\_ptr<sklep> temp\_sklep(\textcolor{keyword}{new} \mbox{\hyperlink{classsklep}{sklep}}, [](\mbox{\hyperlink{classsklep}{sklep}}*) \{\});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00034}00034         \textcolor{keywordtype}{float} cena;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00035}00035         std::string tempstr1, tempstr2;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00036}00036         \textcolor{keywordtype}{int} tempid, tempida, temprodz;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00037}00037         \textcolor{keywordtype}{bool} r;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00038}00038         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00039}00039             f\_fileA-\/>open(\textcolor{stringliteral}{"{}plikA.txt"{}}, ios::in);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00040}00040             \textcolor{keywordflow}{while} (!f\_fileA-\/>eof())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00041}00041             \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00042}00042                 *f\_fileA >> tempid >> tempstr1 >> tempstr2;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00043}00043                 temp\_bazaA-\/>dodajAutoraWczyt(tempstr1, tempstr2, tempid);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00044}00044             \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00045}00045             f\_fileA-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00047}00047             f\_fileK-\/>open(\textcolor{stringliteral}{"{}plikK.txt"{}}, ios::in);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00048}00048             \textcolor{keywordflow}{while} (!f\_fileK-\/>eof())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00049}00049             \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00050}00050                 *f\_fileK >> tempid >> tempida >> temprodz >> tempstr1;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00051}00051                 temp\_bazaK-\/>dodajKsiazke(tempstr1, temprodz, \textcolor{stringliteral}{"{}TBD"{}});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00052}00052                 temp\_bazaK-\/>getPtrLK()-\/>dodajAutora(*temp\_bazaA-\/>getAutorById(tempida));}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00053}00053             \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00054}00054             f\_fileK-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00056}00056             f\_fileC-\/>open(\textcolor{stringliteral}{"{}plikC.txt"{}}, ios::in);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00057}00057             \textcolor{keywordflow}{while} (!f\_fileC-\/>eof())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00058}00058             \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00059}00059                 *f\_fileC >> tempid >> tempida >> temprodz >> tempstr1;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00060}00060                 temp\_bazaC-\/>dodajCzasopismo(tempstr1, temprodz, \textcolor{stringliteral}{"{}TBD"{}});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00061}00061                 temp\_bazaC-\/>getPtrLK()-\/>przyznajAutora(*temp\_bazaA-\/>getAutorById(tempida));}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00062}00062             \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00063}00063             f\_fileC-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00065}00065             f\_fileD-\/>open(\textcolor{stringliteral}{"{}plikD.txt"{}}, ios::in);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00066}00066             \textcolor{keywordflow}{while} (!f\_fileD-\/>eof())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00067}00067             \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00068}00068                 *f\_fileD >> tempid >> temprodz >> tempstr1;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00069}00069                 temp\_bazaD-\/>wczytD(tempstr1, temprodz, tempid);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00070}00070             \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00071}00071             f\_fileD-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00073}00073             f\_fileU-\/>open(\textcolor{stringliteral}{"{}plikU.txt"{}}, ios::in);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00074}00074             \textcolor{keywordflow}{while} (!f\_fileU-\/>eof())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00075}00075             \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00076}00076                 *f\_fileU >> tempid >> temprodz >> r >> tempida;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00077}00077                 \textcolor{keywordflow}{if} (r)temp\_bazaU-\/>wczyt(temp\_bazaK-\/>getPtrById(tempida), temprodz, tempid);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00078}00078             \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00079}00079             f\_fileU-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00081}00081             f\_fileSklK-\/>open(\textcolor{stringliteral}{"{}pliksklK.txt"{}}, ios::in);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00082}00082             \textcolor{keywordflow}{while} (!f\_fileSklK-\/>eof())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00083}00083             \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00084}00084                 *f\_fileSklK >> tempid >> temprodz >> tempida >> cena;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00085}00085                 \textcolor{keywordflow}{if} (temprodz == temp\_bazaK-\/>getPtrById(tempida)-\/>getRodzajInterwal())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00086}00086                     temp\_sklep-\/>wczytK(temp\_bazaK-\/>getPtrById(tempid), tempida, cena);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00087}00087             \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00088}00088             f\_fileSklK-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00090}00090             f\_fileSklC-\/>open(\textcolor{stringliteral}{"{}pliksklC.txt"{}}, ios::in);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00091}00091             \textcolor{keywordflow}{while} (!f\_fileSklC-\/>eof())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00092}00092             \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00093}00093                 *f\_fileSklK >> tempid >> temprodz >> tempida >> cena;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00094}00094                 \textcolor{keywordflow}{if} (temprodz == temp\_bazaC-\/>getPtrById(tempida)-\/>getRodzajInterwal())}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00095}00095                     temp\_sklep-\/>wczytC(temp\_bazaC-\/>getPtrById(tempid), tempida, cena);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00096}00096             \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00097}00097             f\_fileSklC-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00098}00098             std::cout << std::endl << \textcolor{stringliteral}{"{}Pomyslnie otworzono."{}} << std::endl;}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00099}00099             system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00101}00101             f\_bazaK.swap(temp\_bazaK);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00102}00102             f\_bazaC.swap(temp\_bazaC);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00103}00103             f\_bazaA.swap(temp\_bazaA);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00104}00104             f\_bazaD.swap(temp\_bazaD);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00105}00105             f\_bazaU.swap(temp\_bazaU);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00106}00106             f\_skl.swap(temp\_sklep);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00107}00107         \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00108}00108         \textcolor{keywordflow}{catch} (\mbox{\hyperlink{classexcept}{except}} es ) \{ std::cout << \textcolor{stringliteral}{"{}Blad."{}}; system(\textcolor{stringliteral}{"{}pause"{}}); \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00109}00109     \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00110}\mbox{\hyperlink{class_system_a34dabc5883367c59d834571cc13f6072}{00110}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_a34dabc5883367c59d834571cc13f6072}{Save}}(std::shared\_ptr<bazaKsiazek>f\_bazaK, std::shared\_ptr<bazaCzasopism>f\_bazaC, std::shared\_ptr<bazaAutorow>f\_bazaA,}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00111}00111         std::shared\_ptr<bazaDrukarni>f\_bazaD, std::shared\_ptr<bazaUmow>f\_bazaU, std::shared\_ptr<sklep> f\_skl,}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00112}00112         std::shared\_ptr<std::fstream> f\_fileK, std::shared\_ptr<std::fstream> f\_fileC, std::shared\_ptr<std::fstream> f\_fileA,}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00113}00113         std::shared\_ptr<std::fstream> f\_fileU, std::shared\_ptr<std::fstream> f\_fileD, std::shared\_ptr<std::fstream> f\_fileSklK, std::shared\_ptr<std::fstream> f\_fileSklC)}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00114}00114     \{}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00115}00115         \textcolor{keywordtype}{size\_t} temp\_sum\_ids = f\_bazaA-\/>getMaxID() + f\_bazaC-\/>getMaxID() + f\_bazaD-\/>getMaxID() + f\_bazaK-\/>getMaxID() + f\_bazaU-\/>getMaxID();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00117}00117         f\_fileK-\/>open(\textcolor{stringliteral}{"{}plikK.txt"{}}, ios::out);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00118}00118         f\_fileA-\/>open(\textcolor{stringliteral}{"{}plikA.txt"{}}, ios::out);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00119}00119         f\_fileD-\/>open(\textcolor{stringliteral}{"{}plikD.txt"{}}, ios::out);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00120}00120         f\_fileU-\/>open(\textcolor{stringliteral}{"{}plikU.txt"{}}, ios::out);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00121}00121         f\_fileC-\/>open(\textcolor{stringliteral}{"{}plikC.txt"{}}, ios::out);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00122}00122         f\_fileSklK-\/>open(\textcolor{stringliteral}{"{}pliksklK.txt"{}},ios::out);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00123}00123         f\_fileSklC-\/>open(\textcolor{stringliteral}{"{}pliksklC.txt"{}}, ios::out);}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00125}00125         *f\_fileK << f\_bazaK-\/>dump();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00126}00126         *f\_fileA << f\_bazaA-\/>dump();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00127}00127         *f\_fileC << f\_bazaC-\/>dump();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00128}00128         *f\_fileD << f\_bazaD-\/>dump();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00129}00129         *f\_fileU << f\_bazaU-\/>dump();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00130}00130         *f\_fileSklK << f\_skl-\/>dumpK();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00131}00131         *f\_fileSklC << f\_skl-\/>dumpC();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00133}00133         f\_fileK-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00134}00134         f\_fileA-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00135}00135         f\_fileD-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00136}00136         f\_fileC-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00137}00137         f\_fileU-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00138}00138         f\_fileSklC-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00139}00139         f\_fileSklK-\/>close();}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00140}00140     \}}
+\DoxyCodeLine{\Hypertarget{_system_8h_source_l00141}00141 \};}
 
 \end{DoxyCode}

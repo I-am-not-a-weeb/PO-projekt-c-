@@ -3,6 +3,7 @@
   <compounddef id="classbaza_ksiazek" kind="class" language="C++" prot="public">
     <compoundname>bazaKsiazek</compoundname>
     <basecompoundref refid="classbaza" prot="protected" virt="non-virtual">baza</basecompoundref>
+    <includes refid="baza_8h" local="no">baza.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classbaza_ksiazek_1acd51336d7c8c108b01e521c29ecc2a12" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
@@ -16,27 +17,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="21" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="21" bodyend="-1"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="23" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classbaza_ksiazek_1a5315281cbc97dc6510307c62abc516ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>bazaKsiazek::~bazaKsiazek</definition>
-        <argsstring>()</argsstring>
-        <name>~bazaKsiazek</name>
-        <qualifiedname>bazaKsiazek::~bazaKsiazek</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="23" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="23" bodyend="26"/>
-      </memberdef>
-      <memberdef kind="function" id="classbaza_ksiazek_1a23bb0f5d2184e02039be0ba3583a3038" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void bazaKsiazek::dodajKsiazke</definition>
+      <memberdef kind="function" id="classbaza_ksiazek_1ac4a48391e3207a8920f98f5efac1bdea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_ksiazka &gt; bazaKsiazek::dodajKsiazke</definition>
         <argsstring>(std::string f_tytul, int f_rodzaj, std::string f_tekst)</argsstring>
         <name>dodajKsiazke</name>
         <qualifiedname>bazaKsiazek::dodajKsiazke</qualifiedname>
@@ -58,25 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="27" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="27" bodyend="30"/>
-      </memberdef>
-      <memberdef kind="function" id="classbaza_ksiazek_1a7f4c59bbee142a90fbba6c20eed2e69b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void bazaKsiazek::usunKsiazke</definition>
-        <argsstring>(c_ksiazka f_ksiazka)</argsstring>
-        <name>usunKsiazke</name>
-        <qualifiedname>bazaKsiazek::usunKsiazke</qualifiedname>
-        <param>
-          <type><ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref></type>
-          <declname>f_ksiazka</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="31" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="31" bodyend="40"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="25" column="21" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="25" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="classbaza_ksiazek_1a4237d1715c775aa3471e1c8b1825b2cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>size_t</type>
@@ -91,7 +60,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="41" column="12" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="41" bodyend="44"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="31" column="12" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_ksiazek_1a854f44e25513e976bff850b05ce433b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_ksiazka &gt; bazaKsiazek::getPtrById</definition>
+        <argsstring>(int f_id)</argsstring>
+        <name>getPtrById</name>
+        <qualifiedname>bazaKsiazek::getPtrById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="35" column="21" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_ksiazek_1a8046dce23f3cd543f94bf466872c6dd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_ksiazka &gt; bazaKsiazek::getPtrLK</definition>
+        <argsstring>()</argsstring>
+        <name>getPtrLK</name>
+        <qualifiedname>bazaKsiazek::getPtrLK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="44" column="21" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="44" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="classbaza_ksiazek_1a1ca572513613c36ae642a46b6e1f276d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -106,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="45" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="45" bodyend="53"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="48" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="48" bodyend="56"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -137,15 +138,15 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="18" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="19" bodyend="54"/>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="20" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="21" bodyend="57"/>
     <listofallmembers>
-      <member refid="classbaza_ksiazek_1a23bb0f5d2184e02039be0ba3583a3038" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>dodajKsiazke</name></member>
+      <member refid="classbaza_ksiazek_1ac4a48391e3207a8920f98f5efac1bdea" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>dodajKsiazke</name></member>
       <member refid="classbaza_ksiazek_1a1ca572513613c36ae642a46b6e1f276d" prot="public" virt="virtual"><scope>bazaKsiazek</scope><name>dump</name></member>
       <member refid="classbaza_ksiazek_1a4237d1715c775aa3471e1c8b1825b2cc" prot="public" virt="virtual"><scope>bazaKsiazek</scope><name>getMaxID</name></member>
+      <member refid="classbaza_ksiazek_1a854f44e25513e976bff850b05ce433b4" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>getPtrById</name></member>
+      <member refid="classbaza_ksiazek_1a8046dce23f3cd543f94bf466872c6dd4" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>getPtrLK</name></member>
       <member refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" prot="protected" virt="non-virtual"><scope>bazaKsiazek</scope><name>maxID</name></member>
-      <member refid="classbaza_ksiazek_1a7f4c59bbee142a90fbba6c20eed2e69b" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>usunKsiazke</name></member>
       <member refid="classbaza_ksiazek_1acd51336d7c8c108b01e521c29ecc2a12" prot="private" virt="non-virtual"><scope>bazaKsiazek</scope><name>vecKsiazka</name></member>
-      <member refid="classbaza_ksiazek_1a5315281cbc97dc6510307c62abc516ae" prot="public" virt="non-virtual"><scope>bazaKsiazek</scope><name>~bazaKsiazek</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

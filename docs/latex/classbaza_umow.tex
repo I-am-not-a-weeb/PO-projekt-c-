@@ -1,5 +1,9 @@
 \hypertarget{classbaza_umow}{}\doxysection{baza\+Umow Class Reference}
 \label{classbaza_umow}\index{bazaUmow@{bazaUmow}}
+
+
+{\ttfamily \#include $<$baza.\+h$>$}
+
 Inheritance diagram for baza\+Umow\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,11 +13,15 @@ Inheritance diagram for baza\+Umow\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classbaza_umow_ab478e5e25b869d7c58729a43f7b50d98}{dodaj\+UmoweK}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} $>$ f\+\_\+autor, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ f\+\_\+ksiazka, int f\+\_\+rodzaj)
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ \mbox{\hyperlink{classbaza_umow_a224244dd67bc38de3134d689dbcad69e}{dodaj\+UmoweK}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ f\+\_\+ksiazka, int f\+\_\+rodzaj)
 \item 
-void \mbox{\hyperlink{classbaza_umow_a9183d0d98bfe5598c22a4b96635ac741}{dodaj\+UmoweC}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} $>$ f\+\_\+autor, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ f\+\_\+czasopismo, int f\+\_\+rodzaj)
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ \mbox{\hyperlink{classbaza_umow_a8c26ff6af6ac7292b8c925795f9f4b13}{wczyt}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ f\+\_\+ksiazka, int f\+\_\+rodzaj, int f\+\_\+id)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ \mbox{\hyperlink{classbaza_umow_a9b5727e5497f437fe2459255f2582332}{dodaj\+UmoweC}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ f\+\_\+czasopismo, int f\+\_\+rodzaj)
 \item 
 size\+\_\+t \mbox{\hyperlink{classbaza_umow_aaa1d273f58f603670ed05afaee1e0421}{get\+Max\+ID}} ()
+\item 
+std\+::string \mbox{\hyperlink{classbaza_umow_ac169b9465e257728fbb5ab52a93e68b0}{dump}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -21,30 +29,44 @@ size\+\_\+t \mbox{\hyperlink{classbaza_umow_aaa1d273f58f603670ed05afaee1e0421}{g
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00139}{139}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00130}{130}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classbaza_umow_a9183d0d98bfe5598c22a4b96635ac741}\label{classbaza_umow_a9183d0d98bfe5598c22a4b96635ac741}} 
+\mbox{\Hypertarget{classbaza_umow_a9b5727e5497f437fe2459255f2582332}\label{classbaza_umow_a9b5727e5497f437fe2459255f2582332}} 
 \index{bazaUmow@{bazaUmow}!dodajUmoweC@{dodajUmoweC}}
 \index{dodajUmoweC@{dodajUmoweC}!bazaUmow@{bazaUmow}}
 \doxysubsubsection{\texorpdfstring{dodajUmoweC()}{dodajUmoweC()}}
-{\footnotesize\ttfamily void baza\+Umow\+::dodaj\+UmoweC (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} $>$}]{f\+\_\+autor,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$}]{f\+\_\+czasopismo,  }\item[{int}]{f\+\_\+rodzaj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ baza\+Umow\+::dodaj\+UmoweC (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$}]{f\+\_\+czasopismo,  }\item[{int}]{f\+\_\+rodzaj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Definition at line \mbox{\hyperlink{baza_8h_source_l00149}{149}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
-\mbox{\Hypertarget{classbaza_umow_ab478e5e25b869d7c58729a43f7b50d98}\label{classbaza_umow_ab478e5e25b869d7c58729a43f7b50d98}} 
+\mbox{\Hypertarget{classbaza_umow_a224244dd67bc38de3134d689dbcad69e}\label{classbaza_umow_a224244dd67bc38de3134d689dbcad69e}} 
 \index{bazaUmow@{bazaUmow}!dodajUmoweK@{dodajUmoweK}}
 \index{dodajUmoweK@{dodajUmoweK}!bazaUmow@{bazaUmow}}
 \doxysubsubsection{\texorpdfstring{dodajUmoweK()}{dodajUmoweK()}}
-{\footnotesize\ttfamily void baza\+Umow\+::dodaj\+UmoweK (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} $>$}]{f\+\_\+autor,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$}]{f\+\_\+ksiazka,  }\item[{int}]{f\+\_\+rodzaj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ baza\+Umow\+::dodaj\+UmoweK (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$}]{f\+\_\+ksiazka,  }\item[{int}]{f\+\_\+rodzaj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00144}{144}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00135}{135}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+
+\mbox{\Hypertarget{classbaza_umow_ac169b9465e257728fbb5ab52a93e68b0}\label{classbaza_umow_ac169b9465e257728fbb5ab52a93e68b0}} 
+\index{bazaUmow@{bazaUmow}!dump@{dump}}
+\index{dump@{dump}!bazaUmow@{bazaUmow}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily std\+::string baza\+Umow\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classbaza_acb0899ba4aa2273720fd949d830bc511}{baza}}.
+
+
+
+Definition at line \mbox{\hyperlink{baza_8h_source_l00160}{160}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 \mbox{\Hypertarget{classbaza_umow_aaa1d273f58f603670ed05afaee1e0421}\label{classbaza_umow_aaa1d273f58f603670ed05afaee1e0421}} 
 \index{bazaUmow@{bazaUmow}!getMaxID@{getMaxID}}
@@ -54,14 +76,24 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00144}{144}} of file \mbox{\
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
+Implements \mbox{\hyperlink{classbaza_a74d1c31125deb832c105235eb41105c9}{baza}}.
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00154}{154}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00156}{156}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+
+\mbox{\Hypertarget{classbaza_umow_a8c26ff6af6ac7292b8c925795f9f4b13}\label{classbaza_umow_a8c26ff6af6ac7292b8c925795f9f4b13}} 
+\index{bazaUmow@{bazaUmow}!wczyt@{wczyt}}
+\index{wczyt@{wczyt}!bazaUmow@{bazaUmow}}
+\doxysubsubsection{\texorpdfstring{wczyt()}{wczyt()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ baza\+Umow\+::wczyt (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$}]{f\+\_\+ksiazka,  }\item[{int}]{f\+\_\+rodzaj,  }\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{baza_8h_source_l00142}{142}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/baza.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/\mbox{\hyperlink{baza_8h}{baza.\+h}}\end{DoxyCompactItemize}

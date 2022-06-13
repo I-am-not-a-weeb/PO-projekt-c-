@@ -1,15 +1,29 @@
 \hypertarget{classc__autor}{}\doxysection{c\+\_\+autor Class Reference}
 \label{classc__autor}\index{c\_autor@{c\_autor}}
+
+
+{\ttfamily \#include $<$Zarzadzanie\+Autorami.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classc__autor_ae8ec05f42746b2a25bd5290490a502c5}{c\+\_\+autor}} ()
+\item 
 \mbox{\hyperlink{classc__autor_a707ccd77acc4fc6163d7c1037791eb8e}{c\+\_\+autor}} (std\+::string f\+\_\+imie, std\+::string f\+\_\+nazwisko, int f\+\_\+id)
 \item 
-void \mbox{\hyperlink{classc__autor_a8ef4f7da1df9b6f63068c66750901af1}{dodaj\+Umowe}} (\mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} f\+\_\+umowa)
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ \mbox{\hyperlink{classc__autor_a86a1bb02b22c5e8813bd7da118e80cf0}{dodaj\+Umowe}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ f\+\_\+umowa)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ \mbox{\hyperlink{classc__autor_a0bd5235e255604dd7f75b31eeeb1027b}{dodaj\+Ksiazke}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ f\+\_\+ksiazka)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ \mbox{\hyperlink{classc__autor_a9332ca436889774cd981a147dd03a542}{dodaj\+Czasopismo}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ f\+\_\+czasopismo)
 \item 
 std\+::string \mbox{\hyperlink{classc__autor_aaa8fc2dd4c6a3249a92bbd71d3e75f6f}{get\+Imie}} ()
 \item 
 std\+::string \mbox{\hyperlink{classc__autor_a13e9e9213e1db2e7de358c84a950d163}{get\+Nazwisko}} ()
+\item 
+int \mbox{\hyperlink{classc__autor_aaae283476ef0ff1abbee88ce834cbea3}{get\+Id}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} $>$ \mbox{\hyperlink{classc__autor_a804bf15673111bc9a53cf745bb3b3d02}{get\+Ptr}} ()
 \item 
 std\+::string \mbox{\hyperlink{classc__autor_a1000a8f12d806aca3923aec61bfade40}{dump}} ()
 \end{DoxyCompactItemize}
@@ -23,7 +37,7 @@ bool \mbox{\hyperlink{classc__autor_aa60a4ab68d36149b0d0a2f03ffa770ea}{operator=
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00059}{59}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00084}{84}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
@@ -36,7 +50,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00059}{59}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00067}{67}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00094}{94}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__autor_a707ccd77acc4fc6163d7c1037791eb8e}\label{classc__autor_a707ccd77acc4fc6163d7c1037791eb8e}} 
 \index{c\_autor@{c\_autor}!c\_autor@{c\_autor}}
@@ -46,20 +60,40 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00067}{67}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00072}{72}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00099}{99}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classc__autor_a8ef4f7da1df9b6f63068c66750901af1}\label{classc__autor_a8ef4f7da1df9b6f63068c66750901af1}} 
+\mbox{\Hypertarget{classc__autor_a9332ca436889774cd981a147dd03a542}\label{classc__autor_a9332ca436889774cd981a147dd03a542}} 
+\index{c\_autor@{c\_autor}!dodajCzasopismo@{dodajCzasopismo}}
+\index{dodajCzasopismo@{dodajCzasopismo}!c\_autor@{c\_autor}}
+\doxysubsubsection{\texorpdfstring{dodajCzasopismo()}{dodajCzasopismo()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ c\+\_\+autor\+::dodaj\+Czasopismo (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$}]{f\+\_\+czasopismo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00116}{116}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__autor_a0bd5235e255604dd7f75b31eeeb1027b}\label{classc__autor_a0bd5235e255604dd7f75b31eeeb1027b}} 
+\index{c\_autor@{c\_autor}!dodajKsiazke@{dodajKsiazke}}
+\index{dodajKsiazke@{dodajKsiazke}!c\_autor@{c\_autor}}
+\doxysubsubsection{\texorpdfstring{dodajKsiazke()}{dodajKsiazke()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ c\+\_\+autor\+::dodaj\+Ksiazke (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$}]{f\+\_\+ksiazka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00111}{111}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__autor_a86a1bb02b22c5e8813bd7da118e80cf0}\label{classc__autor_a86a1bb02b22c5e8813bd7da118e80cf0}} 
 \index{c\_autor@{c\_autor}!dodajUmowe@{dodajUmowe}}
 \index{dodajUmowe@{dodajUmowe}!c\_autor@{c\_autor}}
 \doxysubsubsection{\texorpdfstring{dodajUmowe()}{dodajUmowe()}}
-{\footnotesize\ttfamily void c\+\_\+autor\+::dodaj\+Umowe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}}}]{f\+\_\+umowa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$ c\+\_\+autor\+::dodaj\+Umowe (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__umowa}{c\+\_\+umowa}} $>$}]{f\+\_\+umowa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00078}{78}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00106}{106}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__autor_a1000a8f12d806aca3923aec61bfade40}\label{classc__autor_a1000a8f12d806aca3923aec61bfade40}} 
 \index{c\_autor@{c\_autor}!dump@{dump}}
@@ -69,7 +103,17 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00078}{78}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00090}{90}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00137}{137}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__autor_aaae283476ef0ff1abbee88ce834cbea3}\label{classc__autor_aaae283476ef0ff1abbee88ce834cbea3}} 
+\index{c\_autor@{c\_autor}!getId@{getId}}
+\index{getId@{getId}!c\_autor@{c\_autor}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int c\+\_\+autor\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00129}{129}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__autor_aaa8fc2dd4c6a3249a92bbd71d3e75f6f}\label{classc__autor_aaa8fc2dd4c6a3249a92bbd71d3e75f6f}} 
 \index{c\_autor@{c\_autor}!getImie@{getImie}}
@@ -79,7 +123,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00090}{90}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00082}{82}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00121}{121}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__autor_a13e9e9213e1db2e7de358c84a950d163}\label{classc__autor_a13e9e9213e1db2e7de358c84a950d163}} 
 \index{c\_autor@{c\_autor}!getNazwisko@{getNazwisko}}
@@ -89,7 +133,17 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00082}{82}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00086}{86}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00125}{125}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__autor_a804bf15673111bc9a53cf745bb3b3d02}\label{classc__autor_a804bf15673111bc9a53cf745bb3b3d02}} 
+\index{c\_autor@{c\_autor}!getPtr@{getPtr}}
+\index{getPtr@{getPtr}!c\_autor@{c\_autor}}
+\doxysubsubsection{\texorpdfstring{getPtr()}{getPtr()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} $>$ c\+\_\+autor\+::get\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00133}{133}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
@@ -102,10 +156,10 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00086}{86}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00096}{96}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00143}{143}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/Zarzadzanie\+Autorami.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/\mbox{\hyperlink{_zarzadzanie_autorami_8h}{Zarzadzanie\+Autorami.\+h}}\end{DoxyCompactItemize}

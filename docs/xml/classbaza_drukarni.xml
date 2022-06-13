@@ -2,9 +2,26 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="classbaza_drukarni" kind="class" language="C++" prot="public">
     <compoundname>bazaDrukarni</compoundname>
-    <basecompoundref refid="classbaza" prot="protected" virt="non-virtual">baza</basecompoundref>
+    <includes refid="_zarzadzanie_autorami_8h" local="no">ZarzadzanieAutorami.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classbaza_drukarni_1ab364a41513ffd89ea94027187f930fe3" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classbaza_drukarni_1ac7d9a43890553fa21c160963cf851640" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bazaDrukarni::maxID</definition>
+        <argsstring></argsstring>
+        <name>maxID</name>
+        <qualifiedname>bazaDrukarni::maxID</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="58" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classbaza_drukarni_1ab364a41513ffd89ea94027187f930fe3" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classc__drukarnia" kindref="compound">c_drukarnia</ref> &gt;</type>
         <definition>std::vector&lt;c_drukarnia&gt; bazaDrukarni::vecDrukarnie</definition>
         <argsstring></argsstring>
@@ -16,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="87" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="87" bodyend="-1"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="60" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -40,17 +57,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="89" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="89" bodyend="92"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="61" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="61" bodyend="64"/>
       </memberdef>
-      <memberdef kind="function" id="classbaza_drukarni_1af6f2826959556056b8d8c42a50d4d59e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classbaza_drukarni_1aa358ae1d7977bc16a46c4ec4b1f78308" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void bazaDrukarni::usunDrukarnie</definition>
-        <argsstring>(c_drukarnia f_drukarnia)</argsstring>
-        <name>usunDrukarnie</name>
-        <qualifiedname>bazaDrukarni::usunDrukarnie</qualifiedname>
+        <definition>void bazaDrukarni::wczytD</definition>
+        <argsstring>(std::string f_nazwa, bool f_album, int f_id)</argsstring>
+        <name>wczytD</name>
+        <qualifiedname>bazaDrukarni::wczytD</qualifiedname>
         <param>
-          <type><ref refid="classc__drukarnia" kindref="compound">c_drukarnia</ref></type>
-          <declname>f_drukarnia</declname>
+          <type>std::string</type>
+          <declname>f_nazwa</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>f_album</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -58,75 +83,49 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="93" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="93" bodyend="96"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="65" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="65" bodyend="68"/>
       </memberdef>
-      <memberdef kind="function" id="classbaza_drukarni_1adbd755e462edf1b2b4f937ce25d0ac1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classbaza_drukarni_1adbd755e462edf1b2b4f937ce25d0ac1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>size_t</type>
         <definition>size_t bazaDrukarni::getMaxID</definition>
         <argsstring>()</argsstring>
         <name>getMaxID</name>
         <qualifiedname>bazaDrukarni::getMaxID</qualifiedname>
-        <reimplements refid="classbaza_1a74d1c31125deb832c105235eb41105c9">getMaxID</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="97" column="12" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="97" bodyend="100"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="69" column="8" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="69" bodyend="72"/>
       </memberdef>
-      <memberdef kind="function" id="classbaza_drukarni_1a6c195294f190ee816a4185cf2096e02d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classbaza_drukarni_1a6c195294f190ee816a4185cf2096e02d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string bazaDrukarni::dump</definition>
         <argsstring>()</argsstring>
         <name>dump</name>
         <qualifiedname>bazaDrukarni::dump</qualifiedname>
-        <reimplements refid="classbaza_1acb0899ba4aa2273720fd949d830bc511">dump</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="101" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="101" bodyend="109"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="73" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="73" bodyend="81"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>baza</label>
-        <link refid="classbaza"/>
-      </node>
-      <node id="1">
-        <label>bazaDrukarni</label>
-        <link refid="classbaza_drukarni"/>
-        <childnode refid="2" relation="protected-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="2">
-        <label>baza</label>
-        <link refid="classbaza"/>
-      </node>
-      <node id="1">
-        <label>bazaDrukarni</label>
-        <link refid="classbaza_drukarni"/>
-        <childnode refid="2" relation="protected-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="84" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="85" bodyend="110"/>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="56" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="57" bodyend="82"/>
     <listofallmembers>
       <member refid="classbaza_drukarni_1a81cdb4f07c0d2c586ca6d46fdd8d7795" prot="public" virt="non-virtual"><scope>bazaDrukarni</scope><name>dodajDrukarnie</name></member>
-      <member refid="classbaza_drukarni_1a6c195294f190ee816a4185cf2096e02d" prot="public" virt="virtual"><scope>bazaDrukarni</scope><name>dump</name></member>
-      <member refid="classbaza_drukarni_1adbd755e462edf1b2b4f937ce25d0ac1d" prot="public" virt="virtual"><scope>bazaDrukarni</scope><name>getMaxID</name></member>
-      <member refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" prot="protected" virt="non-virtual"><scope>bazaDrukarni</scope><name>maxID</name></member>
-      <member refid="classbaza_drukarni_1af6f2826959556056b8d8c42a50d4d59e" prot="public" virt="non-virtual"><scope>bazaDrukarni</scope><name>usunDrukarnie</name></member>
-      <member refid="classbaza_drukarni_1ab364a41513ffd89ea94027187f930fe3" prot="private" virt="non-virtual"><scope>bazaDrukarni</scope><name>vecDrukarnie</name></member>
+      <member refid="classbaza_drukarni_1a6c195294f190ee816a4185cf2096e02d" prot="public" virt="non-virtual"><scope>bazaDrukarni</scope><name>dump</name></member>
+      <member refid="classbaza_drukarni_1adbd755e462edf1b2b4f937ce25d0ac1d" prot="public" virt="non-virtual"><scope>bazaDrukarni</scope><name>getMaxID</name></member>
+      <member refid="classbaza_drukarni_1ac7d9a43890553fa21c160963cf851640" prot="private" virt="non-virtual"><scope>bazaDrukarni</scope><name>maxID</name></member>
+      <member refid="classbaza_drukarni_1ab364a41513ffd89ea94027187f930fe3" prot="public" virt="non-virtual"><scope>bazaDrukarni</scope><name>vecDrukarnie</name></member>
+      <member refid="classbaza_drukarni_1aa358ae1d7977bc16a46c4ec4b1f78308" prot="public" virt="non-virtual"><scope>bazaDrukarni</scope><name>wczytD</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

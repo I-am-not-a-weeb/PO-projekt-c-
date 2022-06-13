@@ -3,6 +3,7 @@
   <compounddef id="classbaza_autorow" kind="class" language="C++" prot="public">
     <compoundname>bazaAutorow</compoundname>
     <basecompoundref refid="classbaza" prot="protected" virt="non-virtual">baza</basecompoundref>
+    <includes refid="baza_8h" local="no">baza.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classbaza_autorow_1a36a759703dc7da849ee6a694744ef903" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classc__autor" kindref="compound">c_autor</ref> &gt;</type>
@@ -16,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="115" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="115" bodyend="-1"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="101" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -40,7 +41,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="117" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="117" bodyend="120"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="103" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_autorow_1a5a7d96cdd3c1921dd51547c98d3e7221" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void bazaAutorow::dodajAutoraWczyt</definition>
+        <argsstring>(std::string f_imie, std::string f_nazwisko, int f_id)</argsstring>
+        <name>dodajAutoraWczyt</name>
+        <qualifiedname>bazaAutorow::dodajAutoraWczyt</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_imie</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>f_nazwisko</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="107" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="107" bodyend="110"/>
       </memberdef>
       <memberdef kind="function" id="classbaza_autorow_1a8b6e99c6370eb3ef00efc51589096207" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -55,7 +82,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="121" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="121" bodyend="129"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="111" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="111" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classbaza_autorow_1a30ad5d5fd7699b34ee61a50d0c2ad12c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__autor" kindref="compound">c_autor</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_autor &gt; bazaAutorow::getAutorById</definition>
+        <argsstring>(int f_id)</argsstring>
+        <name>getAutorById</name>
+        <qualifiedname>bazaAutorow::getAutorById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="120" column="21" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="120" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classbaza_autorow_1aa42c486a7d4bd3b791a1aa15a1490074" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>size_t</type>
@@ -70,25 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="130" column="12" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="130" bodyend="133"/>
-      </memberdef>
-      <memberdef kind="function" id="classbaza_autorow_1ae079d248177572533832cf00007f62ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void bazaAutorow::usunAutora</definition>
-        <argsstring>(c_autor f_autor)</argsstring>
-        <name>usunAutora</name>
-        <qualifiedname>bazaAutorow::usunAutora</qualifiedname>
-        <param>
-          <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
-          <declname>f_autor</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="134" column="10" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="134" bodyend="137"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="125" column="12" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="125" bodyend="128"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -119,13 +146,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="112" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="113" bodyend="138"/>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="98" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="99" bodyend="129"/>
     <listofallmembers>
       <member refid="classbaza_autorow_1a19a76fee6b66ae74c08efa3202798ce1" prot="public" virt="non-virtual"><scope>bazaAutorow</scope><name>dodajAutora</name></member>
+      <member refid="classbaza_autorow_1a5a7d96cdd3c1921dd51547c98d3e7221" prot="public" virt="non-virtual"><scope>bazaAutorow</scope><name>dodajAutoraWczyt</name></member>
       <member refid="classbaza_autorow_1a8b6e99c6370eb3ef00efc51589096207" prot="public" virt="virtual"><scope>bazaAutorow</scope><name>dump</name></member>
+      <member refid="classbaza_autorow_1a30ad5d5fd7699b34ee61a50d0c2ad12c" prot="public" virt="non-virtual"><scope>bazaAutorow</scope><name>getAutorById</name></member>
       <member refid="classbaza_autorow_1aa42c486a7d4bd3b791a1aa15a1490074" prot="public" virt="virtual"><scope>bazaAutorow</scope><name>getMaxID</name></member>
       <member refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" prot="protected" virt="non-virtual"><scope>bazaAutorow</scope><name>maxID</name></member>
-      <member refid="classbaza_autorow_1ae079d248177572533832cf00007f62ef" prot="public" virt="non-virtual"><scope>bazaAutorow</scope><name>usunAutora</name></member>
       <member refid="classbaza_autorow_1a36a759703dc7da849ee6a694744ef903" prot="private" virt="non-virtual"><scope>bazaAutorow</scope><name>vecAutor</name></member>
     </listofallmembers>
   </compounddef>

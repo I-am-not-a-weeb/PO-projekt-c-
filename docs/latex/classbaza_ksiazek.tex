@@ -1,5 +1,9 @@
 \hypertarget{classbaza_ksiazek}{}\doxysection{baza\+Ksiazek Class Reference}
 \label{classbaza_ksiazek}\index{bazaKsiazek@{bazaKsiazek}}
+
+
+{\ttfamily \#include $<$baza.\+h$>$}
+
 Inheritance diagram for baza\+Ksiazek\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,11 +13,13 @@ Inheritance diagram for baza\+Ksiazek\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classbaza_ksiazek_a23bb0f5d2184e02039be0ba3583a3038}{dodaj\+Ksiazke}} (std\+::string f\+\_\+tytul, int f\+\_\+rodzaj, std\+::string f\+\_\+tekst)
-\item 
-void \mbox{\hyperlink{classbaza_ksiazek_a7f4c59bbee142a90fbba6c20eed2e69b}{usun\+Ksiazke}} (\mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} f\+\_\+ksiazka)
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ \mbox{\hyperlink{classbaza_ksiazek_ac4a48391e3207a8920f98f5efac1bdea}{dodaj\+Ksiazke}} (std\+::string f\+\_\+tytul, int f\+\_\+rodzaj, std\+::string f\+\_\+tekst)
 \item 
 size\+\_\+t \mbox{\hyperlink{classbaza_ksiazek_a4237d1715c775aa3471e1c8b1825b2cc}{get\+Max\+ID}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ \mbox{\hyperlink{classbaza_ksiazek_a854f44e25513e976bff850b05ce433b4}{get\+Ptr\+By\+Id}} (int f\+\_\+id)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ \mbox{\hyperlink{classbaza_ksiazek_a8046dce23f3cd543f94bf466872c6dd4}{get\+Ptr\+LK}} ()
 \item 
 std\+::string \mbox{\hyperlink{classbaza_ksiazek_a1ca572513613c36ae642a46b6e1f276d}{dump}} ()
 \end{DoxyCompactItemize}
@@ -23,33 +29,20 @@ std\+::string \mbox{\hyperlink{classbaza_ksiazek_a1ca572513613c36ae642a46b6e1f27
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00018}{18}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
-
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classbaza_ksiazek_a5315281cbc97dc6510307c62abc516ae}\label{classbaza_ksiazek_a5315281cbc97dc6510307c62abc516ae}} 
-\index{bazaKsiazek@{bazaKsiazek}!````~bazaKsiazek@{$\sim$bazaKsiazek}}
-\index{````~bazaKsiazek@{$\sim$bazaKsiazek}!bazaKsiazek@{bazaKsiazek}}
-\doxysubsubsection{\texorpdfstring{$\sim$bazaKsiazek()}{~bazaKsiazek()}}
-{\footnotesize\ttfamily baza\+Ksiazek\+::$\sim$baza\+Ksiazek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line \mbox{\hyperlink{baza_8h_source_l00023}{23}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00020}{20}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classbaza_ksiazek_a23bb0f5d2184e02039be0ba3583a3038}\label{classbaza_ksiazek_a23bb0f5d2184e02039be0ba3583a3038}} 
+\mbox{\Hypertarget{classbaza_ksiazek_ac4a48391e3207a8920f98f5efac1bdea}\label{classbaza_ksiazek_ac4a48391e3207a8920f98f5efac1bdea}} 
 \index{bazaKsiazek@{bazaKsiazek}!dodajKsiazke@{dodajKsiazke}}
 \index{dodajKsiazke@{dodajKsiazke}!bazaKsiazek@{bazaKsiazek}}
 \doxysubsubsection{\texorpdfstring{dodajKsiazke()}{dodajKsiazke()}}
-{\footnotesize\ttfamily void baza\+Ksiazek\+::dodaj\+Ksiazke (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+tytul,  }\item[{int}]{f\+\_\+rodzaj,  }\item[{std\+::string}]{f\+\_\+tekst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ baza\+Ksiazek\+::dodaj\+Ksiazke (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+tytul,  }\item[{int}]{f\+\_\+rodzaj,  }\item[{std\+::string}]{f\+\_\+tekst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00027}{27}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00025}{25}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 \mbox{\Hypertarget{classbaza_ksiazek_a1ca572513613c36ae642a46b6e1f276d}\label{classbaza_ksiazek_a1ca572513613c36ae642a46b6e1f276d}} 
 \index{bazaKsiazek@{bazaKsiazek}!dump@{dump}}
@@ -59,11 +52,11 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00027}{27}} of file \mbox{\h
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
+Implements \mbox{\hyperlink{classbaza_acb0899ba4aa2273720fd949d830bc511}{baza}}.
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00045}{45}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00048}{48}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 \mbox{\Hypertarget{classbaza_ksiazek_a4237d1715c775aa3471e1c8b1825b2cc}\label{classbaza_ksiazek_a4237d1715c775aa3471e1c8b1825b2cc}} 
 \index{bazaKsiazek@{bazaKsiazek}!getMaxID@{getMaxID}}
@@ -73,24 +66,34 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00045}{45}} of file \mbox{\h
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
-
-
-
-Definition at line \mbox{\hyperlink{baza_8h_source_l00041}{41}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
-
-\mbox{\Hypertarget{classbaza_ksiazek_a7f4c59bbee142a90fbba6c20eed2e69b}\label{classbaza_ksiazek_a7f4c59bbee142a90fbba6c20eed2e69b}} 
-\index{bazaKsiazek@{bazaKsiazek}!usunKsiazke@{usunKsiazke}}
-\index{usunKsiazke@{usunKsiazke}!bazaKsiazek@{bazaKsiazek}}
-\doxysubsubsection{\texorpdfstring{usunKsiazke()}{usunKsiazke()}}
-{\footnotesize\ttfamily void baza\+Ksiazek\+::usun\+Ksiazke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}}}]{f\+\_\+ksiazka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Implements \mbox{\hyperlink{classbaza_a74d1c31125deb832c105235eb41105c9}{baza}}.
 
 
 
 Definition at line \mbox{\hyperlink{baza_8h_source_l00031}{31}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
+\mbox{\Hypertarget{classbaza_ksiazek_a854f44e25513e976bff850b05ce433b4}\label{classbaza_ksiazek_a854f44e25513e976bff850b05ce433b4}} 
+\index{bazaKsiazek@{bazaKsiazek}!getPtrById@{getPtrById}}
+\index{getPtrById@{getPtrById}!bazaKsiazek@{bazaKsiazek}}
+\doxysubsubsection{\texorpdfstring{getPtrById()}{getPtrById()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ baza\+Ksiazek\+::get\+Ptr\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{baza_8h_source_l00035}{35}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+
+\mbox{\Hypertarget{classbaza_ksiazek_a8046dce23f3cd543f94bf466872c6dd4}\label{classbaza_ksiazek_a8046dce23f3cd543f94bf466872c6dd4}} 
+\index{bazaKsiazek@{bazaKsiazek}!getPtrLK@{getPtrLK}}
+\index{getPtrLK@{getPtrLK}!bazaKsiazek@{bazaKsiazek}}
+\doxysubsubsection{\texorpdfstring{getPtrLK()}{getPtrLK()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ baza\+Ksiazek\+::get\+Ptr\+LK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{baza_8h_source_l00044}{44}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/baza.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/\mbox{\hyperlink{baza_8h}{baza.\+h}}\end{DoxyCompactItemize}

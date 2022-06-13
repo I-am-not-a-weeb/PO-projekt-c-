@@ -1,5 +1,9 @@
 \hypertarget{classc__ksiazka}{}\doxysection{c\+\_\+ksiazka Class Reference}
 \label{classc__ksiazka}\index{c\_ksiazka@{c\_ksiazka}}
+
+
+{\ttfamily \#include $<$Zarzadzanie\+Autorami.\+h$>$}
+
 Inheritance diagram for c\+\_\+ksiazka\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,15 +13,23 @@ Inheritance diagram for c\+\_\+ksiazka\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classc__ksiazka_acb9d094aaf60ad359cee191b2c147a78}{c\+\_\+ksiazka}} ()
+\item 
 \mbox{\hyperlink{classc__ksiazka_ad256e12e6e6f12f7f8802ae3d60702fe}{c\+\_\+ksiazka}} (std\+::string f\+\_\+tytul, int f\+\_\+rodzaj, std\+::string f\+\_\+tekst, int f\+\_\+id)
 \item 
+\mbox{\hyperlink{classc__ksiazka_a3b5238c408d2c18db39a09d435f4f064}{c\+\_\+ksiazka}} (std\+::string f\+\_\+tytul, int f\+\_\+rodzaj, int f\+\_\+id)
+\item 
 \mbox{\hyperlink{classc__ksiazka_a2aa5ffd4d9c99c5e7a22f64c703337e9}{c\+\_\+ksiazka}} (const \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} \&f\+\_\+ksiazka)
+\item 
+void \mbox{\hyperlink{classc__ksiazka_a31636d779bc727404a9df64f07b54b2b}{wczyt}} (std\+::string f\+\_\+tytul, int f\+\_\+rodzaj, int f\+\_\+id)
 \item 
 void \mbox{\hyperlink{classc__ksiazka_a717a7e24d5f29c099f90130bf366d65c}{przyznaj\+Tytul}} (std\+::string f\+\_\+tytul)
 \item 
 void \mbox{\hyperlink{classc__ksiazka_a986538377a475cec63db16538e87e8ce}{dodaj\+Autora}} (\mbox{\hyperlink{classc__autor}{c\+\_\+autor}} f\+\_\+autor)
 \item 
 int \mbox{\hyperlink{classc__ksiazka_a3ee4507f911ddc1908f50d8f8318f1d8}{get\+Rodzaj\+Interwal}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ \mbox{\hyperlink{classc__ksiazka_aeca6fc43119e1e850ff90d4ee04a56b6}{get\+Ptr}} ()
 \item 
 \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} \mbox{\hyperlink{classc__ksiazka_ac1e3e3ae5b6353fb615e4ccc398d0f3a}{get\+Autor}} ()
 \item 
@@ -26,8 +38,6 @@ std\+::string \mbox{\hyperlink{classc__ksiazka_a37fc9e36e58b05901306e99912db93f0
 std\+::string \mbox{\hyperlink{classc__ksiazka_a3638267b03c2274d9de38bf962af30e4}{get\+Tekst}} ()
 \item 
 int \mbox{\hyperlink{classc__ksiazka_ab6424ab3931bec93298066a1c417d5f9}{get\+Id}} ()
-\item 
-std\+::string \mbox{\hyperlink{classc__ksiazka_a330dc6a70b32677bef19675ea6bb6961}{dump\+\_\+t}} ()
 \item 
 std\+::string \mbox{\hyperlink{classc__ksiazka_a40fc8580acfaae4f701692cba06a2059}{dump}} ()
 \end{DoxyCompactItemize}
@@ -49,7 +59,7 @@ bool \mbox{\hyperlink{classc__ksiazka_a141a383f53afe4fc986fd84f4a711ff0}{operato
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00123}{123}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00170}{170}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
@@ -57,32 +67,42 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00123}{123}
 \mbox{\Hypertarget{classc__ksiazka_acb9d094aaf60ad359cee191b2c147a78}\label{classc__ksiazka_acb9d094aaf60ad359cee191b2c147a78}} 
 \index{c\_ksiazka@{c\_ksiazka}!c\_ksiazka@{c\_ksiazka}}
 \index{c\_ksiazka@{c\_ksiazka}!c\_ksiazka@{c\_ksiazka}}
-\doxysubsubsection{\texorpdfstring{c\_ksiazka()}{c\_ksiazka()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{c\_ksiazka()}{c\_ksiazka()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily c\+\_\+ksiazka\+::c\+\_\+ksiazka (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00128}{128}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00175}{175}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_ad256e12e6e6f12f7f8802ae3d60702fe}\label{classc__ksiazka_ad256e12e6e6f12f7f8802ae3d60702fe}} 
 \index{c\_ksiazka@{c\_ksiazka}!c\_ksiazka@{c\_ksiazka}}
 \index{c\_ksiazka@{c\_ksiazka}!c\_ksiazka@{c\_ksiazka}}
-\doxysubsubsection{\texorpdfstring{c\_ksiazka()}{c\_ksiazka()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{c\_ksiazka()}{c\_ksiazka()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily c\+\_\+ksiazka\+::c\+\_\+ksiazka (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+tytul,  }\item[{int}]{f\+\_\+rodzaj,  }\item[{std\+::string}]{f\+\_\+tekst,  }\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00132}{132}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00179}{179}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__ksiazka_a3b5238c408d2c18db39a09d435f4f064}\label{classc__ksiazka_a3b5238c408d2c18db39a09d435f4f064}} 
+\index{c\_ksiazka@{c\_ksiazka}!c\_ksiazka@{c\_ksiazka}}
+\index{c\_ksiazka@{c\_ksiazka}!c\_ksiazka@{c\_ksiazka}}
+\doxysubsubsection{\texorpdfstring{c\_ksiazka()}{c\_ksiazka()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily c\+\_\+ksiazka\+::c\+\_\+ksiazka (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+tytul,  }\item[{int}]{f\+\_\+rodzaj,  }\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00186}{186}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_a2aa5ffd4d9c99c5e7a22f64c703337e9}\label{classc__ksiazka_a2aa5ffd4d9c99c5e7a22f64c703337e9}} 
 \index{c\_ksiazka@{c\_ksiazka}!c\_ksiazka@{c\_ksiazka}}
 \index{c\_ksiazka@{c\_ksiazka}!c\_ksiazka@{c\_ksiazka}}
-\doxysubsubsection{\texorpdfstring{c\_ksiazka()}{c\_ksiazka()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{c\_ksiazka()}{c\_ksiazka()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily c\+\_\+ksiazka\+::c\+\_\+ksiazka (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} \&}]{f\+\_\+ksiazka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00139}{139}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00193}{193}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
@@ -95,7 +115,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00139}{139}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00151}{151}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00212}{212}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_a40fc8580acfaae4f701692cba06a2059}\label{classc__ksiazka_a40fc8580acfaae4f701692cba06a2059}} 
 \index{c\_ksiazka@{c\_ksiazka}!dump@{dump}}
@@ -105,17 +125,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00151}{151}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00181}{181}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
-
-\mbox{\Hypertarget{classc__ksiazka_a330dc6a70b32677bef19675ea6bb6961}\label{classc__ksiazka_a330dc6a70b32677bef19675ea6bb6961}} 
-\index{c\_ksiazka@{c\_ksiazka}!dump\_t@{dump\_t}}
-\index{dump\_t@{dump\_t}!c\_ksiazka@{c\_ksiazka}}
-\doxysubsubsection{\texorpdfstring{dump\_t()}{dump\_t()}}
-{\footnotesize\ttfamily std\+::string c\+\_\+ksiazka\+::dump\+\_\+t (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00175}{175}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00241}{241}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_ac1e3e3ae5b6353fb615e4ccc398d0f3a}\label{classc__ksiazka_ac1e3e3ae5b6353fb615e4ccc398d0f3a}} 
 \index{c\_ksiazka@{c\_ksiazka}!getAutor@{getAutor}}
@@ -125,11 +135,11 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00175}{175}
 
 
 
-Implements \mbox{\hyperlink{classc__pozycja}{c\+\_\+pozycja}}.
+Implements \mbox{\hyperlink{classc__pozycja_a9b73df6147e489d4281b2c39f3ba6dea}{c\+\_\+pozycja}}.
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00159}{159}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00225}{225}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_ab6424ab3931bec93298066a1c417d5f9}\label{classc__ksiazka_ab6424ab3931bec93298066a1c417d5f9}} 
 \index{c\_ksiazka@{c\_ksiazka}!getId@{getId}}
@@ -139,11 +149,21 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00159}{159}
 
 
 
-Implements \mbox{\hyperlink{classc__pozycja}{c\+\_\+pozycja}}.
+Implements \mbox{\hyperlink{classc__pozycja_a481db2dfea4151367694941ff6619327}{c\+\_\+pozycja}}.
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00171}{171}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00237}{237}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__ksiazka_aeca6fc43119e1e850ff90d4ee04a56b6}\label{classc__ksiazka_aeca6fc43119e1e850ff90d4ee04a56b6}} 
+\index{c\_ksiazka@{c\_ksiazka}!getPtr@{getPtr}}
+\index{getPtr@{getPtr}!c\_ksiazka@{c\_ksiazka}}
+\doxysubsubsection{\texorpdfstring{getPtr()}{getPtr()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ c\+\_\+ksiazka\+::get\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00221}{221}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_a3ee4507f911ddc1908f50d8f8318f1d8}\label{classc__ksiazka_a3ee4507f911ddc1908f50d8f8318f1d8}} 
 \index{c\_ksiazka@{c\_ksiazka}!getRodzajInterwal@{getRodzajInterwal}}
@@ -153,11 +173,11 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00171}{171}
 
 
 
-Implements \mbox{\hyperlink{classc__pozycja}{c\+\_\+pozycja}}.
+Implements \mbox{\hyperlink{classc__pozycja_a997bc423d8303f4143b3f4e1c28859aa}{c\+\_\+pozycja}}.
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00155}{155}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00217}{217}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_a3638267b03c2274d9de38bf962af30e4}\label{classc__ksiazka_a3638267b03c2274d9de38bf962af30e4}} 
 \index{c\_ksiazka@{c\_ksiazka}!getTekst@{getTekst}}
@@ -167,11 +187,11 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00155}{155}
 
 
 
-Implements \mbox{\hyperlink{classc__pozycja}{c\+\_\+pozycja}}.
+Implements \mbox{\hyperlink{classc__pozycja_a7a6218b406f34e2235cb9efd1da68cf0}{c\+\_\+pozycja}}.
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00167}{167}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00233}{233}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_a37fc9e36e58b05901306e99912db93f0}\label{classc__ksiazka_a37fc9e36e58b05901306e99912db93f0}} 
 \index{c\_ksiazka@{c\_ksiazka}!getTytul@{getTytul}}
@@ -181,11 +201,11 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00167}{167}
 
 
 
-Implements \mbox{\hyperlink{classc__pozycja}{c\+\_\+pozycja}}.
+Implements \mbox{\hyperlink{classc__pozycja_a324cb69be8e2685de6145b014983072d}{c\+\_\+pozycja}}.
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00163}{163}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00229}{229}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_a717a7e24d5f29c099f90130bf366d65c}\label{classc__ksiazka_a717a7e24d5f29c099f90130bf366d65c}} 
 \index{c\_ksiazka@{c\_ksiazka}!przyznajTytul@{przyznajTytul}}
@@ -195,11 +215,21 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00163}{163}
 
 
 
-Implements \mbox{\hyperlink{classc__pozycja}{c\+\_\+pozycja}}.
+Implements \mbox{\hyperlink{classc__pozycja_a0ac114ca92231c9f22fb4533669f1382}{c\+\_\+pozycja}}.
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00147}{147}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00208}{208}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__ksiazka_a31636d779bc727404a9df64f07b54b2b}\label{classc__ksiazka_a31636d779bc727404a9df64f07b54b2b}} 
+\index{c\_ksiazka@{c\_ksiazka}!wczyt@{wczyt}}
+\index{wczyt@{wczyt}!c\_ksiazka@{c\_ksiazka}}
+\doxysubsubsection{\texorpdfstring{wczyt()}{wczyt()}}
+{\footnotesize\ttfamily void c\+\_\+ksiazka\+::wczyt (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+tytul,  }\item[{int}]{f\+\_\+rodzaj,  }\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00201}{201}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
@@ -212,7 +242,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00147}{147}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00191}{191}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00251}{251}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__ksiazka_a46c72b5aadd78e785acd29b0c235a648}\label{classc__ksiazka_a46c72b5aadd78e785acd29b0c235a648}} 
 \index{c\_ksiazka@{c\_ksiazka}!operator==@{operator==}}
@@ -222,7 +252,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00191}{191}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00187}{187}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00247}{247}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
@@ -235,10 +265,10 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00187}{187}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00126}{126}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00173}{173}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/Zarzadzanie\+Autorami.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/\mbox{\hyperlink{_zarzadzanie_autorami_8h}{Zarzadzanie\+Autorami.\+h}}\end{DoxyCompactItemize}

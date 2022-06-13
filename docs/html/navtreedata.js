@@ -24,22 +24,32 @@
 */
 var NAVTREE =
 [
-  [ "Po projekt cpp", "index.html", [
+  [ "My Project", "index.html", [
     [ "README", "md__c___users__i_am_not_a_weeb_source_repos__p_o_projekt_c____r_e_a_d_m_e.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ]
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_p_o_01projekt_01c_09_09_8cpp_source.html"
+"_p_o_01projekt_01c_09_09_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

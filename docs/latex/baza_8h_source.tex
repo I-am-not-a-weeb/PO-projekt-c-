@@ -1,164 +1,177 @@
 \hypertarget{baza_8h_source}{}\doxysection{baza.\+h}
 \label{baza_8h_source}\index{C:/Users/I\_am\_not\_a\_weeb/source/repos/PO projekt c++/baza.h@{C:/Users/I\_am\_not\_a\_weeb/source/repos/PO projekt c++/baza.h}}
-
+\mbox{\hyperlink{baza_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00002}00002 \textcolor{preprocessor}{\#include "{}ZarzadzaniePozycjamiIUmowanie.h"{}}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}ZarzadzanieAutorami.h"{}}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}ZarzadzanieDrukarniami.h"{}}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_zarzadzanie_pozycjami_i_umowanie_8h}{ZarzadzaniePozycjamiIUmowanie.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_zarzadzanie_autorami_8h}{ZarzadzanieAutorami.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_zarzadzanie_drukarniami_8h}{ZarzadzanieDrukarniami.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <sstream>}}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <vector>}}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <fstream>}}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00008}00008 }
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00009}\mbox{\hyperlink{classbaza}{00009}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza}{baza}}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00010}00010 \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00011}00011 \textcolor{keyword}{protected}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00012}00012     \textcolor{keywordtype}{int} maxID = 0;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00013}00013 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00014}00014     \textcolor{keyword}{virtual} std::string dump() = 0;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00015}00015     \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} getMaxID() = 0;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00016}00016 \};}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00017}00017 }
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00018}\mbox{\hyperlink{classbaza_ksiazek}{00018}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_ksiazek}{bazaKsiazek}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00019}00019 \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00020}00020 \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00021}00021     std::vector<c\_ksiazka> vecKsiazka;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00022}00022 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00023}00023     \mbox{\hyperlink{classbaza_ksiazek}{\string~bazaKsiazek}}()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00024}00024     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00025}00025 }
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00026}00026     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00027}00027     \textcolor{keywordtype}{void} dodajKsiazke(std::string f\_tytul, \textcolor{keywordtype}{int} f\_rodzaj, std::string f\_tekst)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00028}00028     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00029}00029         vecKsiazka.push\_back(\mbox{\hyperlink{classc__ksiazka}{c\_ksiazka}}(f\_tytul, f\_rodzaj, f\_tekst, ++maxID));}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00009}\mbox{\hyperlink{baza_8h_a30f201d4066e11d110626c2b7c8c3a57}{00009}} \textcolor{keywordtype}{void} \mbox{\hyperlink{baza_8h_a30f201d4066e11d110626c2b7c8c3a57}{null\_deleter}}(\mbox{\hyperlink{classc__autor}{c\_autor}}*) \{\}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00011}\mbox{\hyperlink{classbaza}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza}{baza}}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00013}00013 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00014}\mbox{\hyperlink{classbaza_abcd804a85cb70c6848bd079234105f0c}{00014}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classbaza_abcd804a85cb70c6848bd079234105f0c}{maxID}} = 0;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00015}00015 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00016}\mbox{\hyperlink{classbaza_acb0899ba4aa2273720fd949d830bc511}{00016}}     \textcolor{keyword}{virtual} std::string \mbox{\hyperlink{classbaza_acb0899ba4aa2273720fd949d830bc511}{dump}}() = 0;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00017}\mbox{\hyperlink{classbaza_a74d1c31125deb832c105235eb41105c9}{00017}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classbaza_a74d1c31125deb832c105235eb41105c9}{getMaxID}}() = 0;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00018}00018 \};}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00020}\mbox{\hyperlink{classbaza_ksiazek}{00020}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_ksiazek}{bazaKsiazek}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00021}00021 \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00022}00022 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00023}00023     std::vector<c\_ksiazka> vecKsiazka;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00024}00024 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00025}\mbox{\hyperlink{classbaza_ksiazek_ac4a48391e3207a8920f98f5efac1bdea}{00025}}     std::shared\_ptr<c\_ksiazka> \mbox{\hyperlink{classbaza_ksiazek_ac4a48391e3207a8920f98f5efac1bdea}{dodajKsiazke}}(std::string f\_tytul, \textcolor{keywordtype}{int} f\_rodzaj, std::string f\_tekst)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00026}00026     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00027}00027         std::shared\_ptr<c\_ksiazka> temp(\textcolor{keyword}{new} \mbox{\hyperlink{classc__ksiazka}{c\_ksiazka}}(f\_tytul, f\_rodzaj, f\_tekst, ++\mbox{\hyperlink{classbaza_abcd804a85cb70c6848bd079234105f0c}{maxID}}), [](\mbox{\hyperlink{classc__ksiazka}{c\_ksiazka}}*) \{\});}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00028}00028         vecKsiazka.push\_back(*temp);}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00029}00029         \textcolor{keywordflow}{return} temp;}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00030}00030     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00031}00031     \textcolor{keywordtype}{void} usunKsiazke(\mbox{\hyperlink{classc__ksiazka}{c\_ksiazka}} f\_ksiazka)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00031}\mbox{\hyperlink{classbaza_ksiazek_a4237d1715c775aa3471e1c8b1825b2cc}{00031}}     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classbaza_ksiazek_a4237d1715c775aa3471e1c8b1825b2cc}{getMaxID}}()}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00032}00032     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00033}00033         vecKsiazka.erase(std::remove(vecKsiazka.begin(),vecKsiazka.end(),f\_ksiazka));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00034}00034         \textcolor{comment}{/*t\_ptr = std::for\_each(vecKsiazka.begin(), vecKsiazka.end(), ).erase();}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00035}00035 \textcolor{comment}{        vector<c\_ksiazka>::iterator del;}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00036}00036 \textcolor{comment}{        for (del = vecKsiazka.begin(); del!= vecKsiazka.end(); del++)}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00037}00037 \textcolor{comment}{        \{}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00038}00038 \textcolor{comment}{            \string~del();}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00039}00039 \textcolor{comment}{        \}*/}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00040}00040     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00041}00041     \textcolor{keywordtype}{size\_t} getMaxID()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00042}00042     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00043}00043         \textcolor{keywordflow}{return} vecKsiazka.size();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00044}00044     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00045}00045     std::string dump()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00046}00046     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00047}00047         std::ostringstream out;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00048}00048         \textcolor{keywordflow}{for} (std::vector<c\_ksiazka>::iterator i = vecKsiazka.begin(); i != vecKsiazka.end(); i++)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00049}00049         \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00050}00050             out << (*i).dump();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00051}00051         \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00052}00052         \textcolor{keywordflow}{return} out.str();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00053}00053     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00054}00054 \};}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00055}00055 }
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00056}\mbox{\hyperlink{classbaza_czasopism}{00056}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_czasopism}{bazaCzasopism}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00057}00057 \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00058}00058 \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00059}00059     std::vector<c\_czasopismo> vecCzasopism;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00060}00060 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00061}00061     \textcolor{keywordtype}{void} dodajCzasopismo(std::string f\_tytul, \textcolor{keywordtype}{bool} f\_interwal, std::string f\_tekst)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00062}00062     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00063}00063         vecCzasopism.push\_back(\mbox{\hyperlink{classc__czasopismo}{c\_czasopismo}}(f\_tytul, f\_interwal, f\_tekst, ++maxID));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00064}00064     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00065}00065     \textcolor{keywordtype}{void} usunCzasopismo(\mbox{\hyperlink{classc__czasopismo}{c\_czasopismo}} f\_czasopismo)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00066}00066     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00067}00067         vecCzasopism.erase(std::remove(vecCzasopism.begin(), vecCzasopism.end(), f\_czasopismo));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00068}00068     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00069}00069     \textcolor{keywordtype}{size\_t} getMaxID()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00070}00070     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00071}00071         \textcolor{keywordflow}{return} vecCzasopism.size();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00072}00072     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00073}00073     std::string dump()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00074}00074     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00075}00075         std::ostringstream out;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00033}00033         \textcolor{keywordflow}{return} vecKsiazka.size();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00034}00034     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00035}\mbox{\hyperlink{classbaza_ksiazek_a854f44e25513e976bff850b05ce433b4}{00035}}     std::shared\_ptr<c\_ksiazka> \mbox{\hyperlink{classbaza_ksiazek_a854f44e25513e976bff850b05ce433b4}{getPtrById}}(\textcolor{keywordtype}{int} f\_id)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00036}00036     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00037}00037         \textcolor{keywordflow}{for} (std::vector<c\_ksiazka>::iterator i = vecKsiazka.begin(); i != vecKsiazka.end(); i++)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00038}00038         \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00039}00039             \textcolor{keywordflow}{if} (i-\/>getId() == f\_id) \textcolor{keywordflow}{return} i-\/>getPtr();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00040}00040         \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00041}00041         \textcolor{keywordflow}{throw} \mbox{\hyperlink{classexcept}{except}}(\textcolor{stringliteral}{"{}Brak ksiazki o podanym id."{}});}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00042}00042     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00044}\mbox{\hyperlink{classbaza_ksiazek_a8046dce23f3cd543f94bf466872c6dd4}{00044}}     std::shared\_ptr<c\_ksiazka> \mbox{\hyperlink{classbaza_ksiazek_a8046dce23f3cd543f94bf466872c6dd4}{getPtrLK}}()}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00045}00045     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00046}00046         \textcolor{keywordflow}{return} std::shared\_ptr<c\_ksiazka>(\&vecKsiazka.back(), [](\mbox{\hyperlink{classc__ksiazka}{c\_ksiazka}}*) \{\});}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00047}00047     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00048}\mbox{\hyperlink{classbaza_ksiazek_a1ca572513613c36ae642a46b6e1f276d}{00048}}     std::string \mbox{\hyperlink{classbaza_ksiazek_a1ca572513613c36ae642a46b6e1f276d}{dump}}()}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00049}00049     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00050}00050         std::ostringstream out;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00051}00051         \textcolor{keywordflow}{for} (std::vector<c\_ksiazka>::iterator i = vecKsiazka.begin(); i != vecKsiazka.end(); i++)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00052}00052         \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00053}00053             out << (*i).dump();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00054}00054         \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00055}00055         \textcolor{keywordflow}{return} out.str();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00056}00056     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00057}00057 \};}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00059}\mbox{\hyperlink{classbaza_czasopism}{00059}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_czasopism}{bazaCzasopism}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00060}00060 \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00061}00061 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00062}00062     std::vector<c\_czasopismo> vecCzasopism;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00063}00063 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00064}\mbox{\hyperlink{classbaza_czasopism_a25fb60b405aeb595d24a4a5844e3061e}{00064}}     std::shared\_ptr<c\_czasopismo> \mbox{\hyperlink{classbaza_czasopism_a25fb60b405aeb595d24a4a5844e3061e}{dodajCzasopismo}}(std::string f\_tytul, \textcolor{keywordtype}{bool} f\_interwal, std::string f\_tekst)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00065}00065     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00066}00066         std::shared\_ptr<c\_czasopismo> temp(\textcolor{keyword}{new} \mbox{\hyperlink{classc__czasopismo}{c\_czasopismo}}(f\_tytul, f\_interwal, f\_tekst, ++\mbox{\hyperlink{classbaza_abcd804a85cb70c6848bd079234105f0c}{maxID}}),[](\mbox{\hyperlink{classc__czasopismo}{c\_czasopismo}}*)\{\});}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00067}00067         vecCzasopism.push\_back(*temp);}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00068}00068         \textcolor{keywordflow}{return} temp;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00070}\mbox{\hyperlink{classbaza_czasopism_a5578094905cf8110342a63d1f5756678}{00070}}     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classbaza_czasopism_a5578094905cf8110342a63d1f5756678}{getMaxID}}()}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00071}00071     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00072}00072         \textcolor{keywordflow}{return} vecCzasopism.size();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00073}00073     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00074}\mbox{\hyperlink{classbaza_czasopism_a78bdd9403527d3eb0201544b22d60e37}{00074}}     std::shared\_ptr<c\_czasopismo> \mbox{\hyperlink{classbaza_czasopism_a78bdd9403527d3eb0201544b22d60e37}{getPtrById}}(\textcolor{keywordtype}{int} f\_id)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00075}00075     \{}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00076}00076         \textcolor{keywordflow}{for} (std::vector<c\_czasopismo>::iterator i = vecCzasopism.begin(); i != vecCzasopism.end(); i++)}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00077}00077         \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00078}00078             out << (*i).dump();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00078}00078             \textcolor{keywordflow}{if} (i-\/>getId() == f\_id) \textcolor{keywordflow}{return} i-\/>getPtrB();}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00079}00079         \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00080}00080         \textcolor{keywordflow}{return} out.str();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00080}00080         \textcolor{keywordflow}{throw} \mbox{\hyperlink{classexcept}{except}}(\textcolor{stringliteral}{"{}Brak czasopisma po podanym id"{}});}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00081}00081     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00082}00082 \};}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00083}00083 }
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00084}\mbox{\hyperlink{classbaza_drukarni}{00084}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_drukarni}{bazaDrukarni}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00085}00085 \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00086}00086 \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00087}00087     std::vector<c\_drukarnia> vecDrukarnie;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00088}00088 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00089}00089     \textcolor{keywordtype}{void} dodajDrukarnie(std::string f\_nazwa, \textcolor{keywordtype}{bool} f\_album)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00090}00090     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00091}00091         vecDrukarnie.push\_back(\mbox{\hyperlink{classc__drukarnia}{c\_drukarnia}}(f\_nazwa, f\_album,++maxID));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00092}00092     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00093}00093     \textcolor{keywordtype}{void} usunDrukarnie(\mbox{\hyperlink{classc__drukarnia}{c\_drukarnia}} f\_drukarnia) }
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00094}00094     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00095}00095         vecDrukarnie.erase(std::remove(vecDrukarnie.begin(), vecDrukarnie.end(), f\_drukarnia));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00096}00096     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00097}00097     \textcolor{keywordtype}{size\_t} getMaxID()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00098}00098     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00099}00099         \textcolor{keywordflow}{return} vecDrukarnie.size();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00100}00100     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00101}00101     std::string dump()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00102}00102     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00103}00103         std::ostringstream out;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00104}00104         \textcolor{keywordflow}{for} (std::vector<c\_drukarnia>::iterator i = vecDrukarnie.begin(); i != vecDrukarnie.end(); i++)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00105}00105         \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00106}00106             out << (*i).dump();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00107}00107         \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00108}00108         \textcolor{keywordflow}{return} out.str();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00109}00109     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00110}00110 \};}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00111}00111 }
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00112}\mbox{\hyperlink{classbaza_autorow}{00112}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_autorow}{bazaAutorow}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00113}00113 \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00114}00114 \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00115}00115     std::vector<c\_autor> vecAutor;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00116}00116 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00117}00117     \textcolor{keywordtype}{void} dodajAutora(std::string f\_imie, std::string f\_nazwisko)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00118}00118     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00119}00119         vecAutor.push\_back(\mbox{\hyperlink{classc__autor}{c\_autor}}(f\_imie, f\_nazwisko, ++maxID));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00120}00120     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00121}00121     std::string dump()  }
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00122}00122     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00123}00123         std::ostringstream out;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00124}00124         \textcolor{keywordflow}{for} (std::vector<c\_autor>::iterator i = vecAutor.begin(); i != vecAutor.end(); i++)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00125}00125         \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00126}00126             out << (*i).dump();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00127}00127         \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00128}00128         \textcolor{keywordflow}{return} out.str();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00129}00129     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00130}00130     \textcolor{keywordtype}{size\_t} getMaxID()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00131}00131     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00132}00132         \textcolor{keywordflow}{return} vecAutor.size();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00133}00133     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00134}00134     \textcolor{keywordtype}{void} usunAutora(\mbox{\hyperlink{classc__autor}{c\_autor}} f\_autor)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00135}00135     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00136}00136         vecAutor.erase(std::remove(vecAutor.begin(), vecAutor.end(), f\_autor));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00137}00137     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00138}00138 \};}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00139}\mbox{\hyperlink{classbaza_umow}{00139}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_umow}{bazaUmow}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00140}00140 \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00141}00141 \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00142}00142     std::vector<c\_umowa> vecUmow;}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00143}00143 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00144}00144     \textcolor{keywordtype}{void} dodajUmoweK(std::shared\_ptr<c\_autor> f\_autor, std::shared\_ptr<c\_ksiazka> f\_ksiazka,\textcolor{keywordtype}{int} f\_rodzaj)}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00145}00145     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00146}00146         vecUmow.push\_back(\mbox{\hyperlink{classc__umowa}{c\_umowa}}(f\_ksiazka, f\_rodzaj));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00147}00147         f\_autor-\/>dodajUmowe(vecUmow.back());}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00082}\mbox{\hyperlink{classbaza_czasopism_ae74e603714dd0f7b225107e1a0c6da57}{00082}}     std::shared\_ptr<c\_czasopismo> \mbox{\hyperlink{classbaza_czasopism_ae74e603714dd0f7b225107e1a0c6da57}{getPtrLK}}()}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00083}00083     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00084}00084         \textcolor{keywordflow}{return} std::shared\_ptr<c\_czasopismo>(\&vecCzasopism.back(), [](\mbox{\hyperlink{classc__czasopismo}{c\_czasopismo}}*) \{\});}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00085}00085     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00086}\mbox{\hyperlink{classbaza_czasopism_a7837aaa595345835d9916b56d77b3ae6}{00086}}     std::string \mbox{\hyperlink{classbaza_czasopism_a7837aaa595345835d9916b56d77b3ae6}{dump}}()}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00087}00087     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00088}00088         std::ostringstream out;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00089}00089         \textcolor{keywordflow}{for} (std::vector<c\_czasopismo>::iterator i = vecCzasopism.begin(); i != vecCzasopism.end(); i++)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00090}00090         \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00091}00091             out << (*i).dump();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00092}00092         \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00093}00093         \textcolor{keywordflow}{return} out.str();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00094}00094     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00095}00095 \};}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00098}\mbox{\hyperlink{classbaza_autorow}{00098}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_autorow}{bazaAutorow}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00099}00099 \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00100}00100 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00101}00101     std::vector<c\_autor> vecAutor;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00102}00102 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00103}\mbox{\hyperlink{classbaza_autorow_a19a76fee6b66ae74c08efa3202798ce1}{00103}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbaza_autorow_a19a76fee6b66ae74c08efa3202798ce1}{dodajAutora}}(std::string f\_imie, std::string f\_nazwisko)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00104}00104     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00105}00105         vecAutor.push\_back(\mbox{\hyperlink{classc__autor}{c\_autor}}(f\_imie, f\_nazwisko, ++\mbox{\hyperlink{classbaza_abcd804a85cb70c6848bd079234105f0c}{maxID}}));}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00106}00106     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00107}\mbox{\hyperlink{classbaza_autorow_a5a7d96cdd3c1921dd51547c98d3e7221}{00107}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbaza_autorow_a5a7d96cdd3c1921dd51547c98d3e7221}{dodajAutoraWczyt}}(std::string f\_imie, std::string f\_nazwisko,\textcolor{keywordtype}{int} f\_id)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00108}00108     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00109}00109         vecAutor.push\_back(\mbox{\hyperlink{classc__autor}{c\_autor}}(f\_imie, f\_nazwisko, f\_id));}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00110}00110     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00111}\mbox{\hyperlink{classbaza_autorow_a8b6e99c6370eb3ef00efc51589096207}{00111}}     std::string \mbox{\hyperlink{classbaza_autorow_a8b6e99c6370eb3ef00efc51589096207}{dump}}()  }
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00112}00112     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00113}00113         std::ostringstream out;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00114}00114         \textcolor{keywordflow}{for} (std::vector<c\_autor>::iterator i = vecAutor.begin(); i != vecAutor.end(); i++)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00115}00115         \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00116}00116             out << (*i).dump();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00117}00117         \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00118}00118         \textcolor{keywordflow}{return} out.str();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00119}00119     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00120}\mbox{\hyperlink{classbaza_autorow_a30ad5d5fd7699b34ee61a50d0c2ad12c}{00120}}     std::shared\_ptr<c\_autor> \mbox{\hyperlink{classbaza_autorow_a30ad5d5fd7699b34ee61a50d0c2ad12c}{getAutorById}}(\textcolor{keywordtype}{int} f\_id)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00121}00121     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00122}00122         \textcolor{keywordflow}{if} (f\_id >= 0 \&\& f\_id <= vecAutor.size()) \textcolor{keywordflow}{return} std::shared\_ptr<c\_autor>(\&vecAutor[f\_id -\/ 1], \&\mbox{\hyperlink{baza_8h_a30f201d4066e11d110626c2b7c8c3a57}{null\_deleter}});}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00123}00123         \textcolor{keywordflow}{else} \textcolor{keywordflow}{throw} \mbox{\hyperlink{classexcept}{except}}(\textcolor{stringliteral}{"{}Brak autora o podanym id."{}});}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00124}00124     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00125}\mbox{\hyperlink{classbaza_autorow_aa42c486a7d4bd3b791a1aa15a1490074}{00125}}     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classbaza_autorow_aa42c486a7d4bd3b791a1aa15a1490074}{getMaxID}}()}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00126}00126     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00127}00127         \textcolor{keywordflow}{return} vecAutor.size();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00128}00128     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00129}00129 \};}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00130}\mbox{\hyperlink{classbaza_umow}{00130}} \textcolor{keyword}{class }\mbox{\hyperlink{classbaza_umow}{bazaUmow}} : \textcolor{keyword}{protected} \mbox{\hyperlink{classbaza}{baza}}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00131}00131 \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00132}00132 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00133}00133     std::vector<c\_umowa> vecUmow;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00134}00134 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00135}\mbox{\hyperlink{classbaza_umow_a224244dd67bc38de3134d689dbcad69e}{00135}}     std::shared\_ptr<c\_umowa> \mbox{\hyperlink{classbaza_umow_a224244dd67bc38de3134d689dbcad69e}{dodajUmoweK}}(std::shared\_ptr<c\_ksiazka> f\_ksiazka,\textcolor{keywordtype}{int} f\_rodzaj)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00136}00136     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00137}00137         std::shared\_ptr<c\_umowa> tmp;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00138}00138         tmp= std::shared\_ptr<c\_umowa>(\textcolor{keyword}{new} \mbox{\hyperlink{classc__umowa}{c\_umowa}}(f\_ksiazka, f\_rodzaj));}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00139}00139         vecUmow.push\_back(*tmp);}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00140}00140         \textcolor{keywordflow}{return} tmp;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00141}00141     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00142}\mbox{\hyperlink{classbaza_umow_a8c26ff6af6ac7292b8c925795f9f4b13}{00142}}     std::shared\_ptr<c\_umowa> \mbox{\hyperlink{classbaza_umow_a8c26ff6af6ac7292b8c925795f9f4b13}{wczyt}}(std::shared\_ptr<c\_ksiazka> f\_ksiazka, \textcolor{keywordtype}{int} f\_rodzaj,\textcolor{keywordtype}{int} f\_id)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00143}00143     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00144}00144         std::shared\_ptr<c\_umowa> tmp;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00145}00145         tmp = std::shared\_ptr<c\_umowa>(\textcolor{keyword}{new} \mbox{\hyperlink{classc__umowa}{c\_umowa}}(f\_ksiazka, f\_rodzaj, f\_id));}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00146}00146         vecUmow.push\_back(*tmp);}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00147}00147         \textcolor{keywordflow}{return} tmp;}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00148}00148     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00149}00149     \textcolor{keywordtype}{void} dodajUmoweC(std::shared\_ptr<c\_autor> f\_autor, std::shared\_ptr<c\_czasopismo> f\_czasopismo, \textcolor{keywordtype}{int} f\_rodzaj)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00149}\mbox{\hyperlink{classbaza_umow_a9b5727e5497f437fe2459255f2582332}{00149}}     std::shared\_ptr<c\_umowa> \mbox{\hyperlink{classbaza_umow_a9b5727e5497f437fe2459255f2582332}{dodajUmoweC}}(std::shared\_ptr<c\_czasopismo> f\_czasopismo, \textcolor{keywordtype}{int} f\_rodzaj)}
 \DoxyCodeLine{\Hypertarget{baza_8h_source_l00150}00150     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00151}00151         vecUmow.push\_back(\mbox{\hyperlink{classc__umowa}{c\_umowa}}(f\_czasopismo, f\_rodzaj));}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00152}00152         f\_autor-\/>dodajUmowe(vecUmow.back());}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00153}00153     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00154}00154     \textcolor{keywordtype}{size\_t} getMaxID()}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00155}00155     \{}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00156}00156         \textcolor{keywordflow}{return} vecUmow.size();}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00157}00157     \}}
-\DoxyCodeLine{\Hypertarget{baza_8h_source_l00158}00158 \};}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00151}00151         std::shared\_ptr<c\_umowa> tmp;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00152}00152         tmp = std::shared\_ptr<c\_umowa>(\textcolor{keyword}{new} \mbox{\hyperlink{classc__umowa}{c\_umowa}}(f\_czasopismo, f\_rodzaj),[](\mbox{\hyperlink{classc__umowa}{c\_umowa}}*)\{\});}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00153}00153         vecUmow.push\_back(*tmp);}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00154}00154         \textcolor{keywordflow}{return} tmp;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00155}00155     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00156}\mbox{\hyperlink{classbaza_umow_aaa1d273f58f603670ed05afaee1e0421}{00156}}     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classbaza_umow_aaa1d273f58f603670ed05afaee1e0421}{getMaxID}}()}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00157}00157     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00158}00158         \textcolor{keywordflow}{return} vecUmow.size();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00159}00159     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00160}\mbox{\hyperlink{classbaza_umow_ac169b9465e257728fbb5ab52a93e68b0}{00160}}     std::string \mbox{\hyperlink{classbaza_umow_ac169b9465e257728fbb5ab52a93e68b0}{dump}}()}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00161}00161     \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00162}00162         std::ostringstream out;}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00163}00163         \textcolor{keywordflow}{for} (std::vector<c\_umowa>::iterator i = vecUmow.begin(); i != vecUmow.end(); i++)}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00164}00164         \{}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00165}00165             out << (*i).dump();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00166}00166         \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00167}00167         \textcolor{keywordflow}{return} out.str();}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00168}00168     \}}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00169}00169 \};}
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{baza_8h_source_l00171}\mbox{\hyperlink{baza_8h_a8ccce8c4a488ca9c64d85906899b5ae4}{00171}} \textcolor{keywordtype}{void} \mbox{\hyperlink{baza_8h_a30f201d4066e11d110626c2b7c8c3a57}{null\_deleter}}(\mbox{\hyperlink{classbaza_drukarni}{bazaDrukarni}}*) \{\}}
 
 \end{DoxyCode}

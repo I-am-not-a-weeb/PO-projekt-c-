@@ -2,78 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="class_system" kind="class" language="C++" prot="public">
     <compoundname>System</compoundname>
-      <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_system_1a3027fe0ce4b50b4414892ec6535a59e0" prot="private" static="no" mutable="no">
-        <type>std::shared_ptr&lt; <ref refid="classbaza_ksiazek" kindref="compound">bazaKsiazek</ref> &gt;</type>
-        <definition>std::shared_ptr&lt;bazaKsiazek&gt; System::bazaK</definition>
-        <argsstring></argsstring>
-        <name>bazaK</name>
-        <qualifiedname>System::bazaK</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="12" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="12" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_system_1adefc1936b72ea4a29f4ff783287c6fbd" prot="private" static="no" mutable="no">
-        <type>std::shared_ptr&lt; <ref refid="classbaza_czasopism" kindref="compound">bazaCzasopism</ref> &gt;</type>
-        <definition>std::shared_ptr&lt;bazaCzasopism&gt; System::bazaC</definition>
-        <argsstring></argsstring>
-        <name>bazaC</name>
-        <qualifiedname>System::bazaC</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="13" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="13" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_system_1a5002c9a4809d9f527919b00b3a224e0b" prot="private" static="no" mutable="no">
-        <type>std::shared_ptr&lt; <ref refid="classbaza_autorow" kindref="compound">bazaAutorow</ref> &gt;</type>
-        <definition>std::shared_ptr&lt;bazaAutorow&gt; System::bazaA</definition>
-        <argsstring></argsstring>
-        <name>bazaA</name>
-        <qualifiedname>System::bazaA</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="14" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="14" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_system_1a46e3da9e2b4e1b48977991430497153a" prot="private" static="no" mutable="no">
-        <type>std::shared_ptr&lt; <ref refid="classbaza_drukarni" kindref="compound">bazaDrukarni</ref> &gt;</type>
-        <definition>std::shared_ptr&lt;bazaDrukarni&gt; System::bazaD</definition>
-        <argsstring></argsstring>
-        <name>bazaD</name>
-        <qualifiedname>System::bazaD</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="15" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="15" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_system_1a824afbfb59353a4683f72cd6426c13fc" prot="private" static="no" mutable="no">
-        <type>std::shared_ptr&lt; <ref refid="classbaza_umow" kindref="compound">bazaUmow</ref> &gt;</type>
-        <definition>std::shared_ptr&lt;bazaUmow&gt; System::bazaU</definition>
-        <argsstring></argsstring>
-        <name>bazaU</name>
-        <qualifiedname>System::bazaU</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="16" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="16" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
+    <includes refid="_system_8h" local="no">System.h</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="class_system_1a99d3c3036a58c1698f286677c4ace286" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -87,26 +16,78 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="19" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="19" bodyend="23"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="16" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="16" bodyend="19"/>
       </memberdef>
-      <memberdef kind="function" id="class_system_1a72ecdb324bce4a0e96e210ffae6e212f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_system_1af66432de07a152c6f4376565c46ba7c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void System::Open</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(std::shared_ptr&lt; bazaKsiazek &gt;f_bazaK, std::shared_ptr&lt; bazaCzasopism &gt;f_bazaC, std::shared_ptr&lt; bazaAutorow &gt;f_bazaA, std::shared_ptr&lt; bazaDrukarni &gt;f_bazaD, std::shared_ptr&lt; bazaUmow &gt;f_bazaU, std::shared_ptr&lt; sklep &gt; f_skl, std::shared_ptr&lt; std::fstream &gt; f_fileK, std::shared_ptr&lt; std::fstream &gt; f_fileC, std::shared_ptr&lt; std::fstream &gt; f_fileA, std::shared_ptr&lt; std::fstream &gt; f_fileU, std::shared_ptr&lt; std::fstream &gt; f_fileD, std::shared_ptr&lt; std::fstream &gt; f_fileSklK, std::shared_ptr&lt; std::fstream &gt; f_fileSklC)</argsstring>
         <name>Open</name>
         <qualifiedname>System::Open</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbaza_ksiazek" kindref="compound">bazaKsiazek</ref> &gt;</type>
+          <declname>f_bazaK</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbaza_czasopism" kindref="compound">bazaCzasopism</ref> &gt;</type>
+          <declname>f_bazaC</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbaza_autorow" kindref="compound">bazaAutorow</ref> &gt;</type>
+          <declname>f_bazaA</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbaza_drukarni" kindref="compound">bazaDrukarni</ref> &gt;</type>
+          <declname>f_bazaD</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbaza_umow" kindref="compound">bazaUmow</ref> &gt;</type>
+          <declname>f_bazaU</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classsklep" kindref="compound">sklep</ref> &gt;</type>
+          <declname>f_skl</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileK</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileC</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileA</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileU</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileD</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileSklK</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileSklC</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="24" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="24" bodyend="27"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="20" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="20" bodyend="109"/>
       </memberdef>
-      <memberdef kind="function" id="class_system_1ac3d9bbcaefd3e3731a0f0ab99d22bf62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_system_1a34dabc5883367c59d834571cc13f6072" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void System::Save</definition>
-        <argsstring>(std::shared_ptr&lt; bazaKsiazek &gt;f_bazaK, std::shared_ptr&lt; bazaCzasopism &gt;f_bazaC, std::shared_ptr&lt; bazaAutorow &gt;f_bazaA, std::shared_ptr&lt; bazaDrukarni &gt;f_bazaD, std::shared_ptr&lt; bazaUmow &gt;f_bazaU, std::fstream &amp;f_fileK, std::fstream &amp;f_fileC, std::fstream &amp;f_fileA, std::fstream &amp;f_fileD)</argsstring>
+        <argsstring>(std::shared_ptr&lt; bazaKsiazek &gt;f_bazaK, std::shared_ptr&lt; bazaCzasopism &gt;f_bazaC, std::shared_ptr&lt; bazaAutorow &gt;f_bazaA, std::shared_ptr&lt; bazaDrukarni &gt;f_bazaD, std::shared_ptr&lt; bazaUmow &gt;f_bazaU, std::shared_ptr&lt; sklep &gt; f_skl, std::shared_ptr&lt; std::fstream &gt; f_fileK, std::shared_ptr&lt; std::fstream &gt; f_fileC, std::shared_ptr&lt; std::fstream &gt; f_fileA, std::shared_ptr&lt; std::fstream &gt; f_fileU, std::shared_ptr&lt; std::fstream &gt; f_fileD, std::shared_ptr&lt; std::fstream &gt; f_fileSklK, std::shared_ptr&lt; std::fstream &gt; f_fileSklC)</argsstring>
         <name>Save</name>
         <qualifiedname>System::Save</qualifiedname>
         <param>
@@ -130,20 +111,36 @@
           <declname>f_bazaU</declname>
         </param>
         <param>
-          <type>std::fstream &amp;</type>
+          <type>std::shared_ptr&lt; <ref refid="classsklep" kindref="compound">sklep</ref> &gt;</type>
+          <declname>f_skl</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
           <declname>f_fileK</declname>
         </param>
         <param>
-          <type>std::fstream &amp;</type>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
           <declname>f_fileC</declname>
         </param>
         <param>
-          <type>std::fstream &amp;</type>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
           <declname>f_fileA</declname>
         </param>
         <param>
-          <type>std::fstream &amp;</type>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileU</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
           <declname>f_fileD</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileSklK</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std::fstream &gt;</type>
+          <declname>f_fileSklC</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -151,22 +148,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="28" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="28" bodyend="46"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="110" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="110" bodyend="140"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="9" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="10" bodyend="47"/>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" line="11" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h" bodystart="12" bodyend="141"/>
     <listofallmembers>
-      <member refid="class_system_1a5002c9a4809d9f527919b00b3a224e0b" prot="private" virt="non-virtual"><scope>System</scope><name>bazaA</name></member>
-      <member refid="class_system_1adefc1936b72ea4a29f4ff783287c6fbd" prot="private" virt="non-virtual"><scope>System</scope><name>bazaC</name></member>
-      <member refid="class_system_1a46e3da9e2b4e1b48977991430497153a" prot="private" virt="non-virtual"><scope>System</scope><name>bazaD</name></member>
-      <member refid="class_system_1a3027fe0ce4b50b4414892ec6535a59e0" prot="private" virt="non-virtual"><scope>System</scope><name>bazaK</name></member>
-      <member refid="class_system_1a824afbfb59353a4683f72cd6426c13fc" prot="private" virt="non-virtual"><scope>System</scope><name>bazaU</name></member>
-      <member refid="class_system_1a72ecdb324bce4a0e96e210ffae6e212f" prot="public" virt="non-virtual"><scope>System</scope><name>Open</name></member>
-      <member refid="class_system_1ac3d9bbcaefd3e3731a0f0ab99d22bf62" prot="public" virt="non-virtual"><scope>System</scope><name>Save</name></member>
+      <member refid="class_system_1af66432de07a152c6f4376565c46ba7c7" prot="public" virt="non-virtual"><scope>System</scope><name>Open</name></member>
+      <member refid="class_system_1a34dabc5883367c59d834571cc13f6072" prot="public" virt="non-virtual"><scope>System</scope><name>Save</name></member>
       <member refid="class_system_1a99d3c3036a58c1698f286677c4ace286" prot="public" virt="non-virtual"><scope>System</scope><name>Start</name></member>
     </listofallmembers>
   </compounddef>

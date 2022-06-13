@@ -3,6 +3,7 @@
   <compounddef id="classc__czasopismo" kind="class" language="C++" prot="public">
     <compoundname>c_czasopismo</compoundname>
     <basecompoundref refid="classc__pozycja" prot="protected" virt="non-virtual">c_pozycja</basecompoundref>
+    <includes refid="_zarzadzanie_autorami_8h" local="no">ZarzadzanieAutorami.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classc__czasopismo_1ae380f32b1a4e9e090fc876bc10cc92c2" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -17,7 +18,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="200" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="200" bodyend="-1"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="265" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classc__czasopismo_1a2f772dd3c4d29838e771c39c84589964" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string c_czasopismo::interwal_str</definition>
+        <argsstring>(bool f_interwal)</argsstring>
+        <name>interwal_str</name>
+        <qualifiedname>c_czasopismo::interwal_str</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>f_interwal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="260" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="260" bodyend="263"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -33,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="202" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="202" bodyend="205"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="267" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="267" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1a03f021c7075aa797c8890fea3ded50b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -63,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="206" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="206" bodyend="212"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="271" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="271" bodyend="277"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1a953dfc52c4e3c87ea0f94518c1fc7701" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -81,7 +102,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="213" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="213" bodyend="220"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="278" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="278" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a5f1521c299d2a8a09bb4e690d3d115c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void c_czasopismo::wczyt</definition>
+        <argsstring>(std::string f_tytul, int f_interwal, int f_id)</argsstring>
+        <name>wczyt</name>
+        <qualifiedname>c_czasopismo::wczyt</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_interwal</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="286" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="286" bodyend="292"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1a030d5375451395d5df759a818801012c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -100,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="221" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="221" bodyend="224"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="293" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="293" bodyend="296"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1a7e4d5561d361dd93c216de0fae2b2d8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -118,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="225" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="225" bodyend="228"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="297" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="297" bodyend="300"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1ab1e307176ff8ed796cb4e8c8acb4f905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -133,7 +180,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="229" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="229" bodyend="232"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="301" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="301" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__czasopismo_1a6cd9c7ba65bbcec962ac4a1016a639b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_czasopismo &gt; c_czasopismo::getPtrB</definition>
+        <argsstring>()</argsstring>
+        <name>getPtrB</name>
+        <qualifiedname>c_czasopismo::getPtrB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="305" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="305" bodyend="308"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1affe729e700f36c3c91ddaa68fba5c32b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
@@ -148,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="233" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="233" bodyend="236"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="309" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="309" bodyend="312"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1a7d46208ee1408ebd8daa068673e9f8be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -163,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="237" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="237" bodyend="240"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="313" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="313" bodyend="316"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1abb02bbf913a4d2ae36dae974e4cd90ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -178,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="241" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="241" bodyend="244"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="317" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="317" bodyend="320"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1a7997a42c34567ea0ecad2cf95e0049a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -193,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="245" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="245" bodyend="248"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="321" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="321" bodyend="324"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1a3193e2a6de7531beee04336559eddab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -207,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="249" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="249" bodyend="254"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="325" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="325" bodyend="330"/>
       </memberdef>
       <memberdef kind="function" id="classc__czasopismo_1a6d23ee846d3e5a73e2e683d4dc0acaf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -221,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="255" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="255" bodyend="260"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="331" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="331" bodyend="336"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -245,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="261" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="261" bodyend="264"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="337" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="337" bodyend="340"/>
       </memberdef>
       <memberdef kind="friend" id="classc__czasopismo_1a28bbbcf6c3b847639ebfce4a9f3a05e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -267,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="265" column="8" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="265" bodyend="268"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="341" column="8" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="341" bodyend="344"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -305,7 +366,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="197" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="198" bodyend="269"/>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="257" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="258" bodyend="345"/>
     <listofallmembers>
       <member refid="classc__pozycja_1ab21b5ecc5dd2e20c551987bf47c3cf84" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>autor</name></member>
       <member refid="classc__czasopismo_1ab6e154fb75da2ff31f67cbef84fb5d78" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>c_czasopismo</name></member>
@@ -317,17 +378,20 @@
       <member refid="classc__czasopismo_1affe729e700f36c3c91ddaa68fba5c32b" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getAutor</name></member>
       <member refid="classc__pozycja_1a3f3c730445d46339966c01f86757ae05" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>getCount</name></member>
       <member refid="classc__czasopismo_1a7997a42c34567ea0ecad2cf95e0049a0" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getId</name></member>
+      <member refid="classc__czasopismo_1a6cd9c7ba65bbcec962ac4a1016a639b6" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>getPtrB</name></member>
       <member refid="classc__czasopismo_1ab1e307176ff8ed796cb4e8c8acb4f905" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getRodzajInterwal</name></member>
       <member refid="classc__czasopismo_1abb02bbf913a4d2ae36dae974e4cd90ae" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getTekst</name></member>
       <member refid="classc__czasopismo_1a7d46208ee1408ebd8daa068673e9f8be" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>getTytul</name></member>
       <member refid="classc__pozycja_1abd844aa9e20a6f880af0388df114b1d3" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>id</name></member>
       <member refid="classc__czasopismo_1ae380f32b1a4e9e090fc876bc10cc92c2" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>interwal</name></member>
+      <member refid="classc__czasopismo_1a2f772dd3c4d29838e771c39c84589964" prot="private" virt="non-virtual"><scope>c_czasopismo</scope><name>interwal_str</name></member>
       <member refid="classc__czasopismo_1a28bbbcf6c3b847639ebfce4a9f3a05e4" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>operator&lt;</name></member>
       <member refid="classc__czasopismo_1af8ce76a29f7080ac4364aa562e6ec54a" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>operator==</name></member>
       <member refid="classc__czasopismo_1a7e4d5561d361dd93c216de0fae2b2d8b" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>przyznajAutora</name></member>
       <member refid="classc__czasopismo_1a030d5375451395d5df759a818801012c" prot="public" virt="virtual"><scope>c_czasopismo</scope><name>przyznajTytul</name></member>
       <member refid="classc__pozycja_1af015282d021e3f40dd532992b3e4a10d" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>tekst</name></member>
       <member refid="classc__pozycja_1a753320da4544d93bf319d903df179980" prot="protected" virt="non-virtual"><scope>c_czasopismo</scope><name>tytul</name></member>
+      <member refid="classc__czasopismo_1a5f1521c299d2a8a09bb4e690d3d115c4" prot="public" virt="non-virtual"><scope>c_czasopismo</scope><name>wczyt</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

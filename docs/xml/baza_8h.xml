@@ -10,10 +10,11 @@
     <includes local="no">fstream</includes>
     <includedby refid="_p_o_01projekt_01c_09_09_8cpp" local="yes">C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/PO projekt c++.cpp</includedby>
     <includedby refid="_system_8h" local="yes">C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h</includedby>
+    <includedby refid="_zarzadzanie_autorami_8h" local="yes">C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h</includedby>
     <incdepgraph>
       <node id="3">
         <label>System.h</label>
-        <link refid="_system_8h_source"/>
+        <link refid="_system_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -29,7 +30,7 @@
       </node>
       <node id="9">
         <label>ZarzadzanieAutorami.h</label>
-        <link refid="_zarzadzanie_autorami_8h_source"/>
+        <link refid="_zarzadzanie_autorami_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
@@ -46,10 +47,16 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>ZarzadzanieDrukarniami.h</label>
-        <link refid="_zarzadzanie_drukarniami_8h_source"/>
+        <link refid="_zarzadzanie_drukarniami_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -61,14 +68,14 @@
       </node>
       <node id="2">
         <label>ZarzadzaniePozycjamiIUmowanie.h</label>
-        <link refid="_zarzadzanie_pozycjami_i_umowanie_8h_source"/>
+        <link refid="_zarzadzanie_pozycjami_i_umowanie_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
@@ -82,13 +89,21 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>except.h</label>
+        <link refid="except_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -109,7 +124,7 @@
       <node id="10">
         <label>sstream</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>string</label>
       </node>
       <node id="11">
@@ -119,11 +134,11 @@
     <invincdepgraph>
       <node id="2">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/PO projekt c++.cpp</label>
-        <link refid="_p_o_01projekt_01c_09_09_8cpp_source"/>
+        <link refid="_p_o_01projekt_01c_09_09_8cpp"/>
       </node>
       <node id="3">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h</label>
-        <link refid="_system_8h_source"/>
+        <link refid="_system_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -135,7 +150,7 @@
       </node>
       <node id="4">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h</label>
-        <link refid="_zarzadzanie_autorami_8h_source"/>
+        <link refid="_zarzadzanie_autorami_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="1" relation="include">
@@ -143,13 +158,15 @@
       </node>
       <node id="6">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h</label>
-        <link refid="_zarzadzanie_drukarniami_8h_source"/>
+        <link refid="_zarzadzanie_drukarniami_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
         <childnode refid="1" relation="include">
         </childnode>
       </node>
       <node id="5">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzaniePozycjamiIUmowanie.h</label>
-        <link refid="_zarzadzanie_pozycjami_i_umowanie_8h_source"/>
+        <link refid="_zarzadzanie_pozycjami_i_umowanie_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -164,177 +181,225 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classbaza" prot="public">baza</innerclass>
     <innerclass refid="classbaza_ksiazek" prot="public">bazaKsiazek</innerclass>
     <innerclass refid="classbaza_czasopism" prot="public">bazaCzasopism</innerclass>
-    <innerclass refid="classbaza_drukarni" prot="public">bazaDrukarni</innerclass>
     <innerclass refid="classbaza_autorow" prot="public">bazaAutorow</innerclass>
     <innerclass refid="classbaza_umow" prot="public">bazaUmow</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="baza_8h_1a30f201d4066e11d110626c2b7c8c3a57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void null_deleter</definition>
+        <argsstring>(c_autor *)</argsstring>
+        <name>null_deleter</name>
+        <param>
+          <type><ref refid="classc__autor" kindref="compound">c_autor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="9" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="baza_8h_1a8ccce8c4a488ca9c64d85906899b5ae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void null_deleter</definition>
+        <argsstring>(bazaDrukarni *)</argsstring>
+        <name>null_deleter</name>
+        <param>
+          <type><ref refid="classbaza_drukarni" kindref="compound">bazaDrukarni</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" line="171" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h" bodystart="171" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ZarzadzaniePozycjamiIUmowanie.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ZarzadzanieAutorami.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ZarzadzanieDrukarniami.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_zarzadzanie_pozycjami_i_umowanie_8h" kindref="compound">ZarzadzaniePozycjamiIUmowanie.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_zarzadzanie_autorami_8h" kindref="compound">ZarzadzanieAutorami.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_zarzadzanie_drukarniami_8h" kindref="compound">ZarzadzanieDrukarniami.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9" refid="classbaza" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
-<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxID<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>dump()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>getMaxID()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18" refid="classbaza_ksiazek" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_ksiazek" kindref="compound">bazaKsiazek</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
-<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_ksiazka&gt;<sp/>vecKsiazka;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbaza_ksiazek" kindref="compound">~bazaKsiazek</ref>()</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dodajKsiazke(std::string<sp/>f_tytul,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_rodzaj,<sp/>std::string<sp/>f_tekst)</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecKsiazka.push_back(<ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref>(f_tytul,<sp/>f_rodzaj,<sp/>f_tekst,<sp/>++maxID));</highlight></codeline>
+<codeline lineno="9" refid="baza_8h_1a30f201d4066e11d110626c2b7c8c3a57" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="baza_8h_1a30f201d4066e11d110626c2b7c8c3a57" kindref="member">null_deleter</ref>(<ref refid="classc__autor" kindref="compound">c_autor</ref>*)<sp/>{}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classbaza" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" kindref="member">maxID</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="classbaza_1acb0899ba4aa2273720fd949d830bc511" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classbaza_1acb0899ba4aa2273720fd949d830bc511" kindref="member">dump</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17" refid="classbaza_1a74d1c31125deb832c105235eb41105c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classbaza_1a74d1c31125deb832c105235eb41105c9" kindref="member">getMaxID</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classbaza_ksiazek" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_ksiazek" kindref="compound">bazaKsiazek</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_ksiazka&gt;<sp/>vecKsiazka;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classbaza_ksiazek_1ac4a48391e3207a8920f98f5efac1bdea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_ksiazka&gt;<sp/><ref refid="classbaza_ksiazek_1ac4a48391e3207a8920f98f5efac1bdea" kindref="member">dodajKsiazke</ref>(std::string<sp/>f_tytul,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_rodzaj,<sp/>std::string<sp/>f_tekst)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_ksiazka&gt;<sp/>temp(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref>(f_tytul,<sp/>f_rodzaj,<sp/>f_tekst,<sp/>++<ref refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" kindref="member">maxID</ref>),<sp/>[](<ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref>*)<sp/>{});</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecKsiazka.push_back(*temp);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usunKsiazke(<ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref><sp/>f_ksiazka)</highlight></codeline>
+<codeline lineno="31" refid="classbaza_ksiazek_1a4237d1715c775aa3471e1c8b1825b2cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classbaza_ksiazek_1a4237d1715c775aa3471e1c8b1825b2cc" kindref="member">getMaxID</ref>()</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecKsiazka.erase(std::remove(vecKsiazka.begin(),vecKsiazka.end(),f_ksiazka));</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*t_ptr<sp/>=<sp/>std::for_each(vecKsiazka.begin(),<sp/>vecKsiazka.end(),<sp/>).erase();</highlight></codeline>
-<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;c_ksiazka&gt;::iterator<sp/>del;</highlight></codeline>
-<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(del<sp/>=<sp/>vecKsiazka.begin();<sp/>del!=<sp/>vecKsiazka.end();<sp/>del++)</highlight></codeline>
-<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~del();</highlight></codeline>
-<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>getMaxID()</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecKsiazka.size();</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>dump()</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_ksiazka&gt;::iterator<sp/>i<sp/>=<sp/>vecKsiazka.begin();<sp/>i<sp/>!=<sp/>vecKsiazka.end();<sp/>i++)</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>(*i).dump();</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56" refid="classbaza_czasopism" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_czasopism" kindref="compound">bazaCzasopism</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
-<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_czasopismo&gt;<sp/>vecCzasopism;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dodajCzasopismo(std::string<sp/>f_tytul,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_interwal,<sp/>std::string<sp/>f_tekst)</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecCzasopism.push_back(<ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref>(f_tytul,<sp/>f_interwal,<sp/>f_tekst,<sp/>++maxID));</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usunCzasopismo(<ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref><sp/>f_czasopismo)</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecCzasopism.erase(std::remove(vecCzasopism.begin(),<sp/>vecCzasopism.end(),<sp/>f_czasopismo));</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>getMaxID()</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecCzasopism.size();</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>dump()</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecKsiazka.size();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35" refid="classbaza_ksiazek_1a854f44e25513e976bff850b05ce433b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_ksiazka&gt;<sp/><ref refid="classbaza_ksiazek_1a854f44e25513e976bff850b05ce433b4" kindref="member">getPtrById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_id)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_ksiazka&gt;::iterator<sp/>i<sp/>=<sp/>vecKsiazka.begin();<sp/>i<sp/>!=<sp/>vecKsiazka.end();<sp/>i++)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i-&gt;getId()<sp/>==<sp/>f_id)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i-&gt;getPtr();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classexcept" kindref="compound">except</ref>(</highlight><highlight class="stringliteral">&quot;Brak<sp/>ksiazki<sp/>o<sp/>podanym<sp/>id.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classbaza_ksiazek_1a8046dce23f3cd543f94bf466872c6dd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_ksiazka&gt;<sp/><ref refid="classbaza_ksiazek_1a8046dce23f3cd543f94bf466872c6dd4" kindref="member">getPtrLK</ref>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;c_ksiazka&gt;(&amp;vecKsiazka.back(),<sp/>[](<ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref>*)<sp/>{});</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48" refid="classbaza_ksiazek_1a1ca572513613c36ae642a46b6e1f276d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbaza_ksiazek_1a1ca572513613c36ae642a46b6e1f276d" kindref="member">dump</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_ksiazka&gt;::iterator<sp/>i<sp/>=<sp/>vecKsiazka.begin();<sp/>i<sp/>!=<sp/>vecKsiazka.end();<sp/>i++)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>(*i).dump();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classbaza_czasopism" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_czasopism" kindref="compound">bazaCzasopism</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_czasopismo&gt;<sp/>vecCzasopism;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64" refid="classbaza_czasopism_1a25fb60b405aeb595d24a4a5844e3061e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_czasopismo&gt;<sp/><ref refid="classbaza_czasopism_1a25fb60b405aeb595d24a4a5844e3061e" kindref="member">dodajCzasopismo</ref>(std::string<sp/>f_tytul,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_interwal,<sp/>std::string<sp/>f_tekst)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_czasopismo&gt;<sp/>temp(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref>(f_tytul,<sp/>f_interwal,<sp/>f_tekst,<sp/>++<ref refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" kindref="member">maxID</ref>),[](<ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref>*){});</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecCzasopism.push_back(*temp);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70" refid="classbaza_czasopism_1a5578094905cf8110342a63d1f5756678" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classbaza_czasopism_1a5578094905cf8110342a63d1f5756678" kindref="member">getMaxID</ref>()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecCzasopism.size();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74" refid="classbaza_czasopism_1a78bdd9403527d3eb0201544b22d60e37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_czasopismo&gt;<sp/><ref refid="classbaza_czasopism_1a78bdd9403527d3eb0201544b22d60e37" kindref="member">getPtrById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_id)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_czasopismo&gt;::iterator<sp/>i<sp/>=<sp/>vecCzasopism.begin();<sp/>i<sp/>!=<sp/>vecCzasopism.end();<sp/>i++)</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>(*i).dump();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i-&gt;getId()<sp/>==<sp/>f_id)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i-&gt;getPtrB();</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classexcept" kindref="compound">except</ref>(</highlight><highlight class="stringliteral">&quot;Brak<sp/>czasopisma<sp/>po<sp/>podanym<sp/>id&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84" refid="classbaza_drukarni" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_drukarni" kindref="compound">bazaDrukarni</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
-<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_drukarnia&gt;<sp/>vecDrukarnie;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dodajDrukarnie(std::string<sp/>f_nazwa,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>f_album)</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecDrukarnie.push_back(<ref refid="classc__drukarnia" kindref="compound">c_drukarnia</ref>(f_nazwa,<sp/>f_album,++maxID));</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usunDrukarnie(<ref refid="classc__drukarnia" kindref="compound">c_drukarnia</ref><sp/>f_drukarnia)<sp/></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecDrukarnie.erase(std::remove(vecDrukarnie.begin(),<sp/>vecDrukarnie.end(),<sp/>f_drukarnia));</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>getMaxID()</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecDrukarnie.size();</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>dump()</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_drukarnia&gt;::iterator<sp/>i<sp/>=<sp/>vecDrukarnie.begin();<sp/>i<sp/>!=<sp/>vecDrukarnie.end();<sp/>i++)</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>(*i).dump();</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112" refid="classbaza_autorow" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_autorow" kindref="compound">bazaAutorow</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
-<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_autor&gt;<sp/>vecAutor;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dodajAutora(std::string<sp/>f_imie,<sp/>std::string<sp/>f_nazwisko)</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecAutor.push_back(<ref refid="classc__autor" kindref="compound">c_autor</ref>(f_imie,<sp/>f_nazwisko,<sp/>++maxID));</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>dump()<sp/><sp/></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_autor&gt;::iterator<sp/>i<sp/>=<sp/>vecAutor.begin();<sp/>i<sp/>!=<sp/>vecAutor.end();<sp/>i++)</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>(*i).dump();</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>getMaxID()</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecAutor.size();</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usunAutora(<ref refid="classc__autor" kindref="compound">c_autor</ref><sp/>f_autor)</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecAutor.erase(std::remove(vecAutor.begin(),<sp/>vecAutor.end(),<sp/>f_autor));</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="138"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="139" refid="classbaza_umow" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_umow" kindref="compound">bazaUmow</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
-<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_umowa&gt;<sp/>vecUmow;</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dodajUmoweK(std::shared_ptr&lt;c_autor&gt;<sp/>f_autor,<sp/>std::shared_ptr&lt;c_ksiazka&gt;<sp/>f_ksiazka,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_rodzaj)</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecUmow.push_back(<ref refid="classc__umowa" kindref="compound">c_umowa</ref>(f_ksiazka,<sp/>f_rodzaj));</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f_autor-&gt;dodajUmowe(vecUmow.back());</highlight></codeline>
+<codeline lineno="82" refid="classbaza_czasopism_1ae74e603714dd0f7b225107e1a0c6da57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_czasopismo&gt;<sp/><ref refid="classbaza_czasopism_1ae74e603714dd0f7b225107e1a0c6da57" kindref="member">getPtrLK</ref>()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;c_czasopismo&gt;(&amp;vecCzasopism.back(),<sp/>[](<ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref>*)<sp/>{});</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86" refid="classbaza_czasopism_1a7837aaa595345835d9916b56d77b3ae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbaza_czasopism_1a7837aaa595345835d9916b56d77b3ae6" kindref="member">dump</ref>()</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_czasopismo&gt;::iterator<sp/>i<sp/>=<sp/>vecCzasopism.begin();<sp/>i<sp/>!=<sp/>vecCzasopism.end();<sp/>i++)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>(*i).dump();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classbaza_autorow" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_autorow" kindref="compound">bazaAutorow</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_autor&gt;<sp/>vecAutor;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103" refid="classbaza_autorow_1a19a76fee6b66ae74c08efa3202798ce1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbaza_autorow_1a19a76fee6b66ae74c08efa3202798ce1" kindref="member">dodajAutora</ref>(std::string<sp/>f_imie,<sp/>std::string<sp/>f_nazwisko)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecAutor.push_back(<ref refid="classc__autor" kindref="compound">c_autor</ref>(f_imie,<sp/>f_nazwisko,<sp/>++<ref refid="classbaza_1abcd804a85cb70c6848bd079234105f0c" kindref="member">maxID</ref>));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107" refid="classbaza_autorow_1a5a7d96cdd3c1921dd51547c98d3e7221" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbaza_autorow_1a5a7d96cdd3c1921dd51547c98d3e7221" kindref="member">dodajAutoraWczyt</ref>(std::string<sp/>f_imie,<sp/>std::string<sp/>f_nazwisko,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_id)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecAutor.push_back(<ref refid="classc__autor" kindref="compound">c_autor</ref>(f_imie,<sp/>f_nazwisko,<sp/>f_id));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111" refid="classbaza_autorow_1a8b6e99c6370eb3ef00efc51589096207" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbaza_autorow_1a8b6e99c6370eb3ef00efc51589096207" kindref="member">dump</ref>()<sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_autor&gt;::iterator<sp/>i<sp/>=<sp/>vecAutor.begin();<sp/>i<sp/>!=<sp/>vecAutor.end();<sp/>i++)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>(*i).dump();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120" refid="classbaza_autorow_1a30ad5d5fd7699b34ee61a50d0c2ad12c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_autor&gt;<sp/><ref refid="classbaza_autorow_1a30ad5d5fd7699b34ee61a50d0c2ad12c" kindref="member">getAutorById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_id)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_id<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>f_id<sp/>&lt;=<sp/>vecAutor.size())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;c_autor&gt;(&amp;vecAutor[f_id<sp/>-<sp/>1],<sp/>&amp;<ref refid="baza_8h_1a30f201d4066e11d110626c2b7c8c3a57" kindref="member">null_deleter</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classexcept" kindref="compound">except</ref>(</highlight><highlight class="stringliteral">&quot;Brak<sp/>autora<sp/>o<sp/>podanym<sp/>id.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125" refid="classbaza_autorow_1aa42c486a7d4bd3b791a1aa15a1490074" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classbaza_autorow_1aa42c486a7d4bd3b791a1aa15a1490074" kindref="member">getMaxID</ref>()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecAutor.size();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="130" refid="classbaza_umow" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbaza_umow" kindref="compound">bazaUmow</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbaza" kindref="compound">baza</ref></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;c_umowa&gt;<sp/>vecUmow;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135" refid="classbaza_umow_1a224244dd67bc38de3134d689dbcad69e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_umowa&gt;<sp/><ref refid="classbaza_umow_1a224244dd67bc38de3134d689dbcad69e" kindref="member">dodajUmoweK</ref>(std::shared_ptr&lt;c_ksiazka&gt;<sp/>f_ksiazka,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_rodzaj)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_umowa&gt;<sp/>tmp;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp=<sp/>std::shared_ptr&lt;c_umowa&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc__umowa" kindref="compound">c_umowa</ref>(f_ksiazka,<sp/>f_rodzaj));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecUmow.push_back(*tmp);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142" refid="classbaza_umow_1a8c26ff6af6ac7292b8c925795f9f4b13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_umowa&gt;<sp/><ref refid="classbaza_umow_1a8c26ff6af6ac7292b8c925795f9f4b13" kindref="member">wczyt</ref>(std::shared_ptr&lt;c_ksiazka&gt;<sp/>f_ksiazka,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_rodzaj,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_id)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_umowa&gt;<sp/>tmp;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>std::shared_ptr&lt;c_umowa&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc__umowa" kindref="compound">c_umowa</ref>(f_ksiazka,<sp/>f_rodzaj,<sp/>f_id));</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecUmow.push_back(*tmp);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dodajUmoweC(std::shared_ptr&lt;c_autor&gt;<sp/>f_autor,<sp/>std::shared_ptr&lt;c_czasopismo&gt;<sp/>f_czasopismo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_rodzaj)</highlight></codeline>
+<codeline lineno="149" refid="classbaza_umow_1a9b5727e5497f437fe2459255f2582332" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_umowa&gt;<sp/><ref refid="classbaza_umow_1a9b5727e5497f437fe2459255f2582332" kindref="member">dodajUmoweC</ref>(std::shared_ptr&lt;c_czasopismo&gt;<sp/>f_czasopismo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f_rodzaj)</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecUmow.push_back(<ref refid="classc__umowa" kindref="compound">c_umowa</ref>(f_czasopismo,<sp/>f_rodzaj));</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f_autor-&gt;dodajUmowe(vecUmow.back());</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>getMaxID()</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecUmow.size();</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="158"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;c_umowa&gt;<sp/>tmp;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>std::shared_ptr&lt;c_umowa&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc__umowa" kindref="compound">c_umowa</ref>(f_czasopismo,<sp/>f_rodzaj),[](<ref refid="classc__umowa" kindref="compound">c_umowa</ref>*){});</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecUmow.push_back(*tmp);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156" refid="classbaza_umow_1aaa1d273f58f603670ed05afaee1e0421" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classbaza_umow_1aaa1d273f58f603670ed05afaee1e0421" kindref="member">getMaxID</ref>()</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecUmow.size();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160" refid="classbaza_umow_1ac169b9465e257728fbb5ab52a93e68b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbaza_umow_1ac169b9465e257728fbb5ab52a93e68b0" kindref="member">dump</ref>()</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;c_umowa&gt;::iterator<sp/>i<sp/>=<sp/>vecUmow.begin();<sp/>i<sp/>!=<sp/>vecUmow.end();<sp/>i++)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>(*i).dump();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="baza_8h_1a8ccce8c4a488ca9c64d85906899b5ae4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="baza_8h_1a30f201d4066e11d110626c2b7c8c3a57" kindref="member">null_deleter</ref>(<ref refid="classbaza_drukarni" kindref="compound">bazaDrukarni</ref>*)<sp/>{}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h"/>
   </compounddef>

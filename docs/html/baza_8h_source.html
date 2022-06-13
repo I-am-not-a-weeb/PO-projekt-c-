@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Po projekt cpp: C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h Source File</title>
+<title>My Project: C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Po projekt cpp
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -85,181 +85,221 @@ $(document).ready(function(){initNavTree('baza_8h_source.html',''); initResizabl
   <div class="headertitle"><div class="title">baza.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;ZarzadzaniePozycjamiIUmowanie.h&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;ZarzadzanieAutorami.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;ZarzadzanieDrukarniami.h&quot;</span></div>
+<a href="baza_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_zarzadzanie_pozycjami_i_umowanie_8h.html">ZarzadzaniePozycjamiIUmowanie.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_zarzadzanie_autorami_8h.html">ZarzadzanieAutorami.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_zarzadzanie_drukarniami_8h.html">ZarzadzanieDrukarniami.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classbaza.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza.html">baza</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">int</span> maxID = 0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">virtual</span> std::string dump() = 0;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> getMaxID() = 0;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classbaza_ksiazek.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_ksiazek.html">bazaKsiazek</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::vector&lt;c_ksiazka&gt; vecKsiazka;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="classbaza_ksiazek.html">~bazaKsiazek</a>()</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> dodajKsiazke(std::string f_tytul, <span class="keywordtype">int</span> f_rodzaj, std::string f_tekst)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        vecKsiazka.push_back(<a class="code hl_class" href="classc__ksiazka.html">c_ksiazka</a>(f_tytul, f_rodzaj, f_tekst, ++maxID));</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="baza_8h.html#a30f201d4066e11d110626c2b7c8c3a57">    9</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="baza_8h.html#a30f201d4066e11d110626c2b7c8c3a57">null_deleter</a>(<a class="code hl_class" href="classc__autor.html">c_autor</a>*) {}</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classbaza.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza.html">baza</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classbaza.html#abcd804a85cb70c6848bd079234105f0c">   14</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classbaza.html#abcd804a85cb70c6848bd079234105f0c">maxID</a> = 0;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classbaza.html#acb0899ba4aa2273720fd949d830bc511">   16</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="classbaza.html#acb0899ba4aa2273720fd949d830bc511">dump</a>() = 0;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classbaza.html#a74d1c31125deb832c105235eb41105c9">   17</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="classbaza.html#a74d1c31125deb832c105235eb41105c9">getMaxID</a>() = 0;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classbaza_ksiazek.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_ksiazek.html">bazaKsiazek</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    std::vector&lt;c_ksiazka&gt; vecKsiazka;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classbaza_ksiazek.html#ac4a48391e3207a8920f98f5efac1bdea">   25</a></span>    std::shared_ptr&lt;c_ksiazka&gt; <a class="code hl_function" href="classbaza_ksiazek.html#ac4a48391e3207a8920f98f5efac1bdea">dodajKsiazke</a>(std::string f_tytul, <span class="keywordtype">int</span> f_rodzaj, std::string f_tekst)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        std::shared_ptr&lt;c_ksiazka&gt; temp(<span class="keyword">new</span> <a class="code hl_class" href="classc__ksiazka.html">c_ksiazka</a>(f_tytul, f_rodzaj, f_tekst, ++<a class="code hl_variable" href="classbaza.html#abcd804a85cb70c6848bd079234105f0c">maxID</a>), [](<a class="code hl_class" href="classc__ksiazka.html">c_ksiazka</a>*) {});</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        vecKsiazka.push_back(*temp);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> temp;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> usunKsiazke(<a class="code hl_class" href="classc__ksiazka.html">c_ksiazka</a> f_ksiazka)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classbaza_ksiazek.html#a4237d1715c775aa3471e1c8b1825b2cc">   31</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classbaza_ksiazek.html#a4237d1715c775aa3471e1c8b1825b2cc">getMaxID</a>()</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        vecKsiazka.erase(std::remove(vecKsiazka.begin(),vecKsiazka.end(),f_ksiazka));</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">/*t_ptr = std::for_each(vecKsiazka.begin(), vecKsiazka.end(), ).erase();</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">        vector&lt;c_ksiazka&gt;::iterator del;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">        for (del = vecKsiazka.begin(); del!= vecKsiazka.end(); del++)</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">        {</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">            ~del();</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">        }*/</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">size_t</span> getMaxID()</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> vecKsiazka.size();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    std::string dump()</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        std::ostringstream out;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">for</span> (std::vector&lt;c_ksiazka&gt;::iterator i = vecKsiazka.begin(); i != vecKsiazka.end(); i++)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            out &lt;&lt; (*i).dump();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> out.str();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classbaza_czasopism.html">   56</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_czasopism.html">bazaCzasopism</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::vector&lt;c_czasopismo&gt; vecCzasopism;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> dodajCzasopismo(std::string f_tytul, <span class="keywordtype">bool</span> f_interwal, std::string f_tekst)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        vecCzasopism.push_back(<a class="code hl_class" href="classc__czasopismo.html">c_czasopismo</a>(f_tytul, f_interwal, f_tekst, ++maxID));</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> usunCzasopismo(<a class="code hl_class" href="classc__czasopismo.html">c_czasopismo</a> f_czasopismo)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        vecCzasopism.erase(std::remove(vecCzasopism.begin(), vecCzasopism.end(), f_czasopismo));</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">size_t</span> getMaxID()</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> vecCzasopism.size();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    std::string dump()</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        std::ostringstream out;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">return</span> vecKsiazka.size();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classbaza_ksiazek.html#a854f44e25513e976bff850b05ce433b4">   35</a></span>    std::shared_ptr&lt;c_ksiazka&gt; <a class="code hl_function" href="classbaza_ksiazek.html#a854f44e25513e976bff850b05ce433b4">getPtrById</a>(<span class="keywordtype">int</span> f_id)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">for</span> (std::vector&lt;c_ksiazka&gt;::iterator i = vecKsiazka.begin(); i != vecKsiazka.end(); i++)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">if</span> (i-&gt;getId() == f_id) <span class="keywordflow">return</span> i-&gt;getPtr();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classexcept.html">except</a>(<span class="stringliteral">&quot;Brak ksiazki o podanym id.&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classbaza_ksiazek.html#a8046dce23f3cd543f94bf466872c6dd4">   44</a></span>    std::shared_ptr&lt;c_ksiazka&gt; <a class="code hl_function" href="classbaza_ksiazek.html#a8046dce23f3cd543f94bf466872c6dd4">getPtrLK</a>()</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> std::shared_ptr&lt;c_ksiazka&gt;(&amp;vecKsiazka.back(), [](<a class="code hl_class" href="classc__ksiazka.html">c_ksiazka</a>*) {});</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classbaza_ksiazek.html#a1ca572513613c36ae642a46b6e1f276d">   48</a></span>    std::string <a class="code hl_function" href="classbaza_ksiazek.html#a1ca572513613c36ae642a46b6e1f276d">dump</a>()</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        std::ostringstream out;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">for</span> (std::vector&lt;c_ksiazka&gt;::iterator i = vecKsiazka.begin(); i != vecKsiazka.end(); i++)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            out &lt;&lt; (*i).dump();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> out.str();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classbaza_czasopism.html">   59</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_czasopism.html">bazaCzasopism</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    std::vector&lt;c_czasopismo&gt; vecCzasopism;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classbaza_czasopism.html#a25fb60b405aeb595d24a4a5844e3061e">   64</a></span>    std::shared_ptr&lt;c_czasopismo&gt; <a class="code hl_function" href="classbaza_czasopism.html#a25fb60b405aeb595d24a4a5844e3061e">dodajCzasopismo</a>(std::string f_tytul, <span class="keywordtype">bool</span> f_interwal, std::string f_tekst)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        std::shared_ptr&lt;c_czasopismo&gt; temp(<span class="keyword">new</span> <a class="code hl_class" href="classc__czasopismo.html">c_czasopismo</a>(f_tytul, f_interwal, f_tekst, ++<a class="code hl_variable" href="classbaza.html#abcd804a85cb70c6848bd079234105f0c">maxID</a>),[](<a class="code hl_class" href="classc__czasopismo.html">c_czasopismo</a>*){});</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        vecCzasopism.push_back(*temp);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> temp;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classbaza_czasopism.html#a5578094905cf8110342a63d1f5756678">   70</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classbaza_czasopism.html#a5578094905cf8110342a63d1f5756678">getMaxID</a>()</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> vecCzasopism.size();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classbaza_czasopism.html#a78bdd9403527d3eb0201544b22d60e37">   74</a></span>    std::shared_ptr&lt;c_czasopismo&gt; <a class="code hl_function" href="classbaza_czasopism.html#a78bdd9403527d3eb0201544b22d60e37">getPtrById</a>(<span class="keywordtype">int</span> f_id)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">for</span> (std::vector&lt;c_czasopismo&gt;::iterator i = vecCzasopism.begin(); i != vecCzasopism.end(); i++)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            out &lt;&lt; (*i).dump();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">if</span> (i-&gt;getId() == f_id) <span class="keywordflow">return</span> i-&gt;getPtrB();</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> out.str();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classexcept.html">except</a>(<span class="stringliteral">&quot;Brak czasopisma po podanym id&quot;</span>);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classbaza_drukarni.html">   84</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_drukarni.html">bazaDrukarni</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::vector&lt;c_drukarnia&gt; vecDrukarnie;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">void</span> dodajDrukarnie(std::string f_nazwa, <span class="keywordtype">bool</span> f_album)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        vecDrukarnie.push_back(<a class="code hl_class" href="classc__drukarnia.html">c_drukarnia</a>(f_nazwa, f_album,++maxID));</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">void</span> usunDrukarnie(<a class="code hl_class" href="classc__drukarnia.html">c_drukarnia</a> f_drukarnia) </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        vecDrukarnie.erase(std::remove(vecDrukarnie.begin(), vecDrukarnie.end(), f_drukarnia));</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">size_t</span> getMaxID()</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">return</span> vecDrukarnie.size();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    std::string dump()</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    {</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        std::ostringstream out;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">for</span> (std::vector&lt;c_drukarnia&gt;::iterator i = vecDrukarnie.begin(); i != vecDrukarnie.end(); i++)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            out &lt;&lt; (*i).dump();</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">return</span> out.str();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classbaza_autorow.html">  112</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_autorow.html">bazaAutorow</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    std::vector&lt;c_autor&gt; vecAutor;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> dodajAutora(std::string f_imie, std::string f_nazwisko)</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        vecAutor.push_back(<a class="code hl_class" href="classc__autor.html">c_autor</a>(f_imie, f_nazwisko, ++maxID));</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    std::string dump()  </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        std::ostringstream out;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">for</span> (std::vector&lt;c_autor&gt;::iterator i = vecAutor.begin(); i != vecAutor.end(); i++)</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            out &lt;&lt; (*i).dump();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">return</span> out.str();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">size_t</span> getMaxID()</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span> vecAutor.size();</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> usunAutora(<a class="code hl_class" href="classc__autor.html">c_autor</a> f_autor)</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        vecAutor.erase(std::remove(vecAutor.begin(), vecAutor.end(), f_autor));</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>};</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classbaza_umow.html">  139</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_umow.html">bazaUmow</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>{</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    std::vector&lt;c_umowa&gt; vecUmow;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordtype">void</span> dodajUmoweK(std::shared_ptr&lt;c_autor&gt; f_autor, std::shared_ptr&lt;c_ksiazka&gt; f_ksiazka,<span class="keywordtype">int</span> f_rodzaj)</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    {</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        vecUmow.push_back(<a class="code hl_class" href="classc__umowa.html">c_umowa</a>(f_ksiazka, f_rodzaj));</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        f_autor-&gt;dodajUmowe(vecUmow.back());</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classbaza_czasopism.html#ae74e603714dd0f7b225107e1a0c6da57">   82</a></span>    std::shared_ptr&lt;c_czasopismo&gt; <a class="code hl_function" href="classbaza_czasopism.html#ae74e603714dd0f7b225107e1a0c6da57">getPtrLK</a>()</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> std::shared_ptr&lt;c_czasopismo&gt;(&amp;vecCzasopism.back(), [](<a class="code hl_class" href="classc__czasopismo.html">c_czasopismo</a>*) {});</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classbaza_czasopism.html#a7837aaa595345835d9916b56d77b3ae6">   86</a></span>    std::string <a class="code hl_function" href="classbaza_czasopism.html#a7837aaa595345835d9916b56d77b3ae6">dump</a>()</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        std::ostringstream out;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">for</span> (std::vector&lt;c_czasopismo&gt;::iterator i = vecCzasopism.begin(); i != vecCzasopism.end(); i++)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            out &lt;&lt; (*i).dump();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> out.str();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classbaza_autorow.html">   98</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_autorow.html">bazaAutorow</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    std::vector&lt;c_autor&gt; vecAutor;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classbaza_autorow.html#a19a76fee6b66ae74c08efa3202798ce1">  103</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classbaza_autorow.html#a19a76fee6b66ae74c08efa3202798ce1">dodajAutora</a>(std::string f_imie, std::string f_nazwisko)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        vecAutor.push_back(<a class="code hl_class" href="classc__autor.html">c_autor</a>(f_imie, f_nazwisko, ++<a class="code hl_variable" href="classbaza.html#abcd804a85cb70c6848bd079234105f0c">maxID</a>));</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classbaza_autorow.html#a5a7d96cdd3c1921dd51547c98d3e7221">  107</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classbaza_autorow.html#a5a7d96cdd3c1921dd51547c98d3e7221">dodajAutoraWczyt</a>(std::string f_imie, std::string f_nazwisko,<span class="keywordtype">int</span> f_id)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        vecAutor.push_back(<a class="code hl_class" href="classc__autor.html">c_autor</a>(f_imie, f_nazwisko, f_id));</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classbaza_autorow.html#a8b6e99c6370eb3ef00efc51589096207">  111</a></span>    std::string <a class="code hl_function" href="classbaza_autorow.html#a8b6e99c6370eb3ef00efc51589096207">dump</a>()  </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        std::ostringstream out;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">for</span> (std::vector&lt;c_autor&gt;::iterator i = vecAutor.begin(); i != vecAutor.end(); i++)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            out &lt;&lt; (*i).dump();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">return</span> out.str();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classbaza_autorow.html#a30ad5d5fd7699b34ee61a50d0c2ad12c">  120</a></span>    std::shared_ptr&lt;c_autor&gt; <a class="code hl_function" href="classbaza_autorow.html#a30ad5d5fd7699b34ee61a50d0c2ad12c">getAutorById</a>(<span class="keywordtype">int</span> f_id)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">if</span> (f_id &gt;= 0 &amp;&amp; f_id &lt;= vecAutor.size()) <span class="keywordflow">return</span> std::shared_ptr&lt;c_autor&gt;(&amp;vecAutor[f_id - 1], &amp;<a class="code hl_function" href="baza_8h.html#a30f201d4066e11d110626c2b7c8c3a57">null_deleter</a>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">else</span> <span class="keywordflow">throw</span> <a class="code hl_class" href="classexcept.html">except</a>(<span class="stringliteral">&quot;Brak autora o podanym id.&quot;</span>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classbaza_autorow.html#aa42c486a7d4bd3b791a1aa15a1490074">  125</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classbaza_autorow.html#aa42c486a7d4bd3b791a1aa15a1490074">getMaxID</a>()</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">return</span> vecAutor.size();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>};</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classbaza_umow.html">  130</a></span><span class="keyword">class </span><a class="code hl_class" href="classbaza_umow.html">bazaUmow</a> : <span class="keyword">protected</span> <a class="code hl_class" href="classbaza.html">baza</a></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>{</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    std::vector&lt;c_umowa&gt; vecUmow;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classbaza_umow.html#a224244dd67bc38de3134d689dbcad69e">  135</a></span>    std::shared_ptr&lt;c_umowa&gt; <a class="code hl_function" href="classbaza_umow.html#a224244dd67bc38de3134d689dbcad69e">dodajUmoweK</a>(std::shared_ptr&lt;c_ksiazka&gt; f_ksiazka,<span class="keywordtype">int</span> f_rodzaj)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        std::shared_ptr&lt;c_umowa&gt; tmp;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        tmp= std::shared_ptr&lt;c_umowa&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classc__umowa.html">c_umowa</a>(f_ksiazka, f_rodzaj));</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        vecUmow.push_back(*tmp);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classbaza_umow.html#a8c26ff6af6ac7292b8c925795f9f4b13">  142</a></span>    std::shared_ptr&lt;c_umowa&gt; <a class="code hl_function" href="classbaza_umow.html#a8c26ff6af6ac7292b8c925795f9f4b13">wczyt</a>(std::shared_ptr&lt;c_ksiazka&gt; f_ksiazka, <span class="keywordtype">int</span> f_rodzaj,<span class="keywordtype">int</span> f_id)</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        std::shared_ptr&lt;c_umowa&gt; tmp;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        tmp = std::shared_ptr&lt;c_umowa&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classc__umowa.html">c_umowa</a>(f_ksiazka, f_rodzaj, f_id));</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        vecUmow.push_back(*tmp);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordflow">return</span> tmp;</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">void</span> dodajUmoweC(std::shared_ptr&lt;c_autor&gt; f_autor, std::shared_ptr&lt;c_czasopismo&gt; f_czasopismo, <span class="keywordtype">int</span> f_rodzaj)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="classbaza_umow.html#a9b5727e5497f437fe2459255f2582332">  149</a></span>    std::shared_ptr&lt;c_umowa&gt; <a class="code hl_function" href="classbaza_umow.html#a9b5727e5497f437fe2459255f2582332">dodajUmoweC</a>(std::shared_ptr&lt;c_czasopismo&gt; f_czasopismo, <span class="keywordtype">int</span> f_rodzaj)</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        vecUmow.push_back(<a class="code hl_class" href="classc__umowa.html">c_umowa</a>(f_czasopismo, f_rodzaj));</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        f_autor-&gt;dodajUmowe(vecUmow.back());</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordtype">size_t</span> getMaxID()</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    {</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">return</span> vecUmow.size();</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>};</div>
-<div class="ttc" id="aclassbaza_autorow_html"><div class="ttname"><a href="classbaza_autorow.html">bazaAutorow</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00112">baza.h:113</a></div></div>
-<div class="ttc" id="aclassbaza_czasopism_html"><div class="ttname"><a href="classbaza_czasopism.html">bazaCzasopism</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00056">baza.h:57</a></div></div>
-<div class="ttc" id="aclassbaza_drukarni_html"><div class="ttname"><a href="classbaza_drukarni.html">bazaDrukarni</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00084">baza.h:85</a></div></div>
-<div class="ttc" id="aclassbaza_html"><div class="ttname"><a href="classbaza.html">baza</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00009">baza.h:10</a></div></div>
-<div class="ttc" id="aclassbaza_ksiazek_html"><div class="ttname"><a href="classbaza_ksiazek.html">bazaKsiazek</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00018">baza.h:19</a></div></div>
-<div class="ttc" id="aclassbaza_umow_html"><div class="ttname"><a href="classbaza_umow.html">bazaUmow</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00139">baza.h:140</a></div></div>
-<div class="ttc" id="aclassc__autor_html"><div class="ttname"><a href="classc__autor.html">c_autor</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00059">ZarzadzanieAutorami.h:60</a></div></div>
-<div class="ttc" id="aclassc__czasopismo_html"><div class="ttname"><a href="classc__czasopismo.html">c_czasopismo</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00197">ZarzadzanieAutorami.h:198</a></div></div>
-<div class="ttc" id="aclassc__drukarnia_html"><div class="ttname"><a href="classc__drukarnia.html">c_drukarnia</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_drukarniami_8h_source.html#l00008">ZarzadzanieDrukarniami.h:9</a></div></div>
-<div class="ttc" id="aclassc__ksiazka_html"><div class="ttname"><a href="classc__ksiazka.html">c_ksiazka</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00123">ZarzadzanieAutorami.h:124</a></div></div>
-<div class="ttc" id="aclassc__umowa_html"><div class="ttname"><a href="classc__umowa.html">c_umowa</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00015">ZarzadzanieAutorami.h:16</a></div></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        std::shared_ptr&lt;c_umowa&gt; tmp;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        tmp = std::shared_ptr&lt;c_umowa&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classc__umowa.html">c_umowa</a>(f_czasopismo, f_rodzaj),[](<a class="code hl_class" href="classc__umowa.html">c_umowa</a>*){});</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        vecUmow.push_back(*tmp);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classbaza_umow.html#aaa1d273f58f603670ed05afaee1e0421">  156</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classbaza_umow.html#aaa1d273f58f603670ed05afaee1e0421">getMaxID</a>()</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">return</span> vecUmow.size();</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classbaza_umow.html#ac169b9465e257728fbb5ab52a93e68b0">  160</a></span>    std::string <a class="code hl_function" href="classbaza_umow.html#ac169b9465e257728fbb5ab52a93e68b0">dump</a>()</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        std::ostringstream out;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">for</span> (std::vector&lt;c_umowa&gt;::iterator i = vecUmow.begin(); i != vecUmow.end(); i++)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            out &lt;&lt; (*i).dump();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">return</span> out.str();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>};</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="baza_8h.html#a8ccce8c4a488ca9c64d85906899b5ae4">  171</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="baza_8h.html#a30f201d4066e11d110626c2b7c8c3a57">null_deleter</a>(<a class="code hl_class" href="classbaza_drukarni.html">bazaDrukarni</a>*) {}</div>
+<div class="ttc" id="a_zarzadzanie_autorami_8h_html"><div class="ttname"><a href="_zarzadzanie_autorami_8h.html">ZarzadzanieAutorami.h</a></div></div>
+<div class="ttc" id="a_zarzadzanie_drukarniami_8h_html"><div class="ttname"><a href="_zarzadzanie_drukarniami_8h.html">ZarzadzanieDrukarniami.h</a></div></div>
+<div class="ttc" id="a_zarzadzanie_pozycjami_i_umowanie_8h_html"><div class="ttname"><a href="_zarzadzanie_pozycjami_i_umowanie_8h.html">ZarzadzaniePozycjamiIUmowanie.h</a></div></div>
+<div class="ttc" id="abaza_8h_html_a30f201d4066e11d110626c2b7c8c3a57"><div class="ttname"><a href="baza_8h.html#a30f201d4066e11d110626c2b7c8c3a57">null_deleter</a></div><div class="ttdeci">void null_deleter(c_autor *)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00009">baza.h:9</a></div></div>
+<div class="ttc" id="aclassbaza_autorow_html"><div class="ttname"><a href="classbaza_autorow.html">bazaAutorow</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00098">baza.h:99</a></div></div>
+<div class="ttc" id="aclassbaza_autorow_html_a19a76fee6b66ae74c08efa3202798ce1"><div class="ttname"><a href="classbaza_autorow.html#a19a76fee6b66ae74c08efa3202798ce1">bazaAutorow::dodajAutora</a></div><div class="ttdeci">void dodajAutora(std::string f_imie, std::string f_nazwisko)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00103">baza.h:103</a></div></div>
+<div class="ttc" id="aclassbaza_autorow_html_a30ad5d5fd7699b34ee61a50d0c2ad12c"><div class="ttname"><a href="classbaza_autorow.html#a30ad5d5fd7699b34ee61a50d0c2ad12c">bazaAutorow::getAutorById</a></div><div class="ttdeci">std::shared_ptr&lt; c_autor &gt; getAutorById(int f_id)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00120">baza.h:120</a></div></div>
+<div class="ttc" id="aclassbaza_autorow_html_a5a7d96cdd3c1921dd51547c98d3e7221"><div class="ttname"><a href="classbaza_autorow.html#a5a7d96cdd3c1921dd51547c98d3e7221">bazaAutorow::dodajAutoraWczyt</a></div><div class="ttdeci">void dodajAutoraWczyt(std::string f_imie, std::string f_nazwisko, int f_id)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00107">baza.h:107</a></div></div>
+<div class="ttc" id="aclassbaza_autorow_html_a8b6e99c6370eb3ef00efc51589096207"><div class="ttname"><a href="classbaza_autorow.html#a8b6e99c6370eb3ef00efc51589096207">bazaAutorow::dump</a></div><div class="ttdeci">std::string dump()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00111">baza.h:111</a></div></div>
+<div class="ttc" id="aclassbaza_autorow_html_aa42c486a7d4bd3b791a1aa15a1490074"><div class="ttname"><a href="classbaza_autorow.html#aa42c486a7d4bd3b791a1aa15a1490074">bazaAutorow::getMaxID</a></div><div class="ttdeci">size_t getMaxID()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00125">baza.h:125</a></div></div>
+<div class="ttc" id="aclassbaza_czasopism_html"><div class="ttname"><a href="classbaza_czasopism.html">bazaCzasopism</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00059">baza.h:60</a></div></div>
+<div class="ttc" id="aclassbaza_czasopism_html_a25fb60b405aeb595d24a4a5844e3061e"><div class="ttname"><a href="classbaza_czasopism.html#a25fb60b405aeb595d24a4a5844e3061e">bazaCzasopism::dodajCzasopismo</a></div><div class="ttdeci">std::shared_ptr&lt; c_czasopismo &gt; dodajCzasopismo(std::string f_tytul, bool f_interwal, std::string f_tekst)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00064">baza.h:64</a></div></div>
+<div class="ttc" id="aclassbaza_czasopism_html_a5578094905cf8110342a63d1f5756678"><div class="ttname"><a href="classbaza_czasopism.html#a5578094905cf8110342a63d1f5756678">bazaCzasopism::getMaxID</a></div><div class="ttdeci">size_t getMaxID()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00070">baza.h:70</a></div></div>
+<div class="ttc" id="aclassbaza_czasopism_html_a7837aaa595345835d9916b56d77b3ae6"><div class="ttname"><a href="classbaza_czasopism.html#a7837aaa595345835d9916b56d77b3ae6">bazaCzasopism::dump</a></div><div class="ttdeci">std::string dump()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00086">baza.h:86</a></div></div>
+<div class="ttc" id="aclassbaza_czasopism_html_a78bdd9403527d3eb0201544b22d60e37"><div class="ttname"><a href="classbaza_czasopism.html#a78bdd9403527d3eb0201544b22d60e37">bazaCzasopism::getPtrById</a></div><div class="ttdeci">std::shared_ptr&lt; c_czasopismo &gt; getPtrById(int f_id)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00074">baza.h:74</a></div></div>
+<div class="ttc" id="aclassbaza_czasopism_html_ae74e603714dd0f7b225107e1a0c6da57"><div class="ttname"><a href="classbaza_czasopism.html#ae74e603714dd0f7b225107e1a0c6da57">bazaCzasopism::getPtrLK</a></div><div class="ttdeci">std::shared_ptr&lt; c_czasopismo &gt; getPtrLK()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00082">baza.h:82</a></div></div>
+<div class="ttc" id="aclassbaza_drukarni_html"><div class="ttname"><a href="classbaza_drukarni.html">bazaDrukarni</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00056">ZarzadzanieAutorami.h:57</a></div></div>
+<div class="ttc" id="aclassbaza_html"><div class="ttname"><a href="classbaza.html">baza</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00011">baza.h:12</a></div></div>
+<div class="ttc" id="aclassbaza_html_a74d1c31125deb832c105235eb41105c9"><div class="ttname"><a href="classbaza.html#a74d1c31125deb832c105235eb41105c9">baza::getMaxID</a></div><div class="ttdeci">virtual size_t getMaxID()=0</div></div>
+<div class="ttc" id="aclassbaza_html_abcd804a85cb70c6848bd079234105f0c"><div class="ttname"><a href="classbaza.html#abcd804a85cb70c6848bd079234105f0c">baza::maxID</a></div><div class="ttdeci">int maxID</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00014">baza.h:14</a></div></div>
+<div class="ttc" id="aclassbaza_html_acb0899ba4aa2273720fd949d830bc511"><div class="ttname"><a href="classbaza.html#acb0899ba4aa2273720fd949d830bc511">baza::dump</a></div><div class="ttdeci">virtual std::string dump()=0</div></div>
+<div class="ttc" id="aclassbaza_ksiazek_html"><div class="ttname"><a href="classbaza_ksiazek.html">bazaKsiazek</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00020">baza.h:21</a></div></div>
+<div class="ttc" id="aclassbaza_ksiazek_html_a1ca572513613c36ae642a46b6e1f276d"><div class="ttname"><a href="classbaza_ksiazek.html#a1ca572513613c36ae642a46b6e1f276d">bazaKsiazek::dump</a></div><div class="ttdeci">std::string dump()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00048">baza.h:48</a></div></div>
+<div class="ttc" id="aclassbaza_ksiazek_html_a4237d1715c775aa3471e1c8b1825b2cc"><div class="ttname"><a href="classbaza_ksiazek.html#a4237d1715c775aa3471e1c8b1825b2cc">bazaKsiazek::getMaxID</a></div><div class="ttdeci">size_t getMaxID()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00031">baza.h:31</a></div></div>
+<div class="ttc" id="aclassbaza_ksiazek_html_a8046dce23f3cd543f94bf466872c6dd4"><div class="ttname"><a href="classbaza_ksiazek.html#a8046dce23f3cd543f94bf466872c6dd4">bazaKsiazek::getPtrLK</a></div><div class="ttdeci">std::shared_ptr&lt; c_ksiazka &gt; getPtrLK()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00044">baza.h:44</a></div></div>
+<div class="ttc" id="aclassbaza_ksiazek_html_a854f44e25513e976bff850b05ce433b4"><div class="ttname"><a href="classbaza_ksiazek.html#a854f44e25513e976bff850b05ce433b4">bazaKsiazek::getPtrById</a></div><div class="ttdeci">std::shared_ptr&lt; c_ksiazka &gt; getPtrById(int f_id)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00035">baza.h:35</a></div></div>
+<div class="ttc" id="aclassbaza_ksiazek_html_ac4a48391e3207a8920f98f5efac1bdea"><div class="ttname"><a href="classbaza_ksiazek.html#ac4a48391e3207a8920f98f5efac1bdea">bazaKsiazek::dodajKsiazke</a></div><div class="ttdeci">std::shared_ptr&lt; c_ksiazka &gt; dodajKsiazke(std::string f_tytul, int f_rodzaj, std::string f_tekst)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00025">baza.h:25</a></div></div>
+<div class="ttc" id="aclassbaza_umow_html"><div class="ttname"><a href="classbaza_umow.html">bazaUmow</a></div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00130">baza.h:131</a></div></div>
+<div class="ttc" id="aclassbaza_umow_html_a224244dd67bc38de3134d689dbcad69e"><div class="ttname"><a href="classbaza_umow.html#a224244dd67bc38de3134d689dbcad69e">bazaUmow::dodajUmoweK</a></div><div class="ttdeci">std::shared_ptr&lt; c_umowa &gt; dodajUmoweK(std::shared_ptr&lt; c_ksiazka &gt; f_ksiazka, int f_rodzaj)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00135">baza.h:135</a></div></div>
+<div class="ttc" id="aclassbaza_umow_html_a8c26ff6af6ac7292b8c925795f9f4b13"><div class="ttname"><a href="classbaza_umow.html#a8c26ff6af6ac7292b8c925795f9f4b13">bazaUmow::wczyt</a></div><div class="ttdeci">std::shared_ptr&lt; c_umowa &gt; wczyt(std::shared_ptr&lt; c_ksiazka &gt; f_ksiazka, int f_rodzaj, int f_id)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00142">baza.h:142</a></div></div>
+<div class="ttc" id="aclassbaza_umow_html_a9b5727e5497f437fe2459255f2582332"><div class="ttname"><a href="classbaza_umow.html#a9b5727e5497f437fe2459255f2582332">bazaUmow::dodajUmoweC</a></div><div class="ttdeci">std::shared_ptr&lt; c_umowa &gt; dodajUmoweC(std::shared_ptr&lt; c_czasopismo &gt; f_czasopismo, int f_rodzaj)</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00149">baza.h:149</a></div></div>
+<div class="ttc" id="aclassbaza_umow_html_aaa1d273f58f603670ed05afaee1e0421"><div class="ttname"><a href="classbaza_umow.html#aaa1d273f58f603670ed05afaee1e0421">bazaUmow::getMaxID</a></div><div class="ttdeci">size_t getMaxID()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00156">baza.h:156</a></div></div>
+<div class="ttc" id="aclassbaza_umow_html_ac169b9465e257728fbb5ab52a93e68b0"><div class="ttname"><a href="classbaza_umow.html#ac169b9465e257728fbb5ab52a93e68b0">bazaUmow::dump</a></div><div class="ttdeci">std::string dump()</div><div class="ttdef"><b>Definition:</b> <a href="baza_8h_source.html#l00160">baza.h:160</a></div></div>
+<div class="ttc" id="aclassc__autor_html"><div class="ttname"><a href="classc__autor.html">c_autor</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00084">ZarzadzanieAutorami.h:85</a></div></div>
+<div class="ttc" id="aclassc__czasopismo_html"><div class="ttname"><a href="classc__czasopismo.html">c_czasopismo</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00257">ZarzadzanieAutorami.h:258</a></div></div>
+<div class="ttc" id="aclassc__ksiazka_html"><div class="ttname"><a href="classc__ksiazka.html">c_ksiazka</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00170">ZarzadzanieAutorami.h:171</a></div></div>
+<div class="ttc" id="aclassc__umowa_html"><div class="ttname"><a href="classc__umowa.html">c_umowa</a></div><div class="ttdef"><b>Definition:</b> <a href="_zarzadzanie_autorami_8h_source.html#l00347">ZarzadzanieAutorami.h:348</a></div></div>
+<div class="ttc" id="aclassexcept_html"><div class="ttname"><a href="classexcept.html">except</a></div><div class="ttdef"><b>Definition:</b> <a href="except_8h_source.html#l00005">except.h:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_d97db01e6be5edf766fd704603b04a05.html">I_am_not_a_weeb</a></li><li class="navelem"><a class="el" href="dir_e934ab610b14015e7ef7948bf7661a53.html">source</a></li><li class="navelem"><a class="el" href="dir_54efcab058069751ec87830bee225e44.html">repos</a></li><li class="navelem"><a class="el" href="dir_5544d2dd6e5f91e0803a3148f02c5ad9.html">PO projekt c++</a></li><li class="navelem"><b>baza.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_d97db01e6be5edf766fd704603b04a05.html">I_am_not_a_weeb</a></li><li class="navelem"><a class="el" href="dir_e934ab610b14015e7ef7948bf7661a53.html">source</a></li><li class="navelem"><a class="el" href="dir_54efcab058069751ec87830bee225e44.html">repos</a></li><li class="navelem"><a class="el" href="dir_5544d2dd6e5f91e0803a3148f02c5ad9.html">PO projekt c++</a></li><li class="navelem"><a class="el" href="baza_8h.html">baza.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

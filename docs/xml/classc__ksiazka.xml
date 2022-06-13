@@ -3,6 +3,7 @@
   <compounddef id="classc__ksiazka" kind="class" language="C++" prot="public">
     <compoundname>c_ksiazka</compoundname>
     <basecompoundref refid="classc__pozycja" prot="protected" virt="non-virtual">c_pozycja</basecompoundref>
+    <includes refid="_zarzadzanie_autorami_8h" local="no">ZarzadzanieAutorami.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classc__ksiazka_1a8276eb868ffd0719c83bf8236c656c09" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -17,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="126" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="126" bodyend="-1"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="173" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="173" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -33,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="128" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="128" bodyend="131"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="175" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="175" bodyend="178"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1ad256e12e6e6f12f7f8802ae3d60702fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -63,7 +64,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="132" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="132" bodyend="138"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="179" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="179" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a3b5238c408d2c18db39a09d435f4f064" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>c_ksiazka::c_ksiazka</definition>
+        <argsstring>(std::string f_tytul, int f_rodzaj, int f_id)</argsstring>
+        <name>c_ksiazka</name>
+        <qualifiedname>c_ksiazka::c_ksiazka</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="186" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="186" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1a2aa5ffd4d9c99c5e7a22f64c703337e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -81,7 +108,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="139" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="139" bodyend="146"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="193" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="193" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1a31636d779bc727404a9df64f07b54b2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void c_ksiazka::wczyt</definition>
+        <argsstring>(std::string f_tytul, int f_rodzaj, int f_id)</argsstring>
+        <name>wczyt</name>
+        <qualifiedname>c_ksiazka::wczyt</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>f_tytul</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_rodzaj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="201" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="201" bodyend="207"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1a717a7e24d5f29c099f90130bf366d65c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -100,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="147" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="147" bodyend="150"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="208" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="208" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1a986538377a475cec63db16538e87e8ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -118,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="151" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="151" bodyend="154"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="212" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="212" bodyend="216"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1a3ee4507f911ddc1908f50d8f8318f1d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -133,7 +186,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="155" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="155" bodyend="158"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="217" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__ksiazka_1aeca6fc43119e1e850ff90d4ee04a56b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_ksiazka &gt; c_ksiazka::getPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getPtr</name>
+        <qualifiedname>c_ksiazka::getPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="221" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="221" bodyend="224"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1ac1e3e3ae5b6353fb615e4ccc398d0f3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classc__autor" kindref="compound">c_autor</ref></type>
@@ -148,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="159" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="159" bodyend="162"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="225" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="225" bodyend="228"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1a37fc9e36e58b05901306e99912db93f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -163,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="163" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="163" bodyend="166"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="229" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="229" bodyend="232"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1a3638267b03c2274d9de38bf962af30e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -178,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="167" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="167" bodyend="170"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="233" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="233" bodyend="236"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1ab6424ab3931bec93298066a1c417d5f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -193,21 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="171" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="171" bodyend="174"/>
-      </memberdef>
-      <memberdef kind="function" id="classc__ksiazka_1a330dc6a70b32677bef19675ea6bb6961" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string c_ksiazka::dump_t</definition>
-        <argsstring>()</argsstring>
-        <name>dump_t</name>
-        <qualifiedname>c_ksiazka::dump_t</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="175" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="175" bodyend="180"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="237" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="237" bodyend="240"/>
       </memberdef>
       <memberdef kind="function" id="classc__ksiazka_1a40fc8580acfaae4f701692cba06a2059" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -221,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="181" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="181" bodyend="186"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="241" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="241" bodyend="246"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -245,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="187" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="187" bodyend="190"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="247" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="247" bodyend="250"/>
       </memberdef>
       <memberdef kind="friend" id="classc__ksiazka_1a141a383f53afe4fc986fd84f4a711ff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -267,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="191" column="8" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="191" bodyend="194"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="251" column="8" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="251" bodyend="254"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -305,19 +358,20 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="123" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="124" bodyend="195"/>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="170" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="171" bodyend="255"/>
     <listofallmembers>
       <member refid="classc__pozycja_1ab21b5ecc5dd2e20c551987bf47c3cf84" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>autor</name></member>
       <member refid="classc__ksiazka_1acb9d094aaf60ad359cee191b2c147a78" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>c_ksiazka</name></member>
       <member refid="classc__ksiazka_1ad256e12e6e6f12f7f8802ae3d60702fe" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>c_ksiazka</name></member>
+      <member refid="classc__ksiazka_1a3b5238c408d2c18db39a09d435f4f064" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>c_ksiazka</name></member>
       <member refid="classc__ksiazka_1a2aa5ffd4d9c99c5e7a22f64c703337e9" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>c_ksiazka</name></member>
       <member refid="classc__pozycja_1a5e19ab43fadee9f07e9c1b35041046bf" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>count</name></member>
       <member refid="classc__ksiazka_1a986538377a475cec63db16538e87e8ce" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>dodajAutora</name></member>
       <member refid="classc__ksiazka_1a40fc8580acfaae4f701692cba06a2059" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>dump</name></member>
-      <member refid="classc__ksiazka_1a330dc6a70b32677bef19675ea6bb6961" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>dump_t</name></member>
       <member refid="classc__ksiazka_1ac1e3e3ae5b6353fb615e4ccc398d0f3a" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getAutor</name></member>
       <member refid="classc__pozycja_1a3f3c730445d46339966c01f86757ae05" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>getCount</name></member>
       <member refid="classc__ksiazka_1ab6424ab3931bec93298066a1c417d5f9" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getId</name></member>
+      <member refid="classc__ksiazka_1aeca6fc43119e1e850ff90d4ee04a56b6" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>getPtr</name></member>
       <member refid="classc__ksiazka_1a3ee4507f911ddc1908f50d8f8318f1d8" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getRodzajInterwal</name></member>
       <member refid="classc__ksiazka_1a3638267b03c2274d9de38bf962af30e4" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getTekst</name></member>
       <member refid="classc__ksiazka_1a37fc9e36e58b05901306e99912db93f0" prot="public" virt="virtual"><scope>c_ksiazka</scope><name>getTytul</name></member>
@@ -328,6 +382,7 @@
       <member refid="classc__ksiazka_1a8276eb868ffd0719c83bf8236c656c09" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>rodzaj</name></member>
       <member refid="classc__pozycja_1af015282d021e3f40dd532992b3e4a10d" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>tekst</name></member>
       <member refid="classc__pozycja_1a753320da4544d93bf319d903df179980" prot="protected" virt="non-virtual"><scope>c_ksiazka</scope><name>tytul</name></member>
+      <member refid="classc__ksiazka_1a31636d779bc727404a9df64f07b54b2b" prot="public" virt="non-virtual"><scope>c_ksiazka</scope><name>wczyt</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classexcept" kind="class" language="C++" prot="public">
+    <compoundname>except</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <includes refid="except_8h" local="no">except.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classexcept_1aa1f1e1caa7e10f9c7773c19b57f9ff79" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string except::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <qualifiedname>except::msg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" line="7" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classexcept_1a469e0011953bdb34b89f6394a4e10f5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>except::except</definition>
+        <argsstring>(std::string mess)</argsstring>
+        <name>except</name>
+        <qualifiedname>except::except</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>mess</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" line="9" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classexcept_1a016a867f8a653f4719693c154022aaac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string except::getMsg</definition>
+        <argsstring>()</argsstring>
+        <name>getMsg</name>
+        <qualifiedname>except::getMsg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" line="10" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classexcept_1ab9c6dd04b75477ad324edccada6b5e7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual except::~except</definition>
+        <argsstring>()</argsstring>
+        <name>~except</name>
+        <qualifiedname>except::~except</qualifiedname>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" line="11" column="9" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" bodystart="11" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>except</label>
+        <link refid="classexcept"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>except</label>
+        <link refid="classexcept"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" line="5" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h" bodystart="6" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classexcept_1a469e0011953bdb34b89f6394a4e10f5d" prot="public" virt="non-virtual"><scope>except</scope><name>except</name></member>
+      <member refid="classexcept_1a016a867f8a653f4719693c154022aaac" prot="public" virt="non-virtual"><scope>except</scope><name>getMsg</name></member>
+      <member refid="classexcept_1aa1f1e1caa7e10f9c7773c19b57f9ff79" prot="private" virt="non-virtual"><scope>except</scope><name>msg</name></member>
+      <member refid="classexcept_1ab9c6dd04b75477ad324edccada6b5e7b" prot="public" virt="virtual"><scope>except</scope><name>~except</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,9 +1,15 @@
 \hypertarget{classc__umowa}{}\doxysection{c\+\_\+umowa Class Reference}
 \label{classc__umowa}\index{c\_umowa@{c\_umowa}}
+
+
+{\ttfamily \#include $<$Zarzadzanie\+Autorami.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classc__umowa_a8293e869d18391f487db7b85974987d4}{c\+\_\+umowa}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ f\+\_\+ksiazka, int f\+\_\+rodzaj)
+\item 
+\mbox{\hyperlink{classc__umowa_ae5c5f66f229070ca2240c3b78aecc8da}{c\+\_\+umowa}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ f\+\_\+ksiazka, int f\+\_\+rodzaj, int f\+\_\+id)
 \item 
 \mbox{\hyperlink{classc__umowa_afa7a9cb2ad3bb8c157cd6cebfa000ed7}{c\+\_\+umowa}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ f\+\_\+czasopismo, int f\+\_\+rodzaj)
 \item 
@@ -11,16 +17,27 @@ int \mbox{\hyperlink{classc__umowa_a63eae1de7bf5205e63c722e2406393bc}{get\+Rodza
 \item 
 void \mbox{\hyperlink{classc__umowa_a26c14efdd16fba592021b3cad114fa7d}{zmien\+Rodzaj}} (int f\+\_\+rodzaj)
 \item 
+void \mbox{\hyperlink{classc__umowa_a6bd7b33e7e972fb71758eeeaf9899872}{dodaj\+Ksiazke}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ f\+\_\+ksiazka)
+\item 
+void \mbox{\hyperlink{classc__umowa_a8d7ddfca1586eba8a12c15514f0423cd}{dodaj\+Czasopismp}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ f\+\_\+czasopismo)
+\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$ \mbox{\hyperlink{classc__umowa_af4b49034040a4ff85a9f768c7a749087}{getpozK}} ()
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ \mbox{\hyperlink{classc__umowa_a2ad9f1cfd19bafa8da5d5c028d84aa35}{getpozC}} ()
+\item 
+std\+::string \mbox{\hyperlink{classc__umowa_a7ae62dfd249a092e379cd881a58a6226}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classc__umowa_af6d92afd8b710edbbcff1c9eea25385f}{maxid}} = 0
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00015}{15}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00347}{347}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
@@ -28,26 +45,66 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00015}{15}}
 \mbox{\Hypertarget{classc__umowa_a8293e869d18391f487db7b85974987d4}\label{classc__umowa_a8293e869d18391f487db7b85974987d4}} 
 \index{c\_umowa@{c\_umowa}!c\_umowa@{c\_umowa}}
 \index{c\_umowa@{c\_umowa}!c\_umowa@{c\_umowa}}
-\doxysubsubsection{\texorpdfstring{c\_umowa()}{c\_umowa()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{c\_umowa()}{c\_umowa()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily c\+\_\+umowa\+::c\+\_\+umowa (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$}]{f\+\_\+ksiazka,  }\item[{int}]{f\+\_\+rodzaj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00023}{23}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00356}{356}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__umowa_ae5c5f66f229070ca2240c3b78aecc8da}\label{classc__umowa_ae5c5f66f229070ca2240c3b78aecc8da}} 
+\index{c\_umowa@{c\_umowa}!c\_umowa@{c\_umowa}}
+\index{c\_umowa@{c\_umowa}!c\_umowa@{c\_umowa}}
+\doxysubsubsection{\texorpdfstring{c\_umowa()}{c\_umowa()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily c\+\_\+umowa\+::c\+\_\+umowa (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$}]{f\+\_\+ksiazka,  }\item[{int}]{f\+\_\+rodzaj,  }\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00364}{364}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__umowa_afa7a9cb2ad3bb8c157cd6cebfa000ed7}\label{classc__umowa_afa7a9cb2ad3bb8c157cd6cebfa000ed7}} 
 \index{c\_umowa@{c\_umowa}!c\_umowa@{c\_umowa}}
 \index{c\_umowa@{c\_umowa}!c\_umowa@{c\_umowa}}
-\doxysubsubsection{\texorpdfstring{c\_umowa()}{c\_umowa()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{c\_umowa()}{c\_umowa()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily c\+\_\+umowa\+::c\+\_\+umowa (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$}]{f\+\_\+czasopismo,  }\item[{int}]{f\+\_\+rodzaj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00028}{28}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00372}{372}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classc__umowa_a8d7ddfca1586eba8a12c15514f0423cd}\label{classc__umowa_a8d7ddfca1586eba8a12c15514f0423cd}} 
+\index{c\_umowa@{c\_umowa}!dodajCzasopismp@{dodajCzasopismp}}
+\index{dodajCzasopismp@{dodajCzasopismp}!c\_umowa@{c\_umowa}}
+\doxysubsubsection{\texorpdfstring{dodajCzasopismp()}{dodajCzasopismp()}}
+{\footnotesize\ttfamily void c\+\_\+umowa\+::dodaj\+Czasopismp (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$}]{f\+\_\+czasopismo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00396}{396}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__umowa_a6bd7b33e7e972fb71758eeeaf9899872}\label{classc__umowa_a6bd7b33e7e972fb71758eeeaf9899872}} 
+\index{c\_umowa@{c\_umowa}!dodajKsiazke@{dodajKsiazke}}
+\index{dodajKsiazke@{dodajKsiazke}!c\_umowa@{c\_umowa}}
+\doxysubsubsection{\texorpdfstring{dodajKsiazke()}{dodajKsiazke()}}
+{\footnotesize\ttfamily void c\+\_\+umowa\+::dodaj\+Ksiazke (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__ksiazka}{c\+\_\+ksiazka}} $>$}]{f\+\_\+ksiazka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00391}{391}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+\mbox{\Hypertarget{classc__umowa_a7ae62dfd249a092e379cd881a58a6226}\label{classc__umowa_a7ae62dfd249a092e379cd881a58a6226}} 
+\index{c\_umowa@{c\_umowa}!dump@{dump}}
+\index{dump@{dump}!c\_umowa@{c\_umowa}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily std\+::string c\+\_\+umowa\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00411}{411}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
 \mbox{\Hypertarget{classc__umowa_a2ad9f1cfd19bafa8da5d5c028d84aa35}\label{classc__umowa_a2ad9f1cfd19bafa8da5d5c028d84aa35}} 
 \index{c\_umowa@{c\_umowa}!getpozC@{getpozC}}
 \index{getpozC@{getpozC}!c\_umowa@{c\_umowa}}
@@ -56,7 +113,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00028}{28}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00053}{53}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00406}{406}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__umowa_af4b49034040a4ff85a9f768c7a749087}\label{classc__umowa_af4b49034040a4ff85a9f768c7a749087}} 
 \index{c\_umowa@{c\_umowa}!getpozK@{getpozK}}
@@ -66,7 +123,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00053}{53}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00049}{49}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00401}{401}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__umowa_a63eae1de7bf5205e63c722e2406393bc}\label{classc__umowa_a63eae1de7bf5205e63c722e2406393bc}} 
 \index{c\_umowa@{c\_umowa}!getRodzaj@{getRodzaj}}
@@ -76,7 +133,7 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00049}{49}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00033}{33}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00381}{381}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 \mbox{\Hypertarget{classc__umowa_a26c14efdd16fba592021b3cad114fa7d}\label{classc__umowa_a26c14efdd16fba592021b3cad114fa7d}} 
 \index{c\_umowa@{c\_umowa}!zmienRodzaj@{zmienRodzaj}}
@@ -86,10 +143,23 @@ Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00033}{33}}
 
 
 
-Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00037}{37}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00386}{386}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classc__umowa_af6d92afd8b710edbbcff1c9eea25385f}\label{classc__umowa_af6d92afd8b710edbbcff1c9eea25385f}} 
+\index{c\_umowa@{c\_umowa}!maxid@{maxid}}
+\index{maxid@{maxid}!c\_umowa@{c\_umowa}}
+\doxysubsubsection{\texorpdfstring{maxid}{maxid}}
+{\footnotesize\ttfamily int c\+\_\+umowa\+::maxid = 0\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_zarzadzanie_autorami_8h_source_l00355}{355}} of file \mbox{\hyperlink{_zarzadzanie_autorami_8h_source}{Zarzadzanie\+Autorami.\+h}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/Zarzadzanie\+Autorami.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/\mbox{\hyperlink{_zarzadzanie_autorami_8h}{Zarzadzanie\+Autorami.\+h}}\end{DoxyCompactItemize}

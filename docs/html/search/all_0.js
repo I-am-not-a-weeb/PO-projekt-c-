@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['baza_0',['baza',['../classbaza.html',1,'']]],
-  ['bazaautorow_1',['bazaAutorow',['../classbaza_autorow.html',1,'']]],
-  ['bazaczasopism_2',['bazaCzasopism',['../classbaza_czasopism.html',1,'']]],
-  ['bazadrukarni_3',['bazaDrukarni',['../classbaza_drukarni.html',1,'']]],
-  ['bazaksiazek_4',['bazaKsiazek',['../classbaza_ksiazek.html',1,'']]],
-  ['bazaumow_5',['bazaUmow',['../classbaza_umow.html',1,'']]]
+  ['amc_0',['amC',['../classam_c.html',1,'amC'],['../classam_c.html#a65cdd014d2461394d881c94d6285a9c8',1,'amC::amC()']]],
+  ['amk_1',['amK',['../classam_k.html',1,'amK'],['../classam_k.html#a9528767b1b3246e4bd1bc56a9f331c61',1,'amK::amK()']]],
+  ['autor_2',['autor',['../classc__pozycja.html#ab21b5ecc5dd2e20c551987bf47c3cf84',1,'c_pozycja']]]
 ];

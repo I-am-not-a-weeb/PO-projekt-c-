@@ -1,5 +1,9 @@
 \hypertarget{classbaza_czasopism}{}\doxysection{baza\+Czasopism Class Reference}
 \label{classbaza_czasopism}\index{bazaCzasopism@{bazaCzasopism}}
+
+
+{\ttfamily \#include $<$baza.\+h$>$}
+
 Inheritance diagram for baza\+Czasopism\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,11 +13,13 @@ Inheritance diagram for baza\+Czasopism\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classbaza_czasopism_a4dec7f63b1c11b0b7da0b6e1b6c6da7b}{dodaj\+Czasopismo}} (std\+::string f\+\_\+tytul, bool f\+\_\+interwal, std\+::string f\+\_\+tekst)
-\item 
-void \mbox{\hyperlink{classbaza_czasopism_ab460f7370c4ac0dc1318d94cabb99a6a}{usun\+Czasopismo}} (\mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} f\+\_\+czasopismo)
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ \mbox{\hyperlink{classbaza_czasopism_a25fb60b405aeb595d24a4a5844e3061e}{dodaj\+Czasopismo}} (std\+::string f\+\_\+tytul, bool f\+\_\+interwal, std\+::string f\+\_\+tekst)
 \item 
 size\+\_\+t \mbox{\hyperlink{classbaza_czasopism_a5578094905cf8110342a63d1f5756678}{get\+Max\+ID}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ \mbox{\hyperlink{classbaza_czasopism_a78bdd9403527d3eb0201544b22d60e37}{get\+Ptr\+By\+Id}} (int f\+\_\+id)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ \mbox{\hyperlink{classbaza_czasopism_ae74e603714dd0f7b225107e1a0c6da57}{get\+Ptr\+LK}} ()
 \item 
 std\+::string \mbox{\hyperlink{classbaza_czasopism_a7837aaa595345835d9916b56d77b3ae6}{dump}} ()
 \end{DoxyCompactItemize}
@@ -23,20 +29,20 @@ std\+::string \mbox{\hyperlink{classbaza_czasopism_a7837aaa595345835d9916b56d77b
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00056}{56}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00059}{59}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classbaza_czasopism_a4dec7f63b1c11b0b7da0b6e1b6c6da7b}\label{classbaza_czasopism_a4dec7f63b1c11b0b7da0b6e1b6c6da7b}} 
+\mbox{\Hypertarget{classbaza_czasopism_a25fb60b405aeb595d24a4a5844e3061e}\label{classbaza_czasopism_a25fb60b405aeb595d24a4a5844e3061e}} 
 \index{bazaCzasopism@{bazaCzasopism}!dodajCzasopismo@{dodajCzasopismo}}
 \index{dodajCzasopismo@{dodajCzasopismo}!bazaCzasopism@{bazaCzasopism}}
 \doxysubsubsection{\texorpdfstring{dodajCzasopismo()}{dodajCzasopismo()}}
-{\footnotesize\ttfamily void baza\+Czasopism\+::dodaj\+Czasopismo (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+tytul,  }\item[{bool}]{f\+\_\+interwal,  }\item[{std\+::string}]{f\+\_\+tekst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ baza\+Czasopism\+::dodaj\+Czasopismo (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+tytul,  }\item[{bool}]{f\+\_\+interwal,  }\item[{std\+::string}]{f\+\_\+tekst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00061}{61}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00064}{64}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 \mbox{\Hypertarget{classbaza_czasopism_a7837aaa595345835d9916b56d77b3ae6}\label{classbaza_czasopism_a7837aaa595345835d9916b56d77b3ae6}} 
 \index{bazaCzasopism@{bazaCzasopism}!dump@{dump}}
@@ -46,11 +52,11 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00061}{61}} of file \mbox{\h
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
+Implements \mbox{\hyperlink{classbaza_acb0899ba4aa2273720fd949d830bc511}{baza}}.
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00073}{73}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00086}{86}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 \mbox{\Hypertarget{classbaza_czasopism_a5578094905cf8110342a63d1f5756678}\label{classbaza_czasopism_a5578094905cf8110342a63d1f5756678}} 
 \index{bazaCzasopism@{bazaCzasopism}!getMaxID@{getMaxID}}
@@ -60,24 +66,34 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00073}{73}} of file \mbox{\h
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
+Implements \mbox{\hyperlink{classbaza_a74d1c31125deb832c105235eb41105c9}{baza}}.
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00069}{69}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00070}{70}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
-\mbox{\Hypertarget{classbaza_czasopism_ab460f7370c4ac0dc1318d94cabb99a6a}\label{classbaza_czasopism_ab460f7370c4ac0dc1318d94cabb99a6a}} 
-\index{bazaCzasopism@{bazaCzasopism}!usunCzasopismo@{usunCzasopismo}}
-\index{usunCzasopismo@{usunCzasopismo}!bazaCzasopism@{bazaCzasopism}}
-\doxysubsubsection{\texorpdfstring{usunCzasopismo()}{usunCzasopismo()}}
-{\footnotesize\ttfamily void baza\+Czasopism\+::usun\+Czasopismo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}}}]{f\+\_\+czasopismo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{classbaza_czasopism_a78bdd9403527d3eb0201544b22d60e37}\label{classbaza_czasopism_a78bdd9403527d3eb0201544b22d60e37}} 
+\index{bazaCzasopism@{bazaCzasopism}!getPtrById@{getPtrById}}
+\index{getPtrById@{getPtrById}!bazaCzasopism@{bazaCzasopism}}
+\doxysubsubsection{\texorpdfstring{getPtrById()}{getPtrById()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ baza\+Czasopism\+::get\+Ptr\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00065}{65}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00074}{74}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+
+\mbox{\Hypertarget{classbaza_czasopism_ae74e603714dd0f7b225107e1a0c6da57}\label{classbaza_czasopism_ae74e603714dd0f7b225107e1a0c6da57}} 
+\index{bazaCzasopism@{bazaCzasopism}!getPtrLK@{getPtrLK}}
+\index{getPtrLK@{getPtrLK}!bazaCzasopism@{bazaCzasopism}}
+\doxysubsubsection{\texorpdfstring{getPtrLK()}{getPtrLK()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__czasopismo}{c\+\_\+czasopismo}} $>$ baza\+Czasopism\+::get\+Ptr\+LK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{baza_8h_source_l00082}{82}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/baza.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/\mbox{\hyperlink{baza_8h}{baza.\+h}}\end{DoxyCompactItemize}

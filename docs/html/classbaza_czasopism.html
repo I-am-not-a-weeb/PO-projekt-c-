@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Po projekt cpp: bazaCzasopism Class Reference</title>
+<title>My Project: bazaCzasopism Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Po projekt cpp
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -88,6 +88,8 @@ $(document).ready(function(){initNavTree('classbaza_czasopism.html',''); initRes
   <div class="headertitle"><div class="title">bazaCzasopism Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="baza_8h_source.html">baza.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bazaCzasopism:</div>
 <div class="dyncontent">
@@ -100,22 +102,22 @@ Inheritance diagram for bazaCzasopism:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4dec7f63b1c11b0b7da0b6e1b6c6da7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza_czasopism.html#a4dec7f63b1c11b0b7da0b6e1b6c6da7b">dodajCzasopismo</a> (std::string f_tytul, bool f_interwal, std::string f_tekst)</td></tr>
-<tr class="separator:a4dec7f63b1c11b0b7da0b6e1b6c6da7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab460f7370c4ac0dc1318d94cabb99a6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza_czasopism.html#ab460f7370c4ac0dc1318d94cabb99a6a">usunCzasopismo</a> (<a class="el" href="classc__czasopismo.html">c_czasopismo</a> f_czasopismo)</td></tr>
-<tr class="separator:ab460f7370c4ac0dc1318d94cabb99a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25fb60b405aeb595d24a4a5844e3061e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classc__czasopismo.html">c_czasopismo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza_czasopism.html#a25fb60b405aeb595d24a4a5844e3061e">dodajCzasopismo</a> (std::string f_tytul, bool f_interwal, std::string f_tekst)</td></tr>
+<tr class="separator:a25fb60b405aeb595d24a4a5844e3061e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5578094905cf8110342a63d1f5756678"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza_czasopism.html#a5578094905cf8110342a63d1f5756678">getMaxID</a> ()</td></tr>
 <tr class="separator:a5578094905cf8110342a63d1f5756678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bdd9403527d3eb0201544b22d60e37"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classc__czasopismo.html">c_czasopismo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza_czasopism.html#a78bdd9403527d3eb0201544b22d60e37">getPtrById</a> (int f_id)</td></tr>
+<tr class="separator:a78bdd9403527d3eb0201544b22d60e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74e603714dd0f7b225107e1a0c6da57"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classc__czasopismo.html">c_czasopismo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza_czasopism.html#ae74e603714dd0f7b225107e1a0c6da57">getPtrLK</a> ()</td></tr>
+<tr class="separator:ae74e603714dd0f7b225107e1a0c6da57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7837aaa595345835d9916b56d77b3ae6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza_czasopism.html#a7837aaa595345835d9916b56d77b3ae6">dump</a> ()</td></tr>
 <tr class="separator:a7837aaa595345835d9916b56d77b3ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="memitem:acb0899ba4aa2273720fd949d830bc511"><td class="memItemLeft" align="right" valign="top"><a id="acb0899ba4aa2273720fd949d830bc511" name="acb0899ba4aa2273720fd949d830bc511"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>dump</b> ()=0</td></tr>
+<tr class="memitem:acb0899ba4aa2273720fd949d830bc511"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza.html#acb0899ba4aa2273720fd949d830bc511">dump</a> ()=0</td></tr>
 <tr class="separator:acb0899ba4aa2273720fd949d830bc511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74d1c31125deb832c105235eb41105c9"><td class="memItemLeft" align="right" valign="top"><a id="a74d1c31125deb832c105235eb41105c9" name="a74d1c31125deb832c105235eb41105c9"></a>
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxID</b> ()=0</td></tr>
+<tr class="memitem:a74d1c31125deb832c105235eb41105c9"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza.html#a74d1c31125deb832c105235eb41105c9">getMaxID</a> ()=0</td></tr>
 <tr class="separator:a74d1c31125deb832c105235eb41105c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classbaza"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbaza')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbaza.html">baza</a></td></tr>
 <tr class="memitem:abcd804a85cb70c6848bd079234105f0c inherit pro_attribs_classbaza"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbaza.html#abcd804a85cb70c6848bd079234105f0c">maxID</a> = 0</td></tr>
@@ -123,10 +125,10 @@ virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxID</b
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00056">56</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00059">59</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4dec7f63b1c11b0b7da0b6e1b6c6da7b" name="a4dec7f63b1c11b0b7da0b6e1b6c6da7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dec7f63b1c11b0b7da0b6e1b6c6da7b">&#9670;&nbsp;</a></span>dodajCzasopismo()</h2>
+<a id="a25fb60b405aeb595d24a4a5844e3061e" name="a25fb60b405aeb595d24a4a5844e3061e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25fb60b405aeb595d24a4a5844e3061e">&#9670;&nbsp;</a></span>dodajCzasopismo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,7 +137,7 @@ virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxID</b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bazaCzasopism::dodajCzasopismo </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classc__czasopismo.html">c_czasopismo</a> &gt; bazaCzasopism::dodajCzasopismo </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>f_tytul</em>, </td>
@@ -165,7 +167,7 @@ virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxID</b
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00061">61</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00064">64</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
 
 </div>
 </div>
@@ -192,9 +194,9 @@ virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxID</b
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classbaza.html">baza</a>.</p>
+<p>Implements <a class="el" href="classbaza.html#acb0899ba4aa2273720fd949d830bc511">baza</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00073">73</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00086">86</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
 
 </div>
 </div>
@@ -221,14 +223,14 @@ virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxID</b
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classbaza.html">baza</a>.</p>
+<p>Implements <a class="el" href="classbaza.html#a74d1c31125deb832c105235eb41105c9">baza</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00069">69</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00070">70</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
 
 </div>
 </div>
-<a id="ab460f7370c4ac0dc1318d94cabb99a6a" name="ab460f7370c4ac0dc1318d94cabb99a6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab460f7370c4ac0dc1318d94cabb99a6a">&#9670;&nbsp;</a></span>usunCzasopismo()</h2>
+<a id="a78bdd9403527d3eb0201544b22d60e37" name="a78bdd9403527d3eb0201544b22d60e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bdd9403527d3eb0201544b22d60e37">&#9670;&nbsp;</a></span>getPtrById()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,10 +239,10 @@ virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxID</b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bazaCzasopism::usunCzasopismo </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classc__czasopismo.html">c_czasopismo</a> &gt; bazaCzasopism::getPtrById </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classc__czasopismo.html">c_czasopismo</a>&#160;</td>
-          <td class="paramname"><em>f_czasopismo</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f_id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -251,7 +253,34 @@ virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxID</b
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00065">65</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00074">74</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
+
+</div>
+</div>
+<a id="ae74e603714dd0f7b225107e1a0c6da57" name="ae74e603714dd0f7b225107e1a0c6da57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74e603714dd0f7b225107e1a0c6da57">&#9670;&nbsp;</a></span>getPtrLK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classc__czasopismo.html">c_czasopismo</a> &gt; bazaCzasopism::getPtrLK </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="baza_8h_source.html#l00082">82</a> of file <a class="el" href="baza_8h_source.html">baza.h</a>.</p>
 
 </div>
 </div>

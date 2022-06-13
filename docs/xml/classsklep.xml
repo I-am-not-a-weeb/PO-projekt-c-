@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classsklep" kind="class" language="C++" prot="public">
+    <compoundname>sklep</compoundname>
+    <includes refid="_zarzadzanie_autorami_8h" local="no">ZarzadzanieAutorami.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsklep_1af86a8d2a88c24c0731e784cd3f607061" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classam_k" kindref="compound">amK</ref> &gt;</type>
+        <definition>std::vector&lt;amK&gt; sklep::sklK</definition>
+        <argsstring></argsstring>
+        <name>sklK</name>
+        <qualifiedname>sklep::sklK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="582" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsklep_1adae6f5917a7e8538d71e5e9f34965387" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classam_c" kindref="compound">amC</ref> &gt;</type>
+        <definition>std::vector&lt;amC&gt; sklep::sklC</definition>
+        <argsstring></argsstring>
+        <name>sklC</name>
+        <qualifiedname>sklep::sklC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="583" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsklep_1a20dbb093d9a161f0066f3bf4776edf14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sklep::dodruk_k</definition>
+        <argsstring>(std::shared_ptr&lt; c_ksiazka &gt; f_ksiazka, int f_ilosc, std::shared_ptr&lt; bazaDrukarni &gt; f_bazaD, float f_cena)</argsstring>
+        <name>dodruk_k</name>
+        <qualifiedname>sklep::dodruk_k</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+          <declname>f_ksiazka</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_ilosc</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbaza_drukarni" kindref="compound">bazaDrukarni</ref> &gt;</type>
+          <declname>f_bazaD</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>f_cena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="586" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="586" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="classsklep_1a87ff6a53a415aa0f26f83c77ec2d93aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sklep::sprzed</definition>
+        <argsstring>(int f_id, int f_ilosc)</argsstring>
+        <name>sprzed</name>
+        <qualifiedname>sklep::sprzed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>f_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_ilosc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="627" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="627" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="classsklep_1a0d17f18c7d08cdb9a1b17388a6f01cb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sklep::dodruk_c</definition>
+        <argsstring>(std::shared_ptr&lt; c_czasopismo &gt; f_czasopismo, int f_ilosc, float f_cena)</argsstring>
+        <name>dodruk_c</name>
+        <qualifiedname>sklep::dodruk_c</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &gt;</type>
+          <declname>f_czasopismo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_ilosc</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>f_cena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="670" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="670" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classsklep_1a3cb1872c30b16b43844195308ee39645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sklep::wczytK</definition>
+        <argsstring>(std::shared_ptr&lt; c_ksiazka &gt; f_ksiazka, int f_ilosc, float f_cena)</argsstring>
+        <name>wczytK</name>
+        <qualifiedname>sklep::wczytK</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+          <declname>f_ksiazka</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_ilosc</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>f_cena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="684" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="684" bodyend="687"/>
+      </memberdef>
+      <memberdef kind="function" id="classsklep_1a3120b055584131a4521b96abe114badf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sklep::wczytC</definition>
+        <argsstring>(std::shared_ptr&lt; c_czasopismo &gt; f_czasopismo, int f_ilosc, float f_cena)</argsstring>
+        <name>wczytC</name>
+        <qualifiedname>sklep::wczytC</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__czasopismo" kindref="compound">c_czasopismo</ref> &gt;</type>
+          <declname>f_czasopismo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_ilosc</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>f_cena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="689" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="689" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="function" id="classsklep_1ab290447c49e42aaeae7aa3822aa6daab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string sklep::wypis</definition>
+        <argsstring>()</argsstring>
+        <name>wypis</name>
+        <qualifiedname>sklep::wypis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="694" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="694" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="classsklep_1aa884accb725e758668fe7ccd4729bbfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string sklep::dumpK</definition>
+        <argsstring>()</argsstring>
+        <name>dumpK</name>
+        <qualifiedname>sklep::dumpK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="710" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="710" bodyend="718"/>
+      </memberdef>
+      <memberdef kind="function" id="classsklep_1a36a5cc828eec6c5d69851dc95bae1c41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string sklep::dumpC</definition>
+        <argsstring>()</argsstring>
+        <name>dumpC</name>
+        <qualifiedname>sklep::dumpC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="719" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="719" bodyend="727"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="580" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="581" bodyend="728"/>
+    <listofallmembers>
+      <member refid="classsklep_1a0d17f18c7d08cdb9a1b17388a6f01cb8" prot="public" virt="non-virtual"><scope>sklep</scope><name>dodruk_c</name></member>
+      <member refid="classsklep_1a20dbb093d9a161f0066f3bf4776edf14" prot="public" virt="non-virtual"><scope>sklep</scope><name>dodruk_k</name></member>
+      <member refid="classsklep_1a36a5cc828eec6c5d69851dc95bae1c41" prot="public" virt="non-virtual"><scope>sklep</scope><name>dumpC</name></member>
+      <member refid="classsklep_1aa884accb725e758668fe7ccd4729bbfb" prot="public" virt="non-virtual"><scope>sklep</scope><name>dumpK</name></member>
+      <member refid="classsklep_1adae6f5917a7e8538d71e5e9f34965387" prot="private" virt="non-virtual"><scope>sklep</scope><name>sklC</name></member>
+      <member refid="classsklep_1af86a8d2a88c24c0731e784cd3f607061" prot="private" virt="non-virtual"><scope>sklep</scope><name>sklK</name></member>
+      <member refid="classsklep_1a87ff6a53a415aa0f26f83c77ec2d93aa" prot="public" virt="non-virtual"><scope>sklep</scope><name>sprzed</name></member>
+      <member refid="classsklep_1a3120b055584131a4521b96abe114badf" prot="public" virt="non-virtual"><scope>sklep</scope><name>wczytC</name></member>
+      <member refid="classsklep_1a3cb1872c30b16b43844195308ee39645" prot="public" virt="non-virtual"><scope>sklep</scope><name>wczytK</name></member>
+      <member refid="classsklep_1ab290447c49e42aaeae7aa3822aa6daab" prot="public" virt="non-virtual"><scope>sklep</scope><name>wypis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

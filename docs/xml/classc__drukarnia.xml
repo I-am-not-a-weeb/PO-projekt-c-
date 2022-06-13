@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="classc__drukarnia" kind="class" language="C++" prot="public">
     <compoundname>c_drukarnia</compoundname>
+    <includes refid="_zarzadzanie_autorami_8h" local="no">ZarzadzanieAutorami.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classc__drukarnia_1acf58ea431d88fa9119caa8685dbbea16" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -16,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="11" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="11" bodyend="-1"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="26" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classc__drukarnia_1abb5e6665d89520c82e7dde23e5f2730e" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -30,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="12" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="27" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classc__drukarnia_1ae3f3b799531df6ebde2a3a8672bd2818" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -45,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="13" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="13" bodyend="-1"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="28" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -61,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="15" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="15" bodyend="18"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="30" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="30" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classc__drukarnia_1acc75591b8b495f0c243a59a3957f3cd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -87,7 +88,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="19" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="19" bodyend="24"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="34" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classc__drukarnia_1a616630368808fa9d696c8f9bce53727d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool c_drukarnia::getDrAl</definition>
+        <argsstring>()</argsstring>
+        <name>getDrAl</name>
+        <qualifiedname>c_drukarnia::getDrAl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="40" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="40" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="classc__drukarnia_1a1a170d62cfdc9598e089c5e386bf0666" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -101,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="25" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="25" bodyend="29"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="44" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="44" bodyend="49"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -125,19 +140,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="30" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="30" bodyend="33"/>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="50" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="50" bodyend="53"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" line="8" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h" bodystart="9" bodyend="34"/>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="23" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="24" bodyend="54"/>
     <listofallmembers>
       <member refid="classc__drukarnia_1a99907b1a4f0740681fcd13c202a670c1" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>c_drukarnia</name></member>
       <member refid="classc__drukarnia_1acc75591b8b495f0c243a59a3957f3cd8" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>c_drukarnia</name></member>
       <member refid="classc__drukarnia_1acf58ea431d88fa9119caa8685dbbea16" prot="private" virt="non-virtual"><scope>c_drukarnia</scope><name>DrukowanieAlbumow</name></member>
       <member refid="classc__drukarnia_1a1a170d62cfdc9598e089c5e386bf0666" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>dump</name></member>
+      <member refid="classc__drukarnia_1a616630368808fa9d696c8f9bce53727d" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>getDrAl</name></member>
       <member refid="classc__drukarnia_1ae3f3b799531df6ebde2a3a8672bd2818" prot="private" virt="non-virtual"><scope>c_drukarnia</scope><name>id</name></member>
       <member refid="classc__drukarnia_1abb5e6665d89520c82e7dde23e5f2730e" prot="private" virt="non-virtual"><scope>c_drukarnia</scope><name>nazwa</name></member>
       <member refid="classc__drukarnia_1a4b59fc383ff37b53db01f4b63ceeb7a5" prot="public" virt="non-virtual"><scope>c_drukarnia</scope><name>operator==</name></member>

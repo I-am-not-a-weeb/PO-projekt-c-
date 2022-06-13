@@ -1,5 +1,9 @@
 \hypertarget{classbaza_autorow}{}\doxysection{baza\+Autorow Class Reference}
 \label{classbaza_autorow}\index{bazaAutorow@{bazaAutorow}}
+
+
+{\ttfamily \#include $<$baza.\+h$>$}
+
 Inheritance diagram for baza\+Autorow\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,11 +15,13 @@ Inheritance diagram for baza\+Autorow\+:\begin{figure}[H]
 \item 
 void \mbox{\hyperlink{classbaza_autorow_a19a76fee6b66ae74c08efa3202798ce1}{dodaj\+Autora}} (std\+::string f\+\_\+imie, std\+::string f\+\_\+nazwisko)
 \item 
+void \mbox{\hyperlink{classbaza_autorow_a5a7d96cdd3c1921dd51547c98d3e7221}{dodaj\+Autora\+Wczyt}} (std\+::string f\+\_\+imie, std\+::string f\+\_\+nazwisko, int f\+\_\+id)
+\item 
 std\+::string \mbox{\hyperlink{classbaza_autorow_a8b6e99c6370eb3ef00efc51589096207}{dump}} ()
 \item 
-size\+\_\+t \mbox{\hyperlink{classbaza_autorow_aa42c486a7d4bd3b791a1aa15a1490074}{get\+Max\+ID}} ()
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} $>$ \mbox{\hyperlink{classbaza_autorow_a30ad5d5fd7699b34ee61a50d0c2ad12c}{get\+Autor\+By\+Id}} (int f\+\_\+id)
 \item 
-void \mbox{\hyperlink{classbaza_autorow_ae079d248177572533832cf00007f62ef}{usun\+Autora}} (\mbox{\hyperlink{classc__autor}{c\+\_\+autor}} f\+\_\+autor)
+size\+\_\+t \mbox{\hyperlink{classbaza_autorow_aa42c486a7d4bd3b791a1aa15a1490074}{get\+Max\+ID}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -23,7 +29,7 @@ void \mbox{\hyperlink{classbaza_autorow_ae079d248177572533832cf00007f62ef}{usun\
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00112}{112}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00098}{98}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 
 
@@ -36,7 +42,17 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00112}{112}} of file \mbox{\
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00117}{117}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00103}{103}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+
+\mbox{\Hypertarget{classbaza_autorow_a5a7d96cdd3c1921dd51547c98d3e7221}\label{classbaza_autorow_a5a7d96cdd3c1921dd51547c98d3e7221}} 
+\index{bazaAutorow@{bazaAutorow}!dodajAutoraWczyt@{dodajAutoraWczyt}}
+\index{dodajAutoraWczyt@{dodajAutoraWczyt}!bazaAutorow@{bazaAutorow}}
+\doxysubsubsection{\texorpdfstring{dodajAutoraWczyt()}{dodajAutoraWczyt()}}
+{\footnotesize\ttfamily void baza\+Autorow\+::dodaj\+Autora\+Wczyt (\begin{DoxyParamCaption}\item[{std\+::string}]{f\+\_\+imie,  }\item[{std\+::string}]{f\+\_\+nazwisko,  }\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{baza_8h_source_l00107}{107}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 \mbox{\Hypertarget{classbaza_autorow_a8b6e99c6370eb3ef00efc51589096207}\label{classbaza_autorow_a8b6e99c6370eb3ef00efc51589096207}} 
 \index{bazaAutorow@{bazaAutorow}!dump@{dump}}
@@ -46,11 +62,21 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00117}{117}} of file \mbox{\
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
+Implements \mbox{\hyperlink{classbaza_acb0899ba4aa2273720fd949d830bc511}{baza}}.
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00121}{121}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00111}{111}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+
+\mbox{\Hypertarget{classbaza_autorow_a30ad5d5fd7699b34ee61a50d0c2ad12c}\label{classbaza_autorow_a30ad5d5fd7699b34ee61a50d0c2ad12c}} 
+\index{bazaAutorow@{bazaAutorow}!getAutorById@{getAutorById}}
+\index{getAutorById@{getAutorById}!bazaAutorow@{bazaAutorow}}
+\doxysubsubsection{\texorpdfstring{getAutorById()}{getAutorById()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classc__autor}{c\+\_\+autor}} $>$ baza\+Autorow\+::get\+Autor\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{f\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{baza_8h_source_l00120}{120}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 \mbox{\Hypertarget{classbaza_autorow_aa42c486a7d4bd3b791a1aa15a1490074}\label{classbaza_autorow_aa42c486a7d4bd3b791a1aa15a1490074}} 
 \index{bazaAutorow@{bazaAutorow}!getMaxID@{getMaxID}}
@@ -60,24 +86,14 @@ Definition at line \mbox{\hyperlink{baza_8h_source_l00121}{121}} of file \mbox{\
 
 
 
-Implements \mbox{\hyperlink{classbaza}{baza}}.
+Implements \mbox{\hyperlink{classbaza_a74d1c31125deb832c105235eb41105c9}{baza}}.
 
 
 
-Definition at line \mbox{\hyperlink{baza_8h_source_l00130}{130}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
-
-\mbox{\Hypertarget{classbaza_autorow_ae079d248177572533832cf00007f62ef}\label{classbaza_autorow_ae079d248177572533832cf00007f62ef}} 
-\index{bazaAutorow@{bazaAutorow}!usunAutora@{usunAutora}}
-\index{usunAutora@{usunAutora}!bazaAutorow@{bazaAutorow}}
-\doxysubsubsection{\texorpdfstring{usunAutora()}{usunAutora()}}
-{\footnotesize\ttfamily void baza\+Autorow\+::usun\+Autora (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classc__autor}{c\+\_\+autor}}}]{f\+\_\+autor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line \mbox{\hyperlink{baza_8h_source_l00134}{134}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
+Definition at line \mbox{\hyperlink{baza_8h_source_l00125}{125}} of file \mbox{\hyperlink{baza_8h_source}{baza.\+h}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/baza.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/\+I\+\_\+am\+\_\+not\+\_\+a\+\_\+weeb/source/repos/\+PO projekt c++/\mbox{\hyperlink{baza_8h}{baza.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="except_8h" kind="file" language="C++">
+    <compoundname>except.h</compoundname>
+    <includes local="no">Windows.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="_zarzadzanie_autorami_8h" local="yes">C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h</label>
+        <link refid="except_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Windows.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/PO projekt c++.cpp</label>
+        <link refid="_p_o_01projekt_01c_09_09_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h</label>
+        <link refid="_system_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h</label>
+        <link refid="_zarzadzanie_autorami_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h</label>
+        <link refid="_zarzadzanie_drukarniami_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzaniePozycjamiIUmowanie.h</label>
+        <link refid="_zarzadzanie_pozycjami_i_umowanie_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h</label>
+        <link refid="baza_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h</label>
+        <link refid="except_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classexcept" prot="public">except</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classexcept" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classexcept" kindref="compound">except</ref><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::exception</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>msg;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classexcept_1a469e0011953bdb34b89f6394a4e10f5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classexcept_1a469e0011953bdb34b89f6394a4e10f5d" kindref="member">except</ref>(std::string<sp/>mess)<sp/>:<sp/>msg(mess){}</highlight></codeline>
+<codeline lineno="10" refid="classexcept_1a016a867f8a653f4719693c154022aaac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classexcept_1a016a867f8a653f4719693c154022aaac" kindref="member">getMsg</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>msg;<sp/>}</highlight></codeline>
+<codeline lineno="11" refid="classexcept_1ab9c6dd04b75477ad324edccada6b5e7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classexcept_1ab9c6dd04b75477ad324edccada6b5e7b" kindref="member">~except</ref>()<sp/>throw()<sp/>{}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/except.h"/>
+  </compounddef>
+</doxygen>

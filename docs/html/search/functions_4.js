@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['getautor_0',['getAutor',['../classc__pozycja.html#a9b73df6147e489d4281b2c39f3ba6dea',1,'c_pozycja::getAutor()'],['../classc__ksiazka.html#ac1e3e3ae5b6353fb615e4ccc398d0f3a',1,'c_ksiazka::getAutor()'],['../classc__czasopismo.html#affe729e700f36c3c91ddaa68fba5c32b',1,'c_czasopismo::getAutor()']]],
+  ['getautorbyid_1',['getAutorById',['../classbaza_autorow.html#a30ad5d5fd7699b34ee61a50d0c2ad12c',1,'bazaAutorow']]],
+  ['getcena_2',['getCena',['../classam_k.html#ae9d775143c6118c0b8b61388e3c2f8af',1,'amK::getCena()'],['../classam_c.html#ad6194b557a024438b1ef8903286cbd2e',1,'amC::getCena()']]],
+  ['getcount_3',['getCount',['../classc__pozycja.html#a3f3c730445d46339966c01f86757ae05',1,'c_pozycja']]],
+  ['getdral_4',['getDrAl',['../classc__drukarnia.html#a616630368808fa9d696c8f9bce53727d',1,'c_drukarnia']]],
+  ['getid_5',['getId',['../classc__autor.html#aaae283476ef0ff1abbee88ce834cbea3',1,'c_autor::getId()'],['../classc__pozycja.html#a481db2dfea4151367694941ff6619327',1,'c_pozycja::getId()'],['../classc__ksiazka.html#ab6424ab3931bec93298066a1c417d5f9',1,'c_ksiazka::getId()'],['../classc__czasopismo.html#a7997a42c34567ea0ecad2cf95e0049a0',1,'c_czasopismo::getId()']]],
+  ['getilosc_6',['getIlosc',['../classam_k.html#add9e485f24d76e03a26685d0762ef1d2',1,'amK::getIlosc()'],['../classam_c.html#aa3e18e77e707b1e0fe3c46450fa8e181',1,'amC::getIlosc()']]],
+  ['getimie_7',['getImie',['../classc__autor.html#aaa8fc2dd4c6a3249a92bbd71d3e75f6f',1,'c_autor']]],
+  ['getmaxid_8',['getMaxID',['../classbaza.html#a74d1c31125deb832c105235eb41105c9',1,'baza::getMaxID()'],['../classbaza_ksiazek.html#a4237d1715c775aa3471e1c8b1825b2cc',1,'bazaKsiazek::getMaxID()'],['../classbaza_czasopism.html#a5578094905cf8110342a63d1f5756678',1,'bazaCzasopism::getMaxID()'],['../classbaza_autorow.html#aa42c486a7d4bd3b791a1aa15a1490074',1,'bazaAutorow::getMaxID()'],['../classbaza_umow.html#aaa1d273f58f603670ed05afaee1e0421',1,'bazaUmow::getMaxID()'],['../classbaza_drukarni.html#adbd755e462edf1b2b4f937ce25d0ac1d',1,'bazaDrukarni::getMaxID()']]],
+  ['getmsg_9',['getMsg',['../classexcept.html#a016a867f8a653f4719693c154022aaac',1,'except']]],
+  ['getnazwisko_10',['getNazwisko',['../classc__autor.html#a13e9e9213e1db2e7de358c84a950d163',1,'c_autor']]],
+  ['getpozc_11',['getpozC',['../classc__umowa.html#a2ad9f1cfd19bafa8da5d5c028d84aa35',1,'c_umowa']]],
+  ['getpozk_12',['getpozK',['../classc__umowa.html#af4b49034040a4ff85a9f768c7a749087',1,'c_umowa']]],
+  ['getptr_13',['getPtr',['../classc__autor.html#a804bf15673111bc9a53cf745bb3b3d02',1,'c_autor::getPtr()'],['../classc__ksiazka.html#aeca6fc43119e1e850ff90d4ee04a56b6',1,'c_ksiazka::getPtr()'],['../classam_k.html#a45d7b8ba247db18c4eb762d2ac445c20',1,'amK::getPtr()'],['../classam_c.html#af5dc33895facc0644ef3cf4bc6e73d47',1,'amC::getPtr()']]],
+  ['getptrb_14',['getPtrB',['../classc__czasopismo.html#a6cd9c7ba65bbcec962ac4a1016a639b6',1,'c_czasopismo']]],
+  ['getptrbyid_15',['getPtrById',['../classbaza_ksiazek.html#a854f44e25513e976bff850b05ce433b4',1,'bazaKsiazek::getPtrById()'],['../classbaza_czasopism.html#a78bdd9403527d3eb0201544b22d60e37',1,'bazaCzasopism::getPtrById()']]],
+  ['getptrlk_16',['getPtrLK',['../classbaza_ksiazek.html#a8046dce23f3cd543f94bf466872c6dd4',1,'bazaKsiazek::getPtrLK()'],['../classbaza_czasopism.html#ae74e603714dd0f7b225107e1a0c6da57',1,'bazaCzasopism::getPtrLK()']]],
+  ['getrodzaj_17',['getRodzaj',['../classc__umowa.html#a63eae1de7bf5205e63c722e2406393bc',1,'c_umowa']]],
+  ['getrodzajinterwal_18',['getRodzajInterwal',['../classc__pozycja.html#a997bc423d8303f4143b3f4e1c28859aa',1,'c_pozycja::getRodzajInterwal()'],['../classc__ksiazka.html#a3ee4507f911ddc1908f50d8f8318f1d8',1,'c_ksiazka::getRodzajInterwal()'],['../classc__czasopismo.html#ab1e307176ff8ed796cb4e8c8acb4f905',1,'c_czasopismo::getRodzajInterwal()']]],
+  ['gettekst_19',['getTekst',['../classc__pozycja.html#a7a6218b406f34e2235cb9efd1da68cf0',1,'c_pozycja::getTekst()'],['../classc__ksiazka.html#a3638267b03c2274d9de38bf962af30e4',1,'c_ksiazka::getTekst()'],['../classc__czasopismo.html#abb02bbf913a4d2ae36dae974e4cd90ae',1,'c_czasopismo::getTekst()']]],
+  ['gettytul_20',['getTytul',['../classc__pozycja.html#a324cb69be8e2685de6145b014983072d',1,'c_pozycja::getTytul()'],['../classc__ksiazka.html#a37fc9e36e58b05901306e99912db93f0',1,'c_ksiazka::getTytul()'],['../classc__czasopismo.html#a7d46208ee1408ebd8daa068673e9f8be',1,'c_czasopismo::getTytul()']]]
+];

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['c_5fautor_0',['c_autor',['../classc__autor.html',1,'']]],
-  ['c_5fczasopismo_1',['c_czasopismo',['../classc__czasopismo.html',1,'']]],
-  ['c_5fdrukarnia_2',['c_drukarnia',['../classc__drukarnia.html',1,'']]],
-  ['c_5fksiazka_3',['c_ksiazka',['../classc__ksiazka.html',1,'']]],
-  ['c_5fpozycja_4',['c_pozycja',['../classc__pozycja.html',1,'']]],
-  ['c_5fumowa_5',['c_umowa',['../classc__umowa.html',1,'']]]
+  ['baza_0',['baza',['../classbaza.html',1,'']]],
+  ['bazaautorow_1',['bazaAutorow',['../classbaza_autorow.html',1,'']]],
+  ['bazaczasopism_2',['bazaCzasopism',['../classbaza_czasopism.html',1,'']]],
+  ['bazadrukarni_3',['bazaDrukarni',['../classbaza_drukarni.html',1,'']]],
+  ['bazaksiazek_4',['bazaKsiazek',['../classbaza_ksiazek.html',1,'']]],
+  ['bazaumow_5',['bazaUmow',['../classbaza_umow.html',1,'']]]
 ];

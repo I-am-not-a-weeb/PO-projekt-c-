@@ -14,7 +14,7 @@
     <incdepgraph>
       <node id="2">
         <label>System.h</label>
-        <link refid="_system_8h_source"/>
+        <link refid="_system_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -23,14 +23,14 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="7">
         <label>ZarzadzanieAutorami.h</label>
-        <link refid="_zarzadzanie_autorami_8h_source"/>
+        <link refid="_zarzadzanie_autorami_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="1" relation="include">
@@ -47,10 +47,16 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
-      <node id="11">
+      <node id="13">
         <label>ZarzadzanieDrukarniami.h</label>
-        <link refid="_zarzadzanie_drukarniami_8h_source"/>
+        <link refid="_zarzadzanie_drukarniami_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
@@ -69,7 +75,7 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -78,16 +84,24 @@
       </node>
       <node id="6">
         <label>baza.h</label>
-        <link refid="baza_8h_source"/>
+        <link refid="baza_8h"/>
         <childnode refid="1" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>except.h</label>
+        <link refid="except_8h"/>
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -98,7 +112,7 @@
       <node id="4">
         <label>conio.h</label>
       </node>
-      <node id="12">
+      <node id="14">
         <label>fstream</label>
       </node>
       <node id="3">
@@ -110,7 +124,7 @@
       <node id="8">
         <label>sstream</label>
       </node>
-      <node id="13">
+      <node id="12">
         <label>string</label>
       </node>
       <node id="9">
@@ -120,11 +134,11 @@
     <invincdepgraph>
       <node id="2">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/PO projekt c++.cpp</label>
-        <link refid="_p_o_01projekt_01c_09_09_8cpp_source"/>
+        <link refid="_p_o_01projekt_01c_09_09_8cpp"/>
       </node>
       <node id="5">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/System.h</label>
-        <link refid="_system_8h_source"/>
+        <link refid="_system_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
@@ -136,7 +150,7 @@
       </node>
       <node id="3">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h</label>
-        <link refid="_zarzadzanie_autorami_8h_source"/>
+        <link refid="_zarzadzanie_autorami_8h"/>
         <childnode refid="1" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -144,7 +158,9 @@
       </node>
       <node id="6">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieDrukarniami.h</label>
-        <link refid="_zarzadzanie_drukarniami_8h_source"/>
+        <link refid="_zarzadzanie_drukarniami_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -160,10 +176,12 @@
       </node>
       <node id="4">
         <label>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/baza.h</label>
-        <link refid="baza_8h_source"/>
+        <link refid="baza_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -173,8 +191,8 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;System.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ZarzadzanieAutorami.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_system_8h" kindref="compound">System.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_zarzadzanie_autorami_8h" kindref="compound">ZarzadzanieAutorami.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>

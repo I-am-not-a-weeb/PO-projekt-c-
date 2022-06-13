@@ -3,6 +3,7 @@
   <compounddef id="dir_5544d2dd6e5f91e0803a3148f02c5ad9" kind="dir">
     <compoundname>C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++</compoundname>
     <innerfile refid="baza_8h">baza.h</innerfile>
+    <innerfile refid="except_8h">except.h</innerfile>
     <innerfile refid="_p_o_01projekt_01c_09_09_8cpp">PO projekt c++.cpp</innerfile>
     <innerfile refid="_system_8cpp">System.cpp</innerfile>
     <innerfile refid="_system_8h">System.h</innerfile>

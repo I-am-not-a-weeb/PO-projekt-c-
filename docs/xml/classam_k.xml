@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classam_k" kind="class" language="C++" prot="public">
+    <compoundname>amK</compoundname>
+    <includes refid="_zarzadzanie_autorami_8h" local="no">ZarzadzanieAutorami.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classam_k_1ae330cc79f3851bf36dacc61b86d7b86f" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;c_ksiazka&gt; amK::ptrK</definition>
+        <argsstring></argsstring>
+        <name>ptrK</name>
+        <qualifiedname>amK::ptrK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="429" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classam_k_1a5adffba8c46547f4b839fba0c15075ac" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int amK::ilosc</definition>
+        <argsstring></argsstring>
+        <name>ilosc</name>
+        <qualifiedname>amK::ilosc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="430" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classam_k_1a9ee5af5544b8bf42de497beb78f10718" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float amK::cena</definition>
+        <argsstring></argsstring>
+        <name>cena</name>
+        <qualifiedname>amK::cena</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="431" column="7" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classam_k_1a9528767b1b3246e4bd1bc56a9f331c61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>amK::amK</definition>
+        <argsstring>(std::shared_ptr&lt; c_ksiazka &gt; f_ksiazka, int f_ilosc, float f_cena)</argsstring>
+        <name>amK</name>
+        <qualifiedname>amK::amK</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+          <declname>f_ksiazka</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_ilosc</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>f_cena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="434" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="434" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classam_k_1a45d7b8ba247db18c4eb762d2ac445c20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classc__ksiazka" kindref="compound">c_ksiazka</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; c_ksiazka &gt; amK::getPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getPtr</name>
+        <qualifiedname>amK::getPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="441" column="17" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="441" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classam_k_1add9e485f24d76e03a26685d0762ef1d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int amK::getIlosc</definition>
+        <argsstring>()</argsstring>
+        <name>getIlosc</name>
+        <qualifiedname>amK::getIlosc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="446" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="446" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="classam_k_1ae9d775143c6118c0b8b61388e3c2f8af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float amK::getCena</definition>
+        <argsstring>()</argsstring>
+        <name>getCena</name>
+        <qualifiedname>amK::getCena</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="451" column="7" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="451" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classam_k_1a14bf75a1fff4a34cfafea56ae101dd83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int amK::zmienIlosc</definition>
+        <argsstring>(int delta)</argsstring>
+        <name>zmienIlosc</name>
+        <qualifiedname>amK::zmienIlosc</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="456" column="5" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="456" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classam_k_1a4c60b4a6adc88924be7491248b2e4709" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void amK::zmienCena</definition>
+        <argsstring>(float f_cena)</argsstring>
+        <name>zmienCena</name>
+        <qualifiedname>amK::zmienCena</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>f_cena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="463" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="463" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classam_k_1a3062cbd22fa150f04493d1a977b5b4b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string amK::wypis</definition>
+        <argsstring>()</argsstring>
+        <name>wypis</name>
+        <qualifiedname>amK::wypis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="468" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="468" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classam_k_1ad6cf3e5b4b3f6f29ec377f3c031fff5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string amK::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <qualifiedname>amK::dump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="475" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="475" bodyend="480"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="427" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="428" bodyend="481"/>
+    <listofallmembers>
+      <member refid="classam_k_1a9528767b1b3246e4bd1bc56a9f331c61" prot="public" virt="non-virtual"><scope>amK</scope><name>amK</name></member>
+      <member refid="classam_k_1a9ee5af5544b8bf42de497beb78f10718" prot="private" virt="non-virtual"><scope>amK</scope><name>cena</name></member>
+      <member refid="classam_k_1ad6cf3e5b4b3f6f29ec377f3c031fff5c" prot="public" virt="non-virtual"><scope>amK</scope><name>dump</name></member>
+      <member refid="classam_k_1ae9d775143c6118c0b8b61388e3c2f8af" prot="public" virt="non-virtual"><scope>amK</scope><name>getCena</name></member>
+      <member refid="classam_k_1add9e485f24d76e03a26685d0762ef1d2" prot="public" virt="non-virtual"><scope>amK</scope><name>getIlosc</name></member>
+      <member refid="classam_k_1a45d7b8ba247db18c4eb762d2ac445c20" prot="public" virt="non-virtual"><scope>amK</scope><name>getPtr</name></member>
+      <member refid="classam_k_1a5adffba8c46547f4b839fba0c15075ac" prot="private" virt="non-virtual"><scope>amK</scope><name>ilosc</name></member>
+      <member refid="classam_k_1ae330cc79f3851bf36dacc61b86d7b86f" prot="private" virt="non-virtual"><scope>amK</scope><name>ptrK</name></member>
+      <member refid="classam_k_1a3062cbd22fa150f04493d1a977b5b4b6" prot="public" virt="non-virtual"><scope>amK</scope><name>wypis</name></member>
+      <member refid="classam_k_1a4c60b4a6adc88924be7491248b2e4709" prot="public" virt="non-virtual"><scope>amK</scope><name>zmienCena</name></member>
+      <member refid="classam_k_1a14bf75a1fff4a34cfafea56ae101dd83" prot="public" virt="non-virtual"><scope>amK</scope><name>zmienIlosc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

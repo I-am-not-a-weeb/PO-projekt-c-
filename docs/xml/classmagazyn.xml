@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classmagazyn" kind="class" language="C++" prot="public">
+    <compoundname>magazyn</compoundname>
+    <includes refid="_zarzadzanie_autorami_8h" local="no">ZarzadzanieAutorami.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmagazyn_1af764be1c00404f04de0c1d91a43fd251" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classam_k" kindref="compound">amK</ref> &gt;</type>
+        <definition>std::vector&lt;amK&gt; magazyn::mag_ksiazka</definition>
+        <argsstring></argsstring>
+        <name>mag_ksiazka</name>
+        <qualifiedname>magazyn::mag_ksiazka</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="540" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmagazyn_1aae732ad08b72b02bf470d9a2e6df8353" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classam_c" kindref="compound">amC</ref> &gt;</type>
+        <definition>std::vector&lt;amC&gt; magazyn::mag_czasopismo</definition>
+        <argsstring></argsstring>
+        <name>mag_czasopismo</name>
+        <qualifiedname>magazyn::mag_czasopismo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="541" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmagazyn_1a69fba827701e6634f2d0538495a79085" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void magazyn::dodruk_k</definition>
+        <argsstring>(std::shared_ptr&lt; amK &gt; f_amksiazka, int f_ilosc)</argsstring>
+        <name>dodruk_k</name>
+        <qualifiedname>magazyn::dodruk_k</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classam_k" kindref="compound">amK</ref> &gt;</type>
+          <declname>f_amksiazka</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_ilosc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="544" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="544" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classmagazyn_1a8ec4df99be7fbeef2e480c3974046deb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void magazyn::dodruk_c</definition>
+        <argsstring>(std::shared_ptr&lt; amC &gt; f_amczasopismo, int f_ilosc)</argsstring>
+        <name>dodruk_c</name>
+        <qualifiedname>magazyn::dodruk_c</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classam_c" kindref="compound">amC</ref> &gt;</type>
+          <declname>f_amczasopismo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f_ilosc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="549" column="6" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="549" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="classmagazyn_1af9512615a348c24a5dc630f29ce5ff27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string magazyn::wypis</definition>
+        <argsstring>()</argsstring>
+        <name>wypis</name>
+        <qualifiedname>magazyn::wypis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="554" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="554" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="classmagazyn_1abf2c4bff7d1cee644178a8a4c8f9881b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string magazyn::dumpK</definition>
+        <argsstring>()</argsstring>
+        <name>dumpK</name>
+        <qualifiedname>magazyn::dumpK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="569" column="13" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="569" bodyend="577"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" line="538" column="1" bodyfile="C:/Users/I_am_not_a_weeb/source/repos/PO projekt c++/ZarzadzanieAutorami.h" bodystart="539" bodyend="578"/>
+    <listofallmembers>
+      <member refid="classmagazyn_1a8ec4df99be7fbeef2e480c3974046deb" prot="public" virt="non-virtual"><scope>magazyn</scope><name>dodruk_c</name></member>
+      <member refid="classmagazyn_1a69fba827701e6634f2d0538495a79085" prot="public" virt="non-virtual"><scope>magazyn</scope><name>dodruk_k</name></member>
+      <member refid="classmagazyn_1abf2c4bff7d1cee644178a8a4c8f9881b" prot="public" virt="non-virtual"><scope>magazyn</scope><name>dumpK</name></member>
+      <member refid="classmagazyn_1aae732ad08b72b02bf470d9a2e6df8353" prot="private" virt="non-virtual"><scope>magazyn</scope><name>mag_czasopismo</name></member>
+      <member refid="classmagazyn_1af764be1c00404f04de0c1d91a43fd251" prot="private" virt="non-virtual"><scope>magazyn</scope><name>mag_ksiazka</name></member>
+      <member refid="classmagazyn_1af9512615a348c24a5dc630f29ce5ff27" prot="public" virt="non-virtual"><scope>magazyn</scope><name>wypis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
