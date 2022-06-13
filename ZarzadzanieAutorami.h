@@ -278,6 +278,13 @@ public:
 		tekst = f_czasopismo.tekst;
 		id = f_czasopismo.id;
 	}
+	void wczyt(std::string f_tytul, int f_interwal, int f_id)
+	{
+		tytul = f_tytul;
+		interwal = f_interwal;
+		id = f_id;
+		if (count < f_id) count = f_id;
+	}
 	void przyznajTytul(std::string f_tytul)
 	{
 		tytul = f_tytul;

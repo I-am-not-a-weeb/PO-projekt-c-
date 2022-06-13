@@ -122,7 +122,7 @@ int main()
 									cout << endl << "Nazwa czasopisma: ";
 									cin.ignore();
 									getline(cin,tytul);
-									cout << endl << "Rodzaj: ";
+									cout << endl << "Interwal: ";
 									cin.ignore();
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
@@ -298,9 +298,10 @@ int main()
 									_getch();
 									continue;
 								}
-								case '2':		//dodanie ksiazki
+								case '2':		//dodanie czaopisma
 								{
 									cout << "Tytul: ";
+									cin.clear();
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
 									cin.clear();
@@ -319,12 +320,17 @@ int main()
 												bazaA.getAutorById(ida)->dodajCzasopismo(bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"));
 												cout << endl << "Dodano czasopismo.";
 											}
-											catch(except es){ cout << endl << es.getMsg(); }
+											catch (except es) { cout << endl << es.getMsg(); }
 											cout << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 											_getch();
 											break;
 										}
-										continue;
+										else if
+											(ch == 'n' || ch == 'N')
+										{
+											break;
+										}
+										else continue;
 									}
 								}
 								case '0':		//cofniecie
@@ -363,7 +369,7 @@ int main()
 						{
 						case '1':		//wypis
 						{
-							cout << "Id umowy  Rodzaj umowy  Ksiazka?  Id ksiazki/czasopisma";
+							cout << "Id umowy  Rodzaj umowy  Ksiazka?  Id ksiazki/czasopisma" << endl;
 							cout << bazaU.dump() << endl << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 							_getch();
 							continue;
