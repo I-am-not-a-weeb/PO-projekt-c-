@@ -67,8 +67,10 @@ int main()
 						case '2':		//dodanie autora
 						{
 							cout << "Imie: ";
+							cin.ignore();
 							cin >> imiea;
 							cout << endl << "Nazwisko: ";
+							cin.ignore();
 							cin >> nazwiskoa;
 							try {
 								bazaA.dodajAutora(imiea, nazwiskoa);
@@ -90,13 +92,16 @@ int main()
 								case '1':			//ksiazka
 								{
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
+									cin.ignore();
 									cin >> ida;
 									cout << endl << "Nazwa ksiazki: ";
 									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Rodzaj: ";
+									cin.ignore();
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
+									cin.ignore();
 									cin >> rodzajU;
 									try {
 										bazaU.dodajUmoweK(bazaA.getAutorById(ida), bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU);
@@ -111,13 +116,16 @@ int main()
 								case '2':			//czasopismo
 								{
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
+									cin.ignore();
 									cin >> ida;
 									cout << endl << "Nazwa czasopisma: ";
 									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Rodzaj: ";
+									cin.ignore();
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
+									cin.ignore();
 									cin >> rodzajU;
 									try {
 										bazaU.dodajUmoweC(bazaA.getAutorById(ida), bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU);
@@ -234,8 +242,10 @@ int main()
 										cin.ignore();
 										getline(cin,tytul);
 										cout << endl << "Rodzaj: ";
+										cin.ignore();
 										cin >> rodzaj;
 										cout << endl << "ID autora:";
+										cin.ignore();
 										cin >> ida;
 										while (1)
 										{
@@ -288,8 +298,10 @@ int main()
 									cout << "Tytul: ";
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
+									cin.ignore();
 									cin >> rodzaj;
 									cout << endl << "ID autora:";
+									cin.ignore();
 									cin >> ida;
 									while (1)
 									{
@@ -394,8 +406,10 @@ int main()
 				case '2':		//sprzedaz
 				{
 					cout << sklepp.wypis() << endl << "ID: ";
+					cin.ignore();
 					cin >> id;
 					cout << endl << "Ilosc:";
+					cin.ignore();
 					cin >> ilosc;
 					try {
 						sklepp.sprzed(id, ilosc);
@@ -406,10 +420,13 @@ int main()
 				case '3':		//drukowanko
 				{
 					cout << bazaK.dump() << endl << "ID: ";
+					cin.ignore();
 					cin >> id;
 					cout << endl << "Ilosc:";
+					cin.ignore();
 					cin >> ilosc;
 					cout << endl << "Cena: ";
+					cin.ignore();
 					cin >> cena;
 					try {
 						sklepp.dodruk_k(bazaK.getPtrById(id), ilosc, PtrBazaD, cena); }
