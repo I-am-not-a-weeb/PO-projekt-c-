@@ -23,12 +23,12 @@ public:
 		,std::shared_ptr<std::fstream> f_fileSklC)
 	{
 		std::shared_ptr<bazaKsiazek> temp_bazaK;
-		bazaAutorow temp_bazaA;
-		bazaCzasopism temp_bazaC;
-		bazaDrukarni temp_bazaD;
-		bazaUmow temp_bazaU;
+		std::shared_ptr<bazaAutorow> temp_bazaA;
+		std::shared_ptr<bazaCzasopism> temp_bazaC;
+		std::shared_ptr<bazaDrukarni> temp_bazaD;
+		std::shared_ptr<bazaUmow> temp_bazaU;
 
-		sklep temp_sklep;
+		std::shared_ptr<sklep> temp_sklep;
 
 		float cena;
 		std::string tempstr1, tempstr2;
@@ -48,7 +48,7 @@ public:
 			{
 				*f_fileK >> tempid >> tempida >> temprodz >> tempstr1;
 				temp_bazaK->dodajKsiazke(tempstr1, temprodz, "TBD");
-				temp_bazaK->getPtrLK()->dodajAutora(*temp_bazaA.getAutorById(tempida));
+				temp_bazaK->getPtrLK()->dodajAutora(*temp_bazaA->getAutorById(tempida));
 			}
 			f_fileK->close();
 
@@ -56,8 +56,8 @@ public:
 			while (!f_fileC->eof())
 			{
 				*f_fileC >> tempid >> tempida >> temprodz >> tempstr1;
-				temp_bazaC.dodajCzasopismo(tempstr1, temprodz, "TBD");
-				temp_bazaC.getPtrLK()->przyznajAutora(*temp_bazaA.getAutorById(tempida));
+				temp_bazaC->dodajCzasopismo(tempstr1, temprodz, "TBD");
+				temp_bazaC->getPtrLK()->przyznajAutora(*temp_bazaA->getAutorById(tempida));
 			}
 			f_fileC->close();
 
@@ -81,8 +81,8 @@ public:
 			while (!f_fileSklK->eof())
 			{
 				*f_fileSklK >> tempid >> temprodz >> tempida >> cena;
-				if (temprodz == temp_bazaK.getPtrById(tempida)->getRodzajInterwal())
-					temp_sklep.wczytK(temp_bazaK.getPtrById(tempid), tempida, cena);
+				if (temprodz == temp_bazaK->getPtrById(tempida)->getRodzajInterwal())
+					temp_sklep.wczytK(temp_bazaK->getPtrById(tempid), tempida, cena);
 			}
 			f_fileSklK->close();
 
@@ -90,14 +90,19 @@ public:
 			while (!f_fileSklC->eof())
 			{
 				*f_fileSklK >> tempid >> temprodz >> tempida >> cena;
-				if (temprodz == temp_bazaC.getPtrById(tempida)->getRodzajInterwal())
-					temp_sklep.wczytC(temp_bazaC.getPtrById(tempid), tempida, cena);
+				if (temprodz == temp_bazaC->getPtrById(tempida)->getRodzajInterwal())
+					temp_sklep.wczytC(temp_bazaC->getPtrById(tempid), tempida, cena);
 			}
 			f_fileSklC->close();
 			std::cout << std::endl << "Pomyslnie otworzono." << std::endl;
 			system("pause");
 
 			f_bazaK.swap(temp_bazaK);
+			f_bazaC.swap(temp_bazaC);
+			f_bazaA.swap(temp_bazaA);
+			f_bazaD.swap(temp_bazaD);
+			f_bazaU.swap(temp_bazaU);
+			f_skl.swap(temp_sklep);
 
 
 
