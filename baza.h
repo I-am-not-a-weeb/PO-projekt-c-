@@ -122,7 +122,7 @@ public:
     std::shared_ptr<c_umowa> dodajUmoweK(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
     {
         std::shared_ptr<c_umowa> tmp;
-        tmp= std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj),[](c_umowa*){});
+        tmp= std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj));
         vecUmow.push_back(*tmp);
         return tmp;
     }

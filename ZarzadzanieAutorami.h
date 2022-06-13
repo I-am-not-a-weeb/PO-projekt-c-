@@ -339,21 +339,23 @@ private:
 	std::shared_ptr<c_ksiazka> pozK;
 	std::shared_ptr<c_czasopismo> pozC;
 public:
-
-	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj,int f_id)
+	inline static int maxid = 0;
+	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj)
 	{
 		pozK = std::shared_ptr<c_ksiazka>(f_ksiazka.get(), [](c_ksiazka*) {});
 		rodzaj = f_rodzaj;
-		id = f_id;
 		ks = true;
+		id = maxid;
+		maxid++;
 	}
 
-	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj, int f_id)
+	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
 	{
 		pozC = f_czasopismo;
 		rodzaj = f_rodzaj;
-		id = f_id;
 		ks = false;
+		id = maxid;
+		maxid++;
 	}
 
 	int getRodzaj()
@@ -605,7 +607,7 @@ public:
 	void sprzed(int f_id, int f_ilosc)
 	{
 		char ch;
-		if (f_ilosc > 0) throw except("Nie mozna sprzedac ujemnej ilosci.");
+		if (f_ilosc < 0) throw except("Nie mozna sprzedac ujemnej ilosci.");
 		for (std::vector<amK>::iterator i = sklK.begin(); i != sklK.end(); i++)
 		{
 			if (i->getPtr()->getId() == f_id)
