@@ -22,7 +22,7 @@ public:
 		,std::shared_ptr<std::fstream> f_fileA,std::shared_ptr<std::fstream> f_fileU, std::shared_ptr<std::fstream> f_fileD, std::shared_ptr<std::fstream> f_fileSklK
 		,std::shared_ptr<std::fstream> f_fileSklC)
 	{
-		bazaKsiazek temp_bazaK;
+		std::shared_ptr<bazaKsiazek> temp_bazaK;
 		bazaAutorow temp_bazaA;
 		bazaCzasopism temp_bazaC;
 		bazaDrukarni temp_bazaD;
@@ -47,8 +47,8 @@ public:
 			while (!f_fileK->eof())
 			{
 				*f_fileK >> tempid >> tempida >> temprodz >> tempstr1;
-				temp_bazaK.dodajKsiazke(tempstr1, temprodz, "TBD");
-				temp_bazaK.getPtrLK()->dodajAutora(*temp_bazaA.getAutorById(tempida));
+				temp_bazaK->dodajKsiazke(tempstr1, temprodz, "TBD");
+				temp_bazaK->getPtrLK()->dodajAutora(*temp_bazaA.getAutorById(tempida));
 			}
 			f_fileK->close();
 
@@ -73,7 +73,7 @@ public:
 			while (!f_fileU->eof())
 			{
 				*f_fileU >> tempid >> temprodz >> r >> tempida;
-				if (r)temp_bazaU.wczyt(temp_bazaK.getPtrById(tempida), temprodz, tempid);
+				if (r)temp_bazaU.wczyt(temp_bazaK->getPtrById(tempida), temprodz, tempid);
 			}
 			f_fileU->close();
 
@@ -96,6 +96,11 @@ public:
 			f_fileSklC->close();
 			std::cout << std::endl << "Pomyslnie otworzono." << std::endl;
 			system("pause");
+
+			f_bazaK.swap(temp_bazaK);
+
+
+
 		}
 		catch (except es ) { std::cout << "Blad."; system("pause"); }
 	}
