@@ -22,10 +22,13 @@ public:
 		,std::shared_ptr<std::fstream> f_fileA,std::shared_ptr<std::fstream> f_fileU, std::shared_ptr<std::fstream> f_fileD, std::shared_ptr<std::fstream> f_fileSklK
 		,std::shared_ptr<std::fstream> f_fileSklC)
 	{
+		bazaKsiazek temp_bazaK;
+		std::string tempstr;
+		int tempid, tempida, temprodz;
 		f_fileK->open("plikK.txt", ios::in);
 		while (!f_fileK->eof())
 		{
-
+			*f_fileK >> tempid >> tempida >> temprodz >> tempstr;
 		}
 	}
 	void Save(std::shared_ptr<bazaKsiazek>f_bazaK, std::shared_ptr<bazaCzasopism>f_bazaC, std::shared_ptr<bazaAutorow>f_bazaA,

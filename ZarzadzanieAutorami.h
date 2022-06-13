@@ -208,6 +208,7 @@ public:
 	void dodajAutora(c_autor f_autor)
 	{
 		autor = f_autor;
+	
 	}
 	int getRodzajInterwal()
 	{
@@ -645,7 +646,7 @@ public:
 				ch = _getch();
 				if (ch == 'y' || ch == 'Y')
 				{
-					try { i->zmienIlosc(f_ilosc); }
+					try { i->zmienIlosc(-f_ilosc); }
 					catch (except es) { std::cout << std::endl << es.getMsg() << std::endl; }
 					break;
 				}

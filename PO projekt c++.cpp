@@ -260,6 +260,7 @@ int main()
 											{	
 												try {
 													bazaA.getAutorById(ida)->dodajKsiazke(bazaK.dodajKsiazke(tytul, rodzaj, "TBD"));
+													bazaK.getPtrLK()->dodajAutora(*bazaA.getAutorById(ida));
 													cout << endl << "Dodano ksiazke.";
 												}
 												catch (except es) { cout << endl << es.getMsg(); }
@@ -322,6 +323,7 @@ int main()
 										{
 											try {
 												bazaA.getAutorById(ida)->dodajCzasopismo(bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"));
+												bazaC.getPtrById()->przyznajAutora(*bazaA.getAutorById(ida));
 												cout << endl << "Dodano czasopismo.";
 											}
 											catch (except es) { cout << endl << es.getMsg(); }

@@ -40,6 +40,11 @@ public:
         }
         throw except("Brak ksiazki o podanym id.");
     }
+
+    std::shared_ptr<c_ksiazka> getPtrLK()
+    {
+        return std::shared_ptr<c_ksiazka>(&vecKsiazka.back(), [](c_ksiazka*) {});
+    }
     std::string dump()
     {
         std::ostringstream out;
@@ -73,6 +78,10 @@ public:
             if (i->getId() == f_id) return i->getPtrB();
         }
         throw except("Brak czasopisma po podanym id");
+    }
+    std::shared_ptr<c_czasopismo> getPtrLK()
+    {
+        return std::shared_ptr<c_czasopismo>(&vecCzasopism.back(), [](c_czasopismo*) {});
     }
     std::string dump()
     {
