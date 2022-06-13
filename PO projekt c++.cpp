@@ -68,11 +68,9 @@ int main()
 						case '2':		//dodanie autora
 						{
 							cout << "Imie: ";
-							cin.ignore();
-							cin >> imiea;
+							getline(cin,imiea);
 							cout << endl << "Nazwisko: ";
-							cin.ignore();
-							cin >> nazwiskoa;
+							getline(cin,nazwiskoa);
 							try {
 								bazaA.dodajAutora(imiea, nazwiskoa);
 							}
@@ -93,16 +91,14 @@ int main()
 								case '1':			//ksiazka
 								{
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
-									cin.ignore();
 									cin >> ida;
 									cout << endl << "Nazwa ksiazki: ";
+									cin.clear();
 									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Rodzaj: ";
-									cin.ignore();
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
-									cin.ignore();
 									cin >> rodzajU;
 									try {
 										bazaU.dodajUmoweK(bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU);
@@ -117,16 +113,14 @@ int main()
 								case '2':			//czasopismo
 								{
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
-									cin.clear();
 									cin >> ida;
 									cout << endl << "Nazwa czasopisma: ";
 									cin.clear();
+									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
-									cin.clear();
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
-									cin.clear();
 									cin >> rodzajU;
 									try {
 										bazaU.dodajUmoweC(bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU);
@@ -185,7 +179,6 @@ int main()
 						case '2':		//dodanie drukarki
 						{
 							cout << "Nazwa: ";
-							cin.ignore();
 							getline(cin,nazwa);
 							while (1)
 							{
@@ -243,14 +236,13 @@ int main()
 									while (1)
 									{
 										cout << endl << "Tytul: ";
+										cin.clear();
 										cin.ignore();
 										getline(cin,tytul);
 										cout << endl << "Rodzaj: ";
-										cin.clear();
-										cin >> rodzaj;
+										cin >>rodzaj;
 										cout << endl << "Id autora    Imie    Nazwisko" << endl << bazaA.dump();
 										cout << endl << "ID autora:";
-										cin.clear();
 										cin >> ida;
 										while (1)
 										{
@@ -302,19 +294,15 @@ int main()
 								}
 								case '2':		//dodanie czaopisma
 								{
-									cin.clear();
 									cout << "Tytul: ";
 									cin.clear();
+									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
-									cin.clear();
 									cin >> rodzaj;
-									cin.clear();
 									cout << endl <<"Id autora    Imie    Nazwisko" << endl << bazaA.dump();
 									cout << endl << "ID autora:";
-									cin.clear();
 									cin >> ida;
-									cin.clear();
 									while (1)
 									{
 										cout << "Potwierdzenie dodania ksiazki o nazwie \"" << tytul << "\" rodzaju: \"" << rodzaj << "\" i ID autora: \"" << ida << "\"  Y/N";
@@ -425,10 +413,8 @@ int main()
 				case '2':		//sprzedaz
 				{
 					cout << sklepp.wypis() << endl << "ID: ";
-					cin.ignore();
 					cin >> id;
 					cout << endl << "Ilosc:";
-					cin.ignore();
 					cin >> ilosc;
 					try {
 						sklepp.sprzed(id, ilosc);
@@ -443,10 +429,8 @@ int main()
 					cin.ignore();
 					cin >> id;
 					cout << endl << "Ilosc:";
-					cin.ignore();
 					cin >> ilosc;
 					cout << endl << "Cena: ";
-					cin.ignore();
 					cin >> cena;
 					try {
 						sklepp.dodruk_k(bazaK.getPtrById(id), ilosc, PtrBazaD, cena); }
@@ -487,7 +471,12 @@ int main()
 		}
 		case '4':		//odczyt <-
 		{
-
+			try {
+				sys.Open(shared_ptr<bazaKsiazek>(&bazaK, [](bazaKsiazek*) {}), shared_ptr<bazaCzasopism>(&bazaC, [](bazaCzasopism*) {}), shared_ptr <bazaAutorow>(&bazaA, [](bazaAutorow*) {}), shared_ptr<bazaDrukarni>(&bazaD, [](bazaDrukarni*) {}), shared_ptr<bazaUmow>(&bazaU, [](bazaUmow*) {})
+					, shared_ptr<sklep>(&sklepp, [](sklep*) {}), shared_ptr<fstream>(&fileK, [](fstream*) {}), shared_ptr<fstream>(&fileC, [](fstream*) {}), shared_ptr<fstream>(&fileA, [](fstream*) {}), shared_ptr<fstream>(&fileU, [](fstream*) {}), shared_ptr<fstream>(&fileD, [](fstream*) {})
+					, shared_ptr<fstream>(&filesklK, [](fstream*) {}), shared_ptr<fstream>(&filesklC, [](fstream*) {}));
+			}
+			catch (except es) {}
 		}
 		case '0':		//wyjscie z programu
 		{
