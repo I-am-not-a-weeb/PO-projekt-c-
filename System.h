@@ -39,7 +39,7 @@ public:
 			while (!f_fileA->eof())
 			{
 				*f_fileA >> tempid >> tempstr1 >> tempstr2;
-				temp_bazaA.dodajAutoraWczyt(tempstr1, tempstr2, tempid);
+				temp_bazaA->dodajAutoraWczyt(tempstr1, tempstr2, tempid);
 			}
 			f_fileA->close();
 
@@ -65,7 +65,7 @@ public:
 			while (!f_fileD->eof())
 			{
 				*f_fileD >> tempid >> temprodz >> tempstr1;
-				temp_bazaD.wczytD(tempstr1, temprodz, tempid);
+				temp_bazaD->wczytD(tempstr1, temprodz, tempid);
 			}
 			f_fileD->close();
 
@@ -73,7 +73,7 @@ public:
 			while (!f_fileU->eof())
 			{
 				*f_fileU >> tempid >> temprodz >> r >> tempida;
-				if (r)temp_bazaU.wczyt(temp_bazaK->getPtrById(tempida), temprodz, tempid);
+				if (r)temp_bazaU->wczyt(temp_bazaK->getPtrById(tempida), temprodz, tempid);
 			}
 			f_fileU->close();
 
@@ -82,7 +82,7 @@ public:
 			{
 				*f_fileSklK >> tempid >> temprodz >> tempida >> cena;
 				if (temprodz == temp_bazaK->getPtrById(tempida)->getRodzajInterwal())
-					temp_sklep.wczytK(temp_bazaK->getPtrById(tempid), tempida, cena);
+					temp_sklep->wczytK(temp_bazaK->getPtrById(tempid), tempida, cena);
 			}
 			f_fileSklK->close();
 
@@ -91,7 +91,7 @@ public:
 			{
 				*f_fileSklK >> tempid >> temprodz >> tempida >> cena;
 				if (temprodz == temp_bazaC->getPtrById(tempida)->getRodzajInterwal())
-					temp_sklep.wczytC(temp_bazaC->getPtrById(tempid), tempida, cena);
+					temp_sklep->wczytC(temp_bazaC->getPtrById(tempid), tempida, cena);
 			}
 			f_fileSklC->close();
 			std::cout << std::endl << "Pomyslnie otworzono." << std::endl;
