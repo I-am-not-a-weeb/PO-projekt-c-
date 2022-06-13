@@ -22,13 +22,14 @@ public:
 		,std::shared_ptr<std::fstream> f_fileA,std::shared_ptr<std::fstream> f_fileU, std::shared_ptr<std::fstream> f_fileD, std::shared_ptr<std::fstream> f_fileSklK
 		,std::shared_ptr<std::fstream> f_fileSklC)
 	{
-		std::shared_ptr<bazaKsiazek> temp_bazaK;
-		std::shared_ptr<bazaAutorow> temp_bazaA;
-		std::shared_ptr<bazaCzasopism> temp_bazaC;
-		std::shared_ptr<bazaDrukarni> temp_bazaD;
-		std::shared_ptr<bazaUmow> temp_bazaU;
+		//
+		std::shared_ptr<bazaKsiazek> temp_bazaK(new bazaKsiazek, [](bazaKsiazek*) {});
+		std::shared_ptr<bazaAutorow> temp_bazaA(new bazaAutorow,[](bazaAutorow*){});
+		std::shared_ptr<bazaCzasopism> temp_bazaC(new bazaCzasopism, [](bazaCzasopism*) {});
+		std::shared_ptr<bazaDrukarni> temp_bazaD(new bazaDrukarni, [](bazaDrukarni*) {});
+		std::shared_ptr<bazaUmow> temp_bazaU(new bazaUmow, [](bazaUmow*) {});
 
-		std::shared_ptr<sklep> temp_sklep;
+		std::shared_ptr<sklep> temp_sklep(new sklep, [](sklep*) {});
 
 		float cena;
 		std::string tempstr1, tempstr2;

@@ -68,8 +68,10 @@ int main()
 						case '2':		//dodanie autora
 						{
 							cout << "Imie: ";
+							cin.clear();
 							getline(cin,imiea);
 							cout << endl << "Nazwisko: ";
+							cin.clear();
 							getline(cin,nazwiskoa);
 							try {
 								bazaA.dodajAutora(imiea, nazwiskoa);
@@ -179,6 +181,7 @@ int main()
 						case '2':		//dodanie drukarki
 						{
 							cout << "Nazwa: ";
+							cin.clear();
 							getline(cin,nazwa);
 							while (1)
 							{
@@ -237,7 +240,6 @@ int main()
 									{
 										cout << endl << "Tytul: ";
 										cin.clear();
-										cin.ignore();
 										getline(cin,tytul);
 										cout << endl << "Rodzaj: ";
 										cin >>rodzaj;
@@ -296,7 +298,6 @@ int main()
 								{
 									cout << "Tytul: ";
 									cin.clear();
-									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
 									cin >> rodzaj;
@@ -459,7 +460,7 @@ int main()
 		case '3':		//zapis ->
 		{
 			try{
-				sys.Save(shared_ptr<bazaKsiazek>(&bazaK,[](bazaKsiazek*){}), shared_ptr<bazaCzasopism>(&bazaC,[](bazaCzasopism*){}), shared_ptr <bazaAutorow>(&bazaA,[](bazaAutorow*){}), shared_ptr<bazaDrukarni>(&bazaD,[](bazaDrukarni*){}), shared_ptr<bazaUmow>(&bazaU,[](bazaUmow*){})
+ 				sys.Save(shared_ptr<bazaKsiazek>(&bazaK,[](bazaKsiazek*){}), shared_ptr<bazaCzasopism>(&bazaC,[](bazaCzasopism*){}), shared_ptr <bazaAutorow>(&bazaA,[](bazaAutorow*){}), shared_ptr<bazaDrukarni>(&bazaD,[](bazaDrukarni*){}), shared_ptr<bazaUmow>(&bazaU,[](bazaUmow*){})
 					, shared_ptr<sklep>(&sklepp,[](sklep*){}), shared_ptr<fstream>(&fileK, [](fstream*) {}), shared_ptr<fstream>(&fileC, [](fstream*) {}), shared_ptr<fstream>(&fileA, [](fstream*) {}), shared_ptr<fstream>(&fileU, [](fstream*) {}), shared_ptr<fstream>(&fileD, [](fstream*) {})
 					, shared_ptr<fstream>(&filesklK,[](fstream*) {}), shared_ptr<fstream>(&filesklC,[](fstream*){}));
 				cout << endl << "Pomyslnie zapisano.";
