@@ -117,16 +117,16 @@ int main()
 								case '2':			//czasopismo
 								{
 									cout << bazaA.dump() << endl << "Wpisz ID autora: ";
-									cin.ignore();
+									cin.clear();
 									cin >> ida;
 									cout << endl << "Nazwa czasopisma: ";
-									cin.ignore();
+									cin.clear();
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
-									cin.ignore();
+									cin.clear();
 									cin >> rodzaj;
 									cout << endl << "Rodzaj umowy: ";
-									cin.ignore();
+									cin.clear();
 									cin >> rodzajU;
 									try {
 										bazaU.dodajUmoweC(bazaA.getAutorById(ida), bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU);
