@@ -103,9 +103,6 @@ public:
 			f_bazaD.swap(temp_bazaD);
 			f_bazaU.swap(temp_bazaU);
 			f_skl.swap(temp_sklep);
-
-
-
 		}
 		catch (except es ) { std::cout << "Blad."; system("pause"); }
 	}
