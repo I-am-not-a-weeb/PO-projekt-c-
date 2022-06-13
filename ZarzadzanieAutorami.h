@@ -62,6 +62,10 @@ public:
 	{
 		vecDrukarnie.push_back(c_drukarnia(f_nazwa, f_album, ++maxID));
 	}
+	void wczytD(std::string f_nazwa, bool f_album, int f_id)
+	{
+		vecDrukarnie.push_back(c_drukarnia(f_nazwa, f_album, f_id));
+	}
 	size_t getMaxID()
 	{
 		return vecDrukarnie.size();
@@ -357,7 +361,14 @@ public:
 		id = maxid;
 		maxid++;
 	}
-
+	c_umowa(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj, int f_id)
+	{
+		pozK = std::shared_ptr<c_ksiazka>(f_ksiazka.get(), [](c_ksiazka*) {});
+		rodzaj = f_rodzaj;
+		ks = true;
+		id = f_id;
+		if (maxid < f_id) maxid = f_id;
+	}
 	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
 	{
 		pozC = f_czasopismo;
@@ -668,6 +679,16 @@ public:
 			}
 		}
 		sklC.push_back(amC(f_czasopismo, f_ilosc,f_cena));
+	}
+
+	void wczytK(std::shared_ptr<c_ksiazka> f_ksiazka, int f_ilosc, float f_cena)
+	{
+		sklK.push_back(amK(f_ksiazka, f_ilosc, f_cena));
+	}
+
+	void wczytC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_ilosc, float f_cena)
+	{
+		sklC.push_back(amC(f_czasopismo, f_ilosc, f_cena));
 	}
 
 	std::string wypis()

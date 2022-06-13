@@ -104,6 +104,10 @@ public:
     {
         vecAutor.push_back(c_autor(f_imie, f_nazwisko, ++maxID));
     }
+    void dodajAutoraWczyt(std::string f_imie, std::string f_nazwisko,int f_id)
+    {
+        vecAutor.push_back(c_autor(f_imie, f_nazwisko, f_id));
+    }
     std::string dump()  
     {
         std::ostringstream out;
@@ -128,14 +132,21 @@ class bazaUmow : protected baza
 private:
     std::vector<c_umowa> vecUmow;
 public:
-    std::shared_ptr<c_umowa> dodajUmoweK(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
+    std::shared_ptr<c_umowa> dodajUmoweK(std::shared_ptr<c_ksiazka> f_ksiazka,int f_rodzaj)
     {
         std::shared_ptr<c_umowa> tmp;
         tmp= std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj));
         vecUmow.push_back(*tmp);
         return tmp;
     }
-    std::shared_ptr<c_umowa> dodajUmoweC(std::shared_ptr<c_autor> f_autor, std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
+    std::shared_ptr<c_umowa> wczyt(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj,int f_id)
+    {
+        std::shared_ptr<c_umowa> tmp;
+        tmp = std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj, f_id));
+        vecUmow.push_back(*tmp);
+        return tmp;
+    }
+    std::shared_ptr<c_umowa> dodajUmoweC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)
     {
         std::shared_ptr<c_umowa> tmp;
         tmp = std::shared_ptr<c_umowa>(new c_umowa(f_czasopismo, f_rodzaj),[](c_umowa*){});

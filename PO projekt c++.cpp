@@ -105,7 +105,7 @@ int main()
 									cin.ignore();
 									cin >> rodzajU;
 									try {
-										bazaU.dodajUmoweK(bazaA.getAutorById(ida), bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU);
+										bazaU.dodajUmoweK(bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU);
 										cout << bazaA.getAutorById(ida)->getImie();
 									}
 									catch (except es) {
@@ -129,7 +129,7 @@ int main()
 									cin.clear();
 									cin >> rodzajU;
 									try {
-										bazaU.dodajUmoweC(bazaA.getAutorById(ida), bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU);
+										bazaU.dodajUmoweC(bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU);
 										cout << bazaA.getAutorById(ida)->getImie();
 									}
 									catch (except es)
