@@ -473,6 +473,7 @@ int main()
 					, shared_ptr<sklep>(&sklepp,[](sklep*){}), shared_ptr<fstream>(&fileK, [](fstream*) {}), shared_ptr<fstream>(&fileC, [](fstream*) {}), shared_ptr<fstream>(&fileA, [](fstream*) {}), shared_ptr<fstream>(&fileU, [](fstream*) {}), shared_ptr<fstream>(&fileD, [](fstream*) {})
 					, shared_ptr<fstream>(&filesklK,[](fstream*) {}), shared_ptr<fstream>(&filesklC,[](fstream*){}));
 				cout << endl << "Pomyslnie zapisano.";
+				system("pause");
 			}
 			catch (except es) { cout << endl << es.getMsg(); }
 			catch (exception es2){}
