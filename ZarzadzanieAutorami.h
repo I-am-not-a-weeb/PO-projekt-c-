@@ -44,7 +44,7 @@ public:
 	std::string dump()
 	{
 		std::stringstream out;
-		out << id << "|" << nazwa << "|" << DrukowanieAlbumow << std::endl;
+		out << id << " " << nazwa << " " << DrukowanieAlbumow << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_drukarnia l, c_drukarnia r)
@@ -133,7 +133,7 @@ public:
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << "|" << imie << "|" << nazwisko << std::endl;
+		out << id << " " << imie << " " << nazwisko << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_autor l, c_autor r)
@@ -229,13 +229,13 @@ public:
 	std::string dump_t()
 	{
 		std::ostringstream out;
-		out << id << "|" << tytul << "|" << rodzaj << "|" << tekst << std::endl;
+		out << id << " " << tytul << " " << rodzaj << " " << tekst << std::endl;
 		return out.str();
 	}
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << "|" << tytul << "|" << rodzaj << std::endl;
+		out << id << " " << tytul << " " << rodzaj << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_ksiazka l, c_ksiazka r)
@@ -312,13 +312,13 @@ public:
 	std::string dump_t()
 	{
 		std::ostringstream out;
-		out << id << "|" << tytul << "|" << interwal_str(interwal) << "|" << tekst << std::endl;
+		out << id << " " << tytul << " " << interwal_str(interwal) << " " << tekst << std::endl;
 		return out.str();
 	}
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << "|" << tytul << "|" << interwal_str(interwal) << std::endl;
+		out << id << " " << tytul << " " << interwal_str(interwal) << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_czasopismo l, c_czasopismo r)
