@@ -297,12 +297,14 @@ int main()
 								case '2':		//dodanie czaopisma
 								{
 									cout << "Tytul: ";
-									cin.clear();
+									cin.ignore();
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
+									cin.clear();
 									cin >> rodzaj;
 									cout << endl <<"Id autora    Imie    Nazwisko" << endl << bazaA.dump();
 									cout << endl << "ID autora:";
+									cin.clear();
 									cin >> ida;
 									while (1)
 									{
