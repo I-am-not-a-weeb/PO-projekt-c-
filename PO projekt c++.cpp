@@ -172,11 +172,12 @@ int main()
 						system("cls");
 						cout << "1. Wypisac baze" << endl << "2. Dodac drukarnie" << endl << "0. Cofnij" << endl;
 						ch = _getch();
+						system("cls");
 						switch (ch)
 						{
 						case '1':		//wypis bazy
 						{
-							cout << "Id drukarni     Nazwa      Czy drukuje albumy" << endl;
+							cout << "Id drukarni     Czy drukuje albumy   Nazwa" << endl;
 							cout << bazaD.dump() << endl << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 							_getch();
 							continue;
@@ -300,16 +301,19 @@ int main()
 								}
 								case '2':		//dodanie czaopisma
 								{
+									cin.clear();
 									cout << "Tytul: ";
 									cin.clear();
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
 									cin.clear();
 									cin >> rodzaj;
+									cin.clear();
 									cout << endl <<"Id autora    Imie    Nazwisko" << endl << bazaA.dump();
 									cout << endl << "ID autora:";
 									cin.clear();
 									cin >> ida;
+									cin.clear();
 									while (1)
 									{
 										cout << "Potwierdzenie dodania ksiazki o nazwie \"" << tytul << "\" rodzaju: \"" << rodzaj << "\" i ID autora: \"" << ida << "\"  Y/N";
