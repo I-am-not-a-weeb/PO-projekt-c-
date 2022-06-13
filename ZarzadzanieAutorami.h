@@ -194,6 +194,13 @@ public:
 		rodzaj = f_ksiazka.rodzaj;
 		id = f_ksiazka.id;
 	}
+	void wczyt(std::string f_tytul, int f_rodzaj,int f_id)
+	{
+		tytul = f_tytul;
+		rodzaj = f_rodzaj;
+		id = f_id;
+		if (count < f_id) count = f_id;
+	}
 	void przyznajTytul(std::string f_tytul)
 	{
 		tytul = f_tytul;
@@ -226,16 +233,10 @@ public:
 	{
 		return id;
 	}
-	std::string dump_t()
-	{
-		std::ostringstream out;
-		out << id << " " << tytul << " " << rodzaj << " " << tekst << std::endl;
-		return out.str();
-	}
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << " " << rodzaj << " " << tytul << std::endl;
+		out << id << " " << autor.getId() << " " << rodzaj << " " << tytul << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_ksiazka l, c_ksiazka r)
@@ -318,7 +319,7 @@ public:
 	std::string dump()
 	{
 		std::ostringstream out;
-		out << id << " " << interwal_str(interwal) << " " << tytul << std::endl;
+		out << id << " " << autor.getId()<< " " << interwal_str(interwal) << " " << tytul << std::endl;
 		return out.str();
 	}
 	friend bool operator==(c_czasopismo l, c_czasopismo r)
@@ -664,12 +665,12 @@ public:
 	std::string wypis()
 	{
 		std::ostringstream out;
-		out << "Ksiazki:" << std::endl;
+		out << "Ksiazki:" << std::endl << "Id  Tytul  Rodzaj  Ilosc  Cena" << std::endl;
 		for (std::vector<amK>::iterator i = sklK.begin(); i != sklK.end(); i++)
 		{
 			out << i->wypis();
 		}
-		out << "Czasopisma:" << std::endl;
+		out << "Czasopisma:" << std::endl << "Id  Tytul  Interwal  Ilosc  Cena" << std::endl;
 		for (std::vector<amC>::iterator i = sklC.begin(); i != sklC.end(); i++)
 		{
 			out << i->wypis();

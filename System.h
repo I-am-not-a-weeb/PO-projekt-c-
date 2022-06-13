@@ -11,19 +11,22 @@ using std::ios;
 class System
 {
 private:
-	/*std::shared_ptr<bazaKsiazek> bazaK;
-	std::shared_ptr<bazaCzasopism> bazaC;
-	std::shared_ptr<bazaAutorow> bazaA;
-	std::shared_ptr<bazaDrukarni> bazaD;
-	std::shared_ptr<bazaUmow> bazaU;*/
+	
 public:
 	void Start()
 	{
 
 	}
-	void Open()
+	void Open(std::shared_ptr<bazaKsiazek>f_bazaK, std::shared_ptr<bazaCzasopism>f_bazaC, std::shared_ptr<bazaAutorow>f_bazaA, std::shared_ptr<bazaDrukarni>f_bazaD
+		,std::shared_ptr<bazaUmow>f_bazaU, std::shared_ptr<sklep> f_skl,std::shared_ptr<std::fstream> f_fileK, std::shared_ptr<std::fstream> f_fileC
+		,std::shared_ptr<std::fstream> f_fileA,std::shared_ptr<std::fstream> f_fileU, std::shared_ptr<std::fstream> f_fileD, std::shared_ptr<std::fstream> f_fileSklK
+		,std::shared_ptr<std::fstream> f_fileSklC)
 	{
+		f_fileK->open("plikK.txt", ios::in);
+		while (!f_fileK->eof())
+		{
 
+		}
 	}
 	void Save(std::shared_ptr<bazaKsiazek>f_bazaK, std::shared_ptr<bazaCzasopism>f_bazaC, std::shared_ptr<bazaAutorow>f_bazaA,
 		std::shared_ptr<bazaDrukarni>f_bazaD, std::shared_ptr<bazaUmow>f_bazaU, std::shared_ptr<sklep> f_skl,
@@ -47,5 +50,13 @@ public:
 		*f_fileU << f_bazaU->dump();
 		*f_fileSklK << f_skl->dumpK();
 		*f_fileSklC << f_skl->dumpC();
+
+		f_fileK->close();
+		f_fileA->close();
+		f_fileD->close();
+		f_fileC->close();
+		f_fileU->close();
+		f_fileSklC->close();
+		f_fileSklK->close();
 	}
 };

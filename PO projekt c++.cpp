@@ -60,6 +60,7 @@ int main()
 						{
 						case '1':		//wypis bazy autorow
 						{
+							cout << "Id autora w bazie     Imie     Nazwisko" << endl;
 							cout << bazaA.dump() << endl << endl << "Nacisnij dowolny przycisk by kontynuowac." << endl;
 							_getch();
 							continue;
@@ -175,6 +176,7 @@ int main()
 						{
 						case '1':		//wypis bazy
 						{
+							cout << "Id drukarni     Nazwa      Czy drukuje albumy" << endl;
 							cout << bazaD.dump() << endl << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 							_getch();
 							continue;
@@ -230,6 +232,7 @@ int main()
 								{
 								case '1':		//wypis bazy
 								{
+									cout << "Id ksiazki    Id autora    Rodzaj    Tytul" << endl;
 									cout << bazaK.dump() << endl << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 									_getch();
 									continue;
@@ -242,10 +245,11 @@ int main()
 										cin.ignore();
 										getline(cin,tytul);
 										cout << endl << "Rodzaj: ";
-										cin.ignore();
+										cin.clear();
 										cin >> rodzaj;
+										cout << endl << "Id autora    Imie    Nazwisko" << endl << bazaA.dump();
 										cout << endl << "ID autora:";
-										cin.ignore();
+										cin.clear();
 										cin >> ida;
 										while (1)
 										{
@@ -289,6 +293,7 @@ int main()
 								{
 								case '1':		//wypis bazy
 								{
+									cout << "Id czasopisma   Id autora   Interwal   Tytul" << endl;
 									cout << bazaC.dump() << endl << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 									_getch();
 									continue;
@@ -298,10 +303,11 @@ int main()
 									cout << "Tytul: ";
 									getline(cin,tytul);
 									cout << endl << "Interwal: ";
-									cin.ignore();
+									cin.clear();
 									cin >> rodzaj;
+									cout << endl <<"Id autora    Imie    Nazwisko" << endl << bazaA.dump();
 									cout << endl << "ID autora:";
-									cin.ignore();
+									cin.clear();
 									cin >> ida;
 									while (1)
 									{
@@ -357,6 +363,7 @@ int main()
 						{
 						case '1':		//wypis
 						{
+							cout << "Id umowy  Rodzaj umowy  Ksiazka?  Id ksiazki/czasopisma";
 							cout << bazaU.dump() << endl << endl << "Nacisnij dowolny przycisk aby kontynuowac." << endl;
 							_getch();
 							continue;
@@ -419,6 +426,7 @@ int main()
 				}
 				case '3':		//drukowanko
 				{
+					cout << "Id  Id autora  Rodzaj/Interwal  Tytul" << endl;
 					cout << bazaK.dump() << endl << "ID: ";
 					cin.ignore();
 					cin >> id;
