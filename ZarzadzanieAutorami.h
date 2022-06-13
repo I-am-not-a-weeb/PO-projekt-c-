@@ -428,6 +428,7 @@ public:
 
 	int zmienIlosc(int delta)			//+= ilosc
 	{
+		if (ilosc < -delta) throw except("Brak takiej ilosci ksiazek.");
 		ilosc += delta;
 		return ilosc;
 	}
@@ -562,19 +563,29 @@ public:
 			if (i->getPtr()->getId() != f_ksiazka->getId()) continue;
 			else
 			{
-				if (i->getPtr()->getRodzajInterwal() != 3) i->zmienIlosc(f_ilosc);
+				if (i->getPtr()->getRodzajInterwal() != 3) 
+				{
+					i->zmienIlosc(f_ilosc); return;
+				}
 				else
 				{
 					for (std::vector<c_drukarnia>::iterator n = f_bazaD.get()->vecDrukarnie.begin(); n != f_bazaD.get()->vecDrukarnie.end(); n++)
 					{
-						if (n->getDrAl()) i->zmienIlosc(f_ilosc);
+						if (n->getDrAl())
+						{
+							i->zmienIlosc(f_ilosc);
+							return;
+						}
 						else { throw (except("Brak drukarni ktora moze drukowac albumow.")); }
 						return;
 					}
 				}
 			}
 		}
-		if (f_ksiazka->getRodzajInterwal() != 3) sklK.push_back(amK(f_ksiazka,f_ilosc,f_cena));
+		if (f_ksiazka->getRodzajInterwal() != 3) {
+			sklK.push_back(amK(f_ksiazka, f_ilosc, f_cena));
+			return;
+		}
 		else
 		{
 			for (std::vector<c_drukarnia>::iterator n = f_bazaD.get()->vecDrukarnie.begin(); n != f_bazaD.get()->vecDrukarnie.end(); n++)
@@ -600,7 +611,7 @@ public:
 					ch = _getch();
 					if (ch == 'y' || ch == 'Y')
 					{
-						try { i->zmienIlosc(f_ilosc); }
+						try { i->zmienIlosc(-f_ilosc); }
 						catch (except es) { std::cout << std::endl << es.getMsg() << std::endl; }
 						break;
 					}

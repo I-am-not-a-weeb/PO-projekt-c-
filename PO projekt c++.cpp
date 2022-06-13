@@ -222,6 +222,7 @@ int main()
 									while (1)
 									{
 										cout << endl << "Tytul: ";
+										cin.ignore();
 										getline(cin,tytul);
 										cout << endl << "Rodzaj: ";
 										cin >> rodzaj;
@@ -395,7 +396,7 @@ int main()
 				}
 				case '3':		//drukowanko
 				{
-					cout << sklepp.wypis() << endl << "ID: ";
+					cout << bazaK.dump() << endl << "ID: ";
 					cin >> id;
 					cout << endl << "Ilosc:";
 					cin >> ilosc;
