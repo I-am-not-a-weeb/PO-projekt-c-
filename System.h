@@ -35,6 +35,8 @@ public:
 		*f_bazaA = bazaAutorow();
 
 		float cena;
+
+		char chtstr[100];
 		std::string tempstr1, tempstr2;
 		int tempid, tempida, temprodz;
 		bool r;
@@ -47,16 +49,18 @@ public:
 			f_fileA->close();
 
 			f_fileK->open("plikK.txt", ios::in);
-			while (*f_fileK >> tempid >> tempida >> temprodz >> tempstr1)
+			while (*f_fileK >> tempid >> tempida >> temprodz >> chtstr)
 			{
+				tempstr1 = chtstr;
 				f_bazaK->wczytKsiazka(tempstr1, temprodz,tempid);
 				f_bazaK->getPtrLK()->dodajAutora(*f_bazaA->getAutorById(tempida));
 			}
 			f_fileK->close();
 
 			f_fileC->open("plikC.txt", ios::in);
-			while (*f_fileC >> tempid >> tempida >> tempstr2 >> tempstr1)
+			while (*f_fileC >> tempid >> tempida >> tempstr2 >> chtstr)
 			{
+				tempstr1 = chtstr;
 				if (tempstr2 == "Miesiecznik") temprodz = 1; else temprodz = 0;
 				f_bazaC->dodajCzasopismo(tempstr1, temprodz, "TBD");
 				f_bazaC->getPtrLK()->przyznajAutora(*f_bazaA->getAutorById(tempida));
@@ -64,8 +68,9 @@ public:
 			f_fileC->close();
 
 			f_fileD->open("plikD.txt", ios::in);
-			while (*f_fileD >> tempid >> temprodz >> tempstr1)
+			while (*f_fileD >> tempid >> temprodz >> chtstr)
 			{
+				tempstr1 = chtstr;
 				f_bazaD->wczytD(tempstr1, temprodz, tempid);
 			}
 			f_fileD->close();
