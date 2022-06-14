@@ -100,13 +100,6 @@ public:
 			f_fileSklC->close();
 			std::cout << std::endl << "Pomyslnie otworzono." << std::endl;
 			system("pause");
-
-			temp_bazaK.swap(f_bazaK);
-			temp_bazaC.swap(f_bazaC);
-			temp_bazaA.swap(f_bazaA);
-			temp_bazaD.swap(f_bazaD);
-			temp_bazaU.swap(f_bazaU);
-			temp_sklep.swap(f_skl);
 		}
 		catch (except es ) { std::cout << "Blad."; system("pause"); }
 	}
