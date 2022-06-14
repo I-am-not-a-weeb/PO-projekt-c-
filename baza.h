@@ -47,7 +47,14 @@ public:
         }
         throw except("Brak ksiazki o podanym id.");
     }
-
+    bool isItId(int f_id)
+    {
+        for (std::vector<c_ksiazka>::iterator i = vecKsiazka.begin(); i != vecKsiazka.end(); i++)
+        {
+            if (i->getId() == f_id) return 1;
+        }
+        return 0;
+    }
     std::shared_ptr<c_ksiazka> getPtrLK()
     {
         return std::shared_ptr<c_ksiazka>(&vecKsiazka.back(), [](c_ksiazka*) {});
@@ -91,6 +98,15 @@ public:
             if (i->getId() == f_id) return i->getPtrB();
         }
         throw except("Brak czasopisma po podanym id");
+    }
+
+    bool isItId(int f_id)
+    {
+        for (std::vector<c_czasopismo>::iterator i = vecCzasopism.begin(); i != vecCzasopism.end(); i++)
+        {
+            if (i->getId() == f_id) return 1;
+        }
+        return 0;
     }
     std::shared_ptr<c_czasopismo> getPtrLK()
     {
@@ -157,18 +173,18 @@ public:
         vecUmow.push_back(*tmp);
         return tmp;
     }
-    std::shared_ptr<c_umowa> wczytK(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj,int f_id)
+    std::shared_ptr<c_umowa> wczytK(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj,int f_id, std::shared_ptr<bazaKsiazek> f_bazaK)
     {
         std::shared_ptr<c_umowa> tmp;
         tmp = std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj, f_id));
-        vecUmow.push_back(*tmp);
+        if(!f_bazaK->isItId(f_id))vecUmow.push_back(*tmp);
         return tmp;
     }
-    std::shared_ptr<c_umowa> wczytC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj, int f_id)
+    std::shared_ptr<c_umowa> wczytC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj, int f_id,std::shared_ptr<bazaCzasopism> f_bazaC)
     {
         std::shared_ptr<c_umowa> tmp;
         tmp = std::shared_ptr<c_umowa>(new c_umowa(f_czasopismo, f_rodzaj, f_id));
-        vecUmow.push_back(*tmp);
+        if(!f_bazaC->isItId(f_id)) vecUmow.push_back(*tmp);
         return tmp;
     }
     std::shared_ptr<c_umowa> dodajUmoweC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj)

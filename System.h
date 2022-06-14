@@ -78,8 +78,8 @@ public:
 			f_fileU->open("plikU.txt", ios::in);
 			while (*f_fileU >> tempid >> temprodz >> r >> tempida)
 			{
-				if (r)f_bazaU->wczytK(f_bazaK->getPtrById(tempida), temprodz, tempid);
-				else f_bazaU->wczytC(f_bazaC->getPtrById(tempida), temprodz, tempid);
+				if (r)f_bazaU->wczytK(f_bazaK->getPtrById(tempida), temprodz, tempid,f_bazaK);
+				else f_bazaU->wczytC(f_bazaC->getPtrById(tempida), temprodz, tempid,f_bazaC);
 			}
 			f_fileU->close();
 
