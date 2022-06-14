@@ -190,6 +190,13 @@ public:
 		tekst = "TBD";
 		id = ++count;
 	}
+	c_ksiazka(std::string f_tytul, int f_rodzaj,int f_id,bool i)
+	{
+		tytul = f_tytul;
+		rodzaj = f_rodzaj;
+		tekst = "TBD";
+		id = f_id;
+	}
 	c_ksiazka(const c_ksiazka& f_ksiazka)
 	{
 		autor = f_ksiazka.autor;
@@ -212,7 +219,10 @@ public:
 	void dodajAutora(c_autor f_autor)
 	{
 		autor = f_autor;
-	
+	}
+	void dodajAutora(std::shared_ptr<c_autor> f_autor)
+	{
+		autor = *f_autor;
 	}
 	int getRodzajInterwal()
 	{
@@ -274,6 +284,13 @@ public:
 		interwal = f_interwal;
 		tekst = f_tekst;
 		id = ++count;
+	}
+	c_czasopismo(std::string f_tytul, int f_interwal, int f_id,bool i)
+	{
+		tytul = f_tytul;
+		interwal = f_interwal;
+		tekst = "TBD";
+		id = f_id;
 	}
 	c_czasopismo(const c_czasopismo &f_czasopismo)
 	{
@@ -376,6 +393,14 @@ public:
 		ks = false;
 		id = maxid;
 		maxid++;
+	}
+	c_umowa(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj,int f_id)
+	{
+		pozC = f_czasopismo;
+		rodzaj = f_rodzaj;
+		ks = false;
+		id = f_id;
+		if (maxid < f_id)maxid = f_id;
 	}
 
 	int getRodzaj()

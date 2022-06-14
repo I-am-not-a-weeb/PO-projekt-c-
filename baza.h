@@ -28,6 +28,13 @@ public:
         vecKsiazka.push_back(*temp);
         return temp;
     }
+    std::shared_ptr<c_ksiazka> wczytKsiazka(std::string f_tytul, int f_rodzaj, int f_id)
+    {
+        std::shared_ptr<c_ksiazka>temp(new c_ksiazka(f_tytul, f_rodzaj, f_id, 1), [](c_ksiazka*) {});
+        vecKsiazka.push_back(*temp);
+        return temp;
+    }
+
     size_t getMaxID()
     {
         return vecKsiazka.size();
@@ -64,6 +71,12 @@ public:
     std::shared_ptr<c_czasopismo> dodajCzasopismo(std::string f_tytul, bool f_interwal, std::string f_tekst)
     {
         std::shared_ptr<c_czasopismo> temp(new c_czasopismo(f_tytul, f_interwal, f_tekst, ++maxID),[](c_czasopismo*){});
+        vecCzasopism.push_back(*temp);
+        return temp;
+    }
+    std::shared_ptr<c_czasopismo> wczytCzasopismo(std::string f_tytul, bool f_interwal, int f_id)
+    {
+        std::shared_ptr<c_czasopismo> temp(new c_czasopismo(f_tytul, f_interwal,f_id,1), [](c_czasopismo*) {});
         vecCzasopism.push_back(*temp);
         return temp;
     }
@@ -119,7 +132,12 @@ public:
     }
     std::shared_ptr<c_autor> getAutorById(int f_id)
     {
-        if (f_id >= 0 && f_id <= vecAutor.size()) return std::shared_ptr<c_autor>(&vecAutor[f_id - 1], &null_deleter);
+        if (f_id >= 0 && f_id <= vecAutor.size()) return std::shared_ptr<c_autor>(&vecAutor[f_id - 1], [](c_autor*){});
+        else throw except("Brak autora o podanym id.");
+    }
+    std::shared_ptr<c_autor> wczytGetAutorById(int f_id)
+    {
+        if (f_id >= 0 && f_id <= vecAutor.size()) return std::shared_ptr<c_autor>(&vecAutor[f_id], &null_deleter);
         else throw except("Brak autora o podanym id.");
     }
     size_t getMaxID()
@@ -139,10 +157,17 @@ public:
         vecUmow.push_back(*tmp);
         return tmp;
     }
-    std::shared_ptr<c_umowa> wczyt(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj,int f_id)
+    std::shared_ptr<c_umowa> wczytK(std::shared_ptr<c_ksiazka> f_ksiazka, int f_rodzaj,int f_id)
     {
         std::shared_ptr<c_umowa> tmp;
         tmp = std::shared_ptr<c_umowa>(new c_umowa(f_ksiazka, f_rodzaj, f_id));
+        vecUmow.push_back(*tmp);
+        return tmp;
+    }
+    std::shared_ptr<c_umowa> wczytC(std::shared_ptr<c_czasopismo> f_czasopismo, int f_rodzaj, int f_id)
+    {
+        std::shared_ptr<c_umowa> tmp;
+        tmp = std::shared_ptr<c_umowa>(new c_umowa(f_czasopismo, f_rodzaj, f_id));
         vecUmow.push_back(*tmp);
         return tmp;
     }

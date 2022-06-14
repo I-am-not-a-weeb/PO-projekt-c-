@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <conio.h>
-#include <Windows.h>
+//#include <Windows.h>
 #include "baza.h"
 #include <fstream>
 #include <memory>
@@ -31,79 +31,77 @@ public:
 
 		std::shared_ptr<sklep> temp_sklep(new sklep, [](sklep*) {});
 
+		*f_bazaK = bazaKsiazek();
+		*f_bazaA = bazaAutorow();
+
 		float cena;
 		std::string tempstr1, tempstr2;
 		int tempid, tempida, temprodz;
 		bool r;
 		try {
 			f_fileA->open("plikA.txt", ios::in);
-			while (!f_fileA->eof())
+			while (*f_fileA >> tempid >> tempstr1 >> tempstr2)
 			{
-				*f_fileA >> tempid >> tempstr1 >> tempstr2;
-				temp_bazaA->dodajAutoraWczyt(tempstr1, tempstr2, tempid);
+				f_bazaA->dodajAutoraWczyt(tempstr1, tempstr2, tempid);
 			}
 			f_fileA->close();
 
 			f_fileK->open("plikK.txt", ios::in);
-			while (!f_fileK->eof())
+			while (*f_fileK >> tempid >> tempida >> temprodz >> tempstr1)
 			{
-				*f_fileK >> tempid >> tempida >> temprodz >> tempstr1;
-				temp_bazaK->dodajKsiazke(tempstr1, temprodz, "TBD");
-				temp_bazaK->getPtrLK()->dodajAutora(*temp_bazaA->getAutorById(tempida));
+				f_bazaK->wczytKsiazka(tempstr1, temprodz,tempid);
+				f_bazaK->getPtrLK()->dodajAutora(*f_bazaA->getAutorById(tempida));
 			}
 			f_fileK->close();
 
 			f_fileC->open("plikC.txt", ios::in);
-			while (!f_fileC->eof())
+			while (*f_fileC >> tempid >> tempida >> tempstr2 >> tempstr1)
 			{
-				*f_fileC >> tempid >> tempida >> temprodz >> tempstr1;
-				temp_bazaC->dodajCzasopismo(tempstr1, temprodz, "TBD");
-				temp_bazaC->getPtrLK()->przyznajAutora(*temp_bazaA->getAutorById(tempida));
+				if (tempstr2 == "Miesiecznik") temprodz = 1; else temprodz = 0;
+				f_bazaC->dodajCzasopismo(tempstr1, temprodz, "TBD");
+				f_bazaC->getPtrLK()->przyznajAutora(*f_bazaA->getAutorById(tempida));
 			}
 			f_fileC->close();
 
 			f_fileD->open("plikD.txt", ios::in);
-			while (!f_fileD->eof())
+			while (*f_fileD >> tempid >> temprodz >> tempstr1)
 			{
-				*f_fileD >> tempid >> temprodz >> tempstr1;
-				temp_bazaD->wczytD(tempstr1, temprodz, tempid);
+				f_bazaD->wczytD(tempstr1, temprodz, tempid);
 			}
 			f_fileD->close();
 
 			f_fileU->open("plikU.txt", ios::in);
-			while (!f_fileU->eof())
+			while (*f_fileU >> tempid >> temprodz >> r >> tempida)
 			{
-				*f_fileU >> tempid >> temprodz >> r >> tempida;
-				if (r)temp_bazaU->wczyt(temp_bazaK->getPtrById(tempida), temprodz, tempid);
+				if (r)f_bazaU->wczytK(f_bazaK->getPtrById(tempida), temprodz, tempid);
+				else f_bazaU->wczytC(f_bazaC->getPtrById(tempida), temprodz, tempid);
 			}
 			f_fileU->close();
 
 			f_fileSklK->open("pliksklK.txt", ios::in);
-			while (!f_fileSklK->eof())
+			while (*f_fileSklK >> tempid >> temprodz >> tempida >> cena)
 			{
-				*f_fileSklK >> tempid >> temprodz >> tempida >> cena;
-				if (temprodz == temp_bazaK->getPtrById(tempida)->getRodzajInterwal())
-					temp_sklep->wczytK(temp_bazaK->getPtrById(tempid), tempida, cena);
+				if (temprodz == f_bazaK->getPtrById(tempida)->getRodzajInterwal())
+					f_skl->wczytK(f_bazaK->getPtrById(tempid), tempida, cena);
 			}
 			f_fileSklK->close();
 
 			f_fileSklC->open("pliksklC.txt", ios::in);
-			while (!f_fileSklC->eof())
+			while (*f_fileSklK >> tempid >> temprodz >> tempida >> cena)
 			{
-				*f_fileSklK >> tempid >> temprodz >> tempida >> cena;
-				if (temprodz == temp_bazaC->getPtrById(tempida)->getRodzajInterwal())
-					temp_sklep->wczytC(temp_bazaC->getPtrById(tempid), tempida, cena);
+				if (temprodz == f_bazaC->getPtrById(tempida)->getRodzajInterwal())
+					f_skl->wczytC(f_bazaC->getPtrById(tempid), tempida, cena);
 			}
 			f_fileSklC->close();
 			std::cout << std::endl << "Pomyslnie otworzono." << std::endl;
 			system("pause");
 
-			f_bazaK.swap(temp_bazaK);
-			f_bazaC.swap(temp_bazaC);
-			f_bazaA.swap(temp_bazaA);
-			f_bazaD.swap(temp_bazaD);
-			f_bazaU.swap(temp_bazaU);
-			f_skl.swap(temp_sklep);
+			temp_bazaK.swap(f_bazaK);
+			temp_bazaC.swap(f_bazaC);
+			temp_bazaA.swap(f_bazaA);
+			temp_bazaD.swap(f_bazaD);
+			temp_bazaU.swap(f_bazaU);
+			temp_sklep.swap(f_skl);
 		}
 		catch (except es ) { std::cout << "Blad."; system("pause"); }
 	}

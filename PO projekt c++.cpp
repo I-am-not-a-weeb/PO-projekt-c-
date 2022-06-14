@@ -2,7 +2,7 @@
 #include "System.h"
 #include "baza.h"
 #include "ZarzadzaniePozycjamiIUmowanie.h"
-#include <Windows.h>
+//#include <Windows.h>
 #include <fstream>
 //#include "baza.h"
 
@@ -104,7 +104,7 @@ int main()
 									cin >> rodzajU;
 									try {
 										bazaU.dodajUmoweK(bazaK.dodajKsiazke(tytul, rodzaj, "TBD"), rodzajU);
-										cout << bazaA.getAutorById(ida)->getImie();
+										bazaK.getPtrLK()->dodajAutora(*bazaA.getAutorById(ida));
 									}
 									catch (except es) {
 										cout << endl << es.getMsg();
@@ -126,7 +126,7 @@ int main()
 									cin >> rodzajU;
 									try {
 										bazaU.dodajUmoweC(bazaC.dodajCzasopismo(tytul, rodzaj, "TBD"), rodzajU);
-										cout << bazaA.getAutorById(ida)->getImie();
+										bazaC.getPtrLK()->przyznajAutora(*bazaA.getAutorById(ida));
 									}
 									catch (except es)
 									{
@@ -239,7 +239,7 @@ int main()
 									while (1)
 									{
 										cout << endl << "Tytul: ";
-										cin.clear();
+										cin.ignore();
 										getline(cin,tytul);
 										cout << endl << "Rodzaj: ";
 										cin >>rodzaj;
@@ -463,8 +463,9 @@ int main()
 		{
 			try{
  				sys.Save(shared_ptr<bazaKsiazek>(&bazaK,[](bazaKsiazek*){}), shared_ptr<bazaCzasopism>(&bazaC,[](bazaCzasopism*){}), shared_ptr <bazaAutorow>(&bazaA,[](bazaAutorow*){}), shared_ptr<bazaDrukarni>(&bazaD,[](bazaDrukarni*){}), shared_ptr<bazaUmow>(&bazaU,[](bazaUmow*){})
-					, shared_ptr<sklep>(&sklepp,[](sklep*){}), shared_ptr<fstream>(&fileK, [](fstream*) {}), shared_ptr<fstream>(&fileC, [](fstream*) {}), shared_ptr<fstream>(&fileA, [](fstream*) {}), shared_ptr<fstream>(&fileU, [](fstream*) {}), shared_ptr<fstream>(&fileD, [](fstream*) {})
+					, shared_ptr<sklep>(&sklepp,[](sklep*){}), shared_ptr<fstream>(&fileK, [](fstream*) {}), shared_ptr<fstream>(&fileC,[](fstream*){}), shared_ptr<fstream>(&fileA, [](fstream*) {}), shared_ptr<fstream>(&fileU, [](fstream*) {}), shared_ptr<fstream>(&fileD, [](fstream*) {})
 					, shared_ptr<fstream>(&filesklK,[](fstream*) {}), shared_ptr<fstream>(&filesklC,[](fstream*){}));
+
 				cout << endl << "Pomyslnie zapisano.";
 				system("pause");
 			}
@@ -478,8 +479,10 @@ int main()
 				sys.Open(shared_ptr<bazaKsiazek>(&bazaK, [](bazaKsiazek*) {}), shared_ptr<bazaCzasopism>(&bazaC, [](bazaCzasopism*) {}), shared_ptr <bazaAutorow>(&bazaA, [](bazaAutorow*) {}), shared_ptr<bazaDrukarni>(&bazaD, [](bazaDrukarni*) {}), shared_ptr<bazaUmow>(&bazaU, [](bazaUmow*) {})
 					, shared_ptr<sklep>(&sklepp, [](sklep*) {}), shared_ptr<fstream>(&fileK, [](fstream*) {}), shared_ptr<fstream>(&fileC, [](fstream*) {}), shared_ptr<fstream>(&fileA, [](fstream*) {}), shared_ptr<fstream>(&fileU, [](fstream*) {}), shared_ptr<fstream>(&fileD, [](fstream*) {})
 					, shared_ptr<fstream>(&filesklK, [](fstream*) {}), shared_ptr<fstream>(&filesklC, [](fstream*) {}));
+				continue;
 			}
 			catch (except es) {}
+			
 		}
 		case '0':		//wyjscie z programu
 		{
